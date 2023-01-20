@@ -236,6 +236,52 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["E
 
 
 
+=== 6 février 2023
+
+
+
+==== La possibilité de déplacer d'anciens fichiers de sauvegarde vers le stockage d'archivage Azure à partir des systèmes StorageGRID
+
+Vous pouvez désormais transférer les anciens fichiers de sauvegarde des systèmes StorageGRID vers le stockage d'archivage dans Azure. Cela vous permet de libérer de l'espace sur vos systèmes StorageGRID et de réaliser des économies en utilisant une solution de stockage bon marché pour les anciens fichiers de sauvegarde.
+
+Cette fonctionnalité est disponible si votre cluster sur site utilise ONTAP 9.12.1 ou version ultérieure et que votre système StorageGRID utilise 11.4 ou version ultérieure. https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html#preparing-to-archive-older-backup-files-to-public-cloud-storage["En savoir plus"^].
+
+
+
+==== Il est possible de configurer le verrouillage des données et la protection contre les attaques par ransomware pour les fichiers de sauvegarde dans Azure Blob
+
+DataLock et ransomware protection sont désormais pris en charge pour les fichiers de sauvegarde stockés dans Azure Blob. Si votre système Cloud Volumes ONTAP ou ONTAP sur site exécute ONTAP 9.12.1 ou une version ultérieure, vous pouvez maintenant verrouiller vos fichiers de sauvegarde et les analyser pour détecter un éventuel ransomware. https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-cloud-backup-policies.html#datalock-and-ransomware-protection["Découvrez comment protéger vos sauvegardes avec DataLock et protection contre les attaques par ransomware"^].
+
+
+
+==== Amélioration de la sauvegarde et de la restauration d'un volume FlexGroup
+
+* Vous pouvez désormais choisir plusieurs agrégats lors de la restauration d'un volume FlexGroup. Dans la dernière version, vous ne pouvez sélectionner qu'un seul agrégat.
+* La restauration de volume FlexGroup est désormais prise en charge sur les systèmes Cloud Volumes ONTAP. Dans la dernière version, vous pouviez uniquement restaurer vos données vers des systèmes ONTAP sur site.
+
+
+
+
+==== Les systèmes Cloud Volumes ONTAP peuvent transférer d'anciennes sauvegardes vers le stockage d'archivage Google
+
+Les fichiers de sauvegarde sont initialement créés dans la classe de stockage Google Standard. Vous pouvez désormais utiliser Cloud Backup pour transférer les anciennes sauvegardes vers le stockage Google Archive afin de réaliser une optimisation des coûts. La dernière version ne prend en charge que cette fonctionnalité avec des clusters ONTAP sur site. Désormais, les systèmes Cloud Volumes ONTAP déployés dans Google Cloud sont pris en charge.
+
+
+
+==== Les opérations de restauration de volume permettent désormais de sélectionner la SVM où vous souhaitez restaurer les données de volume
+
+Désormais, vous restaurez des données de volume sur d'autres machines virtuelles de stockage dans vos clusters ONTAP. Auparavant, il n'était pas possible de choisir la machine virtuelle de stockage.
+
+
+
+==== Prise en charge améliorée des volumes dans les configurations MetroCluster
+
+Avec ONTAP 9.12.1 GA ou supérieur, la sauvegarde est désormais prise en charge lorsqu'elle est connectée au système primaire dans une configuration MetroCluster. L'intégralité de la configuration de sauvegarde est transférée vers le système secondaire pour que les sauvegardes vers le cloud puissent se poursuivre automatiquement après le basculement.
+
+https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html#backup-limitations["Voir limites de sauvegarde pour plus d'informations"].
+
+
+
 === 9 janvier 2023
 
 
@@ -359,73 +405,6 @@ Dans les versions précédentes, vous pouviez sélectionner l'agrégat uniquemen
 
 
 
-=== 2 novembre 2022
-
-
-
-==== Possibilité d'exporter d'anciennes copies Snapshot dans vos fichiers de sauvegarde de base
-
-Si des copies Snapshot locales des volumes de votre environnement de travail correspondent aux étiquettes de votre planning de sauvegarde (par exemple, quotidienne, hebdomadaire, etc.), vous pouvez exporter ces snapshots historiques vers le stockage objet sous forme de fichiers de sauvegarde. Cela vous permet d'initialiser vos sauvegardes dans le cloud en déplaçant d'anciennes copies Snapshot vers la copie de sauvegarde de base.
-
-Cette option est disponible lors de l'activation de Cloud Backup pour vos environnements de travail. Vous pouvez également modifier ce paramètre ultérieurement dans https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backup-settings-ontap.html["Page Paramètres avancés"].
-
-
-
-==== Cloud Backup peut désormais être utilisé pour l'archivage des volumes dont vous n'avez plus besoin sur le système source
-
-Vous pouvez maintenant supprimer la relation de sauvegarde d'un volume. Vous disposez ainsi d'un mécanisme d'archivage pour arrêter la création de nouveaux fichiers de sauvegarde et supprimer le volume source, mais conserver tous les fichiers de sauvegarde existants. Cela vous permet de restaurer ultérieurement le volume à partir du fichier de sauvegarde, si nécessaire, tout en libérant de l'espace du système de stockage source. https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backups-ontap.html#deleting-volume-backup-relationships["Découvrez comment"].
-
-
-
-==== Le service de support a été ajouté pour recevoir les alertes Cloud Backup par e-mail et dans le centre de notification
-
-Cloud Backup a été intégré au service BlueXP notification. Vous pouvez afficher les notifications Cloud Backup en cliquant sur la cloche de notification dans la barre de menus BlueXP. Vous pouvez également configurer BlueXP pour envoyer des notifications par e-mail en tant qu'alertes afin de vous informer de l'activité système importante, même lorsque vous n'êtes pas connecté au système. Cet e-mail peut être envoyé aux destinataires qui doivent connaître les activités de sauvegarde et de restauration. https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html#use-the-job-monitor-to-view-backup-and-restore-job-status["Découvrez comment"].
-
-
-
-==== La nouvelle page Paramètres avancés vous permet de modifier les paramètres de sauvegarde au niveau du cluster
-
-Cette nouvelle page vous permet de modifier de nombreux paramètres de sauvegarde au niveau du cluster que vous avez définis lors de l'activation de Cloud Backup pour chaque système ONTAP. Vous pouvez également modifier certains paramètres appliqués comme paramètres de sauvegarde par défaut. L'ensemble des paramètres de sauvegarde que vous pouvez modifier comprend :
-
-* Les clés de stockage qui donnent à votre système ONTAP l'autorisation d'accéder au stockage objet
-* Bande passante réseau allouée pour télécharger les sauvegardes dans le stockage objet
-* Paramètre de sauvegarde automatique (et règle) pour les volumes futurs
-* Classe de stockage d'archivage (AWS uniquement)
-* Indique si des copies Snapshot historiques sont incluses dans les fichiers de sauvegarde de base initiaux
-* Si les snapshots « annuels » sont supprimés du système source
-* L'IPspace ONTAP connecté au stockage objet (en cas de sélection incorrecte lors de l'activation)
-
-
-https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backup-settings-ontap.html["En savoir plus sur la gestion des paramètres de sauvegarde au niveau du cluster"].
-
-
-
-==== Vous pouvez désormais restaurer des fichiers de sauvegarde à l'aide de la fonction de recherche et de restauration lors de l'utilisation d'un connecteur sur site
-
-Dans la version précédente, la prise en charge a été ajoutée pour créer des fichiers de sauvegarde dans le cloud public lorsque le connecteur est déployé sur site. Dans cette version, le service de support a continué d'être utilisé pour restaurer des sauvegardes à partir d'Amazon S3 ou d'Azure Blob lorsque le connecteur est déployé sur site. La fonction de recherche et restauration prend également en charge la restauration des sauvegardes depuis les systèmes StorageGRID vers les systèmes ONTAP sur site.
-
-À l'heure actuelle, le connecteur doit être déployé dans Google Cloud Platform lorsque vous utilisez les fonctions de recherche et de restauration pour restaurer des sauvegardes à partir de Google Cloud Storage.
-
-
-
-==== La page surveillance des travaux a été mise à jour
-
-Les mises à jour suivantes ont été effectuées sur le https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html["Surveillance des travaux"]:
-
-* Une colonne pour « charge de travail » est disponible. Vous pouvez donc filtrer la page pour afficher les travaux des services de sauvegarde suivants : volumes, applications, machines virtuelles et Kubernetes.
-* Vous pouvez ajouter de nouvelles colonnes pour « Nom d'utilisateur » et « Type de travail » si vous souhaitez afficher ces détails pour une tâche de sauvegarde spécifique.
-* La page Détails du travail affiche tous les sous-travaux en cours d'exécution pour terminer le travail principal.
-* La page est automatiquement actualisée toutes les 15 minutes pour que vous puissiez toujours voir les résultats de l'état des travaux les plus récents. Et vous pouvez cliquer sur le bouton *Actualiser* pour mettre la page à jour immédiatement.
-
-
-
-
-==== Améliorations de la sauvegarde entre plusieurs comptes AWS
-
-Si vous souhaitez utiliser un autre compte AWS pour vos sauvegardes Cloud Volumes ONTAP que celui que vous utilisez pour les volumes source, vous devez ajouter les identifiants de compte AWS de destination dans BlueXP. Vous devez également ajouter les autorisations « s3:PutBuckePolicy » et « s3:PutketOwnershipControls » au rôle qui fournit BlueXP avec les autorisations. Auparavant, il fallait configurer de nombreux paramètres sur la console AWS. Plus besoin de le faire.
-
-
-
 == Sens des données cloud
 
 
@@ -438,7 +417,7 @@ Si vous souhaitez utiliser un autre compte AWS pour vos sauvegardes Cloud Volume
 
 Dans les versions antérieures de Cloud Data SENSE, vous pouvez envoyer des alertes par e-mail aux utilisateurs BlueXP de votre compte lorsque certaines stratégies critiques renvoient des résultats. Cette fonction vous permet d'obtenir des notifications pour protéger vos données lorsque vous n'êtes pas en ligne. Vous pouvez désormais envoyer des alertes par e-mail à partir de stratégies à tous les autres utilisateurs - jusqu'à 20 adresses e-mail - qui ne sont pas dans votre compte BlueXP.
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#sending-email-alerts-when-non-compliant-data-is-found["En savoir plus sur l'envoi d'alertes par e-mail basées sur les résultats des règles"].
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-using-policies.html#sending-email-alerts-when-non-compliant-data-is-found["En savoir plus sur l'envoi d'alertes par e-mail basées sur les résultats des règles"].
 
 
 
@@ -487,7 +466,7 @@ De nouveaux filtres sont disponibles pour affiner les résultats affichés dans 
 * Le filtre "chemin du fichier" vous permet maintenant de spécifier les chemins que vous souhaitez exclure des résultats de la requête filtrée. Si vous entrez des chemins pour inclure et exclure certaines données, Data Sense recherche d'abord tous les fichiers des chemins inclus, puis supprime les fichiers des chemins exclus, puis affiche les résultats.
 
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["Voir la liste de tous les filtres que vous pouvez utiliser pour examiner vos données"].
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-investigate-data.html#filtering-data-in-the-data-investigation-page["Voir la liste de tous les filtres que vous pouvez utiliser pour examiner vos données"].
 
 
 
@@ -789,7 +768,7 @@ Le type de machine par défaut pour le courtier en données dans Google Cloud es
 
 
 
-==== Modifications du point de terminaison d'accès Internet sortant du connecteur requises
+==== Modifications du point de terminaison de l'accès Internet sortant du connecteur
 
 Du fait d'un changement dans le Tiering cloud, il est nécessaire de modifier les terminaux de connecteur suivants pour assurer la réussite des opérations de Tiering dans le cloud :
 
