@@ -406,6 +406,44 @@ Si vous souhaitez utiliser un autre compte AWS pour vos sauvegardes Cloud Volume
 
 
 
+=== 5 février 2023 (version 1.20)
+
+
+
+==== Possibilité d'envoyer des e-mails de notification basés sur des règles à n'importe quelle adresse e-mail
+
+Dans les versions antérieures de Cloud Data SENSE, vous pouvez envoyer des alertes par e-mail aux utilisateurs BlueXP de votre compte lorsque certaines stratégies critiques renvoient des résultats. Cette fonction vous permet d'obtenir des notifications pour protéger vos données lorsque vous n'êtes pas en ligne. Vous pouvez désormais envoyer des alertes par e-mail à partir de stratégies à tous les autres utilisateurs - jusqu'à 20 adresses e-mail - qui ne sont pas dans votre compte BlueXP.
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#sending-email-alerts-when-non-compliant-data-is-found["En savoir plus sur l'envoi d'alertes par e-mail basées sur les résultats des règles"].
+
+
+
+==== Vous pouvez maintenant ajouter des modèles personnels que Data Sense identifiera à partir de l'interface utilisateur
+
+Data Sense a la possibilité d'ajouter des « données personnelles » personnalisées que Data Sense identifiera pendant un certain temps dans les futures analyses. Cependant, vous devez vous connecter à l'hôte Data Sense Linux et utiliser une ligne de commande pour ajouter les modèles personnalisés. Dans cette version, la possibilité d'ajouter des motifs personnels à l'aide d'un regex se trouve dans l'interface utilisateur de Data Sense, ce qui facilite l'ajout et la modification de ces modèles personnalisés.
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion.html#add-custom-personal-data-identifiers-using-a-regex["En savoir plus sur l'ajout de modèles personnalisés à partir de l'interface utilisateur Data Sense"^].
+
+
+
+==== Capacité à déplacer 15 millions de fichiers avec Data Sense
+
+Par le passé, il était possible que Data Sense déplace un maximum de 100,000 fichiers source vers n'importe quel partage NFS. Vous pouvez désormais déplacer jusqu'à 15 millions de fichiers à la fois. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#moving-source-files-to-an-nfs-share["En savoir plus sur le déplacement de fichiers source à l'aide de Data Sense"].
+
+
+
+==== Possibilité de voir le nombre d'utilisateurs ayant accès aux fichiers SharePoint Online
+
+Le filtre « nombre d'utilisateurs avec accès » prend désormais en charge les fichiers stockés dans les référentiels SharePoint Online. Auparavant, seuls les fichiers stockés sur des partages CIFS étaient pris en charge. Notez que les groupes SharePoint qui ne sont pas actifs basés sur un répertoire ne seront pas pris en compte dans ce filtre à l'heure actuelle.
+
+
+
+==== Le nouvel état « réussite partielle » a été ajouté au panneau État de l'action
+
+Le nouvel état « réussite partielle » indique qu'une action détection de données est terminée et que certains éléments ont échoué et que certains éléments ont réussi, par exemple, lorsque vous déplacez ou supprimez 100 fichiers. De plus, le statut « terminé » a été renommé « succès ». Par le passé, l'état « terminé » peut lister les actions qui ont réussi et qui ont échoué. Désormais, le statut « réussite » signifie que toutes les actions ont réussi sur tous les éléments. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-view-compliance-actions.html["Voir comment afficher le panneau Etat des actions"].
+
+
+
 === 9 janvier 2023 (version 1.19)
 
 
@@ -454,36 +492,6 @@ Plusieurs améliorations ont été ajoutées à l'installation de Data Sense sur
 
 
 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-onprem.html["En savoir plus sur l'installation de Data Sense sur un serveur hôte unique et sur plusieurs hôtes"].
-
-
-
-=== 13 novembre 2022 (version 1.17)
-
-
-
-==== Prise en charge de la numérisation des comptes SharePoint sur site
-
-Il est désormais possible d'analyser les comptes SharePoint Online et les comptes SharePoint sur site (SharePoint Server). Si vous devez installer SharePoint sur vos propres serveurs ou sur des sites sans accès à Internet, vous pouvez maintenant avoir Data Sense scan les fichiers utilisateur dans ces comptes. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-scanning-sharepoint.html#adding-a-sharepoint-on-premise-account["En savoir plus >>"^].
-
-
-
-==== Possibilité de réanalyser plusieurs répertoires (dossiers ou partages)
-
-Vous pouvez désormais analyser plusieurs répertoires (dossiers ou partages) immédiatement afin que les modifications soient répercutées dans le système. Cela vous permet de hiérarchiser la réanalyse de certaines données avant d'autres données. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-repo-scanning.html#rescanning-data-for-an-existing-repository["Voir la procédure de nouvelle analyse d'un répertoire"^].
-
-
-
-==== Possibilité d'ajouter des nœuds de numérisation supplémentaires sur site pour analyser des sources de données spécifiques
-
-Si vous avez installé Data SENSE sur site et que vous avez besoin d'une puissance de traitement plus élevée pour analyser certaines sources de données, vous pouvez ajouter d'autres nœuds de « scanner » et les affecter pour analyser ces sources de données. Vous pouvez ajouter les nœuds du scanner immédiatement après avoir installé le nœud du gestionnaire, ou vous pouvez ajouter un nœud du scanner ultérieurement.
-
-Si nécessaire, les nœuds du scanner peuvent être installés sur des systèmes hôtes qui sont physiquement plus proches des sources de données que vous scannez. Plus le nœud du scanner est proche des données, mieux c'est, car il réduit la latence du réseau autant que possible lors de l'acquisition des données. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-onprem.html#add-scanner-nodes-to-an-existing-deployment["Découvrez comment installer des nœuds de scanner pour analyser d'autres sources de données"^].
-
-
-
-==== Les installateurs sur site effectuent désormais une pré-vérification avant de commencer l'installation
-
-Lors de l'installation de Data Sense sur un système Linux, le programme d'installation vérifie si le système répond à toutes les exigences nécessaires (CPU, RAM, capacité, réseau, etc.) avant de démarrer l'installation. Cela permet de détecter les problèmes *avant*, vous passez du temps sur l'installation.
 
 
 
@@ -1093,6 +1101,26 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/ma
 
 
 
+=== 5 février 2023
+
+
+
+==== La capacité à définir des règles permettant d'identifier les données que vous considérez comme stratégiques
+
+Une nouvelle page pour les données stratégiques pour l'entreprise a été ajoutée à la protection par ransomware. Cette page vous permet d'afficher toutes les règles qui ont été définies dans le sens des données du cloud. Vous pouvez sélectionner les règles qui identifient les données stratégiques pour votre entreprise. Ainsi, le tableau de bord de protection contre les ransomwares et d'autres panels d'attaques par ransomware peuvent entraîner des problèmes en fonction de vos données les plus importantes.
+
+Une nouvelle action recommandée appelée « configurer vos données stratégiques » s'affiche dans le panneau actions recommandées si vous n'avez pas activé l'une de ces stratégies pour le service de protection contre les attaques par ransomware.
+
+https://docs.netapp.com/us-en/cloud-manager-ransomware/task-select-business-critical-policies.html["En savoir plus sur la page consacrée aux données stratégiques pour l'entreprise"^].
+
+
+
+==== La protection contre les ransomwares est passée de la catégorie protection à la catégorie gouvernance
+
+Vous pouvez désormais accéder à ce service à partir du menu de navigation gauche BlueXP en sélectionnant *gouvernance > protection contre les attaques par ransomware*.
+
+
+
 === 9 janvier 2023
 
 
@@ -1116,16 +1144,6 @@ Deux nouvelles actions recommandées sont maintenant affichées pour les problè
 
 
 Vous pouvez sélectionner ces actions dans l'interface utilisateur, puis suivre le workflow pour résoudre les problèmes sous-jacents. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#list-of-recommended-actions["Voir la liste de toutes les actions recommandées"].
-
-
-
-=== 13 novembre 2022
-
-
-
-==== Nouveaux panneaux pour afficher votre score global de protection contre les attaques par ransomware et les actions recommandées
-
-Le panneau _Overransomware protection Score_ affiche le score global et les zones de cybersécurité où il existe des problèmes potentiels. Le panneau _Recommended actions_ répertorie les actions potentielles que vous pouvez effectuer pour améliorer votre résilience à une attaque par ransomware et fournit un lien pour examiner les problèmes afin que vous puissiez appliquer les actions si nécessaire. Ces deux nouveaux panneaux travaillent ensemble pour identifier la résilience de vos données face à une attaque par ransomware et ce que vous pouvez faire pour améliorer votre score. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#ransomware-protection-score-and-recommended-actions["En savoir plus"^].
 
 
 
