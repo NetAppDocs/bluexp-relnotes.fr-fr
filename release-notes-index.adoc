@@ -47,7 +47,7 @@ Affichez l'ensemble des notes de version pour chaque service.
 * https://docs.netapp.com/us-en/cloud-manager-tiering/whats-new.html["Tiering dans le cloud"^]
 * https://docs.netapp.com/us-en/cloud-manager-compute/whats-new.html["Calcul"^]
 * https://docs.netapp.com/us-en/cloud-manager-file-cache/whats-new.html["Cache global de fichiers"^]
-* https://docs.netapp.com/us-en/cloud-manager-ransomware/whats-new.html["Attaques par ransomware"^]
+* https://docs.netapp.com/us-en/cloud-manager-ransomware/whats-new.html["Protection contre les ransomwares"^]
 * https://docs.netapp.com/us-en/cloud-manager-replication/whats-new.html["La réplication"^]
 
 

@@ -39,8 +39,6 @@
   <block id="818bcbc7a642cb031afa7b414815a76c" category="list-text"><block ref="818bcbc7a642cb031afa7b414815a76c" category="inline-link-rx"></block></block>
   <block id="24e6e2f6171b43a847fe194a9a9b5cd0" category="inline-link">Cache global de fichiers</block>
   <block id="24bb270dd8a21f04115481dc5a9e23f9" category="list-text"><block ref="24bb270dd8a21f04115481dc5a9e23f9" category="inline-link-rx"></block></block>
-  <block id="232a2b16a1710c0ed1d16548ba8bb8f1" category="inline-link">Attaques par ransomware</block>
-  <block id="723c4c67941a96b49b471e8a0ef4b07d" category="list-text"><block ref="723c4c67941a96b49b471e8a0ef4b07d" category="inline-link-rx"></block></block>
   <block id="8c340dc334134096f68b880b42a8692c" category="inline-link">La réplication</block>
   <block id="c49bb8aa9fd443e227ec7dd83d980f9b" category="list-text"><block ref="c49bb8aa9fd443e227ec7dd83d980f9b" category="inline-link-rx"></block></block>
   <block id="7258e7251413465e0a3eb58094430bde" category="section-title">L'administration</block>
@@ -135,18 +133,8 @@
   <block id="bcce731a4ced178ba1457a0965f1a878" category="list-text">La page Détails du travail affiche tous les sous-travaux en cours d'exécution pour terminer le travail principal.</block>
   <block id="95bdcffb51de388c8d204ebc69a73e61" category="section-title">Améliorations de la sauvegarde entre plusieurs comptes AWS</block>
   <block id="ae3795f53c6086a9639e4652dbff318b" category="paragraph">Si vous souhaitez utiliser un autre compte AWS pour vos sauvegardes Cloud Volumes ONTAP que celui que vous utilisez pour les volumes source, vous devez ajouter les identifiants de compte AWS de destination dans BlueXP. Vous devez également ajouter les autorisations « s3:PutBuckePolicy » et « s3:PutketOwnershipControls » au rôle qui fournit BlueXP avec les autorisations. Auparavant, il fallait configurer de nombreux paramètres sur la console AWS. Plus besoin de le faire.</block>
-  <block id="2d96aa84884717fd77e4906d82c73ddc" category="section-title">28 septembre 2022</block>
   <block id="89d500a3ace67f6d47edb61231336589" category="section-title">Améliorations de Cloud Backup pour les applications</block>
-  <block id="ef63a877f0594c057f824f4327169a39" category="list-text">Prise en charge de Google Cloud Platform (GCP) et de StorageGRID pour sauvegarder des copies Snapshot cohérentes au niveau des applications</block>
-  <block id="f617da6b50728500642eb376ab97b6f4" category="list-text">Création de règles personnalisées</block>
-  <block id="eaec67d5f8f719a2f05b5ded5dc4ce60" category="list-text">Prend en charge le stockage d'archivage</block>
-  <block id="37976e53c610f9f37f8310aaacc3323e" category="list-text">Sauvegarde des applications SAP HANA</block>
-  <block id="bd3468a6ecb625b121385bd7f39c67e1" category="list-text">Sauvegardez les applications Oracle et SQL qui se trouvent sur l'environnement VMware</block>
-  <block id="a0f2b147a9c0eb0f8a59efd52556c7a2" category="list-text">Sauvegarder les applications à partir d'un système de stockage secondaire sur site</block>
-  <block id="c05b61fb3f1a201cd787a5c713ee2461" category="list-text">Désactiver les sauvegardes</block>
-  <block id="40cfdc443f8536e4e751b21f465246d7" category="list-text">Annuler l'enregistrement du serveur SnapCenter</block>
   <block id="e75ce95021f32383e6a928c1b242bc34" category="section-title">Améliorations de Cloud Backup pour les machines virtuelles</block>
-  <block id="46a34c0c1ccc14eb217db2e715c43df6" category="list-text">Prend en charge StorageGRID pour sauvegarder un ou plusieurs datastores</block>
   <block id="ab288ae4b4c50ebb9a997e0f0debbd15" category="section-title">19 septembre 2022</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link">En savoir plus &gt;&gt;</block>
   <block id="bd975c5b95d2c7b6d2e124201b98445c" category="section-title">13 novembre 2022 (version 1.17)</block>
@@ -341,7 +329,6 @@
   <block id="f5f7a4d1535be1d0940e398b2997dfc0" category="sidebar">Notes de version par service</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Communauté sur les blogs</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Communauté NetApp</block>
-  <block id="ff93781ff90bf605d8b3070c1501b28f" category="sidebar">Blog du site Web BlueXP</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Webinaires sur le cloud</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">Toute la documentation BlueXP</block>
   <block id="83ec139c80a3d5b2f11f1a94eed47cd2" category="section-title">4 décembre 2022</block>
@@ -473,9 +460,7 @@
   <block id="88a11892e7418e1eee8c952df9545b46" category="section-title">9 janvier 2023</block>
   <block id="b17d2155a07524d0e8a3d1eb73a257c3" category="section-title">La possibilité de déplacer d'anciens fichiers de sauvegarde vers le stockage d'archivage AWS S3 à partir des systèmes StorageGRID</block>
   <block id="76592785cd14862cf74d11289e50ed92" category="paragraph">Vous pouvez désormais transférer d'anciens fichiers de sauvegarde des systèmes StorageGRID vers le stockage d'archivage dans AWS S3. Cela vous permet de libérer de l'espace sur vos systèmes StorageGRID et de réaliser des économies en utilisant une solution de stockage bon marché pour les anciens fichiers de sauvegarde. Vous pouvez choisir de transférer les sauvegardes vers un stockage AWS S3 Glacier ou S3 Glacier Deep Archive.</block>
-  <block id="481c6a107a47fcbb610d4e79b7d8bc01" category="paragraph">Cette fonctionnalité est disponible si votre cluster utilise ONTAP 9.12.1 ou version ultérieure et si votre système StorageGRID utilise 11.3 ou version ultérieure.<block ref="ba1010a667c53f122912d421bb932c28" category="inline-link-rx"></block>.</block>
   <block id="5baabb9bbca503ea382779d0fce7e9c5" category="section-title">Possibilité de sélectionner vos propres clés gérées par le client pour le chiffrement des données sur Google Cloud</block>
-  <block id="d42d3ab595b05475b681bcec25a25c6b" category="paragraph">Lorsque vous sauvegardez les données de vos systèmes ONTAP dans Google Cloud Storage, vous pouvez maintenant sélectionner vos propres clés gérées par le client pour le chiffrement des données dans l'assistant d'activation au lieu d'utiliser les clés de chiffrement gérées par Google par défaut. Il vous suffit de configurer d'abord vos clés de chiffrement gérées par le client, puis de saisir les informations lors de l'activation de Cloud Backup.</block>
   <block id="b9395c2030b2a8ad48d31ad52bd9f6e9" category="section-title">Le rôle d'administrateur du stockage n'est plus nécessaire pour créer des sauvegardes dans Google Cloud Storage</block>
   <block id="d7cf6019b64afefeee4361ce4c22ce30" category="inline-link">Découvrez comment préparer votre Google Cloud Storage pour les sauvegardes</block>
   <block id="121b4934193e6ec77a35338afd1028bb" category="paragraph">Dans les versions antérieures, le rôle d'administrateur du stockage était requis pour le compte de service permettant à Cloud Backup d'accéder aux compartiments Google Cloud Storage. Vous pouvez désormais créer un rôle personnalisé avec un ensemble réduit d'autorisations à attribuer au compte de service.<block ref="cdc0823dc4910df979845484c27cfc1d" category="inline-link-rx"></block>.</block>
@@ -492,4 +477,18 @@
   <block id="2d7dcb96cb20cbaa2b94280f3b67d862" category="paragraph"><block ref="e3dd455551e82145f7b0bbdda5ed35ae" category="inline-link-rx"></block>.</block>
   <block id="4e499a708b699475cdaf2e23cd596d11" category="section-title">La prise en charge a été ajoutée pour recevoir les alertes de protection contre les ransomwares par e-mail et dans le Centre de notification</block>
   <block id="53bccb80a99ecb6d22ac23a5d83a662e" category="paragraph">La protection contre les ransomwares a été intégrée au service de notification BlueXP. Vous pouvez afficher les notifications de protection contre les attaques par ransomware en cliquant sur la cloche de notification dans la barre de menus BlueXP. Vous pouvez également configurer BlueXP pour envoyer des notifications par e-mail en tant qu'alertes afin de vous informer de l'activité système importante, même lorsque vous n'êtes pas connecté au système. Cet e-mail peut être envoyé aux destinataires qui doivent avoir connaissance d'alertes par ransomware.<block ref="4b31f56f66b4ac96107c1c8a3ca6ad6e" category="inline-link-rx"></block>.</block>
+  <block id="4856dfc18851de08c9ed97332b1fd100" category="list-text"><block ref="4856dfc18851de08c9ed97332b1fd100" category="inline-link-rx"></block></block>
+  <block id="b7027e7163ab44680c3c69296db41564" category="paragraph">Cette fonctionnalité est disponible si votre cluster sur site utilise ONTAP 9.12.1 ou version ultérieure et que votre système StorageGRID utilise 11.3 ou version ultérieure.<block ref="ba1010a667c53f122912d421bb932c28" category="inline-link-rx"></block>.</block>
+  <block id="0b17a5b6850808b4455bcd3d8bf54966" category="paragraph">Lorsque vous sauvegardez les données de vos systèmes ONTAP dans Google Cloud Storage, vous pouvez maintenant sélectionner vos propres clés gérées par le client pour le chiffrement des données dans l'assistant d'activation au lieu d'utiliser les clés de chiffrement gérées par Google par défaut. Il vous suffit de configurer d'abord vos clés de chiffrement gérées par le client dans Google, puis de saisir les informations lors de l'activation de Cloud Backup.</block>
+  <block id="e083799711dc9b588bbb440525564506" category="section-title">L'assistance a été ajoutée pour restaurer des données à l'aide de la fonction de recherche et de restauration sur des sites sans accès à Internet</block>
+  <block id="a282fca785a0e402e0b5cdde4c380d6d" category="paragraph">Si vous sauvegardez des données à partir d'un cluster ONTAP sur site vers StorageGRID sur un site sans accès Internet, également connu sous le nom de site sombre ou hors ligne, vous pouvez maintenant utiliser l'option de recherche et de restauration pour restaurer les données si nécessaire. Cette fonctionnalité requiert le déploiement du connecteur BlueXP (version 3.9.25 ou ultérieure) sur le site hors ligne.</block>
+  <block id="c9ec78264dce9938676b736265201e28" category="inline-link">Voir comment restaurer les données ONTAP à l'aide de la fonction Rechercher et AMP ; Restaurer</block>
+  <block id="6f44a1bf2246f054fd573ae9473909b6" category="inline-link">Découvrez comment installer le connecteur dans votre site hors ligne</block>
+  <block id="74aacc002c6d6d85e9786012bf71af08" category="paragraph"><block ref="fbe0ce057e5d8013a227c4cb944242a5" category="inline-link-rx"></block>.<block ref="eb618b89294e80d594faecbc4641afee" category="inline-link-rx"></block>.</block>
+  <block id="5e6d4a84337eb1e0ff5a019edf3a15d6" category="section-title">Possibilité d'afficher un graphique de fichiers contenant des données sensibles et qui sont trop permissives</block>
+  <block id="d9b195efc41ceb51899b712eb2c0c583" category="paragraph">Le tableau de bord gouvernance a ajouté une nouvelle zone données et autorisations larges_ qui fournit une carte thermique de fichiers contenant des données sensibles (y compris des données personnelles sensibles et sensibles) et qui sont trop permissives. Cela vous aide à déterminer les risques liés aux données sensibles.<block ref="315faeb2b0e6f27dd87bce24f0b16dd0" category="inline-link-rx"></block>.</block>
+  <block id="39042f4c3554377e7367f85ef5edf207" category="section-title">Le capteur de données peut identifier le numéro individuel japonais</block>
+  <block id="8900e436e6a12ce71aa703bf1c8be02c" category="inline-link">Consultez tous les types de données personnelles que Data Sense peut identifier dans vos données</block>
+  <block id="21e575de9b2cf958293bb22c657eba7b" category="paragraph">Data Sense peut identifier et classer les fichiers contenant le numéro individuel japonais (également appelé mon numéro). Cela inclut à la fois le numéro mon personnel et celui de l'entreprise.<block ref="b4ce36808fde13e40836bb7d14af31c6" category="inline-link-rx"></block>.</block>
+  <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">Blogs BlueXP</block>
 </blocks>

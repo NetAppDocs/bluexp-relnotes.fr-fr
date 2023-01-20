@@ -195,19 +195,27 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["E
 
 Vous pouvez désormais transférer d'anciens fichiers de sauvegarde des systèmes StorageGRID vers le stockage d'archivage dans AWS S3. Cela vous permet de libérer de l'espace sur vos systèmes StorageGRID et de réaliser des économies en utilisant une solution de stockage bon marché pour les anciens fichiers de sauvegarde. Vous pouvez choisir de transférer les sauvegardes vers un stockage AWS S3 Glacier ou S3 Glacier Deep Archive.
 
-Cette fonctionnalité est disponible si votre cluster utilise ONTAP 9.12.1 ou version ultérieure et si votre système StorageGRID utilise 11.3 ou version ultérieure. https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html#preparing-to-archive-older-backup-files-to-public-cloud-storage["En savoir plus"].
+Cette fonctionnalité est disponible si votre cluster sur site utilise ONTAP 9.12.1 ou version ultérieure et que votre système StorageGRID utilise 11.3 ou version ultérieure. https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html#preparing-to-archive-older-backup-files-to-public-cloud-storage["En savoir plus"].
 
 
 
 ==== Possibilité de sélectionner vos propres clés gérées par le client pour le chiffrement des données sur Google Cloud
 
-Lorsque vous sauvegardez les données de vos systèmes ONTAP dans Google Cloud Storage, vous pouvez maintenant sélectionner vos propres clés gérées par le client pour le chiffrement des données dans l'assistant d'activation au lieu d'utiliser les clés de chiffrement gérées par Google par défaut. Il vous suffit de configurer d'abord vos clés de chiffrement gérées par le client, puis de saisir les informations lors de l'activation de Cloud Backup.
+Lorsque vous sauvegardez les données de vos systèmes ONTAP dans Google Cloud Storage, vous pouvez maintenant sélectionner vos propres clés gérées par le client pour le chiffrement des données dans l'assistant d'activation au lieu d'utiliser les clés de chiffrement gérées par Google par défaut. Il vous suffit de configurer d'abord vos clés de chiffrement gérées par le client dans Google, puis de saisir les informations lors de l'activation de Cloud Backup.
 
 
 
 ==== Le rôle d'administrateur du stockage n'est plus nécessaire pour créer des sauvegardes dans Google Cloud Storage
 
 Dans les versions antérieures, le rôle d'administrateur du stockage était requis pour le compte de service permettant à Cloud Backup d'accéder aux compartiments Google Cloud Storage. Vous pouvez désormais créer un rôle personnalisé avec un ensemble réduit d'autorisations à attribuer au compte de service. https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-to-gcp.html#preparing-google-cloud-storage-for-backups["Découvrez comment préparer votre Google Cloud Storage pour les sauvegardes"].
+
+
+
+==== L'assistance a été ajoutée pour restaurer des données à l'aide de la fonction de recherche et de restauration sur des sites sans accès à Internet
+
+Si vous sauvegardez des données à partir d'un cluster ONTAP sur site vers StorageGRID sur un site sans accès Internet, également connu sous le nom de site sombre ou hors ligne, vous pouvez maintenant utiliser l'option de recherche et de restauration pour restaurer les données si nécessaire. Cette fonctionnalité requiert le déploiement du connecteur BlueXP (version 3.9.25 ou ultérieure) sur le site hors ligne.
+
+https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-restore-backups-ontap.html#restoring-ontap-data-using-search-restore["Voir comment restaurer les données ONTAP à l'aide de la fonction Rechercher et AMP ; Restaurer"].https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["Découvrez comment installer le connecteur dans votre site hors ligne"].
 
 
 
@@ -369,37 +377,17 @@ Si vous souhaitez utiliser un autre compte AWS pour vos sauvegardes Cloud Volume
 
 
 
-=== 28 septembre 2022
-
-
-
-==== Améliorations de Cloud Backup pour les applications
-
-* Prise en charge de Google Cloud Platform (GCP) et de StorageGRID pour sauvegarder des copies Snapshot cohérentes au niveau des applications
-* Création de règles personnalisées
-* Prend en charge le stockage d'archivage
-* Sauvegarde des applications SAP HANA
-* Sauvegardez les applications Oracle et SQL qui se trouvent sur l'environnement VMware
-* Sauvegarder les applications à partir d'un système de stockage secondaire sur site
-* Désactiver les sauvegardes
-* Annuler l'enregistrement du serveur SnapCenter
-
-
-
-
-==== Améliorations de Cloud Backup pour les machines virtuelles
-
-* Prend en charge StorageGRID pour sauvegarder un ou plusieurs datastores
-* Création de règles personnalisées
-
-
-
-
 == Sens des données cloud
 
 
 
 === 9 janvier 2023 (version 1.19)
+
+
+
+==== Possibilité d'afficher un graphique de fichiers contenant des données sensibles et qui sont trop permissives
+
+Le tableau de bord gouvernance a ajouté une nouvelle zone données et autorisations larges_ qui fournit une carte thermique de fichiers contenant des données sensibles (y compris des données personnelles sensibles et sensibles) et qui sont trop permissives. Cela vous aide à déterminer les risques liés aux données sensibles. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-governance-data.html#data-listed-by-sensitivity-and-wide-permissions["En savoir plus >>"].
 
 
 
@@ -413,6 +401,12 @@ De nouveaux filtres sont disponibles pour affiner les résultats affichés dans 
 
 
 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["Voir la liste de tous les filtres que vous pouvez utiliser pour examiner vos données"].
+
+
+
+==== Le capteur de données peut identifier le numéro individuel japonais
+
+Data Sense peut identifier et classer les fichiers contenant le numéro individuel japonais (également appelé mon numéro). Cela inclut à la fois le numéro mon personnel et celui de l'entreprise. https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-personal-data["Consultez tous les types de données personnelles que Data Sense peut identifier dans vos données"].
 
 
 
@@ -998,6 +992,10 @@ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kuberne
 
 == Contrôle
 
+
+
+=== 1er novembre 2022
+
 Le service de surveillance a été retiré le 1er novembre 2022. Vous pouvez désormais accéder directement à Cloud Insights à partir du menu de navigation et sélectionner *Insights > observabilité*.
 
 
@@ -1151,6 +1149,10 @@ https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.ht
 
 
 == Service SnapCenter
+
+
+
+=== 1er novembre 2022
 
 Le service SnapCenter a été supprimé le 1er novembre 2022.
 
