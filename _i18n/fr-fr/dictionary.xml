@@ -54,16 +54,8 @@
   <block id="f3aae44c0ba1e9d5c7a46f4e224ea31e" category="section-title">Fonctionnalités administratives</block>
   <block id="87448a3fa35fafb362a06b4d17cc1328" category="paragraph">Cette section décrit les nouvelles fonctionnalités liées aux fonctions d'administration de BlueXP : comptes, connecteurs, informations d'identification du fournisseur cloud, etc.</block>
   <block id="5a4346a01828d72104a6540080377b25" category="section-title">6 novembre 2022</block>
-  <block id="f658ebadeb22d41618c5222998030cb9" category="section-title">Connecteur 3.9.23</block>
-  <block id="a7dad5ac7e311dedf2a82e4bb5a713dd" category="list-text">Vos abonnements PAYGO et vos contrats annuels pour BlueXP sont désormais disponibles pour la consultation et la gestion à partir du portefeuille numérique.</block>
-  <block id="949b19dd7e9f6496c1125f7166270450" category="inline-link">Découvrez comment gérer vos abonnements</block>
-  <block id="efa03f1c1a0f03001f1680681d9ac8a7" category="paragraph"><block ref="efa03f1c1a0f03001f1680681d9ac8a7" category="inline-link-rx"></block></block>
-  <block id="e8249b4253d6a921188373a80621c098" category="list-text">Cette version du connecteur inclut également des améliorations Cloud Volumes ONTAP.</block>
   <block id="03e6ae21f561049c3e8010740c63aab3" category="inline-link">Découvrez les améliorations apportées à Cloud Volumes ONTAP</block>
-  <block id="9fcd0a1eb1b488b623812d42567ce2d8" category="paragraph"><block ref="9fcd0a1eb1b488b623812d42567ce2d8" category="inline-link-rx"></block></block>
   <block id="c642de9f40ee79267e2e62e3ebed032e" category="section-title">1er novembre 2022</block>
-  <block id="23888423406e47190ca0cf40a113c61f" category="inline-link">Découvrez comment gérer des comptes NSS</block>
-  <block id="929fa09ef9d24654b353f312638ca6e6" category="paragraph">Cloud Manager vous invite à mettre à jour les identifiants associés à vos comptes sur le site de support NetApp lorsque le jeton de mise à jour associé à votre compte expire au bout de 3 mois.<block ref="abba285888ca54da9f89054b7e57f270" category="inline-link-rx"></block></block>
   <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">18 septembre 2022</block>
   <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">31 juillet 2022</block>
   <block id="29c251ed5a57bbffe470654ccbbe714c" category="section-title">11 avril 2021</block>
@@ -365,8 +357,6 @@
   <block id="dfe6b806f7dd136ec5c5baaaae335c21" category="list-text">Stockage ONTAP S3 vers AWS S3</block>
   <block id="c7360b05ac6a5646b2770ea0c162d4fb" category="inline-link">En savoir plus sur les relations de synchronisation prises en charge</block>
   <block id="623dda645e4d20988b8c1d61423da14e" category="paragraph"><block ref="f9c4f71cab183e7ba62e68df19c3dfe9" category="inline-link-rx"></block>.</block>
-  <block id="708ffc372ba6f36174a7930961b956ab" category="section-title">8 décembre 2022</block>
-  <block id="dba89da91170934734e847dcfe4ad5d0" category="section-title">Cloud Volumes ONTAP 9.12.1</block>
   <block id="9f97c3125a701942b4e6e648146819fc" category="inline-link">Découvrez les nouvelles fonctionnalités de cette version d'Cloud Volumes ONTAP</block>
   <block id="fe9c9f72fd091b4ebc4d0686a2dccdc6" category="section-title">11 décembre 2022</block>
   <block id="ff1a552e36acc064f2353128cc8cae7e" category="section-title">De nouvelles actions recommandées ont été ajoutées au panneau Score de protection contre les attaques par ransomware</block>
@@ -436,8 +426,6 @@
   <block id="bf748f930fa11e46773ff6f7b815e480" category="section-title">Cloud Volumes ONTAP 9.12.0</block>
   <block id="80df4292f7c986dbd0920bb576487060" category="paragraph">BlueXP peut désormais déployer et gérer Cloud Volumes ONTAP 9.12.0 dans AWS et Google Cloud.</block>
   <block id="64885a300b31929a1b0ea6b5a20128d3" category="paragraph"><block ref="065aa84d514cfdc6fc00d8cb3eaf6ec4" category="inline-link-rx"></block>.</block>
-  <block id="abd10f7bee2f791a9e8f76bf98163c27" category="paragraph">BlueXP peut désormais déployer et gérer Cloud Volumes ONTAP 9.12.1, qui inclut également la prise en charge de nouvelles fonctionnalités et de régions de fournisseurs de cloud supplémentaires.</block>
-  <block id="0d69949c9de36f8752d49be7f0ec9aed" category="paragraph"><block ref="0d69949c9de36f8752d49be7f0ec9aed" category="inline-link-rx"></block></block>
   <block id="f2e4e4f7b0b864863bfac74f4383a826" category="section-title">Enregistrer les informations d'identification ONTAP</block>
   <block id="6a28e623eb98d9eb0799ab2c472620f3" category="paragraph">Lorsque vous ouvrez un environnement de travail ONTAP sur site qui a été découvert directement sans utiliser de connecteur, il est désormais possible d'enregistrer les identifiants du cluster ONTAP. Il n'est donc pas nécessaire de les saisir à chaque ouverture de l'environnement de travail.</block>
   <block id="8a08a7490f38dacd86c415a138d60aea" category="inline-link">En savoir plus sur cette option.</block>
@@ -515,4 +503,59 @@
   <block id="f77caa23f512ad7c5c38882b9a13b6db" category="paragraph"><block ref="d9564f80e250011b85c05664d779bbef" category="inline-link-rx"></block>.</block>
   <block id="1e189efdd1c21e1702b4e4a48e6a3815" category="section-title">La protection contre les ransomwares est passée de la catégorie protection à la catégorie gouvernance</block>
   <block id="c1d1220273fe79d481c41539bea31710" category="paragraph">Vous pouvez désormais accéder à ce service à partir du menu de navigation gauche BlueXP en sélectionnant *gouvernance &gt; protection contre les attaques par ransomware*.</block>
+  <block id="d2ab99e3c8406089dca863337debb121" category="section-title">Connecteur 3.9.26</block>
+  <block id="330ddcd0a3779c8729cfb2c56aeb33f5" category="list-text">Sur la page *connexion*, vous êtes invité à saisir l'adresse e-mail associée à votre connexion. Après avoir cliqué sur *Suivant*, BlueXP vous invite à vous authentifier à l'aide de la méthode d'authentification associée à votre connexion :</block>
+  <block id="1baec3621cd37cfb63c78d95c414ca61" category="list-text">Le mot de passe de vos identifiants cloud NetApp</block>
+  <block id="1dca7678a1041ed05b6071c24454dfde" category="list-text">Vos identifiants d'identité fédérés</block>
+  <block id="9ec04e5ecf7230969f472cb3ba28f9d5" category="list-text">Vos identifiants du site du support NetApp</block>
+  <block id="95161959ea62121420b9e6e6553c5afa" category="inline-image-macro">Capture d'écran de la page de connexion BlueXP où vous êtes invité à saisir votre adresse e-mail.</block>
+  <block id="7fef862357cf2face17cb8062b1f051f" category="paragraph"><block ref="7fef862357cf2face17cb8062b1f051f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9cb7486a7e7f24abb51cfcc8bb6085db" category="list-text">Si vous connaissez déjà BlueXP et que vous disposez d'informations d'identification pour le site de support NetApp (NSS), vous pouvez ignorer la page d'inscription et entrer votre adresse e-mail directement dans la page de connexion. BlueXP vous inscrit dans le cadre de cette connexion initiale.</block>
+  <block id="845c6364e1c82b67190dc691538533e1" category="list-text">Lorsque vous vous abonnez à BlueXP depuis le Marketplace de votre fournisseur de services Cloud, vous avez désormais la possibilité de remplacer l'abonnement existant pour un compte par le nouvel abonnement.</block>
+  <block id="79ee9d46f0018b3cb493ecfda60ffa4b" category="inline-image-macro">Capture d'écran indiquant l'affectation d'abonnement pour un compte BlueXP.</block>
+  <block id="cd56a207e786d73d9abfd43dd2202acd" category="paragraph"><block ref="cd56a207e786d73d9abfd43dd2202acd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f1b38e057f0b3e3f883f386f412fd0a9" category="inline-link">Découvrez comment associer un abonnement AWS</block>
+  <block id="73f01c2e56cdb9b30f4fe33ce5bbdc20" category="list-text"><block ref="73f01c2e56cdb9b30f4fe33ce5bbdc20" category="inline-link-rx"></block></block>
+  <block id="72bfd3f607087d94f12332f83b700ab8" category="inline-link">Découvrez comment associer un abonnement Azure</block>
+  <block id="58b7b647775bc09b6b8a9f45df71775b" category="list-text"><block ref="58b7b647775bc09b6b8a9f45df71775b" category="inline-link-rx"></block></block>
+  <block id="1c74f0a5753f74c783e970c346408b4a" category="inline-link">Découvrez comment associer un abonnement Google Cloud</block>
+  <block id="896471f03a9a1e209bebabb5923d2b3e" category="list-text"><block ref="896471f03a9a1e209bebabb5923d2b3e" category="inline-link-rx"></block></block>
+  <block id="f906d086ca70101dd1f218ea0786aee8" category="list-text">BlueXP vous avertira désormais si votre connecteur a été mis hors tension pendant 14 jours ou plus.</block>
+  <block id="18ed152ca3e6d97795e3c62f29f14fa3" category="inline-link">En savoir plus sur les notifications BlueXP</block>
+  <block id="68f34edaf3c796f179fbe80b3df89f0c" category="list-text"><block ref="68f34edaf3c796f179fbe80b3df89f0c" category="inline-link-rx"></block></block>
+  <block id="752697882fd7ee73f8d5f60a6f8c02f5" category="inline-link">Découvrez pourquoi les connecteurs doivent rester en fonctionnement</block>
+  <block id="23f4e22cbf061f84ba77fd79e423d90f" category="list-text"><block ref="23f4e22cbf061f84ba77fd79e423d90f" category="inline-link-rx"></block></block>
+  <block id="1c8a63199471322e5b0fe67deb835f4b" category="list-text">Nous avons mis à jour la règle de connecteur pour Google Cloud afin d'inclure une autorisation requise pour créer et gérer des machines virtuelles de stockage sur des paires haute disponibilité Cloud Volumes ONTAP :</block>
+  <block id="3503950ea6a1ba87d4be44e07b1a16c8" category="paragraph">compute.instances.updateNetworkInterface</block>
+  <block id="67d29883f03468dc44eefc494f37473e" category="inline-link">Afficher les autorisations Google Cloud pour le connecteur</block>
+  <block id="cad0970fb2c4e3d28b046315bb4b7f02" category="paragraph"><block ref="ac22e421263f6f828d096313fa20e6a8" category="inline-link-rx"></block>.</block>
+  <block id="fdfef50a14b07533a8bab908a66de10c" category="list-text">Cette version du connecteur inclut des améliorations Cloud Volumes ONTAP.</block>
+  <block id="e5fa209a01e6f968295b098866e0fcf5" category="paragraph"><block ref="e5fa209a01e6f968295b098866e0fcf5" category="inline-link-rx"></block></block>
+  <block id="55157331e0485d25f0d603400a66335e" category="section-title">5 février 2023</block>
+  <block id="761cba7c96f916f975634bfd465401cb" category="section-title">Prise en charge supplémentaire d'Azure Data Lake Storage Gen2, ONTAP S3 Storage et NFS</block>
+  <block id="93cf60ec095fd8da10fc299cc367ba5f" category="paragraph">Cloud Sync prend désormais en charge des relations de synchronisation supplémentaires pour le stockage ONTAP S3 et NFS :</block>
+  <block id="852f9290d6e492b0c65094f3676c0c9b" category="list-text">Stockage ONTAP S3 sur NFS</block>
+  <block id="84b6c32a0e939d90280ebcdf036f7678" category="list-text">NFS vers le stockage ONTAP S3</block>
+  <block id="444a944798699bf4690bdc286127a9f2" category="paragraph">Cloud Sync peut également prendre en charge Azure Data Lake Gen2 Storage, source et cible pour :</block>
+  <block id="e83e5674ab295a6613b60f5e12d1bfe3" category="list-text">Serveur NFS</block>
+  <block id="876d9b7b1c11a792f25a0e1e9dbf31dd" category="list-text">Serveur SMB</block>
+  <block id="a68d8b6ae92fdf98aa74ce8cfe41a27f" category="list-text">Stockage ONTAP S3</block>
+  <block id="5446a6bee3301e1f52824fc0affa6299" category="list-text">IBM Cloud Object Storage</block>
+  <block id="b3c6595e164d585a18699d6b36cab08a" category="section-title">Effectuer la mise à niveau vers le système d'exploitation du courtier de données Amazon Web Services</block>
+  <block id="56b81b60dec6a853cc4a71acf27e639b" category="paragraph">Le système d'exploitation des courtiers de données AWS a été mis à niveau vers Amazon Linux 2022.</block>
+  <block id="0dd728efd36ee3f96597b07096922b08" category="inline-link">En savoir plus sur l'instance de courtier de données dans AWS</block>
+  <block id="ab1608bfe0e155c43b562df0832f62cb" category="paragraph"><block ref="f5f6281702689de644df10baf88bc982" category="inline-link-rx"></block>.</block>
+  <block id="078640757da4b274abf89709c42d7741" category="paragraph">Les modifications suivantes ont été introduites avec la version 3.9.26 du connecteur.</block>
+  <block id="72c6f65b45015ee1135ff4bc2cce8860" category="section-title">Création de groupes de placement dans AWS</block>
+  <block id="b743dbbfdeafb74e0c5a918472cb8000" category="paragraph">Un nouveau paramètre de configuration peut désormais être utilisé pour créer des groupes de placement avec AWS HA unique Availability zone (AZ). Vous pouvez désormais choisir de contourner les créations de groupes ayant échoué et d'autoriser les déploiements d'AWS HA unique en AZ à s'effectuer avec succès.</block>
+  <block id="a461eabe3ab382f71ac2e2f6d1e640ac" category="inline-link-macro">Configurez la création de groupe de placement pour AWS HA Single AZ</block>
+  <block id="f8574b4ca8450ebb66b430e6a34a7af0" category="paragraph">Pour plus d'informations sur la configuration du paramètre de création du groupe de placement, reportez-vous à la section <block ref="76b771ebcb3b2314cb6a5531c78c8c56" category="inline-link-macro-rx"></block>.</block>
+  <block id="6d236ccded1ae841f7032a1cfa719500" category="section-title">Mise à jour de la configuration de la zone DNS privée</block>
+  <block id="c07e7cfc7f9b172f2a6463f65a2a4b56" category="paragraph">Un nouveau paramètre de configuration est désormais disponible afin d'éviter de créer un lien entre une zone DNS privée et un réseau virtuel lors de l'utilisation de liens privés Azure. La création est activée par défaut.</block>
+  <block id="77bb2abfb8f3c95b3fdaf2c2e6814b89" category="inline-link-macro">Fournissez BlueXP avec des informations détaillées sur votre DNS privé Azure</block>
+  <block id="b4f6cf785c09e40247b4fa3feac5c2a6" category="paragraph"><block ref="b4f6cf785c09e40247b4fa3feac5c2a6" category="inline-link-macro-rx"></block></block>
+  <block id="9790d5e9d3f702b3255ef268a7bcfc80" category="section-title">Stockage WORM et Tiering des données</block>
+  <block id="3277463bf1ddcca922f85a2efd92c721" category="paragraph">Vous pouvez désormais activer à la fois le Tiering des données et le stockage WORM lorsque vous créez un système Cloud Volumes ONTAP 9.8 ou une version ultérieure. L'activation du Tiering des données avec le stockage WORM vous permet de transférer les données vers un magasin d'objets dans le cloud.</block>
+  <block id="2179dc7c2201ce007bdd7f0a37e78d5e" category="inline-link-macro">En savoir plus sur le stockage WORM</block>
+  <block id="fc76ca2a106ecf45415f92e5b6f34f21" category="paragraph"><block ref="fc76ca2a106ecf45415f92e5b6f34f21" category="inline-link-macro-rx"></block></block>
 </blocks>
