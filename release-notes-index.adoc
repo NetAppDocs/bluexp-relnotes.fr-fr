@@ -23,6 +23,7 @@ Affichez l'ensemble des notes de version pour chaque service.
 
 * https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/whats-new.html["Azure NetApp Files"^]
 * https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/whats-new.html["Amazon FSX pour ONTAP"^]
+* https://docs.netapp.com/us-en/bluexp-s3-storage/whats-new.html["Le stockage Amazon S3"^]
 * Cloud Volumes ONTAP
 +
 ** https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Notes de version pour Cloud Volumes ONTAP"^]

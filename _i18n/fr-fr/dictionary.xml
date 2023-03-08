@@ -572,4 +572,9 @@
   <block id="4b10c384bd11c38afbbe24f979f5519d" category="section-title">7 mars 2023</block>
   <block id="b20988b483bceb3fb63077025a07d023" category="section-title">Un nouveau tableau de bord de restauration anti-ransomware a été ajouté pour vous aider à récupérer votre système suite à une attaque</block>
   <block id="aa31096585d7d55e20d8a7b196ea1a2a" category="paragraph">Le tableau de bord de restauration anti-ransomware fournit des options pour récupérer les données qui pourraient avoir été infectées par des ransomware. Cela vous permet de remettre en service vos systèmes très rapidement. À ce stade, l'action de restauration vous permet de remplacer un volume corrompu par une copie Snapshot qui n'a pas été affectée par les ransomware.<block ref="736cade400f507ba8b7ce738b709d6e6" category="inline-link-rx"></block>.</block>
+  <block id="d79294e72dc3584cc12c98a7a931315d" category="inline-link">Le stockage Amazon S3</block>
+  <block id="e27ba65d55db98b6fd6764580355edcf" category="list-text"><block ref="e27ba65d55db98b6fd6764580355edcf" category="inline-link-rx"></block></block>
+  <block id="912b3a604a5106bda5b0c99ddaaf1364" category="section-title">Possibilité d'ajouter de nouveaux compartiments à partir de BlueXP</block>
+  <block id="c07c4e2e029d6d6eb829c29902cb63ff" category="inline-link">Découvrez comment ajouter de nouveaux compartiments Amazon S3</block>
+  <block id="91402ca539ef196ec17265c55db694dc" category="paragraph">Vous avez depuis longtemps la possibilité d'afficher les compartiments Amazon S3 sur BlueXP Canvas. Vous pouvez désormais ajouter de nouveaux compartiments et modifier les propriétés des compartiments existants directement à partir de BlueXP.<block ref="2c8909472f79d70b0988a1b1340a52c9" category="inline-link-rx"></block>.</block>
 </blocks>

@@ -205,6 +205,20 @@ C'est possible maintenant link:https://docs.netapp.com/us-en/cloud-manager-fsx-o
 
 
 
+== Le stockage Amazon S3
+
+
+
+=== 5 mars 2023
+
+
+
+==== Possibilité d'ajouter de nouveaux compartiments à partir de BlueXP
+
+Vous avez depuis longtemps la possibilité d'afficher les compartiments Amazon S3 sur BlueXP Canvas. Vous pouvez désormais ajouter de nouveaux compartiments et modifier les propriétés des compartiments existants directement à partir de BlueXP. https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["Découvrez comment ajouter de nouveaux compartiments Amazon S3"^].
+
+
+
 == Modèle d'application
 
 
