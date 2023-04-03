@@ -229,8 +229,8 @@ La possibilité de créer et de gérer Azure NetApp Files directement à partir 
 
 === 02 avril 2023
 
-* 9a2a26c33c1a0f6b14b7bb3a214dbaf0
-* 9af9b754c1d16f271c1e6f4b1b2c4f4d
+* C'est possible maintenant link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#create-volumes["Créez un FlexGroup sur FSX pour ONTAP"^] des volumes qui distribuent les données de volume au sein du cluster.
+* La limite IOPS est augmentée pour permettre un provisionnement manuel ou automatique jusqu'à 160,000.
 
 
 
@@ -550,29 +550,29 @@ Data Sense peut identifier et classer les fichiers contenant le numéro individu
 
 
 
-=== c7326baf2ea51b61fafa4f4680d916c0
+=== 2 avril 2023
 
 
 
-==== 9c305cf5f9f8051acc945eda0fc8a1be
+==== Prise en charge supplémentaire des relations Azure Data Lake Storage Gen2
 
-61babc330ca2ea0af752965dd3965d41
+Vous pouvez désormais créer des relations de synchronisation avec Azure Data Lake Storage Gen2 en tant que source et cible avec les éléments suivants :
 
 * Azure NetApp Files
 * Amazon FSX pour ONTAP
 * Cloud Volumes ONTAP
-* a37b0a91d7c4d8ac6ce924a7f8e1ce5a
+* ONTAP sur site
 
 
 https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["En savoir plus sur les relations de synchronisation prises en charge"].
 
 
 
-==== ad5a82acd30f0d971a29fdb4632bd7d4
+==== Filtrer les répertoires par chemin complet
 
-b7395f4da221ab7779cce11224436fb3
+En plus de filtrer les répertoires par nom, vous pouvez maintenant filtrer les répertoires par leur chemin complet.
 
-c73e2e476b1a94d1d032f8e0828dcd20
+https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["En savoir plus sur le paramètre exclure les répertoires"].
 
 
 
@@ -904,42 +904,42 @@ Consultez la liste complète des terminaux de votre https://docs.netapp.com/us-e
 
 === 3 avril 2023
 
-2dfd965acb2426b281b13a70df99c06b
+Les modifications suivantes ont été introduites avec la version 3.9.28 du connecteur.
 
 
 
-==== 671e2a59b2bfa852def9660bf14badde
+==== Amélioration du portefeuille digital
 
-d3ab2a9ddd985032aa120324e6da3710
+Le portefeuille digital affiche désormais la capacité sous licence achetée avec des offres privées Marketplace.
 
-41ed2f596edd466ead9a03a4cdcb3b22
-
-
-
-==== 6ee7d527518e93562cc9e691d20fb1d5
-
-ac14eb6382fa5b619966ba72622ecd3f
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["Découvrez comment afficher la capacité consommée dans votre compte"].
 
 
 
-==== 231ea98554191e640c216736796158d5
+==== Prise en charge des commentaires lors de la création du volume
 
-1cc55fcb982bea0e8f241a1271bda985
-
-23fbfdbb598644432ab089fa6e533405
+Cette version vous permet de faire des commentaires lors de la création d'un volume Cloud Volumes ONTAP FlexGroup ou d'un volume FlexVol lors de l'utilisation de l'API.
 
 
 
-==== 6fff4762fc0aeb74dd0a918683c157ae
+==== Nouvelle conception de l'interface utilisateur BlueXP pour les pages de présentation, de volumes et d'agrégats Cloud Volumes ONTAP
 
-8d40e6e8379382ee39fba2c4a1cb5629
+BlueXP inclut désormais une interface utilisateur repensée pour les pages Présentation de Cloud Volumes ONTAP, volumes et agrégats. La conception en mosaïque présente des informations plus complètes dans chaque mosaïque pour une meilleure expérience utilisateur.
+
+image:screenshot-resource-page-rn.png["Cette capture d'écran présente l'interface utilisateur de BlueXP repensée sur la page de présentation de Cloud Volumes ONTAP. Plusieurs vignettes présentent l'efficacité du stockage, la version, la distribution de la capacité, les informations sur le déploiement Cloud Volumes ONTAP, les volumes, les agrégats, les réplications et les sauvegardes."]
 
 
-NOTE: 905d8520d584560b3995118b2a01f6c2
 
-ce46ac36501bd1de8616d715ef7ee1c2
+==== FlexGroup volumes peut être consulté via Cloud Volumes ONTAP
 
-acef74218ad5e199582b5c76062e5559
+Les volumes FlexGroup créés directement via l'interface de ligne de commande ou System Manager sont désormais visibles dans la mosaïque volumes repensés dans BlueXP. Comme les informations fournies pour les volumes FlexVol, BlueXP fournit des informations détaillées sur les volumes FlexGroup créés via une mosaïque volumes dédiés.
+
+
+NOTE: Actuellement, vous ne pouvez afficher que les volumes FlexGroup existants sous BlueXP. La création de volumes FlexGroup dans BlueXP n'est pas disponible, mais prévue pour une prochaine version.
+
+image:screenshot-show-flexgroup-volume.png["Capture d'écran affichant l'icône de volume FlexGroup, placez le curseur de la souris sous la mosaïque volumes."]
+
+link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-volumes.html["En savoir plus sur l'affichage des volumes FlexGroup créés."^]
 
 
 
@@ -1165,7 +1165,7 @@ Le logiciel Global File cache Edge pour la version 1.3.1 est disponible à l'adr
 
 === 02 avril 2023
 
-* ffb0a040d2831585e0b568e5514270de
+* C'est possible maintenant link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-trident.html["Désinstallez Astra Trident"] Qui a été installé à l'aide de l'opérateur Trident ou de BlueXP.
 * Des améliorations ont été apportées à l'interface utilisateur et des captures d'écran ont été mises à jour dans la documentation.
 
 
