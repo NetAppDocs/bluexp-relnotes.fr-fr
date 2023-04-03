@@ -65,7 +65,7 @@ Pour commencer, sélectionnez *Ajouter un environnement de travail*, *Amazon Web
 Lorsque vous accédez à *Paramètres > informations d'identification*, vous pouvez afficher les informations d'identification, les mettre à jour et les supprimer. Par exemple, si vous modifiez le mot de passe de ces informations d'identification, vous devez le mettre à jour dans BlueXP.
 
 +
-551a80734187b23f5368b6a5609f3de3
+link:task-manage-user-credentials.html["Découvrez comment gérer les informations d'identification des utilisateurs"].
 
 * Vous pouvez maintenant télécharger des pièces jointes lorsque vous créez un dossier de support ou lorsque vous mettez à jour les notes de dossier pour un dossier de support existant.
 +
@@ -850,6 +850,22 @@ Le type de machine par défaut pour le courtier en données dans Google Cloud es
 
 
 
+=== 3 avril 2023
+
+
+
+==== 2e79231a13ecf62585403e20da2dea4a
+
+d4a0c23b533adffe42d63c23035edd5c
+
+
+
+==== 66a0b4752150538292b81c073ca0b83b
+
+10d9a166ad36cdda1e0585914ac18d5f
+
+
+
 === 5 mars 2023
 
 
@@ -879,16 +895,6 @@ Du fait d'un changement dans le Tiering cloud, il est nécessaire de modifier le
 | \https://*.cloudmanager.cloud.netapp.com | \https://*.api.bluexp.netapp.com 
 |===
 Consultez la liste complète des terminaux de votre https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html#outbound-internet-access["AWS"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html#outbound-internet-access["Google Cloud"^], ou https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html#outbound-internet-access["Azure"^] de cloud hybride.
-
-
-
-=== 6 novembre 2022
-
-
-
-==== Effectuez un glisser-déposer pour activer le Tiering cloud sur Azure Blob, Google Cloud Storage et StorageGRID
-
-Si la destination de Tiering Azure Blob, Google Cloud Storage ou StorageGRID existe en tant qu'environnement de travail sur la toile, vous pouvez faire glisser votre environnement de travail ONTAP sur site vers la destination pour lancer l'assistant d'installation de Tiering.
 
 
 

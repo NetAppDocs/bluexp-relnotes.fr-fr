@@ -52,7 +52,6 @@
   <block id="589a81f9a559c7792363bf5c658f7eb7" category="paragraph">Cloud Manager a été renommé BlueXP le 1er novembre 2022.<block ref="f8081012fbfe0608e8247bd5ec45b886" category="inline-link-rx"></block></block>
   <block id="f3aae44c0ba1e9d5c7a46f4e224ea31e" category="section-title">Fonctionnalités administratives</block>
   <block id="87448a3fa35fafb362a06b4d17cc1328" category="paragraph">Cette section décrit les nouvelles fonctionnalités liées aux fonctions d'administration de BlueXP : comptes, connecteurs, informations d'identification du fournisseur cloud, etc.</block>
-  <block id="5a4346a01828d72104a6540080377b25" category="section-title">6 novembre 2022</block>
   <block id="03e6ae21f561049c3e8010740c63aab3" category="inline-link">Découvrez les améliorations apportées à Cloud Volumes ONTAP</block>
   <block id="c642de9f40ee79267e2e62e3ebed032e" category="section-title">1er novembre 2022</block>
   <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">18 septembre 2022</block>
@@ -157,8 +156,6 @@
   <block id="1a1145c860165dcd96b82eb7d32cd59f" category="list-text">Paris (europe-Ouest 9)</block>
   <block id="66c941bf286fd505b009d484ca94a594" category="section-title">Nouveau type de machine Google Cloud</block>
   <block id="32ddf7d830e3a5092074c4f9bb211736" category="paragraph">Le type de machine par défaut pour le courtier en données dans Google Cloud est maintenant n2-standard-4.</block>
-  <block id="8f4621192fd1fe94f1b365ae34c1e0ed" category="section-title">Effectuez un glisser-déposer pour activer le Tiering cloud sur Azure Blob, Google Cloud Storage et StorageGRID</block>
-  <block id="6586247c64ea3f20421ae518b26fc973" category="paragraph">Si la destination de Tiering Azure Blob, Google Cloud Storage ou StorageGRID existe en tant qu'environnement de travail sur la toile, vous pouvez faire glisser votre environnement de travail ONTAP sur site vers la destination pour lancer l'assistant d'installation de Tiering.</block>
   <block id="440be74a67502f9c3d55890782329328" category="paragraph">Les modifications suivantes ont été introduites avec la version 3.9.22 du connecteur.</block>
   <block id="a3c559e0541e9bb860178ce6fe414224" category="section-title">Cloud Volumes Service pour GCP</block>
   <block id="a633f0835832cc75f5a83248a8aa2ba8" category="section-title">9 septembre 2020</block>
@@ -573,4 +570,6 @@
   <block id="111e68f453d93697e376aa4b128f9a4c" category="paragraph"><block ref="ab8039366481dc33ac47cc2a37c277c6" category="inline-link-macro-rx"></block>.</block>
   <block id="7907a1fccb5b8aa9b8df8283d3705052" category="list-text"><block ref="7907a1fccb5b8aa9b8df8283d3705052" category="inline-link-rx"></block></block>
   <block id="92900172340dbf6ba4b3454580c7583b" category="list-text"><block ref="92900172340dbf6ba4b3454580c7583b" category="inline-link-rx"></block></block>
+  <block id="6f6e8b4bb29cff7fb5a94ccadb883777" category="inline-link-macro">Découvrez comment gérer les informations d'identification des utilisateurs</block>
+  <block id="551a80734187b23f5368b6a5609f3de3" category="paragraph"><block ref="cf16e3f2aabf285f3de8d29b23130725" category="inline-link-macro-rx"></block>.</block>
 </blocks>
