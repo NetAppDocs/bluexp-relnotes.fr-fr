@@ -854,15 +854,15 @@ Le type de machine par défaut pour le courtier en données dans Google Cloud es
 
 
 
-==== 2e79231a13ecf62585403e20da2dea4a
+==== L'onglet licences a été supprimé
 
-d4a0c23b533adffe42d63c23035edd5c
+L'onglet Licensing a été supprimé de l'interface de NetApp Cloud Tiering. Toutes les licences pour les abonnements basés sur l'utilisation (PAYGO) sont disponibles dès maintenant sur le tableau de bord sur site de Cloud Tiering. Vous trouverez également un lien vers le portefeuille digital qui vous permet d'afficher et de gérer n'importe quelle licence BYOL (Bring Your Own License) de Cloud Tiering.
 
 
 
-==== 66a0b4752150538292b81c073ca0b83b
+==== Les onglets de hiérarchisation ont été renommés et le contenu a été mis à jour
 
-10d9a166ad36cdda1e0585914ac18d5f
+L'onglet « clusters » a été renommé « clusters » et l'onglet « Présentation sur site » a été renommé « Tableau de bord sur site ». Ces pages ont ajouté des informations qui vous aideront à déterminer si vous pouvez optimiser votre espace de stockage avec une configuration de hiérarchisation supplémentaire.
 
 
 
