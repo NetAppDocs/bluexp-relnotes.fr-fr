@@ -46,7 +46,7 @@ Les _modes de déploiement_ de BlueXP vous permettent d'utiliser BlueXP en fonct
 * Mode privé
 
 
-link:concept-modes.html["En savoir plus sur ces modes de déploiement"].
+10b9ce0cb6b2f607e0c7df6e246cfe67
 
 
 NOTE: L'introduction du mode restreint remplace l'option d'activation ou de désactivation de la plate-forme SaaS. Vous pouvez activer le mode restreint au moment de la création du compte. Il ne peut pas être activé ou désactivé ultérieurement.
@@ -1047,25 +1047,25 @@ Vous pouvez désormais découvrir vos systèmes de stockage E-Series directement
 
 
 
-=== e0feab0ee26165da9cddab198d1f1422
+=== 5 avril 2023 (version 2.2)
 
 Cette version fournit les nouvelles fonctionnalités répertoriées ci-dessous. Il corrige également les problèmes décrits dans le https://docs.netapp.com/us-en/cloud-manager-file-cache/fixed-issues.html["Problèmes résolus"]. Les mises à jour de logiciels sont disponibles à l'adresse https://docs.netapp.com/us-en/cloud-manager-file-cache/download-gfc-resources.html#download-required-resources["cette page"].
 
 
 
-==== b1bdb4b30cdf01fdd4fc306c24b3e449
+==== Prise en charge de Global File cache sur les systèmes Cloud Volumes ONTAP déployés dans Google Cloud
 
-a92c52030822934c670502facf8a8f31
+Une nouvelle licence Edge cache est disponible lors du déploiement d'un système Cloud Volumes ONTAP dans Google Cloud. Vous pouvez déployer un système Global File cache Edge pour chaque 3 To de capacité achetée sur le système Cloud Volumes ONTAP.
 
-3a8f1f533494279acf2d044c11cf495a
-
-
-
-==== 89960279d43d6d504afb45e5a8dff137
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages["En savoir plus sur le package de licences Edge cache."]
 
 
 
-==== 402a1502f5c39fb55ca79d59e3184a34
+==== L'assistant d'installation et l'interface utilisateur de configuration GFC ont été améliorés pour enregistrer les licences NetApp
+
+
+
+==== Optimus PSM amélioré pour configurer la fonctionnalité Edge Sync
 
 
 
@@ -1261,9 +1261,9 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/ma
 
 === 02 avril 2023
 
-Grâce au nouveau service de résilience opérationnelle et à ses suggestions automatisées de résolution des problèmes opérationnels IT, vous pouvez implémenter des solutions suggérées avant une panne ou une défaillance.
+Grâce au nouveau service de résilience opérationnelle et à ses suggestions automatisées de résolution des problèmes opérationnels IT, vous pouvez implémenter les suggestions de résolution avant une panne ou une défaillance.
 
-La résilience opérationnelle est une catégorie de services qui vous aident à analyser les alertes et les événements afin de préserver l'intégrité, la disponibilité et les performances des services et des solutions.
+La résilience opérationnelle est un service qui vous aide à analyser les alertes et les événements afin de préserver l'intégrité, la disponibilité et les performances des services et des solutions.
 
 link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/intro.html["En savoir plus sur ce nouveau service"].
 

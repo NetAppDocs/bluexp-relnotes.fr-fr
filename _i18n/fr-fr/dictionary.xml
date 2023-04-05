@@ -486,7 +486,6 @@
   <block id="39aeb3e37839611b14bfa6c7390065c1" category="paragraph">Pour connaître la disponibilité régionale, reportez-vous à la section <block ref="69e22a6a63d14aa651819a20b96c9cc5" category="inline-link-macro-rx"></block>.</block>
   <block id="723ffd15eb7b4453afd0fa0af42c04c3" category="section-title">Efficacité économique</block>
   <block id="88c49608e723add593f5becc8bd9a968" category="section-title">02 avril 2023</block>
-  <block id="6a96f2962c3be88d01a2e04f7bb4006f" category="paragraph">Le nouveau service d'efficacité économique identifie les clusters dont la capacité est actuellement faible ou prévue et fournit des recommandations sur le Tiering des données ou la capacité supplémentaire pour les systèmes AFF sur site.</block>
   <block id="7e0c2cf881384db7bfcfb883b67871a5" category="inline-link-macro">En savoir plus sur ce nouveau service</block>
   <block id="38532dd1586dac78ea99ce1216e1f352" category="paragraph"><block ref="6e51c6b9ced37d3ad7414d5e4d1ac63a" category="inline-link-macro-rx"></block>.</block>
   <block id="44a722c1e42cdb4002c75bb29403670b" category="section-title">Option de détection unique depuis la console BlueXP</block>
@@ -501,8 +500,6 @@
   <block id="d74db5b2b9703b60c98aead9c3c3275e" category="paragraph"><block ref="9ba91f2cd50d4cdc6a75347f1fff1126" category="inline-link-rx"></block>.</block>
   <block id="d35ea0fa6a3d81047f0a36a7dfac1c07" category="paragraph">Vous pouvez également afficher des informations détaillées sur l'intégration avec d'autres services BlueXP permettant le Tiering des données, la réplication des données et les sauvegardes.</block>
   <block id="efc0c4f71709b261c273fb935757cfae" category="section-title">Résilience opérationnelle</block>
-  <block id="1630a937eacb69072b241ed94c9fd786" category="paragraph">Grâce au nouveau service de résilience opérationnelle et à ses suggestions automatisées de résolution des problèmes opérationnels IT, vous pouvez implémenter des solutions suggérées avant une panne ou une défaillance.</block>
-  <block id="ccdc113a6d04ad73b22b032c1ebd7c63" category="paragraph">La résilience opérationnelle est une catégorie de services qui vous aident à analyser les alertes et les événements afin de préserver l'intégrité, la disponibilité et les performances des services et des solutions.</block>
   <block id="111e68f453d93697e376aa4b128f9a4c" category="paragraph"><block ref="ab8039366481dc33ac47cc2a37c277c6" category="inline-link-macro-rx"></block>.</block>
   <block id="7907a1fccb5b8aa9b8df8283d3705052" category="list-text"><block ref="7907a1fccb5b8aa9b8df8283d3705052" category="inline-link-rx"></block></block>
   <block id="92900172340dbf6ba4b3454580c7583b" category="list-text"><block ref="92900172340dbf6ba4b3454580c7583b" category="inline-link-rx"></block></block>
@@ -549,7 +546,6 @@
   <block id="e429f30641aba9e1fc7f2090cc77ce40" category="list-text">Mode restreint</block>
   <block id="44f51c4ac8fa1a6f53f07c0c2f751b69" category="list-text">Mode privé</block>
   <block id="14862370498786066b8605b6924a2605" category="inline-link-macro">En savoir plus sur ces modes de déploiement</block>
-  <block id="8ac00ea11b6f6d690abdf2e43ac24aa0" category="paragraph"><block ref="0074b237bf3db6e42e5cd08e19595bea" category="inline-link-macro-rx"></block>.</block>
   <block id="7196a94f4d2eb95bbda75c84fd8bbaa9" category="admonition">L'introduction du mode restreint remplace l'option d'activation ou de désactivation de la plate-forme SaaS. Vous pouvez activer le mode restreint au moment de la création du compte. Il ne peut pas être activé ou désactivé ultérieurement.</block>
   <block id="830d9c74b9a0266753efa0c38f11ba15" category="paragraph"><block ref="b3303746b1f0c3c97f0d5584351ddef9" category="inline-link-rx"></block>.</block>
   <block id="40c193dda1b0a4df68695abe150f234a" category="section-title">Possibilité de sauvegarder des données dans le cloud à partir des systèmes Cloud Volumes ONTAP en mode « restreint »</block>
@@ -583,4 +579,13 @@
   <block id="1d0a8122e5a250dbe5879cd7f8f5a495" category="inline-link">En savoir plus sur l'introduction de BlueXP</block>
   <block id="3214121f77d11d3720f824f6609986e1" category="paragraph">NetApp BlueXP a été lancé le 1er novembre 2022. BlueXP étend et améliore les fonctionnalités fournies via Cloud Manager.<block ref="f53c3e09f5dc895df05d3b248da7799e" category="inline-link-rx"></block></block>
   <block id="f25c47eb7d9f3c638d89723bee6d2360" category="paragraph">Grâce aux nouvelles fonctionnalités des API, vous pouvez sauvegarder vos copies Snapshot de volume dans ONTAP S3 à l'aide de BlueXP Cloud Backup. Cette fonctionnalité est disponible uniquement pour les systèmes ONTAP sur site à l'heure actuelle. Pour obtenir des instructions détaillées, consultez le blog<block ref="50f757899df464a10b489edfac75ae5d" category="inline-link-rx"></block>.</block>
+  <block id="754eb66320ee2d41917d70a6a0cd125b" category="paragraph">Le nouveau service d'efficacité économique identifie les clusters dont la capacité est actuellement faible ou prévue et fournit des recommandations sur le Tiering des données ou la capacité supplémentaire pour les systèmes AFF sur site.</block>
+  <block id="e0feab0ee26165da9cddab198d1f1422" category="section-title">5 avril 2023 (version 2.2)</block>
+  <block id="b1bdb4b30cdf01fdd4fc306c24b3e449" category="section-title">Prise en charge de Global File cache sur les systèmes Cloud Volumes ONTAP déployés dans Google Cloud</block>
+  <block id="a92c52030822934c670502facf8a8f31" category="paragraph">Une nouvelle licence Edge cache est disponible lors du déploiement d'un système Cloud Volumes ONTAP dans Google Cloud. Vous pouvez déployer un système Global File cache Edge pour chaque 3 To de capacité achetée sur le système Cloud Volumes ONTAP.</block>
+  <block id="3a8f1f533494279acf2d044c11cf495a" category="paragraph"><block ref="3a8f1f533494279acf2d044c11cf495a" category="inline-link-rx"></block></block>
+  <block id="89960279d43d6d504afb45e5a8dff137" category="section-title">L'assistant d'installation et l'interface utilisateur de configuration GFC ont été améliorés pour enregistrer les licences NetApp</block>
+  <block id="402a1502f5c39fb55ca79d59e3184a34" category="section-title">Optimus PSM amélioré pour configurer la fonctionnalité Edge Sync</block>
+  <block id="d3d5bae1dc5637cc2d16caf23d0426d2" category="paragraph">Grâce au nouveau service de résilience opérationnelle et à ses suggestions automatisées de résolution des problèmes opérationnels IT, vous pouvez implémenter les suggestions de résolution avant une panne ou une défaillance.</block>
+  <block id="ae74e3db3615f676968300b7cc6e8ae1" category="paragraph">La résilience opérationnelle est un service qui vous aide à analyser les alertes et les événements afin de préserver l'intégrité, la disponibilité et les performances des services et des solutions.</block>
 </blocks>
