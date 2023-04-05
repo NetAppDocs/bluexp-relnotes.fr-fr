@@ -285,13 +285,13 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["E
 
 ==== Possibilité de sauvegarder des données dans le cloud à partir des systèmes Cloud Volumes ONTAP en mode « restreint »
 
-Vous pouvez désormais sauvegarder les données à partir des systèmes Cloud Volumes ONTAP installés dans les régions commerciales AWS, Azure et GCP en mode « restreint ». Pour cela, vous devez d'abord installer le connecteur dans la région commerciale « restreinte ». Voir https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-s3.html["Sauvegarde des données Cloud Volumes ONTAP dans Amazon S3"] et https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-azure.html["Sauvegarde des données Cloud Volumes ONTAP dans Azure Blob"].
+Vous pouvez désormais sauvegarder les données à partir des systèmes Cloud Volumes ONTAP installés dans les régions commerciales AWS, Azure et GCP en mode « restreint ». Pour cela, vous devez d'abord installer le connecteur dans la région commerciale « restreinte ». https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-modes.html["En savoir plus sur les modes de déploiement BlueXP"^]. Voir https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-s3.html["Sauvegarde des données Cloud Volumes ONTAP dans Amazon S3"] et https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-azure.html["Sauvegarde des données Cloud Volumes ONTAP dans Azure Blob"].
 
 
 
 ==== Possibilité de sauvegarder vos volumes ONTAP sur site vers ONTAP S3 à l'aide de l'API
 
-Grâce aux nouvelles fonctionnalités des API, vous pouvez sauvegarder vos copies Snapshot de volume dans ONTAP S3 à l'aide de BlueXP Cloud Backup. Cette fonctionnalité est disponible uniquement pour les systèmes ONTAP sur site à l'heure actuelle. Pour obtenir des instructions détaillées, consultez le blog https://community.netapp.com/t5/Tech-ONTAP-Blogs/BlueXP-Backup-and-Recovery-Feature-Blog-April-23-Updates/ba-p/443075#toc-hId--846533830["Intégration avec ONTAP S3 comme destination (via des API REST)"^].
+Grâce aux nouvelles fonctionnalités des API, vous pouvez sauvegarder vos copies Snapshot de volume dans ONTAP S3 à l'aide de BlueXP Cloud Backup. Cette fonctionnalité est disponible uniquement pour les systèmes ONTAP sur site à l'heure actuelle. Pour obtenir des instructions détaillées, consultez le blog https://community.netapp.com/t5/Tech-ONTAP-Blogs/BlueXP-Backup-and-Recovery-Feature-Blog-April-23-Updates/ba-p/443075#toc-hId--846533830["Intégration avec ONTAP S3 en tant que destination"^].
 
 
 
@@ -400,7 +400,7 @@ Lors du déploiement de Data Sense à partir d'un connecteur BlueXP dans un envi
 
 
 
-==== Un script autonome est désormais disponible pour vérifier que votre système Linux est qualifié pour installer Data Sense
+==== Un script autonome est désormais disponible pour qualifier votre système Linux avant l'installation de Data Sense
 
 Si vous souhaitez vérifier que votre système Linux remplit toutes les conditions requises indépendamment de l'exécution de l'installation de Data Sense, vous pouvez télécharger un script distinct qui ne teste que les conditions préalables. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-test-linux-system.html["Découvrez comment vérifier si votre hôte Linux est prêt à installer Data Sense"].
 
@@ -852,7 +852,7 @@ Du fait d'un changement dans le Tiering cloud, il est nécessaire de modifier le
 
 | \https://*.cloudmanager.cloud.netapp.com | \https://*.api.bluexp.netapp.com 
 |===
-Consultez la liste complète des terminaux de votre https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html#outbound-internet-access["AWS"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html#outbound-internet-access["Google Cloud"^], ou https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html#outbound-internet-access["Azure"^] de cloud hybride.
+Consultez la liste complète des terminaux de votre https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-aws.html#outbound-internet-access["AWS"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-google.html#outbound-internet-access["Google Cloud"^], ou https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-azure.html#outbound-internet-access["Azure"^] de cloud hybride.
 
 
 
@@ -860,9 +860,27 @@ Consultez la liste complète des terminaux de votre https://docs.netapp.com/us-e
 
 
 
+=== 4 avril 2023
+
+À partir de la version Cloud Volumes ONTAP 9.12.1 GA, les régions chinoises sont désormais prises en charge dans AWS de la manière suivante.
+
+* Les systèmes à un seul nœud sont pris en charge.
+* Les licences achetées directement auprès de NetApp sont prises en charge.
+
+
+Pour connaître la disponibilité régionale, reportez-vous à la section link:https://bluexp.netapp.com/cloud-volumes-global-regions["Cartes des régions mondiales pour Cloud Volumes ONTAP"^].
+
+
+
 === 3 avril 2023
 
 Les modifications suivantes ont été introduites avec la version 3.9.28 du connecteur.
+
+
+
+==== La région de Turin est désormais prise en charge dans Google Cloud
+
+La région de Turin est désormais prise en charge dans Google Cloud pour Cloud Volumes ONTAP et le connecteur pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures.
 
 
 
@@ -884,7 +902,7 @@ Cette version vous permet de faire des commentaires lors de la création d'un vo
 
 BlueXP inclut désormais une interface utilisateur repensée pour les pages Présentation de Cloud Volumes ONTAP, volumes et agrégats. La conception en mosaïque présente des informations plus complètes dans chaque mosaïque pour une meilleure expérience utilisateur.
 
-image:screenshot-resource-page-rn.png["Cette capture d'écran présente l'interface utilisateur de BlueXP repensée sur la page de présentation de Cloud Volumes ONTAP. Plusieurs vignettes présentent l'efficacité du stockage, la version, la distribution de la capacité, les informations sur le déploiement Cloud Volumes ONTAP, les volumes, les agrégats, les réplications et les sauvegardes."]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-resource-page-rn.png["Cette capture d'écran présente l'interface utilisateur de BlueXP repensée sur la page de présentation de Cloud Volumes ONTAP. Plusieurs vignettes présentent l'efficacité du stockage, la version, la distribution de la capacité, les informations sur le déploiement Cloud Volumes ONTAP, les volumes, les agrégats, les réplications et les sauvegardes."]
 
 
 
@@ -895,7 +913,7 @@ Les volumes FlexGroup créés directement via l'interface de ligne de commande o
 
 NOTE: Actuellement, vous ne pouvez afficher que les volumes FlexGroup existants sous BlueXP. La création de volumes FlexGroup dans BlueXP n'est pas disponible, mais prévue pour une prochaine version.
 
-image:screenshot-show-flexgroup-volume.png["Capture d'écran affichant l'icône de volume FlexGroup, placez le curseur de la souris sous la mosaïque volumes."]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-show-flexgroup-volume.png["Capture d'écran affichant l'icône de volume FlexGroup, placez le curseur de la souris sous la mosaïque volumes."]
 
 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-volumes.html["En savoir plus sur l'affichage des volumes FlexGroup créés."^]
 
@@ -915,41 +933,6 @@ link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage
 
 
 Pour connaître la disponibilité régionale, reportez-vous à la section link:https://bluexp.netapp.com/cloud-volumes-global-regions["Cartes des régions mondiales pour Cloud Volumes ONTAP"^].
-
-
-
-=== 5 mars 2023
-
-Les modifications suivantes ont été introduites avec la version 3.9.27 du connecteur.
-
-
-
-==== Cloud Volumes ONTAP 9.13.0
-
-BlueXP peut désormais déployer et gérer Cloud Volumes ONTAP 9.13.0 dans AWS, Azure et Google Cloud.
-
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["Découvrez les nouvelles fonctionnalités de cette version d'Cloud Volumes ONTAP"^].
-
-
-
-==== Licence MTEKM
-
-La licence MTEKM (Multi-tenant Encryption Key Management) est désormais incluse avec les systèmes Cloud Volumes ONTAP nouveaux et existants exécutant la version 9.12.1 GA ou ultérieure.
-
-La gestion externe et mutualisée des clés permet à chaque machine virtuelle de stockage (SVM) de gérer ses propres clés via un serveur KMIP grâce à NetApp Volume Encryption.
-
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-volumes.html["Découvrez comment chiffrer les volumes à l'aide des solutions de cryptage NetApp"^].
-
-
-
-==== Prise en charge des environnements sans Internet 
-
-Cloud Volumes ONTAP est désormais pris en charge dans tous les environnements cloud isolés d'Internet. Seule la licence basée sur les nœuds (BYOL) est prise en charge dans ces environnements. Les licences basées sur la capacité ne sont pas prises en charge. Pour commencer, installez manuellement le logiciel Connector, connectez-vous à la console BlueXP exécutée sur le connecteur, ajoutez votre licence BYOL au portefeuille digital, puis déployez Cloud Volumes ONTAP. 
-
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["Installez le connecteur dans un emplacement sans accès à Internet"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#access-the-local-ui["Accéder à la console BlueXP sur le connecteur"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["Ajouter une licence non attribuée"^]
-
 
 
 
@@ -1023,7 +1006,7 @@ Pour plus de détails sur l'intégration de Digital Advisor avec BlueXP, rendez-
 
 === 02 avril 2023
 
-Le nouveau service d'efficacité économique identifie les clusters dont la capacité est actuellement faible ou prévue et fournit des recommandations sur le Tiering des données ou la capacité supplémentaire pour les systèmes AFF sur site.
+Le nouveau service d'efficacité économique identifie les actifs de stockage dont la capacité est faible actuelle ou prévue et fournit des recommandations sur le Tiering des données ou la capacité supplémentaire pour les systèmes AFF sur site.
 
 link:https://docs.netapp.com/us-en/bluexp-economic-efficiency/get-started/intro.html["En savoir plus sur ce nouveau service"].
 
