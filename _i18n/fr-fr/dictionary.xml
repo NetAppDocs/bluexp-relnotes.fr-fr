@@ -588,4 +588,5 @@
   <block id="402a1502f5c39fb55ca79d59e3184a34" category="section-title">Optimus PSM amélioré pour configurer la fonctionnalité Edge Sync</block>
   <block id="d3d5bae1dc5637cc2d16caf23d0426d2" category="paragraph">Grâce au nouveau service de résilience opérationnelle et à ses suggestions automatisées de résolution des problèmes opérationnels IT, vous pouvez implémenter les suggestions de résolution avant une panne ou une défaillance.</block>
   <block id="ae74e3db3615f676968300b7cc6e8ae1" category="paragraph">La résilience opérationnelle est un service qui vous aide à analyser les alertes et les événements afin de préserver l'intégrité, la disponibilité et les performances des services et des solutions.</block>
+  <block id="10b9ce0cb6b2f607e0c7df6e246cfe67" category="paragraph"><block ref="8a7bc1e5ebe0f732b7f8c57cc7b088b6" category="inline-link-rx"></block>.</block>
 </blocks>
