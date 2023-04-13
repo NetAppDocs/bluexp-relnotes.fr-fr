@@ -1000,6 +1000,58 @@ Pour plus de détails sur l'intégration de Digital Advisor avec BlueXP, rendez-
 
 
 
+== Portefeuille numérique
+
+
+
+=== 3 avril 2023
+
+
+
+==== Notifications par e-mail
+
+Les notifications par e-mail sont désormais prises en charge par le portefeuille digital.
+
+Si vous configurez vos paramètres de notification, vous pouvez recevoir des notifications par e-mail lorsque vos licences BYOL vont expirer (une notification d'avertissement) ou si elles ont déjà expiré (une notification d'erreur).
+
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["Découvrez comment configurer les notifications par e-mail"^]
+
+
+
+==== Capacité sous licence pour les abonnements Marketplace
+
+Lors de l'affichage des licences basées sur la capacité pour Cloud Volumes ONTAP, le portefeuille digital affiche désormais la capacité sous licence que vous avez achetée avec des offres privées Marketplace.
+
+https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["Découvrez comment afficher la capacité consommée dans votre compte"].
+
+
+
+=== 6 novembre 2022
+
+
+
+==== Abonnements et contrats annuels
+
+Vos abonnements PAYGO et vos contrats annuels pour BlueXP sont désormais disponibles pour la consultation et la gestion à partir du portefeuille numérique.
+
+https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-subscriptions.html["Découvrez comment gérer vos abonnements"].
+
+
+
+=== 18 septembre 2022
+
+
+
+==== E/S optimisées et capacité WORM
+
+Le porte-monnaie numérique présente maintenant un résumé du package de licences d'E/S optimisées et de la capacité WORM provisionnée pour les systèmes Cloud Volumes ONTAP de votre compte.
+
+Ces informations vous permettront de mieux comprendre la facturation et l'achat de capacité supplémentaire.
+
+https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["Découvrez comment afficher la capacité consommée dans votre compte"].
+
+
+
 == Efficacité économique
 
 
