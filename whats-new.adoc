@@ -476,6 +476,50 @@ Le nouvel état « réussite partielle » indique qu'une action de classificatio
 
 
 
+=== 7 mai 2023
+
+Les modifications suivantes ont été introduites avec la version 3.9.29 du connecteur.
+
+
+
+==== La région du Qatar est désormais prise en charge dans Google Cloud
+
+La région Qatar est désormais prise en charge dans Google Cloud pour Cloud Volumes ONTAP et dans Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures.
+
+
+
+==== Suède région centrale désormais prise en charge dans Azure
+
+La région centrale de Suède est désormais prise en charge dans Azure pour Cloud Volumes ONTAP et le connecteur pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures.
+
+
+
+==== Prise en charge des déploiements de zones haute disponibilité dans Azure Australia East
+
+La région est de l'Australie dans Azure prend désormais en charge les déploiements HA avec plusieurs zones de disponibilité pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures.
+
+
+
+==== Répartition de l'utilisation de la charge
+
+Vous pouvez désormais connaître les frais facturés lorsque vous souscrivez à des licences basées sur la capacité. Les types de rapports d'utilisation suivants sont disponibles au téléchargement depuis le portefeuille digital de BlueXP. Les rapports d'utilisation fournissent des détails sur la capacité de vos abonnements et vous indiquent comment vous facturez les ressources de vos abonnements Cloud Volumes ONTAP. Les rapports téléchargeables peuvent être facilement partagés avec d'autres personnes.
+
+* Utilisation du package Cloud Volumes ONTAP
+* Utilisation générale
+* Utilisation des VM de stockage
+* Utilisation des volumes
+
+
+Pour plus d'informations, voir link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["Gestion des licences basées sur la capacité"^].
+
+
+
+==== Une notification s'affiche lorsque vous accédez à BlueXP sans abonnement Marketplace
+
+Une notification s'affiche désormais chaque fois que vous accédez à Cloud Volumes ONTAP dans BlueXP sans abonnement Marketplace. La notification indique « un abonnement Marketplace pour cet environnement de travail doit être conforme aux conditions générales de Cloud Volumes ONTAP. »
+
+
+
 === 4 avril 2023
 
 À partir de la version Cloud Volumes ONTAP 9.12.1 GA, les régions chinoises sont désormais prises en charge dans AWS de la manière suivante.
@@ -504,7 +548,7 @@ La région de Turin est désormais prise en charge dans Google Cloud pour Cloud 
 
 Le portefeuille digital affiche désormais la capacité sous licence achetée avec des offres privées Marketplace.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["Découvrez comment afficher la capacité consommée dans votre compte"].
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["Découvrez comment afficher la capacité consommée dans votre compte"^].
 
 
 
@@ -532,23 +576,6 @@ NOTE: Actuellement, vous ne pouvez afficher que les volumes FlexGroup existants 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-show-flexgroup-volume.png["Capture d'écran affichant l'icône de volume FlexGroup, placez le curseur de la souris sous la mosaïque volumes."]
 
 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-volumes.html["En savoir plus sur l'affichage des volumes FlexGroup créés."^]
-
-
-
-=== 13 mars 2023
-
-
-
-==== Soutien de la région chinoise
-
-À partir de Cloud Volumes ONTAP 9.12.1 GA, la prise en charge par région Chine est désormais prise en charge dans Azure comme suit.
-
-* Cloud Volumes ONTAP est pris en charge dans le nord de la Chine 3.
-* Les systèmes à un seul nœud sont pris en charge.
-* Les licences achetées directement auprès de NetApp sont prises en charge.
-
-
-Pour connaître la disponibilité régionale, reportez-vous à la section link:https://bluexp.netapp.com/cloud-volumes-global-regions["Cartes des régions mondiales pour Cloud Volumes ONTAP"^].
 
 
 
