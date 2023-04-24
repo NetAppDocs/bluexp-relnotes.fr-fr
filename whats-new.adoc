@@ -213,6 +213,36 @@ Vous avez depuis longtemps la possibilité d'afficher les compartiments Amazon S
 
 
 
+=== 8 mai 2023
+
+
+
+==== Les opérations de restauration au niveau des dossiers sont désormais prises en charge à partir du stockage d'archives et des sauvegardes verrouillées
+
+Si un fichier de sauvegarde a été configuré avec la protection DataLock & ransomware, ou si le fichier de sauvegarde réside dans un stockage d'archivage, les opérations de restauration au niveau des dossiers sont prises en charge si le cluster exécute ONTAP 9.13.1 ou une version ultérieure.
+
+
+
+==== Les clés gérées par le client entre régions et projets sont prises en charge lors de la sauvegarde de volumes dans Google Cloud
+
+Vous pouvez désormais choisir un compartiment qui se trouve dans un projet différent de celui des clés de chiffrement gérées par le client (CMEK).
+
+
+
+==== Les régions AWS Chine sont désormais prises en charge pour les fichiers de sauvegarde
+
+Les régions AWS China Beijing (cn-North-1) et Ningxia (cn-Northwest-1) sont désormais prises en charge en tant que destinations pour vos fichiers de sauvegarde si le cluster exécute ONTAP 9.12.1 ou une version ultérieure.
+
+Notez que les règles IAM attribuées à BlueXP Connector doivent modifier le nom de ressource AWS « arn » sous toutes les sections _Resource_ de « aws » à « aws-cn », par exemple « arn:aws-cn:s3:::netapp-backup-* ». Voir https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-s3.html["Sauvegarde des données Cloud Volumes ONTAP dans Amazon S3"] et https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-to-aws.html["Sauvegarde des données ONTAP sur site dans Amazon S3"] pour plus d'informations.
+
+
+
+==== Améliorations apportées au moniteur de tâches
+
+Les tâches lancées par le système, telles que les opérations de sauvegarde en cours, sont désormais disponibles dans l'onglet *surveillance des tâches* pour les systèmes ONTAP sur site exécutant ONTAP 9.13.1 ou version ultérieure. Les versions précédentes de ONTAP affichent uniquement les travaux initiés par l'utilisateur.
+
+
+
 === 14 avril 2023
 
 
@@ -240,7 +270,7 @@ Vous avez depuis longtemps la possibilité d'afficher les compartiments Amazon S
 
 ==== Améliorations apportées à la sauvegarde et à la restauration BlueXP pour les applications (hybride)
 
-* La sauvegarde et la restauration BlueXP pour les applications (hybrides) sont pilotées par le plan de contrôle SaaS.
+* La sauvegarde et la restauration BlueXP pour les applications (hybrides) sont pilotées par le plan de contrôle SaaS
 * API REST hybrides modifiées pour l'alignement avec les API cloud natives - effectué.
 * Prend en charge la notification par e-mail
 
@@ -253,7 +283,7 @@ Vous avez depuis longtemps la possibilité d'afficher les compartiments Amazon S
 
 ==== Possibilité de sauvegarder des données dans le cloud à partir des systèmes Cloud Volumes ONTAP en mode « restreint »
 
-Vous pouvez désormais sauvegarder les données à partir des systèmes Cloud Volumes ONTAP installés dans les régions commerciales AWS, Azure et GCP en mode « restreint ». Pour cela, vous devez d'abord installer le connecteur dans la région commerciale « restreinte ». https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-modes.html["En savoir plus sur les modes de déploiement BlueXP"^]. Voir https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-s3.html["Sauvegarde des données Cloud Volumes ONTAP dans Amazon S3"] et https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-azure.html["Sauvegarde des données Cloud Volumes ONTAP dans Azure Blob"].
+Vous pouvez désormais sauvegarder les données à partir de systèmes Cloud Volumes ONTAP installés dans les régions commerciales AWS, Azure et GCP en « mode restreint ». Pour cela, vous devez d'abord installer le connecteur dans la région commerciale « restreinte ». https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-modes.html["En savoir plus sur les modes de déploiement BlueXP"^]. Voir https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-s3.html["Sauvegarde des données Cloud Volumes ONTAP dans Amazon S3"] et https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-azure.html["Sauvegarde des données Cloud Volumes ONTAP dans Azure Blob"].
 
 
 
@@ -271,7 +301,7 @@ Lors de la création de sauvegardes à partir de systèmes Cloud Volumes ONTAP v
 
 ==== Améliorations apportées au moniteur de tâches
 
-* Les opérations de sauvegarde et de restauration initiées par l'utilisateur à partir de l'interface et de l'API de sauvegarde et de restauration BlueXP, ainsi que les tâches lancées par le système, telles que les opérations de sauvegarde en continu, sont désormais disponibles dans l'onglet *surveillance des tâches* pour les systèmes ONTAP sur site exécutant ONTAP 9.13.1 ou version ultérieure. Les versions précédentes de ONTAP affichent uniquement les travaux initiés par l'utilisateur.
+* Les opérations de sauvegarde et de restauration initiées par l'utilisateur à partir de l'interface utilisateur et de l'API de sauvegarde et de restauration BlueXP, ainsi que les tâches initiées par le système, telles que les opérations de sauvegarde en continu, sont désormais disponibles dans l'onglet *surveillance des tâches* pour les systèmes Cloud Volumes ONTAP exécutant ONTAP 9.13.0 ou version ultérieure. Les versions précédentes de ONTAP affichent uniquement les travaux initiés par l'utilisateur.
 * En plus de pouvoir télécharger un fichier CSV pour créer des rapports sur tous les travaux, vous pouvez désormais télécharger un fichier JSON pour un seul travail et voir ses détails. https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html#download-job-monitoring-results-as-a-report["En savoir plus >>"].
 * Deux nouvelles alertes de tâche de sauvegarde ont été ajoutées : « échec de tâche planifiée » et « la tâche de restauration est terminée mais avec des avertissements ». https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html#review-backup-and-restore-alerts-in-the-bluexp-notification-center["Examinez toutes les alertes que les solutions de sauvegarde et de restauration BlueXP peuvent envoyer"].
 
@@ -299,52 +329,6 @@ Vous pouvez désormais sauvegarder les données à partir de systèmes Cloud Vol
 * La page surveillance des tâches a ajouté un filtrage avancé pour vous permettre de rechercher des tâches de sauvegarde et de restauration par temps, workload (volumes, applications, machines virtuelles ou Kubernetes), Type de tâche, état, environnement de travail et machine virtuelle de stockage. Vous pouvez également entrer du texte libre pour rechercher n'importe quelle ressource, par exemple, "application_3".  https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html#searching-and-filtering-the-list-of-jobs["Voir comment utiliser les filtres avancés"].
 * Les opérations de sauvegarde et de restauration initiées par l'utilisateur à partir de l'interface utilisateur et de l'API de sauvegarde et de restauration BlueXP, ainsi que les tâches initiées par le système, telles que les opérations de sauvegarde en continu, sont désormais disponibles dans l'onglet *surveillance des tâches* pour les systèmes Cloud Volumes ONTAP exécutant ONTAP 9.13.0 ou version ultérieure. Les versions antérieures des systèmes Cloud Volumes ONTAP et les systèmes ONTAP sur site n'affichent actuellement que les tâches initiées par l'utilisateur.
 
-
-
-
-=== 6 février 2023
-
-
-
-==== La possibilité de déplacer d'anciens fichiers de sauvegarde vers le stockage d'archivage Azure à partir des systèmes StorageGRID
-
-Vous pouvez désormais transférer les anciens fichiers de sauvegarde des systèmes StorageGRID vers le stockage d'archivage dans Azure. Cela vous permet de libérer de l'espace sur vos systèmes StorageGRID et de réaliser des économies en utilisant une solution de stockage bon marché pour les anciens fichiers de sauvegarde.
-
-Cette fonctionnalité est disponible si votre cluster sur site utilise ONTAP 9.12.1 ou version ultérieure et que votre système StorageGRID utilise 11.4 ou version ultérieure. https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html#preparing-to-archive-older-backup-files-to-public-cloud-storage["En savoir plus"^].
-
-
-
-==== Il est possible de configurer le verrouillage des données et la protection contre les attaques par ransomware pour les fichiers de sauvegarde dans Azure Blob
-
-DataLock et ransomware protection sont désormais pris en charge pour les fichiers de sauvegarde stockés dans Azure Blob. Si votre système Cloud Volumes ONTAP ou ONTAP sur site exécute ONTAP 9.12.1 ou une version ultérieure, vous pouvez maintenant verrouiller vos fichiers de sauvegarde et les analyser pour détecter un éventuel ransomware. https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-cloud-backup-policies.html#datalock-and-ransomware-protection["Découvrez comment protéger vos sauvegardes avec DataLock et protection contre les attaques par ransomware"^].
-
-
-
-==== Amélioration de la sauvegarde et de la restauration d'un volume FlexGroup
-
-* Vous pouvez désormais choisir plusieurs agrégats lors de la restauration d'un volume FlexGroup. Dans la dernière version, vous ne pouvez sélectionner qu'un seul agrégat.
-* La restauration de volume FlexGroup est désormais prise en charge sur les systèmes Cloud Volumes ONTAP. Dans la dernière version, vous pouviez uniquement restaurer vos données vers des systèmes ONTAP sur site.
-
-
-
-
-==== Les systèmes Cloud Volumes ONTAP peuvent transférer d'anciennes sauvegardes vers le stockage d'archivage Google
-
-Les fichiers de sauvegarde sont initialement créés dans la classe de stockage Google Standard. Vous pouvez désormais utiliser la sauvegarde et la restauration BlueXP pour hiérarchiser les sauvegardes plus anciennes sur le stockage Google Archive afin de mieux optimiser les coûts. La dernière version ne prend en charge que cette fonctionnalité avec des clusters ONTAP sur site. Désormais, les systèmes Cloud Volumes ONTAP déployés dans Google Cloud sont pris en charge.
-
-
-
-==== Les opérations de restauration de volume permettent désormais de sélectionner la SVM où vous souhaitez restaurer les données de volume
-
-Désormais, vous restaurez des données de volume sur d'autres machines virtuelles de stockage dans vos clusters ONTAP. Auparavant, il n'était pas possible de choisir la machine virtuelle de stockage.
-
-
-
-==== Prise en charge améliorée des volumes dans les configurations MetroCluster
-
-Avec ONTAP 9.12.1 GA ou supérieur, la sauvegarde est désormais prise en charge lorsqu'elle est connectée au système primaire dans une configuration MetroCluster. L'intégralité de la configuration de sauvegarde est transférée vers le système secondaire pour que les sauvegardes vers le cloud puissent se poursuivre automatiquement après le basculement.
-
-https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html#backup-limitations["Voir limites de sauvegarde pour plus d'informations"].
 
 
 
@@ -633,6 +617,42 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-compute/main/me
 
 
 
+=== 8 mai 2023
+
+
+
+==== Capacités de liaison rigide
+
+Les utilisateurs peuvent désormais inclure des liens physiques pour les synchronisations impliquant des relations NFS à NFS non sécurisées.
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["En savoir plus sur le paramètre types de fichiers"].
+
+
+
+==== Possibilité d'ajouter un certificat utilisateur pour les courtiers de données dans le cadre de relations NFS sécurisées
+
+Les utilisateurs peuvent désormais définir leur propre certificat pour le courtier de données cible lors de la création d'une relation NFS sécurisée. Ils doivent définir un nom de serveur et fournir une clé privée et un ID de certificat lorsqu'ils le font. Cette fonctionnalité est disponible pour tous les courtiers de données.
+
+
+
+==== Période d'exclusion étendue pour les fichiers récemment modifiés
+
+Les utilisateurs peuvent désormais exclure les fichiers modifiés jusqu'à 365 jours avant la synchronisation planifiée.
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["En savoir plus sur le paramètre fichiers récemment modifiés"].
+
+
+
+==== Filtrer les relations dans l'interface utilisateur par ID de relation
+
+Ceux qui utilisent l'API RESTful peuvent désormais filtrer les relations à l'aide d'ID de relation.
+
+https://docs.netapp.com/us-en/cloud-manager-sync/api-sync.html["En savoir plus sur l'utilisation de l'API RESTful avec la copie et la synchronisation BlueXP"].
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["En savoir plus sur le paramètre exclure les répertoires"].
+
+
+
 === 2 avril 2023
 
 
@@ -668,264 +688,6 @@ https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.htm
 Vous pouvez désormais chiffrer les volumes des courtiers de données AWS à l'aide d'une clé KMS installée sur votre compte.
 
 https://docs.netapp.com/us-en/cloud-manager-sync/task-installing-aws.html#creating-the-data-broker["En savoir plus sur la création d'un courtier en données dans AWS"].
-
-
-
-=== 5 février 2023
-
-
-
-==== Prise en charge supplémentaire d'Azure Data Lake Storage Gen2, ONTAP S3 Storage et NFS
-
-Cloud Sync prend désormais en charge des relations de synchronisation supplémentaires pour le stockage ONTAP S3 et NFS :
-
-* Stockage ONTAP S3 sur NFS
-* NFS vers le stockage ONTAP S3
-
-
-Cloud Sync peut également prendre en charge Azure Data Lake Gen2 Storage, source et cible pour :
-
-* Serveur NFS
-* Serveur SMB
-* Stockage ONTAP S3
-* StorageGRID
-* IBM Cloud Object Storage
-
-
-https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["En savoir plus sur les relations de synchronisation prises en charge"].
-
-
-
-==== Effectuer la mise à niveau vers le système d'exploitation du courtier de données Amazon Web Services
-
-Le système d'exploitation des courtiers de données AWS a été mis à niveau vers Amazon Linux 2022.
-
-https://docs.netapp.com/us-en/cloud-manager-sync/task-installing-aws.html#details-about-the-data-broker-instance["En savoir plus sur l'instance de courtier de données dans AWS"].
-
-
-
-=== 3 janvier 2023
-
-
-
-==== Affiche la configuration locale du courtier de données dans l'interface utilisateur
-
-Il existe maintenant une option *Afficher la configuration* qui permet aux utilisateurs d'afficher la configuration locale de chaque courtier de données dans l'interface utilisateur.
-
-https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-data-brokers.html["En savoir plus sur la gestion des groupes de courtiers de données"].
-
-
-
-==== Effectuer la mise à niveau vers Azure et le système d'exploitation des courtiers de données Google Cloud
-
-Le système d'exploitation des courtiers de données d'Azure et de Google Cloud a été mis à niveau vers Rocky Linux 9.0.
-
-https://docs.netapp.com/us-en/cloud-manager-sync/task-installing-azure.html#details-about-the-data-broker-vm["En savoir plus sur l'instance de courtier de données dans Azure"].
-
-https://docs.netapp.com/us-en/cloud-manager-sync/task-installing-gcp.html#details-about-the-data-broker-vm-instance["En savoir plus sur l'instance de courtier en données dans Google Cloud"].
-
-
-
-=== 11 décembre 2022
-
-
-
-==== Filtrez les répertoires par nom
-
-Un nouveau paramètre *exclure les noms de répertoire* est maintenant disponible pour les relations de synchronisation. Les utilisateurs peuvent filtrer un maximum de 15 noms de répertoire depuis leur synchronisation. Les répertoires .copy-Offload, .snapshot, ~snapshot sont exclus par défaut.
-
-https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["En savoir plus sur le paramètre exclure les noms de répertoire"].
-
-
-
-==== Prise en charge supplémentaire d'Amazon S3 et de ONTAP S3 Storage
-
-Cloud Sync prend désormais en charge des relations de synchronisation supplémentaires pour AWS S3 et ONTAP S3 Storage :
-
-* AWS S3 vers le stockage ONTAP S3
-* Stockage ONTAP S3 vers AWS S3
-
-
-https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["En savoir plus sur les relations de synchronisation prises en charge"].
-
-
-
-=== 30 octobre 2022
-
-
-
-==== Synchronisation continue de Microsoft Azure
-
-Le paramètre Continuous Sync est désormais pris en charge depuis un compartiment de stockage Azure source vers un stockage cloud via un courtier de données Azure.
-
-Après la synchronisation initiale des données, Cloud Sync écoute les modifications apportées au compartiment de stockage Azure source et synchronise en continu les modifications apportées à la cible lorsqu'elles se produisent. Ce paramètre est disponible lors de la synchronisation à partir d'un compartiment de stockage Azure vers le stockage Azure Blob, CIFS, Google Cloud Storage, IBM Cloud Object Storage, NFS et StorageGRID.
-
-Le courtier de données Azure a besoin d'un rôle personnalisé et des autorisations suivantes pour utiliser ce paramètre :
-
-[source, json]
-----
-'Microsoft.Storage/storageAccounts/read',
-'Microsoft.EventGrid/systemTopics/eventSubscriptions/write',
-'Microsoft.EventGrid/systemTopics/eventSubscriptions/read',
-'Microsoft.EventGrid/systemTopics/eventSubscriptions/delete',
-'Microsoft.EventGrid/systemTopics/eventSubscriptions/getFullUrl/action',
-'Microsoft.EventGrid/systemTopics/eventSubscriptions/getDeliveryAttributes/action',
-'Microsoft.EventGrid/systemTopics/read',
-'Microsoft.EventGrid/systemTopics/write',
-'Microsoft.EventGrid/systemTopics/delete',
-'Microsoft.EventGrid/eventSubscriptions/write',
-'Microsoft.Storage/storageAccounts/write'
-----
-https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["En savoir plus sur le paramètre de synchronisation continue"].
-
-
-
-=== 4 septembre 2022
-
-
-
-==== Assistance Google Drive supplémentaire
-
-* Cloud Sync prend désormais en charge des relations de synchronisation supplémentaires pour Google Drive :
-+
-** Google Drive vers les serveurs NFS
-** Google Drive vers les serveurs SMB
-
-
-* Vous pouvez également générer des rapports pour les relations de synchronisation incluant Google Drive.
-+
-https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-reports.html["En savoir plus sur les rapports"].
-
-
-
-
-
-==== Amélioration de la synchronisation continue
-
-Vous pouvez maintenant activer le paramètre de synchronisation continue sur les types de relations de synchronisation suivants :
-
-* Un compartiment S3 vers un serveur NFS
-* Google Cloud Storage sur un serveur NFS
-
-
-https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["En savoir plus sur le paramètre de synchronisation continue"].
-
-
-
-==== Notifications par e-mail
-
-Vous pouvez désormais recevoir des notifications Cloud Sync par e-mail.
-
-Pour recevoir les notifications par e-mail, vous devez activer le paramètre *Notifications* sur la relation de synchronisation, puis configurer les paramètres alertes et notification dans BlueXP.
-
-https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-relationships.html#setting-up-notifications["Apprenez à configurer les notifications"].
-
-
-
-=== 31 juillet 2022
-
-
-
-==== Google Drive
-
-Vous pouvez désormais synchroniser les données d'un serveur NFS ou SMB vers Google Drive. « Mon lecteur » et « lecteurs partagés » sont pris en charge en tant que cibles.
-
-Avant de créer une relation de synchronisation incluant Google Drive, vous devez configurer un compte de service disposant des autorisations requises et d'une clé privée. https://docs.netapp.com/us-en/cloud-manager-sync/reference-requirements.html#google-drive["En savoir plus sur les exigences de Google Drive"].
-
-https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["Affichez la liste des relations de synchronisation prises en charge"].
-
-
-
-==== Prise en charge supplémentaire d'Azure Data Lake
-
-Cloud Sync prend désormais en charge des relations de synchronisation supplémentaires pour Azure Data Lake Storage Gen2 :
-
-* Amazon S3 vers Azure Data Lake Storage Gen2
-* Stockage objet cloud IBM sur Azure Data Lake Storage Gen2
-* De StorageGRID à Azure Data Lake Storage Gen2
-
-
-https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["Affichez la liste des relations de synchronisation prises en charge"].
-
-
-
-==== Nouvelles façons de configurer les relations de synchronisation
-
-Nous avons ajouté des moyens supplémentaires pour configurer les relations de synchronisation directement à partir de BlueXP Canvas.
-
-
-
-===== Glisser-déposer
-
-Vous pouvez maintenant configurer une relation de synchronisation à partir du Canvas en faisant glisser et en déposant un environnement de travail sur un autre.
-
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-enable-drag-and-drop.png["Capture d'écran qui montre le Centre de notification dans BlueXP."]
-
-
-
-===== Configuration du panneau droit
-
-Vous pouvez maintenant configurer une relation de synchronisation pour le stockage Azure Blob ou pour Google Cloud Storage en sélectionnant l'environnement de travail dans Canvas, puis en sélectionnant l'option de synchronisation dans le panneau de droite.
-
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-enable-panel.png["Capture d'écran qui montre le Centre de notification dans BlueXP."]
-
-
-
-=== 3 juillet 2022
-
-
-
-==== Prise en charge d'Azure Data Lake Storage Gen2
-
-Vous pouvez désormais synchroniser les données d'un serveur NFS ou SMB vers Azure Data Lake Storage Gen2.
-
-Lors de la création d'une relation de synchronisation incluant Azure Data Lake, vous devez fournir à Cloud Sync la chaîne de connexion du compte de stockage. Il doit s'agir d'une chaîne de connexion standard et non d'une signature d'accès partagée (SAS).
-
-https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["Affichez la liste des relations de synchronisation prises en charge"].
-
-
-
-==== Synchronisation continue depuis Google Cloud Storage
-
-Le paramètre Continuous Sync est désormais pris en charge à partir d'un compartiment Google Cloud Storage source vers une cible de stockage cloud.
-
-Après la synchronisation initiale des données, Cloud Sync écoute les modifications apportées au compartiment Google Cloud Storage source et synchronise en continu les modifications apportées à la cible au fur et à mesure de leur apparition. Ce paramètre est disponible lors de la synchronisation à partir d'un compartiment Google Cloud Storage vers S3, Google Cloud Storage, Azure Blob Storage, StorageGRID ou IBM Storage.
-
-Le compte de service associé à votre courtier de données nécessite les autorisations suivantes pour utiliser ce paramètre :
-
-[source, json]
-----
-- pubsub.subscriptions.consume
-- pubsub.subscriptions.create
-- pubsub.subscriptions.delete
-- pubsub.subscriptions.list
-- pubsub.topics.attachSubscription
-- pubsub.topics.create
-- pubsub.topics.delete
-- pubsub.topics.list
-- pubsub.topics.setIamPolicy
-- storage.buckets.update
-----
-https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["En savoir plus sur le paramètre de synchronisation continue"].
-
-
-
-==== Prise en charge de la région Google Cloud
-
-Le courtier en données Cloud Sync est désormais pris en charge dans les régions Google Cloud suivantes :
-
-* Columbus (US-east5)
-* Dallas (US-south1)
-* Madrid (europe-Sud-Ouest 1)
-* Milan (europe-Ouest 8)
-* Paris (europe-Ouest 9)
-
-
-
-
-==== Nouveau type de machine Google Cloud
-
-Le type de machine par défaut pour le courtier en données dans Google Cloud est maintenant n2-standard-4.
 
 
 
@@ -1425,7 +1187,7 @@ Vous pouvez désormais découvrir vos systèmes StorageGRID directement depuis B
 
 ==== L'onglet licences a été supprimé
 
-L'onglet Licensing a été supprimé de l'interface de Tiering BlueXP. Toutes les licences pour les abonnements PAYGO sont désormais accessibles depuis le tableau de bord du Tiering BlueXP sur site. Il existe également un lien vers le portefeuille digital BlueXP depuis cette page pour afficher et gérer n'importe quel modèle de Tiering BlueXP BYOL (Bring Your Own License).
+L'onglet Licensing a été supprimé de l'interface de Tiering BlueXP. Toutes les licences pour les abonnements PAYGO sont maintenant accessibles depuis le tableau de bord du Tiering BlueXP sur site. Il existe également un lien vers le portefeuille digital BlueXP depuis cette page pour afficher et gérer n'importe quel modèle de Tiering BlueXP BYOL (Bring Your Own License).
 
 
 
