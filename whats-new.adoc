@@ -33,6 +33,36 @@ Cette section décrit les nouvelles fonctionnalités liées aux fonctions d'admi
 
 
 
+=== 7 mai 2023
+
+
+
+==== Connecteur 3.9.29
+
+* Ubuntu 22.04 est le nouveau système d'exploitation du connecteur lorsque vous déployez un connecteur à partir de BlueXP ou du marché de votre fournisseur de cloud.
++
+Vous avez également la possibilité d'installer manuellement le connecteur sur votre propre hôte Linux exécutant Ubuntu 22.04.
+
+* Red Hat Enterprise Linux 8.6 et 8.7 ne sont plus pris en charge avec les nouveaux déploiements de connecteurs.
++
+Ces versions ne sont pas prises en charge par les nouveaux déploiements, car Red Hat ne prend plus en charge Docker, requis pour le connecteur. Si vous disposez d'un connecteur existant sous RHEL 8.6 ou 8.7, NetApp continuera à prendre en charge votre configuration.
+
++
+Red Hat 7.6, 7.7, 7.8 et 7.9 sont toujours pris en charge avec les connecteurs nouveaux et existants.
+
+* Le connecteur est désormais pris en charge dans la région Qatar de Google Cloud.
+* Le connecteur est également pris en charge dans la région centrale de Suède de Microsoft Azure.
++
+https://cloud.netapp.com/cloud-volumes-global-regions["Afficher la liste complète des régions prises en charge"^]
+
+* Cette version du connecteur inclut des améliorations Cloud Volumes ONTAP.
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#7-may-2023["Découvrez les améliorations apportées à Cloud Volumes ONTAP"^]
+
+
+
+
+
 === 4 avril 2023
 
 
@@ -70,16 +100,6 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operatio
 +
 https://cloud.netapp.com/cloud-volumes-global-regions["Afficher la liste complète des régions prises en charge"^]
 
-* Vous pouvez désormais découvrir les serveurs VMware vCenter dans BlueXP.
-+
-Une fois que vous avez découvert un serveur VMware vCenter Server exécuté dans AWS ou sur site, vous pouvez ouvrir l'environnement de travail pour afficher les détails sur les datastores et les machines virtuelles associés au serveur.
-
-+
-La seule exigence est un connecteur qui dispose d'une connexion à un serveur VMware vCenter Server exécutant la version 7.0 ou ultérieure.
-
-+
-Pour commencer, sélectionnez *Ajouter un environnement de travail*, *Amazon Web Services* ou *sur site*, puis *VMware vCenter Server*. Entrez le nom de domaine ou l'adresse IP du serveur, puis entrez le nom d'utilisateur et le mot de passe de l'utilisateur admin.
-
 * Vous pouvez désormais gérer les identifiants utilisateur associés à votre connexion BlueXP : identifiants ONTAP et identifiants NSS (NetApp support site).
 +
 Lorsque vous accédez à *Paramètres > informations d'identification*, vous pouvez afficher les informations d'identification, les mettre à jour et les supprimer. Par exemple, si vous modifiez le mot de passe de ces informations d'identification, vous devez le mettre à jour dans BlueXP.
@@ -96,50 +116,6 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manag
 ** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#3-april-2023["Découvrez les améliorations apportées à Cloud Volumes ONTAP"^]
 ** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#3-april-2023["Découvrez les améliorations apportées aux clusters sur site de ONTAP"^]
 
-
-
-
-
-
-=== 5 mars 2023
-
-
-
-==== Connecteur 3.9.27
-
-* La recherche est désormais disponible dans la console BlueXP. Vous pouvez utiliser la fonction de recherche pour trouver les services et fonctionnalités BlueXP.
-+
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-search.png["Copie d'écran de la recherche BlueXP disponible en haut de la console."]
-
-* Vous pouvez afficher et gérer les dossiers de support actifs et résolus directement à partir de BlueXP. Vous pouvez gérer les dossiers associés à votre compte NSS et à votre entreprise.
-+
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manage-your-support-cases["Découvrez comment gérer vos dossiers de demande de support"].
-
-* Le connecteur est désormais pris en charge sur un hôte exécutant Red Hat Enterprise Linux 8.7.
-+
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Afficher la configuration système requise pour le connecteur"].
-
-* Le connecteur est désormais pris en charge dans tout environnement cloud totalement isolé d'Internet. Vous pouvez ensuite utiliser la console BlueXP exécutée sur le connecteur pour déployer Cloud Volumes ONTAP au même emplacement et découvrir les clusters ONTAP sur site (si vous disposez d'une connexion entre votre environnement cloud et votre environnement sur site). Vous pouvez également utiliser BlueXP Backup and Recovery pour sauvegarder les volumes Cloud Volumes ONTAP dans les régions commerciales AWS et Azure. Aucun autre service BlueXP n'est pris en charge dans ce type de déploiement, à l'exception du portefeuille digital BlueXP.
-+
-La région cloud peut être une région pour des agences américaines sécurisées comme AWS C2S/SC2S, Azure IL6 ou n'importe quelle région commerciale.
-
-+
-Pour commencer, installez manuellement le logiciel Connector, connectez-vous à la console BlueXP exécutée sur le connecteur, ajoutez votre licence BYOL au portefeuille digital BlueXP, puis déployez Cloud Volumes ONTAP.
-
-+
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["Installez le connecteur dans un emplacement sans accès à Internet"^]
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#access-the-local-ui["Accéder à la console BlueXP sur le connecteur"^]
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["Ajouter une licence non attribuée"^]
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-overview-cvo.html["Lancez-vous avec Cloud Volumes ONTAP"^]
-
-
-* Connector vous permet désormais d'ajouter et de gérer des compartiments Amazon S3 à partir de BlueXP.
-+
-https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["Découvrez comment ajouter de nouveaux compartiments Amazon S3 dans votre compte AWS à partir de BlueXP"^].
-
-* Cette version du connecteur inclut des améliorations Cloud Volumes ONTAP.
-+
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-march-2023["Découvrez les améliorations apportées à Cloud Volumes ONTAP"^]
 
 
 
@@ -199,23 +175,23 @@ La possibilité de créer et de gérer Azure NetApp Files directement à partir 
 
 
 
+=== 07 mai 2023
+
+* Lorsque vous créez un environnement de travail, vous pouvez désormais utiliser BlueXP link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["générer un groupe de sécurité"^] Qui autorise le trafic dans le VPC sélectionné uniquement. Cette fonction link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["nécessite des autorisations supplémentaires"^].
+* Vous pouvez en option link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#create-volumes["autres"^] et link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-fsx-volumes.html#manage-volume-tags["modifier"^] balises pour catégoriser les volumes.
+
+
+
+
 === 02 avril 2023
 
-* C'est possible maintenant link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#create-volumes["Créez un FlexGroup sur FSX pour ONTAP"^] des volumes qui distribuent les données de volume au sein du cluster.
-* La limite IOPS est augmentée pour permettre un provisionnement manuel ou automatique jusqu'à 160,000.
-
+La limite IOPS est augmentée pour permettre un provisionnement manuel ou automatique jusqu'à 160,000.
 
 
 
 === 05 mars 2023
 
 Des améliorations ont été apportées à l'interface utilisateur et des captures d'écran ont été mises à jour dans la documentation.
-
-
-
-=== 01 janvier 2023
-
-Vous pouvez maintenant choisir d'activer link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html#manage-automatic-capacity["gestion automatique de la capacité"^] pour ajouter du stockage incrémentiel à la demande. La gestion automatique de la capacité interroge le cluster à intervalles réguliers afin d'évaluer la demande et augmente automatiquement la capacité de stockage par incréments de 10 % à 80 % de la capacité maximale du cluster.
 
 
 
@@ -944,6 +920,30 @@ https://docs.netapp.com/us-en/active-iq/index.html["En savoir plus sur le consei
 
 
 
+=== 7 mai 2023
+
+
+
+==== Offres privées Google Cloud
+
+Le portefeuille digital BlueXP identifie désormais les abonnements Google Cloud Marketplace associés à une offre privée et affiche la date de fin et la durée de l'abonnement. Cette amélioration vous permet de vérifier que vous avez bien accepté l'offre privée et de valider ses conditions.
+
+
+
+==== Répartition de l'utilisation de la charge
+
+Vous pouvez désormais connaître les frais facturés lorsque vous souscrivez à des licences basées sur la capacité. Les types de rapports d'utilisation suivants sont disponibles au téléchargement depuis le portefeuille digital BlueXP. Les rapports d'utilisation fournissent des détails sur la capacité de vos abonnements et vous indiquent comment vous facturez les ressources de vos abonnements Cloud Volumes ONTAP. Les rapports téléchargeables peuvent être facilement partagés avec d'autres personnes.
+
+* Utilisation du package Cloud Volumes ONTAP
+* Utilisation générale
+* Utilisation des VM de stockage
+* Utilisation des volumes
+
+
+Pour plus d'informations, voir link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["Gestion des licences basées sur la capacité"].
+
+
+
 === 3 avril 2023
 
 
@@ -975,20 +975,6 @@ https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-license
 Vos abonnements PAYGO et vos contrats annuels pour BlueXP sont désormais disponibles. Vous pouvez les consulter et les gérer à partir du portefeuille digital BlueXP.
 
 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-subscriptions.html["Découvrez comment gérer vos abonnements"].
-
-
-
-=== 18 septembre 2022
-
-
-
-==== E/S optimisées et capacité WORM
-
-Le portefeuille digital BlueXP affiche désormais un résumé du pack de licences d'E/S optimisées et de la capacité WORM provisionnée pour les systèmes Cloud Volumes ONTAP de votre compte.
-
-Ces informations vous permettront de mieux comprendre la facturation et l'achat de capacité supplémentaire.
-
-https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["Découvrez comment afficher la capacité consommée dans votre compte"].
 
 
 
