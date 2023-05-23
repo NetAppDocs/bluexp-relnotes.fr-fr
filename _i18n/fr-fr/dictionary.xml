@@ -73,7 +73,6 @@
   <block id="00b4c4979fe8d65dc663ea7c82a1b1c2" category="paragraph"><block ref="ddc85a18edb3f9e32810e603b7ef9eb7" category="inline-link-rx"></block>.</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link">En savoir plus &gt;&gt;</block>
   <block id="a67ce68ccac082ad54a552bdbcb6ecd7" category="section-title">Notifications par e-mail</block>
-  <block id="440be74a67502f9c3d55890782329328" category="paragraph">Les modifications suivantes ont été introduites avec la version 3.9.22 du connecteur.</block>
   <block id="a3c559e0541e9bb860178ce6fe414224" category="section-title">Cloud Volumes Service pour GCP</block>
   <block id="a633f0835832cc75f5a83248a8aa2ba8" category="section-title">9 septembre 2020</block>
   <block id="8751230100c974b7c3ae5adae22c0f7c" category="section-title">Prise en charge de Cloud Volumes Service pour Google Cloud</block>
@@ -128,14 +127,6 @@
   <block id="084fbbb062290ef487eac98d44edd278" category="paragraph">Quand <block ref="44765f3a3e8511cc80b0083ae1e5f436" category="inline-link-macro-rx"></block>, vous pouvez maintenant activer l'économie de classe de stockage pour le stockage en mode bloc ou système de fichiers.</block>
   <block id="423e555c5ec3885f2bb5d9d2d6627f63" category="section-title">Contrôle</block>
   <block id="7e69e168ccaec126378a9fc9829b1a86" category="paragraph">Le service de surveillance a été retiré le 1er novembre 2022. Vous pouvez désormais accéder directement à Cloud Insights à partir du menu de navigation et sélectionner *Insights &gt; observabilité*.</block>
-  <block id="c8328d07fc05c4708c68f547ce6f5e77" category="section-title">Nouvelle page de présentation</block>
-  <block id="8e41db9b51f790909ef80a064153f722" category="paragraph">Nous avons introduit une nouvelle page de présentation qui contient des informations clés sur un cluster ONTAP sur site. Par exemple, vous pouvez désormais afficher des informations telles que l'efficacité du stockage, la distribution de la capacité et les informations système.</block>
-  <block id="fba766c98683be4af93f93b5d7909f1e" category="inline-image-macro">Capture d'écran affichant la page Présentation d'un cluster ONTAP sur site.</block>
-  <block id="5277a2f54c2173b12f8eb86ae9da078e" category="paragraph"><block ref="5277a2f54c2173b12f8eb86ae9da078e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c76ff3fb4e35074fc6f04c1cb8ea02af" category="section-title">Volumes redéfinis</block>
-  <block id="99cbfcbab5c608668044fc3849d8db46" category="paragraph">Nous avons repensé la page volumes pour fournir un récapitulatif des volumes d'un cluster. Le récapitulatif présente le nombre total de volumes, la quantité de capacité provisionnée, la capacité utilisée et réservée, ainsi que la quantité de données hiérarchisées.</block>
-  <block id="2f82cdfc06b6747c85937b5cceabaaee" category="inline-image-macro">Capture d'écran présentant la page volumes d'un cluster ONTAP sur site.</block>
-  <block id="bb4feb07894e787f9d7a8a9c00fa4d55" category="paragraph"><block ref="bb4feb07894e787f9d7a8a9c00fa4d55" category="inline-image-macro-rx" type="image"></block></block>
   <block id="638be56d4cf930b576e6dc1300c7c33b" category="section-title">18 septembre 2022</block>
   <block id="168c5915eb40be2beb0ac04f286489ba" category="section-title">FSX pour ONTAP vers Cloud Volumes ONTAP</block>
   <block id="6aa89747141f6b258796889b4e964d01" category="paragraph">Vous pouvez désormais répliquer des données d'un système de fichiers Amazon FSX pour ONTAP vers Cloud Volumes ONTAP.</block>
@@ -159,17 +150,6 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Communauté NetApp</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Webinaires sur le cloud</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">Toute la documentation BlueXP</block>
-  <block id="83ec139c80a3d5b2f11f1a94eed47cd2" category="section-title">4 décembre 2022</block>
-  <block id="612111851a1740ab34a9d35045621084" category="paragraph">Les modifications suivantes ont été introduites avec la version 3.9.24 du connecteur.</block>
-  <block id="bad2ca9843e053dbde9d0f5cf2f18a7b" category="section-title">Une nouvelle façon de découvrir les clusters ONTAP sur site</block>
-  <block id="d69d6ceca70ae4e3b7cf6949930f5168" category="paragraph">Vous pouvez désormais découvrir directement vos clusters ONTAP sur site sans utiliser de connecteur. Cette option permet de gérer le cluster via System Manager uniquement. Vous ne pouvez pas activer de services de données BlueXP sur ce type d'environnement de travail.</block>
-  <block id="336404297eaddf0051e1d62c3d3bb48e" category="inline-link">En savoir plus sur cette option de découverte et de gestion</block>
-  <block id="7b755afb39a1416600c762f9fe472d98" category="paragraph"><block ref="72c8a0f1bc00bb52f3d78997feb64e77" category="inline-link-rx"></block>.</block>
-  <block id="ee1ef6cf0f3971b44eb2abcac958fb8d" category="section-title">Volumes FlexGroup</block>
-  <block id="3fb631a563e0a478dc6771d75c7f7094" category="paragraph">Pour les clusters ONTAP sur site découverts via un connecteur, la vue standard de BlueXP représente désormais les volumes FlexGroup créés via System Manager ou l'interface de ligne de commande ONTAP. Vous pouvez également gérer ces volumes en les clonant, en modifiant leurs paramètres, en les supprimant, et plus encore.</block>
-  <block id="2907843476579cb2696e8e0e783a2a07" category="inline-image-macro">Copie d'écran montrant un volume FlexGroup sur la page volumes pour un cluster ONTAP sur site.</block>
-  <block id="aa60f08e9c5a748d9b57c0e7689a43f5" category="paragraph"><block ref="aa60f08e9c5a748d9b57c0e7689a43f5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1c081854506aed2f757f753e779bc45f" category="paragraph">BlueXP ne prend pas en charge la création de volumes FlexGroup. Vous devez continuer à utiliser System Manager ou l'interface de ligne de commandes pour créer des volumes FlexGroup.</block>
   <block id="5c0fff562b33dc0a5a3acac30ed2d313" category="section-title">6 décembre 2022</block>
   <block id="c7360b05ac6a5646b2770ea0c162d4fb" category="inline-link">En savoir plus sur les relations de synchronisation prises en charge</block>
   <block id="623dda645e4d20988b8c1d61423da14e" category="paragraph"><block ref="f9c4f71cab183e7ba62e68df19c3dfe9" category="inline-link-rx"></block>.</block>
@@ -184,7 +164,6 @@
   <block id="56ef2682280ac110060b881925a87b80" category="inline-link">Google Cloud</block>
   <block id="3a580f142203677f1f0bc30898f63f53" category="inline-link">Azure</block>
   <block id="f2e4e4f7b0b864863bfac74f4383a826" category="section-title">Enregistrer les informations d'identification ONTAP</block>
-  <block id="6a28e623eb98d9eb0799ab2c472620f3" category="paragraph">Lorsque vous ouvrez un environnement de travail ONTAP sur site qui a été découvert directement sans utiliser de connecteur, il est désormais possible d'enregistrer les identifiants du cluster ONTAP. Il n'est donc pas nécessaire de les saisir à chaque ouverture de l'environnement de travail.</block>
   <block id="8a08a7490f38dacd86c415a138d60aea" category="inline-link">En savoir plus sur cette option.</block>
   <block id="b269330dc42e4f7fc82bba99c0dd5fd7" category="paragraph"><block ref="b269330dc42e4f7fc82bba99c0dd5fd7" category="inline-link-rx"></block></block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">Blogs BlueXP</block>
@@ -275,7 +254,6 @@
   <block id="1f98df6cf22b8e11ecbe762c7b523860" category="list-text">Si vous ne disposez pas d'un connecteur ou si votre connecteur ne dispose pas d'une connexion au cluster ONTAP, BlueXP utilise automatiquement l'option de détection et de gestion directes.</block>
   <block id="873b328fabdfb8db13a38e03c836d37b" category="inline-link">En savoir plus sur les options de découverte et de gestion</block>
   <block id="d74db5b2b9703b60c98aead9c3c3275e" category="paragraph"><block ref="9ba91f2cd50d4cdc6a75347f1fff1126" category="inline-link-rx"></block>.</block>
-  <block id="d35ea0fa6a3d81047f0a36a7dfac1c07" category="paragraph">Vous pouvez également afficher des informations détaillées sur l'intégration avec d'autres services BlueXP permettant le Tiering des données, la réplication des données et les sauvegardes.</block>
   <block id="efc0c4f71709b261c273fb935757cfae" category="section-title">Résilience opérationnelle</block>
   <block id="7907a1fccb5b8aa9b8df8283d3705052" category="list-text"><block ref="7907a1fccb5b8aa9b8df8283d3705052" category="inline-link-rx"></block></block>
   <block id="92900172340dbf6ba4b3454580c7583b" category="list-text"><block ref="92900172340dbf6ba4b3454580c7583b" category="inline-link-rx"></block></block>
@@ -290,8 +268,6 @@
   <block id="d1624b8f3b686e981a178c03616a370b" category="inline-link">En savoir plus sur le paramètre exclure les répertoires</block>
   <block id="c73e2e476b1a94d1d032f8e0828dcd20" category="paragraph"><block ref="f4b5f7467e10befa1f2855925c118fa5" category="inline-link-rx"></block>.</block>
   <block id="2dfd965acb2426b281b13a70df99c06b" category="paragraph">Les modifications suivantes ont été introduites avec la version 3.9.28 du connecteur.</block>
-  <block id="671e2a59b2bfa852def9660bf14badde" category="section-title">Amélioration du portefeuille digital</block>
-  <block id="d3ab2a9ddd985032aa120324e6da3710" category="paragraph">Le portefeuille digital affiche désormais la capacité sous licence achetée avec des offres privées Marketplace.</block>
   <block id="207aaa44f72ba634c18fcc9bae44d655" category="inline-link">Découvrez comment afficher la capacité consommée dans votre compte</block>
   <block id="6ee7d527518e93562cc9e691d20fb1d5" category="section-title">Prise en charge des commentaires lors de la création du volume</block>
   <block id="ac14eb6382fa5b619966ba72622ecd3f" category="paragraph">Cette version vous permet de faire des commentaires lors de la création d'un volume Cloud Volumes ONTAP FlexGroup ou d'un volume FlexVol lors de l'utilisation de l'API.</block>
@@ -493,12 +469,10 @@
   <block id="93c8b08c928ba95dab5c066b4611e000" category="section-title">Les opérations de restauration au niveau des dossiers sont désormais prises en charge à partir du stockage d'archives et des sauvegardes verrouillées</block>
   <block id="2f57132a5aa255f3e276ff3b62b985c8" category="paragraph">Si un fichier de sauvegarde a été configuré avec la protection DataLock &amp; ransomware, ou si le fichier de sauvegarde réside dans un stockage d'archivage, les opérations de restauration au niveau des dossiers sont prises en charge si le cluster exécute ONTAP 9.13.1 ou une version ultérieure.</block>
   <block id="8cb8abb20ae0b2e7c64136ae92b2250d" category="section-title">Les clés gérées par le client entre régions et projets sont prises en charge lors de la sauvegarde de volumes dans Google Cloud</block>
-  <block id="562c459140eec7ec934af0554f42baab" category="paragraph">Vous pouvez désormais choisir un compartiment qui se trouve dans un projet différent de celui des clés de chiffrement gérées par le client (CMEK).</block>
   <block id="679a2d98f8c7c05c4944b0d161a6d567" category="section-title">Les régions AWS Chine sont désormais prises en charge pour les fichiers de sauvegarde</block>
   <block id="aad236ec8e2b61a79fb4bb3a416a2e06" category="paragraph">Les régions AWS China Beijing (cn-North-1) et Ningxia (cn-Northwest-1) sont désormais prises en charge en tant que destinations pour vos fichiers de sauvegarde si le cluster exécute ONTAP 9.12.1 ou une version ultérieure.</block>
   <block id="c93bfe725726f47fe3bfcc0e95f8ec7d" category="inline-link">Sauvegarde des données ONTAP sur site dans Amazon S3</block>
   <block id="afe182ec329d300711f89a81223f8fe1" category="paragraph">Notez que les règles IAM attribuées à BlueXP Connector doivent modifier le nom de ressource AWS « arn » sous toutes les sections _Resource_ de « aws » à « aws-cn », par exemple « arn:aws-cn:s3:::netapp-backup-* ». Voir<block ref="0607f60a93455f62c98c67f333a631e0" category="inline-link-rx"></block> et<block ref="98f7c8e7ee596af91f0142606f0617c9" category="inline-link-rx"></block> pour plus d'informations.</block>
-  <block id="5db93da6e314f6aa0349c5e8f35f4b9a" category="paragraph">Les tâches lancées par le système, telles que les opérations de sauvegarde en cours, sont désormais disponibles dans l'onglet *surveillance des tâches* pour les systèmes ONTAP sur site exécutant ONTAP 9.13.1 ou version ultérieure. Les versions précédentes de ONTAP affichent uniquement les travaux initiés par l'utilisateur.</block>
   <block id="4d5789e8f025b3895d94f1b6a7225e4a" category="list-text">La sauvegarde et la restauration BlueXP pour les applications (hybrides) sont pilotées par le plan de contrôle SaaS</block>
   <block id="53eb0fdde70aa10525b581e17b5d6f86" category="paragraph">Vous pouvez désormais sauvegarder les données à partir de systèmes Cloud Volumes ONTAP installés dans les régions commerciales AWS, Azure et GCP en « mode restreint ». Pour cela, vous devez d'abord installer le connecteur dans la région commerciale « restreinte ».<block ref="18611796b9b4332697b6f9bb72b16e0b" category="inline-link-rx"></block>. Voir<block ref="0607f60a93455f62c98c67f333a631e0" category="inline-link-rx"></block> et<block ref="d878e312b2f9cdcef2f8eccaa51619ee" category="inline-link-rx"></block>.</block>
   <block id="f1a109ae8d953da8e05cf5534df6b22b" category="list-text">Les opérations de sauvegarde et de restauration initiées par l'utilisateur à partir de l'interface utilisateur et de l'API de sauvegarde et de restauration BlueXP, ainsi que les tâches initiées par le système, telles que les opérations de sauvegarde en continu, sont désormais disponibles dans l'onglet *surveillance des tâches* pour les systèmes Cloud Volumes ONTAP exécutant ONTAP 9.13.0 ou version ultérieure. Les versions précédentes de ONTAP affichent uniquement les travaux initiés par l'utilisateur.</block>
@@ -518,4 +492,18 @@
   <block id="30033019c9002410c1dee9e19900cb24" category="paragraph"><block ref="e9b17dee7c6de8c1de2830a91fd1865f" category="inline-link-rx"></block>.</block>
   <block id="6e3d9df489c437a2601f627a5b8935c9" category="paragraph">L'onglet Licensing a été supprimé de l'interface de Tiering BlueXP. Toutes les licences pour les abonnements PAYGO sont maintenant accessibles depuis le tableau de bord du Tiering BlueXP sur site. Il existe également un lien vers le portefeuille digital BlueXP depuis cette page pour afficher et gérer n'importe quel modèle de Tiering BlueXP BYOL (Bring Your Own License).</block>
   <block id="f6e3b39522072e9cb3b0ffb8cecf9b0b" category="paragraph">L'onglet « clusters » a été renommé « clusters » et l'onglet « Présentation sur site » a été renommé « Tableau de bord sur site ». Ces pages ont ajouté des informations qui vous aideront à déterminer si vous pouvez optimiser votre espace de stockage avec une configuration de hiérarchisation supplémentaire.</block>
+  <block id="5afb323d4a36e6ab79cd9d765c5934f7" category="inline-link">En savoir plus sur la configuration de vos propres clés de chiffrement gérées par le client</block>
+  <block id="82e4d7bffd878c91fac874e48e729020" category="paragraph">Vous pouvez désormais choisir un compartiment qui se trouve dans un projet différent de celui des clés de chiffrement gérées par le client (CMEK).<block ref="c27debe559c9dc72a10bc811f768bbff" category="inline-link-rx"></block>.</block>
+  <block id="c325ed37b6a44d9e765cfd2dd7779cfb" category="paragraph">Les tâches lancées par le système, telles que les opérations de sauvegarde en cours, sont désormais disponibles dans l'onglet *surveillance des tâches* pour les systèmes ONTAP sur site exécutant ONTAP 9.13.1 ou version ultérieure. Les versions précédentes de ONTAP affichent uniquement les travaux initiés par l'utilisateur.</block>
+  <block id="24794b3bdde84ec6ccbec9ca5a92cf43" category="section-title">Amélioration du portefeuille digital BlueXP</block>
+  <block id="ca8d7ad5e36d40f4e29b0a489cf94294" category="paragraph">Le portefeuille digital BlueXP affiche désormais la capacité sous licence que vous avez achetée avec des offres privées Marketplace.</block>
+  <block id="7e43a762816453626bbf35533afa1755" category="section-title">4 mai 2023</block>
+  <block id="4addbe3fd43e1a48fd8eb999d5f3b487" category="section-title">Sauvegardez et restaurez vos données BlueXP</block>
+  <block id="f5303ee41218fc978c78d7744749c918" category="inline-link-macro">En savoir plus sur l'activation de la sauvegarde et de la restauration BlueXP</block>
+  <block id="b4dac87ad594b04c0dcd76d4227b5f53" category="paragraph">Depuis ONTAP 9.13.1, vous pouvez utiliser System Manager (vue avancée) pour activer la sauvegarde et la restauration BlueXP si vous avez découvert le cluster à l'aide d'un connecteur. <block ref="e052ae4f2be0dcbae408a5e7fa45055e" category="inline-link-macro-rx"></block></block>
+  <block id="f3d662d271f05f454f32718233b273b8" category="section-title">Mettez à niveau l'image de la version ONTAP et le micrologiciel du matériel</block>
+  <block id="31599c36bc63510a259d9bd99e50d225" category="inline-link-macro">En savoir plus sur la mise à niveau du ONTAP et du micrologiciel</block>
+  <block id="8fc7dd0bb44c44f9797d86872cb017cc" category="paragraph">Depuis ONTAP 9.10.1, vous pouvez utiliser System Manager (vue avancée) pour mettre à niveau l'image de la version ONTAP et le micrologiciel du matériel. Vous pouvez choisir de recevoir des mises à niveau automatiques pour rester à jour, ou d'effectuer des mises à jour manuelles à partir de votre machine locale ou d'un serveur accessible via BlueXP. <block ref="d994c74c98eb05bb27c8a6afc3cc2159" category="inline-link-macro-rx"></block></block>
+  <block id="09dfe5e2e7b8574b925ad72bc7875409" category="admonition">Si vous ne possédez pas de connecteur, vous ne pouvez pas effectuer de mises à jour à partir de votre ordinateur local, uniquement à partir d'un serveur auquel vous pouvez accéder à l'aide de BlueXP.</block>
+  <block id="7d830b76e4f0014bb7468c045f40070d" category="paragraph">Lorsque vous ouvrez un environnement de travail ONTAP sur site découvert directement sans utiliser de connecteur, vous avez désormais la possibilité d'enregistrer vos identifiants de cluster ONTAP afin que vous n'ayez pas besoin de les saisir à chaque ouverture de l'environnement de travail.</block>
 </blocks>

@@ -225,7 +225,7 @@ Si un fichier de sauvegarde a été configuré avec la protection DataLock & ran
 
 ==== Les clés gérées par le client entre régions et projets sont prises en charge lors de la sauvegarde de volumes dans Google Cloud
 
-Vous pouvez désormais choisir un compartiment qui se trouve dans un projet différent de celui des clés de chiffrement gérées par le client (CMEK).
+Vous pouvez désormais choisir un compartiment qui se trouve dans un projet différent de celui des clés de chiffrement gérées par le client (CMEK). https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-to-gcp.html#preparing-google-cloud-storage-for-backups["En savoir plus sur la configuration de vos propres clés de chiffrement gérées par le client"].
 
 
 
@@ -528,9 +528,9 @@ La région de Turin est désormais prise en charge dans Google Cloud pour Cloud 
 
 
 
-==== Amélioration du portefeuille digital
+==== Amélioration du portefeuille digital BlueXP
 
-Le portefeuille digital affiche désormais la capacité sous licence achetée avec des offres privées Marketplace.
+Le portefeuille digital BlueXP affiche désormais la capacité sous licence que vous avez achetée avec des offres privées Marketplace.
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["Découvrez comment afficher la capacité consommée dans votre compte"^].
 
@@ -923,6 +923,25 @@ Le service de surveillance a été retiré le 1er novembre 2022. Vous pouvez dé
 
 
 
+=== 4 mai 2023
+
+
+
+==== Sauvegardez et restaurez vos données BlueXP
+
+Depuis ONTAP 9.13.1, vous pouvez utiliser System Manager (vue avancée) pour activer la sauvegarde et la restauration BlueXP si vous avez découvert le cluster à l'aide d'un connecteur. link:https://docs.netapp.com/us-en/ontap/task_cloud_backup_data_using_cbs.html["En savoir plus sur l'activation de la sauvegarde et de la restauration BlueXP"^]
+
+
+
+==== Mettez à niveau l'image de la version ONTAP et le micrologiciel du matériel
+
+Depuis ONTAP 9.10.1, vous pouvez utiliser System Manager (vue avancée) pour mettre à niveau l'image de la version ONTAP et le micrologiciel du matériel. Vous pouvez choisir de recevoir des mises à niveau automatiques pour rester à jour, ou d'effectuer des mises à jour manuelles à partir de votre machine locale ou d'un serveur accessible via BlueXP. link:https://docs.netapp.com/us-en/ontap/task_admin_update_firmware.html#prepare-for-firmware-update["En savoir plus sur la mise à niveau du ONTAP et du micrologiciel"^]
+
+
+NOTE: Si vous ne possédez pas de connecteur, vous ne pouvez pas effectuer de mises à jour à partir de votre ordinateur local, uniquement à partir d'un serveur auquel vous pouvez accéder à l'aide de BlueXP.
+
+
+
 === 3 avril 2023
 
 
@@ -951,57 +970,9 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 ==== Enregistrer les informations d'identification ONTAP
 
-Lorsque vous ouvrez un environnement de travail ONTAP sur site qui a été découvert directement sans utiliser de connecteur, il est désormais possible d'enregistrer les identifiants du cluster ONTAP. Il n'est donc pas nécessaire de les saisir à chaque ouverture de l'environnement de travail.
+Lorsque vous ouvrez un environnement de travail ONTAP sur site découvert directement sans utiliser de connecteur, vous avez désormais la possibilité d'enregistrer vos identifiants de cluster ONTAP afin que vous n'ayez pas besoin de les saisir à chaque ouverture de l'environnement de travail.
 
 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-manage-ontap-direct.html["En savoir plus sur cette option."]
-
-
-
-=== 4 décembre 2022
-
-Les modifications suivantes ont été introduites avec la version 3.9.24 du connecteur.
-
-
-
-==== Une nouvelle façon de découvrir les clusters ONTAP sur site
-
-Vous pouvez désormais découvrir directement vos clusters ONTAP sur site sans utiliser de connecteur. Cette option permet de gérer le cluster via System Manager uniquement. Vous ne pouvez pas activer de services de données BlueXP sur ce type d'environnement de travail.
-
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["En savoir plus sur cette option de découverte et de gestion"].
-
-
-
-==== Volumes FlexGroup
-
-Pour les clusters ONTAP sur site découverts via un connecteur, la vue standard de BlueXP représente désormais les volumes FlexGroup créés via System Manager ou l'interface de ligne de commande ONTAP. Vous pouvez également gérer ces volumes en les clonant, en modifiant leurs paramètres, en les supprimant, et plus encore.
-
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-flexgroup-volumes.png["Copie d'écran montrant un volume FlexGroup sur la page volumes pour un cluster ONTAP sur site."]
-
-BlueXP ne prend pas en charge la création de volumes FlexGroup. Vous devez continuer à utiliser System Manager ou l'interface de ligne de commandes pour créer des volumes FlexGroup.
-
-
-
-=== 18 septembre 2022
-
-Les modifications suivantes ont été introduites avec la version 3.9.22 du connecteur.
-
-
-
-==== Nouvelle page de présentation
-
-Nous avons introduit une nouvelle page de présentation qui contient des informations clés sur un cluster ONTAP sur site. Par exemple, vous pouvez désormais afficher des informations telles que l'efficacité du stockage, la distribution de la capacité et les informations système.
-
-Vous pouvez également afficher des informations détaillées sur l'intégration avec d'autres services BlueXP permettant le Tiering des données, la réplication des données et les sauvegardes.
-
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-overview.png["Capture d'écran affichant la page Présentation d'un cluster ONTAP sur site."]
-
-
-
-==== Volumes redéfinis
-
-Nous avons repensé la page volumes pour fournir un récapitulatif des volumes d'un cluster. Le récapitulatif présente le nombre total de volumes, la quantité de capacité provisionnée, la capacité utilisée et réservée, ainsi que la quantité de données hiérarchisées.
-
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-volumes.png["Capture d'écran présentant la page volumes d'un cluster ONTAP sur site."]
 
 
 
