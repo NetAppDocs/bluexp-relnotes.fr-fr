@@ -21,42 +21,42 @@ Affichez l'ensemble des notes de version pour chaque service.
 
 == L'administration
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/whats-new.html["Configuration et administration"^]
+https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html["Configuration et administration"^]
 
 
 
 == Stockage
 
-* https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/whats-new.html["Azure NetApp Files"^]
-* https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/whats-new.html["Amazon FSX pour ONTAP"^]
+* https://docs.netapp.com/us-en/bluexp-azure-netapp-files/whats-new.html["Azure NetApp Files"^]
+* https://docs.netapp.com/us-en/bluexp-fsx-ontap/whats-new.html["Amazon FSX pour ONTAP"^]
 * https://docs.netapp.com/us-en/bluexp-s3-storage/whats-new.html["Le stockage Amazon S3"^]
 * Cloud Volumes ONTAP
 +
 ** https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Notes de version pour Cloud Volumes ONTAP"^]
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Notes de version pour la gestion Cloud Volumes ONTAP dans BlueXP"^]
+** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Notes de version pour la gestion Cloud Volumes ONTAP dans BlueXP"^]
 
 
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-service-gcp/whats-new.html["Cloud Volumes Service pour Google Cloud"^]
-* https://docs.netapp.com/us-en/cloud-manager-e-series/whats-new.html["Systèmes E-Series"^]
-* https://docs.netapp.com/us-en/cloud-manager-kubernetes/whats-new.html["Clusters Kubernetes"^]
-* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html["Clusters ONTAP sur site"^]
-* https://docs.netapp.com/us-en/cloud-manager-storagegrid/whats-new.html["StorageGRID"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-service-gcp/whats-new.html["Cloud Volumes Service pour Google Cloud"^]
+* https://docs.netapp.com/us-en/bluexp-e-series/whats-new.html["Systèmes E-Series"^]
+* https://docs.netapp.com/us-en/bluexp-kubernetes/whats-new.html["Clusters Kubernetes"^]
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html["Clusters ONTAP sur site"^]
+* https://docs.netapp.com/us-en/bluexp-storagegrid/whats-new.html["StorageGRID"^]
 
 
 
 
 == Services de données
 
-* https://docs.netapp.com/us-en/cloud-manager-backup-restore/whats-new.html["Sauvegarde et restauration"^]
-* https://docs.netapp.com/us-en/cloud-manager-data-sense/whats-new.html["Classement"^]
-* https://docs.netapp.com/us-en/cloud-manager-compute/whats-new.html["OPS cloud"^]
-* https://docs.netapp.com/us-en/cloud-manager-sync/whats-new.html["Copie et synchronisation"^]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["Sauvegarde et restauration"^]
+* https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["Classement"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-ops/whats-new.html["OPS cloud"^]
+* https://docs.netapp.com/us-en/bluexp-copy-sync/whats-new.html["Copie et synchronisation"^]
 * https://docs.netapp.com/us-en/bluexp-digital-wallet/index.html["Portefeuille digital"^]
 * https://docs.netapp.com/us-en/bluexp-economic-efficiency/index.html["Efficacité économique"^]
-* https://docs.netapp.com/us-en/cloud-manager-file-cache/whats-new.html["La mise en cache en périphérie"^]
+* https://docs.netapp.com/us-en/bluexp-edge-caching/whats-new.html["La mise en cache en périphérie"^]
 * https://docs.netapp.com/us-en/bluexp-operational-resiliency/index.html["Résilience opérationnelle"^]
-* https://docs.netapp.com/us-en/cloud-manager-ransomware/whats-new.html["Protection par ransomware"^]
-* https://docs.netapp.com/us-en/cloud-manager-app-template/whats-new.html["Résolution"^]
-* https://docs.netapp.com/us-en/cloud-manager-replication/whats-new.html["La réplication"^]
-* https://docs.netapp.com/us-en/cloud-manager-tiering/whats-new.html["Tiering"^]
+* https://docs.netapp.com/us-en/bluexp-ransomware-protection/whats-new.html["Protection par ransomware"^]
+* https://docs.netapp.com/us-en/bluexp-remediation/whats-new.html["Résolution"^]
+* https://docs.netapp.com/us-en/bluexp-replication/whats-new.html["La réplication"^]
+* https://docs.netapp.com/us-en/bluexp-tiering/whats-new.html["Tiering"^]
 
