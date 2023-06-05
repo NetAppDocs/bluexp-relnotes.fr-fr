@@ -27,6 +27,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html["Configuration e
 
 == Stockage
 
+* https://docs.netapp.com/us-en/bluexp-blob-storage/index.html["Stockage Azure Blob"^]
 * https://docs.netapp.com/us-en/bluexp-azure-netapp-files/whats-new.html["Azure NetApp Files"^]
 * https://docs.netapp.com/us-en/bluexp-fsx-ontap/whats-new.html["Amazon FSX pour ONTAP"^]
 * https://docs.netapp.com/us-en/bluexp-s3-storage/whats-new.html["Le stockage Amazon S3"^]
@@ -39,6 +40,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html["Configuration e
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-service-gcp/whats-new.html["Cloud Volumes Service pour Google Cloud"^]
 * https://docs.netapp.com/us-en/bluexp-e-series/whats-new.html["Systèmes E-Series"^]
 * https://docs.netapp.com/us-en/bluexp-kubernetes/whats-new.html["Clusters Kubernetes"^]
+* https://docs.netapp.com/us-en/bluexp-reports/release-notes/whats-new.html["Rapports de migration"^]
 * https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html["Clusters ONTAP sur site"^]
 * https://docs.netapp.com/us-en/bluexp-storagegrid/whats-new.html["StorageGRID"^]
 
@@ -59,4 +61,5 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html["Configuration e
 * https://docs.netapp.com/us-en/bluexp-remediation/whats-new.html["Résolution"^]
 * https://docs.netapp.com/us-en/bluexp-replication/whats-new.html["La réplication"^]
 * https://docs.netapp.com/us-en/bluexp-tiering/whats-new.html["Tiering"^]
+* https://docs.netapp.com/us-en/bluexp-volume-caching/release-notes/cache-whats-new.html["Mise en cache du volume"^]
 

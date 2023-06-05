@@ -33,6 +33,58 @@ Cette section décrit les nouvelles fonctionnalités liées aux fonctions d'admi
 
 
 
+=== 4 juin 2023
+
+
+
+==== Connecteur 3.9.30
+
+* Lorsque vous ouvrez un dossier de support NetApp à partir du tableau de bord de support, BlueXP ouvre désormais le dossier à l'aide du compte sur le site de support NetApp associé à votre connexion BlueXP. BlueXP utilisait auparavant le compte du site de support NetApp associé à l'ensemble du compte BlueXP.
++
+Cette modification entraîne l'enregistrement d'un compte BlueXP via le compte du site de support NetApp associé à la connexion BlueXP. Auparavant, l'enregistrement du support avait lieu via un compte NSS associé à l'ensemble du compte BlueXP. Par conséquent, les autres utilisateurs BlueXP ne verront pas le même statut d'enregistrement du support s'ils n'ont pas associé de compte sur le site de support NetApp à leur connexion BlueXP. Si vous avez précédemment enregistré votre compte BlueXP pour le support, votre statut d'enregistrement reste valide. Il vous suffit d'ajouter un compte NSS de niveau utilisateur pour voir l'état.
+
++
+** https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#create-a-case-with-netapp-support["Découvrez comment créer un dossier avec le support NetApp"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-user-credentials.html["Découvrez comment gérer les identifiants associés à votre connexion BlueXP"]
+** https://docs.netapp.com/us-en/bluexp-setup-admin/task-support-registration.html["Découvrez comment vous inscrire à de l'aide"]
+
+
+* Vous pouvez désormais rechercher de la documentation à partir de BlueXP. Les résultats de la recherche fournissent maintenant des liens vers le contenu sur docs.netapp.com et kb.netapp.com, ce qui pourrait aider à répondre à une question que vous avez.
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-search-docs.png["Copie d'écran de la recherche BlueXP disponible en haut de la console."]
+
+* Le connecteur est désormais pris en charge dans les régions AWS suivantes :
++
+** Hyderabad (ap-sud-2)
+** Melbourne (ap-sud-est-4)
+** Espagne (ue-Sud-2)
+** Eau (me-centre-1)
+** Zurich (eu-centre-2)
+
+
+* Le connecteur est désormais pris en charge dans les régions Azure suivantes :
++
+** Brésil Sud
+** France Sud
+** Jio Inde Centrale
+** Jio Inde Ouest
+** Pologne Centre
+** Qatar Central
+
+
+* Le connecteur est désormais pris en charge dans les régions Google Cloud suivantes :
++
+** Columbus (US-east5)
+** Dallas (US-south1)
+
+
++
+https://cloud.netapp.com/cloud-volumes-global-regions["Afficher la liste complète des régions prises en charge"^]
+
+
+
+
+
 === 7 mai 2023
 
 
@@ -83,41 +135,17 @@ NOTE: L'introduction du mode restreint remplace l'option d'activation ou de dés
 
 
 
-=== 3 avril 2023
+== Stockage Azure Blob
 
 
 
-==== Connecteur 3.9.28
-
-* Le portefeuille digital BlueXP prend désormais en charge les notifications par e-mail.
-+
-Si vous configurez vos paramètres de notification, vous pouvez recevoir des notifications par e-mail lorsque vos licences BYOL vont expirer (une notification d'avertissement) ou si elles ont déjà expiré (une notification d'erreur).
-
-+
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html["Découvrez comment configurer les notifications par e-mail"].
-
-* Le connecteur est désormais pris en charge dans la région Google Cloud Turin.
-+
-https://cloud.netapp.com/cloud-volumes-global-regions["Afficher la liste complète des régions prises en charge"^]
-
-* Vous pouvez désormais gérer les identifiants utilisateur associés à votre connexion BlueXP : identifiants ONTAP et identifiants NSS (NetApp support site).
-+
-Lorsque vous accédez à *Paramètres > informations d'identification*, vous pouvez afficher les informations d'identification, les mettre à jour et les supprimer. Par exemple, si vous modifiez le mot de passe de ces informations d'identification, vous devez le mettre à jour dans BlueXP.
-
-+
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-user-credentials.html["Découvrez comment gérer les informations d'identification des utilisateurs"].
-
-* Vous pouvez maintenant télécharger des pièces jointes lorsque vous créez un dossier de support ou lorsque vous mettez à jour les notes de dossier pour un dossier de support existant.
-+
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#manage-your-support-cases["Découvrez comment créer et gérer des dossiers de demande de support"].
-
-* Cette version de Connector inclut également des améliorations apportées à Cloud Volumes ONTAP et des clusters ONTAP sur site.
-+
-** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#3-april-2023["Découvrez les améliorations apportées à Cloud Volumes ONTAP"^]
-** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#3-april-2023["Découvrez les améliorations apportées aux clusters sur site de ONTAP"^]
+=== 5 juin 2023
 
 
 
+==== Possibilité d'ajouter de nouveaux comptes de stockage à partir de BlueXP
+
+Vous avez pu afficher Azure Blob Storage sur BlueXP Canvas pendant un certain temps. Vous pouvez désormais ajouter de nouveaux comptes de stockage et modifier les propriétés de comptes de stockage existants directement à partir de BlueXP. https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html["Découvrez comment ajouter de nouveaux comptes de stockage Azure Blob"^].
 
 
 
@@ -175,6 +203,14 @@ La possibilité de créer et de gérer Azure NetApp Files directement à partir 
 
 
 
+=== 04 juin 2023
+
+* Quand link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["création d'un environnement de travail"], vous pouvez spécifier l'heure de début de la fenêtre de maintenance hebdomadaire de 30 minutes pour vous assurer que la maintenance n'entre pas en conflit avec les activités critiques de l'entreprise.
+* Quand link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html["création d'un volume"], Vous pouvez activer l'optimisation des données en créant une FlexGroup pour distribuer les données entre les volumes.
+
+
+
+
 === 07 mai 2023
 
 * Lorsque vous créez un environnement de travail, vous pouvez désormais utiliser BlueXP link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["générer un groupe de sécurité"^] Qui autorise le trafic dans le VPC sélectionné uniquement. Cette fonction link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["nécessite des autorisations supplémentaires"^].
@@ -186,12 +222,6 @@ La possibilité de créer et de gérer Azure NetApp Files directement à partir 
 === 02 avril 2023
 
 La limite IOPS est augmentée pour permettre un provisionnement manuel ou automatique jusqu'à 160,000.
-
-
-
-=== 05 mars 2023
-
-Des améliorations ont été apportées à l'interface utilisateur et des captures d'écran ont été mises à jour dans la documentation.
 
 
 
@@ -460,6 +490,20 @@ Le nouvel état « réussite partielle » indique qu'une action de classificatio
 
 
 
+=== 4 juin 2023
+
+Le changement suivant a été introduit avec la version 3.9.30 du connecteur.
+
+
+
+==== Mise à jour du sélecteur de version de mise à niveau Cloud Volumes ONTAP
+
+Sur la page Cloud Volumes ONTAP de mise à niveau, vous pouvez désormais choisir de mettre à niveau vers la dernière version disponible de Cloud Volumes ONTAP ou une version antérieure.
+
+Pour en savoir plus sur la mise à niveau d'Cloud Volumes ONTAP via BlueXP, consultez la section https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-cloud-volumes-ontap["Mettez à niveau Cloud Volumes ONTAP"^].
+
+
+
 === 7 mai 2023
 
 Les modifications suivantes ont été introduites avec la version 3.9.29 du connecteur.
@@ -513,53 +557,6 @@ Une notification s'affiche désormais chaque fois que vous accédez à Cloud Vol
 
 
 Pour connaître la disponibilité régionale, reportez-vous à la section link:https://bluexp.netapp.com/cloud-volumes-global-regions["Cartes des régions mondiales pour Cloud Volumes ONTAP"^].
-
-
-
-=== 3 avril 2023
-
-Les modifications suivantes ont été introduites avec la version 3.9.28 du connecteur.
-
-
-
-==== La région de Turin est désormais prise en charge dans Google Cloud
-
-La région de Turin est désormais prise en charge dans Google Cloud pour Cloud Volumes ONTAP et le connecteur pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures.
-
-
-
-==== Amélioration du portefeuille digital BlueXP
-
-Le portefeuille digital BlueXP affiche désormais la capacité sous licence que vous avez achetée avec des offres privées Marketplace.
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["Découvrez comment afficher la capacité consommée dans votre compte"^].
-
-
-
-==== Prise en charge des commentaires lors de la création du volume
-
-Cette version vous permet de faire des commentaires lors de la création d'un volume Cloud Volumes ONTAP FlexGroup ou d'un volume FlexVol lors de l'utilisation de l'API.
-
-
-
-==== Nouvelle conception de l'interface utilisateur BlueXP pour les pages de présentation, de volumes et d'agrégats Cloud Volumes ONTAP
-
-BlueXP inclut désormais une interface utilisateur repensée pour les pages Présentation de Cloud Volumes ONTAP, volumes et agrégats. La conception en mosaïque présente des informations plus complètes dans chaque mosaïque pour une meilleure expérience utilisateur.
-
-image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/main/media/screenshot-resource-page-rn.png["Cette capture d'écran présente l'interface utilisateur de BlueXP repensée sur la page de présentation de Cloud Volumes ONTAP. Plusieurs vignettes présentent l'efficacité du stockage, la version, la distribution de la capacité, les informations sur le déploiement Cloud Volumes ONTAP, les volumes, les agrégats, les réplications et les sauvegardes."]
-
-
-
-==== FlexGroup volumes peut être consulté via Cloud Volumes ONTAP
-
-Les volumes FlexGroup créés directement via l'interface de ligne de commande ou System Manager sont désormais visibles dans la mosaïque volumes repensés dans BlueXP. Comme les informations fournies pour les volumes FlexVol, BlueXP fournit des informations détaillées sur les volumes FlexGroup créés via une mosaïque volumes dédiés.
-
-
-NOTE: Actuellement, vous ne pouvez afficher que les volumes FlexGroup existants sous BlueXP. La création de volumes FlexGroup dans BlueXP n'est pas disponible, mais prévue pour une prochaine version.
-
-image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/main/media/screenshot-show-flexgroup-volume.png["Capture d'écran affichant l'icône de volume FlexGroup, placez le curseur de la souris sous la mosaïque volumes."]
-
-link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-volumes.html["En savoir plus sur l'affichage des volumes FlexGroup créés."^]
 
 
 
@@ -743,7 +740,7 @@ Le portefeuille digital BlueXP prend désormais en charge les notifications par 
 
 Si vous configurez vos paramètres de notification, vous pouvez recevoir des notifications par e-mail lorsque vos licences BYOL vont expirer (une notification d'avertissement) ou si elles ont déjà expiré (une notification d'erreur).
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["Découvrez comment configurer les notifications par e-mail"^]
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html["Découvrez comment configurer les notifications par e-mail"^]
 
 
 
@@ -906,6 +903,20 @@ Lors de la configuration de la licence, le système LMS (License Management Serv
 === 06 novembre 2022
 
 Quand link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["définition des classes de stockage"], vous pouvez maintenant activer l'économie de classe de stockage pour le stockage en mode bloc ou système de fichiers.
+
+
+
+== Rapports de migration
+
+
+
+=== 02 juin 2023
+
+Le nouveau service de rapports de migration BlueXP vous permet d'identifier rapidement le nombre de fichiers, de répertoires, de liens symboliques, de liens physiques, la profondeur et l'étendue des arborescences des systèmes de fichiers, les fichiers les plus volumineux et plus encore dans votre environnement de stockage.
+
+Grâce à ces informations, vous saurez à l'avance que le processus que vous souhaitez utiliser peut gérer votre stock efficacement et avec succès.
+
+link:https://docs.netapp.com/us-en/bluexp-reports/get-started/intro.html["En savoir plus sur les rapports de migration BlueXP"].
 
 
 
@@ -1177,3 +1188,17 @@ En raison d'une modification du Tiering BlueXP, vous devez modifier les terminau
 | \https://*.cloudmanager.cloud.netapp.com | \https://*.api.bluexp.netapp.com 
 |===
 Consultez la liste complète des terminaux de votre https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-aws.html#outbound-internet-access["AWS"^], https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-google.html#outbound-internet-access["Google Cloud"^], ou https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-azure.html#outbound-internet-access["Azure"^] de cloud hybride.
+
+
+
+== Mise en cache du volume
+
+
+
+=== 04 juin 2023
+
+La mise en cache des volumes, fonctionnalité du logiciel ONTAP 9, est une fonctionnalité de mise en cache à distance qui simplifie la distribution des fichiers et réduit la latence des réseaux WAN en rapprochant vos utilisateurs et vos ressources de calcul, tout en réduisant les coûts de la bande passante WAN. La mise en cache du volume fournit un volume inscriptible persistant à un emplacement distant. Vous pouvez utiliser la mise en cache du volume BlueXP pour accélérer l'accès aux données ou pour décharger le trafic des volumes fortement sollicités. Les volumes de cache sont parfaitement adaptés aux charges de travail exigeant une capacité de lecture maximale, en particulier lorsque les clients doivent accéder aux mêmes données de manière répétée.
+
+La mise en cache des volumes BlueXP vous offre des fonctionnalités de mise en cache pour le cloud, en particulier pour Amazon FSX pour NetApp ONTAP, Cloud Volumes ONTAP et pour vos environnements de travail sur site.
+
+link:https://docs.netapp.com/us-en/bluexp-volume-caching/get-started/cache-intro.html["En savoir plus sur la mise en cache de volumes BlueXP"].
