@@ -259,6 +259,46 @@ Vous avez depuis longtemps la possibilité d'afficher les compartiments Amazon S
 
 
 
+=== 04 juillet 2023
+
+
+
+==== Améliorations apportées à la sauvegarde et à la restauration BlueXP pour les applications (cloud natif)
+
+* Systèmes SAP HANA
++
+** Prend en charge la connexion et la restauration des copies de volumes non-données et de volumes globaux non-données disposant d'une protection secondaire Azure NetApp Files
+
+
+* Les bases de données Oracle
++
+** Prend en charge la restauration des bases de données Oracle sur Azure NetApp Files vers un autre emplacement
+** Prise en charge du catalogage Oracle Recovery Manager (RMAN) des sauvegardes de bases de données Oracle sur Azure NetApp Files
+** Permet de placer l'hôte de base de données en mode de maintenance pour effectuer des tâches de maintenance
+
+
+
+
+
+
+==== Améliorations apportées à la sauvegarde et à la restauration BlueXP pour les applications (hybride)
+
+* Prend en charge la restauration dans un autre emplacement
+* Vous permet de monter des sauvegardes de bases de données Oracle
+* Prise en charge du déplacement des sauvegardes de GCP vers le Tier d'archivage
+
+
+
+
+==== Améliorations de la sauvegarde et de la restauration BlueXP pour les machines virtuelles (hybride)
+
+* Prend en charge la protection des types de datastores NFS et VMFS
+* Vous permet d'annuler l'enregistrement du plug-in SnapCenter pour l'hôte VMware vSphere
+* Prend en charge l'actualisation et la découverte des derniers datastores et sauvegardes
+
+
+
+
 === 5 juin 2023
 
 
@@ -1198,6 +1238,24 @@ Vous pouvez désormais découvrir vos systèmes StorageGRID directement depuis B
 
 
 
+=== 4 juillet 2023
+
+
+
+==== Vous pouvez désormais ajuster la bande passante utilisée pour télécharger les données inactives vers le stockage objet
+
+Lorsque vous activez le Tiering BlueXP, ONTAP peut utiliser une quantité illimitée de bande passante réseau pour transférer les données inactives des volumes du cluster vers le stockage objet. Si vous remarquez que le trafic de hiérarchisation affecte les charges de travail normales des utilisateurs, vous pouvez limiter la quantité de bande passante qui peut être utilisée pendant le transfert. https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#changing-the-network-bandwidth-available-to-upload-inactive-data-to-object-storage["En savoir plus >>"].
+
+
+
+==== L'événement de hiérarchisation pour « niveau bas » s'affiche dans le Centre de notification
+
+La fonctionnalité de Tiering « transférer des données supplémentaires d'une <name> de cluster vers un stockage objet pour améliorer votre efficacité du stockage » s'affiche désormais sous forme de notification lorsqu'un cluster effectue le Tiering de moins de 20 % de ses données inactives, y compris les clusters qui ne hiérarchise aucune donnée.
+
+Cette notification est une « recommandation » pour vous aider à rendre vos systèmes plus efficaces et à réduire vos coûts de stockage. Il fournit un lien vers le https://bluexp.netapp.com/cloud-tiering-service-tco["Calculateur de coût total de possession et d'économies du Tiering BlueXP"^] pour vous aider à calculer vos économies.
+
+
+
 === 3 avril 2023
 
 
@@ -1221,28 +1279,6 @@ L'onglet « clusters » a été renommé « clusters » et l'onglet « Présenta
 ==== Vous pouvez désormais générer un rapport de hiérarchisation pour vos volumes
 
 Vous pouvez télécharger un rapport depuis la page volumes de Tier pour consulter l'état de Tiering de tous les volumes des clusters que vous gérez. Le Tiering BlueXP génère un fichier .CSV que vous pouvez consulter et envoyer à d'autres personnes de votre entreprise selon les besoins. https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#download-a-tiering-report-for-your-volumes["Téléchargez le rapport sur la hiérarchisation"].
-
-
-
-=== 6 décembre 2022
-
-
-
-==== Modifications du point de terminaison de l'accès Internet sortant du connecteur
-
-En raison d'une modification du Tiering BlueXP, vous devez modifier les terminaux suivants du connecteur pour assurer la réussite de l'opération de Tiering BlueXP :
-
-[cols="50,50"]
-|===
-| Ancien terminal | Nouveau terminal 
-
-
-| \https://cloudmanager.cloud.netapp.com | \https://api.bluexp.netapp.com 
-
-
-| \https://*.cloudmanager.cloud.netapp.com | \https://*.api.bluexp.netapp.com 
-|===
-Consultez la liste complète des terminaux de votre https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-aws.html#outbound-internet-access["AWS"^], https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-google.html#outbound-internet-access["Google Cloud"^], ou https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-azure.html#outbound-internet-access["Azure"^] de cloud hybride.
 
 
 
