@@ -497,44 +497,6 @@ https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categ
 
 
 
-=== 5 février 2023 (version 1.20)
-
-
-
-==== Possibilité d'envoyer des e-mails de notification basés sur des règles à n'importe quelle adresse e-mail
-
-Dans les versions précédentes de la classification BlueXP, vous pouviez envoyer des alertes par e-mail aux utilisateurs BlueXP de votre compte lorsque certaines stratégies stratégiques renvoient des résultats. Cette fonction vous permet d'obtenir des notifications pour protéger vos données lorsque vous n'êtes pas en ligne. Vous pouvez désormais envoyer des alertes par e-mail à partir de stratégies à tous les autres utilisateurs - jusqu'à 20 adresses e-mail - qui ne sont pas dans votre compte BlueXP.
-
-https://docs.netapp.com/us-en/bluexp-classification/task-using-policies.html#sending-email-alerts-when-non-compliant-data-is-found["En savoir plus sur l'envoi d'alertes par e-mail basées sur les résultats des règles"].
-
-
-
-==== Vous pouvez désormais ajouter des modèles personnels à partir de l'interface de classification BlueXP
-
-La classification BlueXP a eu la possibilité d'ajouter des « données personnelles » personnalisées que la classification BlueXP identifiera lors des analyses futures pendant un certain temps. Cependant, vous avez dû vous connecter à l'hôte de classification BlueXP Linux et utiliser une ligne de commande pour ajouter les modèles personnalisés. Dans cette version, l'ajout de modèles personnels à l'aide d'un regex se fait dans l'interface de classification de BlueXP, ce qui facilite considérablement l'ajout et la modification de ces modèles personnalisés.
-
-https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.html#add-custom-personal-data-identifiers-using-a-regex["En savoir plus sur l'ajout de modèles personnalisés à partir de l'interface de classification BlueXP"^].
-
-
-
-==== Possibilité de déplacer 15 millions de fichiers à l'aide de la classification BlueXP
-
-Par le passé, vous pouviez déplacer jusqu'à 100,000 fichiers source vers n'importe quel partage NFS grâce à la classification BlueXP. Vous pouvez désormais déplacer jusqu'à 15 millions de fichiers à la fois. https://docs.netapp.com/us-en/bluexp-classification/task-managing-highlights.html#moving-source-files-to-an-nfs-share["En savoir plus sur le déplacement des fichiers source à l'aide de la classification BlueXP"].
-
-
-
-==== Possibilité de voir le nombre d'utilisateurs ayant accès aux fichiers SharePoint Online
-
-Le filtre « nombre d'utilisateurs avec accès » prend désormais en charge les fichiers stockés dans les référentiels SharePoint Online. Auparavant, seuls les fichiers stockés sur des partages CIFS étaient pris en charge. Notez que les groupes SharePoint qui ne sont pas actifs basés sur un répertoire ne seront pas pris en compte dans ce filtre à l'heure actuelle.
-
-
-
-==== Le nouvel état « réussite partielle » a été ajouté au panneau État de l'action
-
-Le nouvel état « réussite partielle » indique qu'une action de classification BlueXP est terminée, que certains éléments ont échoué et que certains éléments ont réussi, par exemple, lorsque vous déplacez ou supprimez des fichiers 100. De plus, le statut « terminé » a été renommé « succès ». Par le passé, l'état « terminé » peut lister les actions qui ont réussi et qui ont échoué. Désormais, le statut « réussite » signifie que toutes les actions ont réussi sur tous les éléments. https://docs.netapp.com/us-en/bluexp-classification/task-view-compliance-actions.html["Voir comment afficher le panneau Etat des actions"].
-
-
-
 == Cloud Volumes ONTAP
 
 
