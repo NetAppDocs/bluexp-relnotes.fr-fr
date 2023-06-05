@@ -663,6 +663,26 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 
+=== 11 juin 2023
+
+
+
+==== Prend en charge l'abandon automatique en minutes
+
+Les synchronisations actives qui ne sont pas terminées peuvent maintenant être abandonnées après quinze minutes à l'aide de la fonction *Sync Timeout*.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["En savoir plus sur le paramètre délai de synchronisation"].
+
+
+
+==== Métadonnées de la durée d'accès à la copie
+
+Dans les relations incluant un système de fichiers, la fonction *Copy for Objects* copie désormais les métadonnées du temps d'accès.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["En savoir plus sur le paramètre Copier pour objets"].
+
+
+
 === 8 mai 2023
 
 
@@ -722,18 +742,6 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/reference-supported-relationships
 En plus de filtrer les répertoires par nom, vous pouvez maintenant filtrer les répertoires par leur chemin complet.
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["En savoir plus sur le paramètre exclure les répertoires"].
-
-
-
-=== 7 mars 2023
-
-
-
-==== Cryptage EBS pour les courtiers de données AWS
-
-Vous pouvez désormais chiffrer les volumes des courtiers de données AWS à l'aide d'une clé KMS installée sur votre compte.
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#creating-the-data-broker["En savoir plus sur la création d'un courtier en données dans AWS"].
 
 
 
