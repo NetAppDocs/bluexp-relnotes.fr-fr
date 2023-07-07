@@ -259,6 +259,42 @@ Vous avez depuis longtemps la possibilité d'afficher les compartiments Amazon S
 
 
 
+=== 6 juillet 2023
+
+
+
+==== La sauvegarde et la restauration BlueXP permettent désormais de planifier et de créer des copies Snapshot et des volumes répliqués
+
+La sauvegarde et la restauration BlueXP vous permettent désormais d'implémenter une stratégie 3-2-1 où vous pouvez disposer de 3 copies de vos données source sur 2 systèmes de stockage différents avec une copie dans le cloud. Après l'activation, vous aurez :
+
+* Copie Snapshot du volume sur le système source
+* Volume répliqué sur un autre système de stockage
+* Sauvegarde du volume dans le stockage objet
+
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html["En savoir plus sur les nouvelles fonctionnalités complètes de sauvegarde et de restauration"].
+
+Cette nouvelle fonctionnalité s'applique également aux opérations de restauration. Vous pouvez effectuer des opérations de restauration à partir d'une copie Snapshot, d'un volume répliqué ou d'un fichier de sauvegarde dans le cloud. Cela vous donne la flexibilité de choisir le fichier de sauvegarde qui répond à vos besoins en restauration, notamment le coût et la vitesse de restauration.
+
+Notez que cette nouvelle fonctionnalité et interface utilisateur ne sont prises en charge que pour les clusters exécutant ONTAP 9.8 ou version ultérieure. Si votre cluster dispose d'une version antérieure du logiciel, vous pouvez continuer à utiliser la version précédente de BlueXP Backup and Recovery. Toutefois, nous vous recommandons de passer à une version prise en charge de ONTAP afin d'obtenir les dernières fonctionnalités. Pour continuer à utiliser l'ancienne version du logiciel, procédez comme suit :
+
+. Dans l'onglet *volumes*, sélectionnez *Paramètres de sauvegarde*.
+. Sur la page _Backup Settings_, cliquez sur le bouton radio *Afficher la version précédente de sauvegarde et de restauration BlueXP*.
++
+Vous pouvez ensuite gérer vos anciens clusters à l'aide de la version précédente du logiciel.
+
+
+
+
+
+==== Créez vos compartiments pour la sauvegarde vers le stockage objet
+
+Lorsque vous créez des fichiers de sauvegarde dans un stockage objet, par défaut, le service de sauvegarde et de restauration crée les compartiments dans le stockage objet pour vous. Vous pouvez créer les compartiments vous-même si vous souhaitez utiliser un certain nom ou attribuer des propriétés spéciales. Si vous souhaitez créer votre propre compartiment, vous devez le créer avant de lancer l'assistant d'activation.
+
+Cette fonctionnalité n'est actuellement pas prise en charge lors de la création de fichiers de sauvegarde sur des systèmes StorageGRID.
+
+
+
 === 04 juillet 2023
 
 
@@ -362,71 +398,6 @@ Notez que les règles IAM attribuées à BlueXP Connector doivent modifier le no
 ==== Améliorations apportées au moniteur de tâches
 
 Les tâches lancées par le système, telles que les opérations de sauvegarde en cours, sont désormais disponibles dans l'onglet *surveillance des tâches* pour les systèmes ONTAP sur site exécutant ONTAP 9.13.1 ou version ultérieure. Les versions précédentes de ONTAP affichent uniquement les travaux initiés par l'utilisateur.
-
-
-
-=== 14 avril 2023
-
-
-
-==== Améliorations apportées à la sauvegarde et à la restauration BlueXP pour les applications (cloud natif)
-
-* Les bases de données SAP HANA
-+
-** Prend en charge l'actualisation du système basée sur des scripts
-** Prend en charge la restauration de fichiers uniques Snapshot si la sauvegarde Azure NetApp Files est configurée
-** Prend en charge la mise à niveau du plug-in
-
-
-* Les bases de données Oracle
-+
-** Améliorations apportées au déploiement des plug-ins en simplifiant la configuration utilisateur sudo non-root
-** Prend en charge la mise à niveau du plug-in
-** Prend en charge la détection automatique et la protection pilotée par des règles des bases de données Oracle sur Azure NetApp Files
-** Prend en charge la restauration de la base de données Oracle à l'emplacement d'origine avec récupération granulaire
-
-
-
-
-
-
-==== Améliorations apportées à la sauvegarde et à la restauration BlueXP pour les applications (hybride)
-
-* La sauvegarde et la restauration BlueXP pour les applications (hybrides) sont pilotées par le plan de contrôle SaaS
-* API REST hybrides modifiées pour l'alignement avec les API cloud natives - effectué.
-* Prend en charge la notification par e-mail
-
-
-
-
-=== 4 avril 2023
-
-
-
-==== Possibilité de sauvegarder des données dans le cloud à partir des systèmes Cloud Volumes ONTAP en mode « restreint »
-
-Vous pouvez désormais sauvegarder les données à partir de systèmes Cloud Volumes ONTAP installés dans les régions commerciales AWS, Azure et GCP en « mode restreint ». Pour cela, vous devez d'abord installer le connecteur dans la région commerciale « restreinte ». https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["En savoir plus sur les modes de déploiement BlueXP"^]. Voir https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-s3.html["Sauvegarde des données Cloud Volumes ONTAP dans Amazon S3"] et https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-azure.html["Sauvegarde des données Cloud Volumes ONTAP dans Azure Blob"].
-
-
-
-==== Possibilité de sauvegarder vos volumes ONTAP sur site vers ONTAP S3 à l'aide de l'API
-
-Les nouvelles fonctionnalités des API vous permettent de sauvegarder vos copies Snapshot de volume vers ONTAP S3 à l'aide de la sauvegarde et de la restauration BlueXP. Cette fonctionnalité est disponible uniquement pour les systèmes ONTAP sur site à l'heure actuelle. Pour obtenir des instructions détaillées, consultez le blog https://community.netapp.com/t5/Tech-ONTAP-Blogs/BlueXP-Backup-and-Recovery-Feature-Blog-April-23-Updates/ba-p/443075#toc-hId--846533830["Intégration avec ONTAP S3 en tant que destination"^].
-
-
-
-==== Possibilité de modifier l'aspect redondance de zone de votre compte de stockage Azure de LRS à ZRS
-
-Lors de la création de sauvegardes à partir de systèmes Cloud Volumes ONTAP vers du stockage Azure, par défaut, la sauvegarde et la restauration BlueXP provisionne le conteneur Blob avec une redondance locale (LRS) pour l'optimisation des coûts. Vous pouvez définir ce paramètre sur redondance de zone (ZRS) si vous souhaitez que vos données soient répliquées entre différentes zones. Consultez les instructions Microsoft pour https://learn.microsoft.com/en-us/azure/storage/common/redundancy-migration?tabs=portal["modification de la façon dont votre compte de stockage est répliqué"^].
-
-
-
-==== Améliorations apportées au moniteur de tâches
-
-* Les opérations de sauvegarde et de restauration initiées par l'utilisateur à partir de l'interface utilisateur et de l'API de sauvegarde et de restauration BlueXP, ainsi que les tâches initiées par le système, telles que les opérations de sauvegarde en continu, sont désormais disponibles dans l'onglet *surveillance des tâches* pour les systèmes Cloud Volumes ONTAP exécutant ONTAP 9.13.0 ou version ultérieure. Les versions précédentes de ONTAP affichent uniquement les travaux initiés par l'utilisateur.
-* En plus de pouvoir télécharger un fichier CSV pour créer des rapports sur tous les travaux, vous pouvez désormais télécharger un fichier JSON pour un seul travail et voir ses détails. https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html#download-job-monitoring-results-as-a-report["En savoir plus >>"].
-* Deux nouvelles alertes de tâche de sauvegarde ont été ajoutées : « échec de tâche planifiée » et « la tâche de restauration est terminée mais avec des avertissements ». https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html#review-backup-and-restore-alerts-in-the-bluexp-notification-center["Examinez toutes les alertes que les solutions de sauvegarde et de restauration BlueXP peuvent envoyer"].
-
 
 
 
