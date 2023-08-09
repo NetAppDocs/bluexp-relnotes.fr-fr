@@ -15,8 +15,10 @@ sidebar:
     url: "/index.html"
   - title: Modifications récentes
     url: "/whats-new.html"
-  - title: Index BlueXP
+  - title: Index des notes de version
     url: "/release-notes-index.html"
+  - title: Mentions légales
+    url: "/legal-notices.html"
 homepage:
   tiles:
   - title: Quoi de neuf
