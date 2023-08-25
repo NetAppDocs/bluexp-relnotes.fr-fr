@@ -25,7 +25,6 @@
   <block id="f3aae44c0ba1e9d5c7a46f4e224ea31e" category="section-title">Fonctionnalités administratives</block>
   <block id="87448a3fa35fafb362a06b4d17cc1328" category="paragraph">Cette section décrit les nouvelles fonctionnalités liées aux fonctions d'administration de BlueXP : comptes, connecteurs, informations d'identification du fournisseur cloud, etc.</block>
   <block id="03e6ae21f561049c3e8010740c63aab3" category="inline-link">Découvrez les améliorations apportées à Cloud Volumes ONTAP</block>
-  <block id="c642de9f40ee79267e2e62e3ebed032e" category="section-title">1er novembre 2022</block>
   <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">18 septembre 2022</block>
   <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">31 juillet 2022</block>
   <block id="29c251ed5a57bbffe470654ccbbe714c" category="section-title">11 avril 2021</block>
@@ -159,7 +158,6 @@
   <block id="bb50e2459e4e016aa4b14a56adb2358f" category="inline-link">Configuration et administration</block>
   <block id="2049421a4e8e45e83cd7cf18ffc00a12" category="inline-link">Portefeuille digital</block>
   <block id="1d56c7b4c7e2384a1f75532fbd18626d" category="list-text"><block ref="1d56c7b4c7e2384a1f75532fbd18626d" category="inline-link-rx"></block></block>
-  <block id="986e1f3279b4d74444bd32d4f833afbd" category="section-title">Portefeuille numérique</block>
   <block id="164bf9dea8d8396a2e7501258b908616" category="section-title">Capacité sous licence pour les abonnements Marketplace</block>
   <block id="1e9f781ad3dabc2f942313854ce94883" category="paragraph"><block ref="bcd8bf14da5e102dbc4b48dd0870869e" category="inline-link-rx"></block>.</block>
   <block id="be062cdcabbb3055334e8f19b4bdf378" category="inline-link">Sauvegarde et restauration</block>
@@ -176,10 +174,6 @@
   <block id="9fee27139efd09e005728f7dbfa349f2" category="paragraph">La classification BlueXP peut identifier et catégoriser les fichiers qui contiennent les types de données suivants :</block>
   <block id="22b67d0a50677e01d48389e716223457" category="inline-link">Consultez tous les types de données personnelles que la classification BlueXP peut identifier dans vos données</block>
   <block id="3d2e7e90fac12bab6a0d0736a593b5b4" category="section-title">Conseiller digital</block>
-  <block id="fd31042d52571c6f22cae041d72fc4dd" category="paragraph">Digital Advisor (anciennement Active IQ) est désormais entièrement intégré avec BlueXP et offre une expérience de connexion améliorée.</block>
-  <block id="bde16c93c046fa9870a736978717607f" category="paragraph">Lorsque vous accédez au conseiller digital BlueXP, vous êtes invité à entrer vos identifiants du site de support NetApp pour afficher les données en rapport avec vos systèmes. Le compte NSS avec lequel vous vous connectez est associé uniquement à votre connexion utilisateur. Elle n'est associée à aucun autre utilisateur de votre compte NetApp.</block>
-  <block id="e1a4f9c5e73602864d1ef18966b243f2" category="inline-link">En savoir plus sur le conseiller digital BlueXP</block>
-  <block id="829877d29208a3548ee11017a15158af" category="paragraph"><block ref="829877d29208a3548ee11017a15158af" category="inline-link-rx"></block></block>
   <block id="35c28a4f1250fc5c59dd5bfa5d9993ce" category="paragraph">Le nouveau service d'efficacité économique BlueXP identifie les ressources de stockage dont la capacité est faible, actuelle ou prévue, et fournit des recommandations sur le Tiering des données ou la capacité supplémentaire pour les systèmes AFF sur site.</block>
   <block id="345d0e0aeae5ae7cbf8cdd1fc138e5e6" category="inline-link-macro">Découvrez l'efficacité économique de BlueXP</block>
   <block id="838d01d8bf08e23ff670a400ad2cb368" category="paragraph"><block ref="c4b58b1c24fbcd13ec6df8ee9e6c3a23" category="inline-link-macro-rx"></block>.</block>
@@ -572,4 +566,16 @@
   <block id="405e835e0544bb4cc8bbd26a2c840b54" category="section-title">18 mai 2023</block>
   <block id="acff175f1bababdb2baa1348412d501d" category="paragraph">Il s'agit de la version initiale de la reprise d'activité de BlueXP.</block>
   <block id="1ba37effd0ce32bb6cfe5ede3a761ee2" category="paragraph">BlueXP est un service de reprise après incident basé dans le cloud qui automatise les workflows de reprise après incident. D'abord, grâce à la version bêta de la reprise d'activité BlueXP, vous pouvez protéger vos workloads VMware sur site basés sur NFS exécutant le stockage NetApp vers VMware Cloud (VMC) sur AWS avec Amazon FSX pour ONTAP.</block>
+  <block id="51f8ba1e739f07ed09f1ba20bff5e7fc" category="section-title">16 juillet 2023</block>
+  <block id="91b681e174a782226d26fb4056e14081" category="section-title">Efficacité du stockage</block>
+  <block id="520e6a90f7dfce96c54641856d8584f2" category="list-text">Le libellé *efficacité du stockage*, qui affiche le ratio d'efficacité, est renommé *réduction des données*.</block>
+  <block id="cc50d008d8b1e1f6ba13bbe127a1bf29" category="list-text">Le libellé *données sauvegardées par efficacité du stockage* est renommé *économies de réduction des données*.</block>
+  <block id="2a88859b894ead28756789553bc66754" category="list-text">La bascule *Savings without Snapshot backups* est renommée *with Snapshot copies* avec une modification de sa fonctionnalité. <block ref="3a01d99aaa6c74ce8f92a2ac5ca4e5e9" category="inline-link-macro-rx"></block>.</block>
+  <block id="325e4e14529c96a60b99d9cecba4d5a6" category="section-title">21 juin 2023</block>
+  <block id="072d1a387472fb47fdfa33e48ff08ffd" category="section-title">Tableau de bord durabilité</block>
+  <block id="157e4d0632e88d94ee663058894a5415" category="paragraph">Tableau de bord de durabilité fournit des informations précieuses sur la durabilité environnementale de votre système de stockage. Vous pouvez afficher des informations telles que le score de durabilité, le pourcentage d'atténuation du carbone, l'utilisation prévue de l'énergie, le carbone direct et la chaleur. Vous pouvez ajuster le pourcentage d'atténuation du carbone pour des sites spécifiques. Vous pouvez également afficher le score de durabilité au niveau du cluster. L'évaluation de ce score vous permet d'évaluer l'efficacité globale de votre système de stockage et de l'aligner sur les actions recommandées par NetApp pour un développement durable. <block ref="14f04672b3a078b1589b8f46c67500a4" category="inline-link-macro-rx"></block>.</block>
+  <block id="7002d0318dc4f195c464ca83f3d2ca86" category="section-title">22 février 2023</block>
+  <block id="e10f6958064ae5f36e8b132d4142e626" category="section-title">Graphiques de performances</block>
+  <block id="1c6ca21b0d3e6f38c91e416032c3b178" category="paragraph">Vous pouvez afficher la moyenne des opérations de lecture, d'écriture et autres dans le tableau IOPS du volume.</block>
+  <block id="80a2eb22b09cbe781077565f06b74dbf" category="paragraph">L'efficacité du stockage SAN et NAS est disponible au niveau des nœuds pour les systèmes ONTAP, notamment AFF A-Series, AFF C190, All SAN Array et FAS500 exécutant ONTAP 9.10 et versions ultérieures.</block>
 </blocks>

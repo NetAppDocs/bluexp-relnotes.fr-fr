@@ -718,17 +718,46 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#
 
 
 
-=== 1er novembre 2022
-
-Digital Advisor (anciennement Active IQ) est désormais entièrement intégré avec BlueXP et offre une expérience de connexion améliorée.
-
-Lorsque vous accédez au conseiller digital BlueXP, vous êtes invité à entrer vos identifiants du site de support NetApp pour afficher les données en rapport avec vos systèmes. Le compte NSS avec lequel vous vous connectez est associé uniquement à votre connexion utilisateur. Elle n'est associée à aucun autre utilisateur de votre compte NetApp.
-
-https://docs.netapp.com/us-en/active-iq/index.html["En savoir plus sur le conseiller digital BlueXP"^]
+=== 16 juillet 2023
 
 
 
-== Portefeuille numérique
+==== Efficacité du stockage
+
+* Le libellé *efficacité du stockage*, qui affiche le ratio d'efficacité, est renommé *réduction des données*.
+* Le libellé *données sauvegardées par efficacité du stockage* est renommé *économies de réduction des données*.
+* La bascule *Savings without Snapshot backups* est renommée *with Snapshot copies* avec une modification de sa fonctionnalité. link:https://docs.netapp.com/us-en/active-iq/reference_aiq_faq.html#storage-efficiency["En savoir plus >>"].
+
+
+
+
+=== 21 juin 2023
+
+
+
+==== Tableau de bord durabilité
+
+Tableau de bord de durabilité fournit des informations précieuses sur la durabilité environnementale de votre système de stockage. Vous pouvez afficher des informations telles que le score de durabilité, le pourcentage d'atténuation du carbone, l'utilisation prévue de l'énergie, le carbone direct et la chaleur. Vous pouvez ajuster le pourcentage d'atténuation du carbone pour des sites spécifiques. Vous pouvez également afficher le score de durabilité au niveau du cluster. L'évaluation de ce score vous permet d'évaluer l'efficacité globale de votre système de stockage et de l'aligner sur les actions recommandées par NetApp pour un développement durable. link:https://docs.netapp.com/us-en/active-iq/learn_BlueXP_sustainability.html["En savoir plus >>"].
+
+
+
+=== 22 février 2023
+
+
+
+==== Graphiques de performances
+
+Vous pouvez afficher la moyenne des opérations de lecture, d'écriture et autres dans le tableau IOPS du volume.
+
+
+
+==== Efficacité du stockage
+
+L'efficacité du stockage SAN et NAS est disponible au niveau des nœuds pour les systèmes ONTAP, notamment AFF A-Series, AFF C190, All SAN Array et FAS500 exécutant ONTAP 9.10 et versions ultérieures.
+
+
+
+== Portefeuille digital
 
 
 
