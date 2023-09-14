@@ -346,9 +346,6 @@
   <block id="025b17159c4d2dd28926bdc5b13436e2" category="section-title">Deux nouveaux types de données personnelles allemandes sont identifiés par la classification BlueXP</block>
   <block id="e2f64dc02ab3f9d3b659d24b9503b545" category="list-text">ID allemand (Personalausweisnummer)</block>
   <block id="ac01084f4d5a1af5de639eaf04ad94ff" category="list-text">Numéro de sécurité sociale allemand (Sozialversicherungsnummer)</block>
-  <block id="f6731e0bd9f7a8a40f83ba1c622ffe25" category="section-title">Rocky Linux 9 est désormais une distribution Linux prise en charge sur laquelle vous pouvez installer la classification BlueXP</block>
-  <block id="76264cc2bc8d3793465d31c38655f588" category="inline-link">Découvrez comment installer la classification BlueXP sur un hôte avec Rocky Linux installé</block>
-  <block id="059df2e0abacded1764d0222f6ab3b42" category="paragraph">Rocky Linux 9 (9.0, 9.1 et 9.2) a été qualifié en tant que système d'exploitation pris en charge pour la classification BlueXP. Vous pouvez installer la classification BlueXP sur un hôte Rocky Linux de votre réseau ou sur un hôte Linux dans le cloud en utilisant la version 1.24 du programme d'installation.<block ref="b549f731e0826bdc1659ea47e9a6f422" category="inline-link-rx"></block>.</block>
   <block id="cdbb87700ea6d8c32de7576d1ecb9987" category="section-title">La classification BlueXP est entièrement prise en charge en mode restreint et en mode privé</block>
   <block id="7c4ed755305616a8a97076615e4aa1e5" category="inline-link">En savoir plus sur les modes de déploiement BlueXP pour Connector</block>
   <block id="e7c3514a81618b80dab1e9591ba97368" category="paragraph">La classification BlueXP est désormais entièrement prise en charge sur les sites sans accès Internet (mode privé) et avec un accès Internet sortant limité (mode restreint).<block ref="7ee715aa70b4c6d819896ee955e59621" category="inline-link-rx"></block>.</block>
@@ -524,7 +521,6 @@
   <block id="9d1bf1e07d6563a578988a0916d686ff" category="section-title">5 septembre (version 1.25)</block>
   <block id="a4338ca25ea7436675e99fe5320a9d8a" category="section-title">Appliquez des balises sur un maximum de 100,000 éléments à partir de la page Résultats d'enquête</block>
   <block id="22f62cdf0824b945602b7808b1cb329f" category="inline-link">Découvrez comment</block>
-  <block id="6d37cd3f2b76637efa533f6623bf7ceb" category="paragraph">Dans le passé, vous ne pouviez appliquer des balises qu'à une seule page à la fois dans la page Résultats d'enquête (20 éléments). Vous pouvez maintenant sélectionner *tous* éléments dans les pages Résultats d'enquête et appliquer des balises à tous les éléments - jusqu'à 100,000 éléments à la fois. <block ref="3e9397a24d29fef2aa895562fb0169fb" category="inline-link-rx"></block>.</block>
   <block id="d0b71ca8d45c425a9eafb601e1eb4c3c" category="section-title">Identifiez les fichiers dupliqués avec une taille de fichier minimale de 1 Mo</block>
   <block id="40733cb3233c3b83d0f3ecc4ee6fed65" category="paragraph">Classification BlueXP utilisée pour identifier les fichiers dupliqués uniquement lorsque les fichiers étaient de 50 Mo ou plus. Désormais, les fichiers dupliqués commençant par 1 Mo peuvent être identifiés. Vous pouvez utiliser les filtres de la page Investigation « taille du fichier » ainsi que « doublons » pour voir quels fichiers d'une certaine taille sont dupliqués dans votre environnement.</block>
   <block id="18cf4605db6670514e116119da7de0a0" category="section-title">3 septembre 2023</block>
@@ -557,4 +553,7 @@
   <block id="bc3a07be852924fbf8ece67dbd310169" category="inline-link-macro">Afficher les limites de stockage de Cloud Volumes ONTAP dans Azure</block>
   <block id="7dd77d10e6ae3bee2c34fcea19d9c1ab" category="paragraph"><block ref="2e2ea5a0499f86c06503605a768ce8a2" category="inline-link-macro-rx"></block>
 <block ref="c1f4bd6aa6a7def50b28a0bec13e0184" category="inline-link-macro-rx"></block></block>
+  <block id="6ce2a7f72f88b0710fcd4fd7c8040621" category="section-title">Petits et moyens déploiements temporairement indisponibles</block>
+  <block id="6c7040f055c36964a640c88c62785b1b" category="paragraph">Lorsque vous déployez une instance de classification BlueXP dans AWS, l'option de sélectionner *Deploy &gt; Configuration* et de choisir une instance de petite ou moyenne taille n'est pas disponible pour le moment. Vous pouvez toujours déployer l'instance à l'aide de la grande taille d'instance en sélectionnant *déployer &gt; déployer*.</block>
+  <block id="a95484ffd76e2e97fc6d584af31d2888" category="paragraph">Dans le passé, vous ne pouviez appliquer des balises qu'à une seule page à la fois dans la page Résultats d'enquête (20 éléments). Vous pouvez maintenant sélectionner *tous* éléments dans les pages Résultats d'enquête et appliquer des balises à tous les éléments - jusqu'à 100,000 éléments à la fois.<block ref="3e9397a24d29fef2aa895562fb0169fb" category="inline-link-rx"></block>.</block>
 </blocks>
