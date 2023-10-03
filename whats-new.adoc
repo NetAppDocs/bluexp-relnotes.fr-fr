@@ -381,6 +381,24 @@ Cette fonctionnalité n'est actuellement pas prise en charge lors de la créatio
 
 
 
+=== 4 octobre (version 1.26)
+
+
+
+==== Prise en charge des installations sur site à l'aide de RHEL version 9
+
+Les versions 8 et 9 de Red Hat Enterprise Linux ne prennent pas en charge le moteur Docker, requis pour l'installation de la classification BlueXP. Nous prenons désormais en charge l'installation sur RHEL 9.0, 9.1 et 9.2 en utilisant Podman version 4 ou ultérieure comme infrastructure de conteneurs. Si votre environnement requiert l'utilisation des dernières versions de RHEL, vous pouvez désormais installer la classification BlueXP (version 1.26 ou supérieure) lorsque vous utilisez Podman.
+
+Pour l'instant, nous ne prenons pas en charge les installations de sites invisibles ou les environnements de numérisation distribués (à l'aide de nœuds de scanner principaux et distants).
+
+
+
+==== Les résultats de la page d'enquête affichent désormais la taille totale en plus du nombre total d'éléments
+
+Les résultats filtrés de la page Investigation affichent désormais la taille totale des éléments en plus du nombre total de fichiers. Cela peut vous aider lors du déplacement de fichiers, de la suppression de fichiers, etc.
+
+
+
 === 5 septembre (version 1.25)
 
 
@@ -436,40 +454,6 @@ Vous pouvez maintenant effectuer la mise à niveau vers une version plus récent
 L'API de classification BlueXP vous permet d'effectuer des actions, de créer des requêtes et d'exporter des informations sur les données que vous analysez. La documentation interactive est disponible à l'aide de swagger. La documentation est divisée en plusieurs catégories, notamment Investigation, Compliance, Governance et Configuration. Chaque catégorie fait référence aux onglets de l'interface de classification BlueXP.
 
 https://docs.netapp.com/us-en/bluexp-classification/api-classification.html["En savoir plus sur les API de classification BlueXP"].
-
-
-
-=== 6 juin 2023 (version 1.23)
-
-
-
-==== Le japonais est désormais pris en charge lors de la recherche de noms de sujet de données
-
-Les noms japonais peuvent maintenant être saisis lors de la recherche du nom d'un sujet en réponse à une demande d'accès de la personne concernée (DSAR, Data Subject Access Request). Vous pouvez générer un https://docs.netapp.com/us-en/bluexp-classification/task-generating-compliance-reports.html#what-is-a-data-subject-access-request["Rapport de demande d'accès au sujet des données"] avec les informations obtenues. Vous pouvez également entrer des noms japonais dans le https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html#filter-data-by-sensitivity-and-content["Filtre « sujet des données » dans la page enquête sur les données"] pour identifier les fichiers contenant le nom du sujet.
-
-
-
-==== Ubuntu est maintenant une distribution Linux prise en charge sur laquelle vous pouvez installer la classification BlueXP
-
-Ubuntu 22.04 a été qualifié comme système d'exploitation pris en charge pour la classification BlueXP. Vous pouvez installer la classification BlueXP sur un hôte Ubuntu Linux de votre réseau ou sur un hôte Linux dans le cloud en utilisant la version 1.23 du programme d'installation. https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["Découvrez comment installer la classification BlueXP sur un hôte avec Ubuntu installé"].
-
-
-
-==== Red Hat Enterprise Linux 8.6 et 8.7 ne sont plus pris en charge par les nouvelles installations de classification BlueXP
-
-Ces versions ne sont pas prises en charge par les nouveaux déploiements, car Red Hat ne prend plus en charge Docker, ce qui est un prérequis. Si vous disposez d'un ordinateur de classification BlueXP sous RHEL 8.6 ou 8.7, NetApp continuera à prendre en charge votre configuration.
-
-
-
-==== La classification BlueXP peut être configurée en tant que collecteur FPolicy pour recevoir les événements FPolicy des systèmes ONTAP
-
-Vous pouvez activer la collecte des journaux d'audit de l'accès aux fichiers sur votre système de classification BlueXP pour les événements d'accès aux fichiers détectés sur les volumes de vos environnements de travail. La classification BlueXP peut capturer les types d'événements FPolicy suivants et les utilisateurs qui ont effectué les actions sur vos fichiers : créer, lire, écrire, supprimer, renommer, Modifiez le propriétaire/les autorisations et modifiez SACL/DACL. https://docs.netapp.com/us-en/bluexp-classification/task-manage-file-access-events.html["Découvrez comment contrôler et gérer les événements d'accès aux fichiers"].
-
-
-
-==== Les licences Data Sense BYOL sont désormais prises en charge sur les sites invisibles
-
-Vous pouvez désormais charger votre licence Data Sense BYOL dans le portefeuille digital BlueXP situé dans un site invisible pour que vous soyez averti lorsque le niveau de licence est faible. https://docs.netapp.com/us-en/bluexp-classification/task-licensing-datasense.html#obtain-your-bluexp-classification-license-file["Découvrez comment obtenir et télécharger votre licence Data Sense BYOL"].
 
 
 
