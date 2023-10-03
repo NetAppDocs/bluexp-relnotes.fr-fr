@@ -33,6 +33,16 @@ Cette section décrit les nouvelles fonctionnalités liées aux fonctions d'admi
 
 
 
+=== 6 octobre 2023
+
+
+
+==== Connecteur 3.9.34
+
+Cette version contient des améliorations mineures et des corrections de bogues.
+
+
+
 === 10 septembre 2023
 
 
@@ -461,6 +471,20 @@ https://docs.netapp.com/us-en/bluexp-classification/api-classification.html["En 
 
 
 
+=== 6 octobre 2023
+
+Les modifications suivantes ont été introduites avec la version 3.9.34 du connecteur.
+
+
+
+==== Cloud Volumes ONTAP 9.14.0
+
+BlueXP peut désormais déployer et gérer la version Cloud Volumes ONTAP 9.14.0 General Availability dans AWS, Azure et Google Cloud.
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Découvrez les nouvelles fonctionnalités de cette version d'Cloud Volumes ONTAP"^].
+
+
+
 === 10 septembre 2023
 
 Les modifications suivantes ont été introduites avec la version 3.9.33 du connecteur.
@@ -511,20 +535,6 @@ Diverses améliorations apportées aux informations affichées dans les rapports
 
 
 Pour plus d'informations sur les rapports d'utilisation, reportez-vous à la section link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html#download-usage-reports["Télécharger les rapports d'utilisation"^].
-
-
-
-=== 26 juillet 2023
-
-Les modifications suivantes ont été introduites avec la version 3.9.31 du connecteur.
-
-
-
-==== Cloud Volumes ONTAP 9.13.1 GA
-
-BlueXP peut désormais déployer et gérer la version Cloud Volumes ONTAP 9.13.1 General Availability dans AWS, Azure et Google Cloud.
-
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Découvrez les nouvelles fonctionnalités de cette version d'Cloud Volumes ONTAP"^].
 
 
 
@@ -690,13 +700,9 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#
 
 ==== Upgrade Advisor
 
-Vous pouvez accéder à la page Upgrade Advisor pour votre liste de surveillance par défaut ou votre tableau de bord à l'aide du link:https://activeiq.netapp.com/redirect/upgrade-advisor["Upgrade Advisor"^] lien. Si vous ne disposez pas d'une liste de surveillance ou d'un tableau de bord par défaut, cliquez sur le lien pour vous rediriger vers la page recherche.
+* Vous pouvez accéder à la page Upgrade Advisor de votre liste de contrôle par défaut à l'aide de link:https://activeiq.netapp.com/redirect/upgrade-advisor["Upgrade Advisor"^] lien.
+* Le plan de mise à niveau est optimisé pour supprimer les étapes de mise à niveau redondantes et simplifier le plan de retrait. Les étapes courantes de tous les nœuds d'un cluster sont consolidées et disponibles dans la section informations générales du plan de mise à niveau. link:https://docs.netapp.com/us-en/active-iq/task_view_upgrade.html["Découvrez comment générer et afficher le plan de mise à niveau"].
 
-
-
-==== Plan de mise à niveau
-
-Le plan de mise à niveau a été optimisé afin de supprimer les étapes de mise à niveau redondantes, de modifier les informations et les avertissements et de simplifier le plan de retrait. Les étapes courantes de tous les nœuds d'un cluster sont consolidées et disponibles dans la section informations générales. Pour afficher le plan amélioré, générez le plan de mise à niveau en suivant les étapes mentionnées dans link:https://docs.netapp.com/us-en/active-iq/task_view_upgrade.html["Mettez à niveau la version ONTAP à l'aide du plan de mise à niveau"].
 
 
 
@@ -719,7 +725,7 @@ Le plan de mise à niveau a été optimisé afin de supprimer les étapes de mis
 
 ==== Tableau de bord durabilité
 
-Tableau de bord de durabilité fournit des informations précieuses sur la durabilité environnementale de votre système de stockage. Vous pouvez afficher des informations telles que le score de durabilité, le pourcentage d'atténuation du carbone, l'utilisation prévue de l'énergie, le carbone direct et la chaleur. Vous pouvez ajuster le pourcentage d'atténuation du carbone pour des sites spécifiques. Vous pouvez également afficher le score de durabilité au niveau du cluster. L'évaluation de ce score vous permet d'évaluer l'efficacité globale de votre système de stockage et de l'aligner sur les actions recommandées par NetApp pour un développement durable. link:https://docs.netapp.com/us-en/active-iq/learn_BlueXP_sustainability.html["En savoir plus >>"].
+Le tableau de bord de durabilité fournit des informations précieuses sur la durabilité environnementale de votre système de stockage. Vous pouvez afficher des informations telles que le score de durabilité, le pourcentage d'atténuation du carbone, l'utilisation prévue de l'énergie, le carbone direct et la chaleur. Vous pouvez ajuster le pourcentage d'atténuation du carbone pour des sites spécifiques. Vous pouvez également afficher le score de durabilité au niveau du cluster. En fonction de ce score, vous pouvez évaluer l'efficacité globale de votre système de stockage et l'aligner sur les actions recommandées par NetApp pour un développement durable. link:https://docs.netapp.com/us-en/active-iq/learn_BlueXP_sustainability.html["En savoir plus >>"].
 
 
 
