@@ -538,5 +538,15 @@
   <block id="9e06c986efeeff600f0b04c67d5d6354" category="paragraph">La région Arabie saoudite est désormais prise en charge dans Google Cloud pour Cloud Volumes ONTAP et dans Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures.</block>
   <block id="2bc724993144e8002899059117620062" category="inline-link">Carte des régions du monde sous Google Cloud</block>
   <block id="6a050b5b1c64124ef335bf9dbf64e03f" category="paragraph">Pour obtenir la liste de toutes les régions, reportez-vous au<block ref="5328f934c7a30e2b8b67732fc162a525" category="inline-link-rx"></block>.</block>
-  <block id="e8b16e899245eb584f98d48e087aa975" category="paragraph">Les régions suivantes dans Azure prennent désormais en charge les déploiements de zones de disponibilité multiples hautement disponibles pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures :</block>
+  <block id="e95c0c487a8aec79b7d3484dc5452526" category="section-title">10 novembre 2023</block>
+  <block id="8e40e7e4940e30b2ce260ff97ad74d25" category="paragraph">Le changement suivant a été introduit avec la version 3.9.35 du connecteur.</block>
+  <block id="1c13ec96dac1171608b6dbd65bb2245c" category="section-title">Région de Berlin désormais prise en charge dans Google Cloud</block>
+  <block id="56e0da46254ac9c6f784da40f466bda0" category="paragraph">La région de Berlin est désormais prise en charge dans Google Cloud pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures.</block>
+  <block id="bbb4cf526641d95bbb8ab8bada56fa79" category="section-title">La région de tel Aviv est désormais prise en charge dans AWS</block>
+  <block id="04afad264aa486baec91a1ade145665a" category="paragraph">La région de tel Aviv est désormais prise en charge dans AWS pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures.</block>
+  <block id="0970aa81dd486fe1c8e03549b29f3d46" category="inline-link">Carte des régions globales sous AWS</block>
+  <block id="96c6a6277896e4ed7c2cef558b5542c1" category="paragraph">Pour obtenir la liste de toutes les régions, reportez-vous au<block ref="24faa078890c2d8c97de1a6b5a5789e3" category="inline-link-rx"></block>.</block>
+  <block id="8904b1f88c62ce8a8381c8474f2ccb42" category="paragraph">Le changement suivant a été introduit avec la version 3.9.34 du connecteur.</block>
+  <block id="41e96c41b82196674a6b6c99d0c0b8ad" category="section-title">08 novembre 2023</block>
+  <block id="c4cd570753ca79cf809d24d7723c0e82" category="paragraph">Cette version de BlueXP Economic Efficiency comprend une nouvelle option qui permet d'évaluer vos ressources et d'identifier si une mise à jour technologique est recommandée. Le service inclut une nouvelle option de mise à jour technologique dans le menu de navigation de gauche, de nouvelles pages sur lesquelles vous pouvez évaluer vos charges de travail et ressources actuelles, ainsi qu'un rapport qui vous fournit des recommandations.</block>
 </blocks>
