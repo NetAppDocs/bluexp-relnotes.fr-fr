@@ -1,10 +1,6 @@
-= Connecteur 3.9.33
+= 
 :allow-uri-read: 
 
-
-
-
-=== Connecteur 3.9.33
 
 * Lorsque vous créez un connecteur dans AWS à partir de BlueXP, vous pouvez désormais rechercher dans le champ paire de clés pour trouver plus facilement la paire de clés que vous souhaitez utiliser avec l'instance de connecteur.
 +

@@ -1,10 +1,6 @@
-= Connecteur 3.9.32
+= 
 :allow-uri-read: 
 
-
-
-
-=== Connecteur 3.9.32
 
 * Vous pouvez désormais exporter les journaux d'audit à l'aide de l'API du service d'audit BlueXP.
 +
