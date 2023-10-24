@@ -549,4 +549,9 @@
   <block id="8904b1f88c62ce8a8381c8474f2ccb42" category="paragraph">Le changement suivant a été introduit avec la version 3.9.34 du connecteur.</block>
   <block id="41e96c41b82196674a6b6c99d0c0b8ad" category="section-title">08 novembre 2023</block>
   <block id="c4cd570753ca79cf809d24d7723c0e82" category="paragraph">Cette version de BlueXP Economic Efficiency comprend une nouvelle option qui permet d'évaluer vos ressources et d'identifier si une mise à jour technologique est recommandée. Le service inclut une nouvelle option de mise à jour technologique dans le menu de navigation de gauche, de nouvelles pages sur lesquelles vous pouvez évaluer vos charges de travail et ressources actuelles, ainsi qu'un rapport qui vous fournit des recommandations.</block>
+  <block id="aa4c67fd3731395f4450c9686b20f799" category="section-title">Prise en charge des tâches planifiées dans le moniteur des tâches</block>
+  <block id="314b40130d46a229c3a19dc5e2e23aa4" category="paragraph">Le moniteur de tâches de sauvegarde et de restauration BlueXP a précédemment surveillé les tâches planifiées de sauvegarde et de restauration volume à magasin d'objets, mais pas les tâches Snapshot, de réplication, de sauvegarde et de restauration locales qui ont été planifiées via l'interface utilisateur ou l'API.</block>
+  <block id="04c6b318fe9c7f19ae925a90e52c6569" category="paragraph">Le moniteur des tâches de sauvegarde et de restauration BlueXP inclut désormais des tâches planifiées pour les snapshots locaux, les réplications et les sauvegardes vers le stockage objet.</block>
+  <block id="35214f9b3df21ed35db22cb765a9b147" category="section-title">13 novembre 2023</block>
+  <block id="c14af667110ffb482c0adaaed623dbe2" category="paragraph">Vous pouvez désormais créer des rapports pour les volumes qui utilisent le protocole SMB/CIFS.</block>
 </blocks>

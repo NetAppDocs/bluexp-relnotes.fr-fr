@@ -200,6 +200,16 @@ Le moniteur des tâches de sauvegarde et de restauration BlueXP affiche égaleme
 
 
 
+==== Prise en charge des tâches planifiées dans le moniteur des tâches
+
+Le moniteur de tâches de sauvegarde et de restauration BlueXP a précédemment surveillé les tâches planifiées de sauvegarde et de restauration volume à magasin d'objets, mais pas les tâches Snapshot, de réplication, de sauvegarde et de restauration locales qui ont été planifiées via l'interface utilisateur ou l'API.
+
+Le moniteur des tâches de sauvegarde et de restauration BlueXP inclut désormais des tâches planifiées pour les snapshots locaux, les réplications et les sauvegardes vers le stockage objet.
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html["En savoir plus sur le moniteur de tâches mis à jour"].
+
+
+
 === 13 octobre 2023
 
 
@@ -897,6 +907,12 @@ Quand link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage-
 
 
 == Rapports de migration
+
+
+
+=== 13 novembre 2023
+
+Vous pouvez désormais créer des rapports pour les volumes qui utilisent le protocole SMB/CIFS.
 
 
 
