@@ -1,0 +1,37 @@
+= Flash cache et prise en charge de la vitesse d'écriture élevée dans Google Cloud
+:allow-uri-read: 
+
+
+Les modifications suivantes ont été introduites avec la version 3.9.32 du connecteur.
+
+
+
+=== Flash cache et prise en charge de la vitesse d'écriture élevée dans Google Cloud
+
+Flash cache et la vitesse d'écriture élevée peuvent être activés séparément dans Google Cloud pour Cloud Volumes ONTAP 9.13.1 et versions ultérieures. La vitesse d'écriture élevée est disponible pour tous les types d'instances pris en charge. Flash cache est pris en charge sur les types d'instances suivants :
+
+* n2-standard-16
+* n2-standard-32
+* n2-standard-48
+* n2-standard-64
+
+
+Vous pouvez utiliser ces fonctionnalités séparément ou ensemble dans le cadre de déploiements à un seul nœud et de paires haute disponibilité.
+
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["Lancez Cloud Volumes ONTAP dans Google Cloud"^]
+
+
+
+=== Améliorations apportées aux rapports d'utilisation
+
+Diverses améliorations apportées aux informations affichées dans les rapports d'utilisation sont désormais disponibles. Les améliorations suivantes ont été apportées aux rapports d'utilisation :
+
+* L'unité TIB est désormais incluse dans le nom des colonnes.
+* Un nouveau champ « nœud(s) » pour les numéros de série est désormais inclus.
+* Une nouvelle colonne « Type de workload » est désormais disponible dans le rapport sur l'utilisation des machines virtuelles de stockage.
+* Les noms d'environnement de travail sont désormais inclus dans les machines virtuelles de stockage et les rapports d'utilisation des volumes.
+* Le type de volume « fichier » est désormais intitulé « primaire (lecture/écriture) ».
+* Le type de volume « secondaire » est désormais libellé « secondaire (DP) ».
+
+
+Pour plus d'informations sur les rapports d'utilisation, reportez-vous à la section link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html#download-usage-reports["Télécharger les rapports d'utilisation"^].

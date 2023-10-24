@@ -1,0 +1,18 @@
+= 
+:allow-uri-read: 
+
+
+La préversion de la reprise d'activité BlueXP est un service de reprise après incident basé dans le cloud qui automatise les workflows de reprise après incident. À l'aide de la préversion de la reprise d'activité BlueXP, vous pouvez protéger vos workloads VMware sur site basés sur NFS exécutant le stockage NetApp vers VMware Cloud (VMC) sur AWS avec Amazon FSX pour ONTAP.
+
+
+NOTE: Avec cette offre de prévisualisation, NetApp se réserve le droit de modifier les détails, le contenu et le calendrier de l'offre avant la disponibilité générale.
+
+https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["En savoir plus sur la reprise d'activité BlueXP"].
+
+Cette version comprend les mises à jour suivantes :
+
+* *Mise à jour des groupes de ressources pour l'ordre d'amorçage* : lorsque vous créez un plan de reprise après sinistre ou de réplication, vous pouvez ajouter des machines virtuelles à des groupes de ressources fonctionnelles. Les groupes de ressources vous permettent de placer un ensemble de machines virtuelles dépendantes dans des groupes logiques qui répondent à vos besoins. Par exemple, les groupes peuvent contenir un ordre de démarrage qui peut être exécuté lors de la restauration. Avec cette version, chaque groupe de ressources peut inclure une ou plusieurs machines virtuelles. Les machines virtuelles s'allume en fonction de l'ordre dans lequel vous les incluez dans le plan. Reportez-vous à la section https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html#select-applications-to-replicate-and-assign-resource-groups["Sélectionnez les applications à répliquer et attribuez des groupes de ressources"].
+* *Vérification de la réplication* : après avoir créé le plan de reprise après incident ou de réplication, identifiez la récurrence dans l'assistant et lancez une réplication vers un site de reprise après incident, toutes les 30 minutes, BlueXP Disaster Recovery vérifie que la réplication se produit réellement conformément au plan. Vous pouvez surveiller la progression dans la page moniteur des tâches. Reportez-vous à la section  https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/replicate.html["Réplication d'applications vers un autre site"].
+* *Le plan de réplication affiche les programmes de transfert de l'objectif de point de récupération (RPO)* : lorsque vous créez un plan de reprise après sinistre ou de réplication, vous sélectionnez les machines virtuelles. Dans cette version, vous pouvez désormais afficher la SnapMirror associée à chacun des volumes associés au datastore ou à la machine virtuelle. Vous pouvez également consulter les planifications de transfert RPO associées à la planification SnapMirror. L'objectif de point de récupération vous permet de déterminer si votre planification de sauvegarde est suffisante pour permettre une reprise après incident. Reportez-vous à la section https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Créer un plan de réplication"].
+* *Mise à jour du moniteur de tâches* : la page moniteur de tâches comprend maintenant une option d'actualisation qui vous permet d'obtenir un état à jour des opérations. Reportez-vous à la section  https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/monitor-jobs.html["Surveiller les tâches de reprise après incident"].
+

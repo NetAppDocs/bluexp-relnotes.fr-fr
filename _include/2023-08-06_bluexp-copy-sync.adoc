@@ -1,0 +1,31 @@
+= Utilisez les groupes de sécurité Azure existants lors de la création d'un courtier en données
+:allow-uri-read: 
+
+
+
+
+=== Utilisez les groupes de sécurité Azure existants lors de la création d'un courtier en données
+
+Les utilisateurs ont désormais la possibilité d'utiliser les groupes de sécurité Azure existants lors de la création d'un courtier de données.
+
+Le compte de service utilisé lors de la création du courtier de données doit disposer des autorisations suivantes :
+
+* « Microsoft.Network/networkSecurityGroups/securityRules/read"
+* « Microsoft.Network/networkSecurityGroups/read"
+
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html["En savoir plus sur la création d'un courtier en données dans Azure."]
+
+
+
+=== Chiffrement des données lors de la synchronisation avec Google Storage
+
+Les utilisateurs ont désormais la possibilité de spécifier une clé de chiffrement gérée par le client lors de la création d'une relation de synchronisation avec un compartiment Google Storage comme cible. Vous pouvez saisir manuellement votre touche ou choisir dans une liste de vos touches dans une seule région.
+
+Le compte de service utilisé lors de la création du courtier de données doit disposer des autorisations suivantes :
+
+* Cloudkms.cryptoKeys.list
+* Cloudkms.keyrings.list
+
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/reference-requirements.html#google-cloud-storage-bucket-requirements["En savoir plus sur les exigences relatives aux compartiments de stockage de Google Cloud."]

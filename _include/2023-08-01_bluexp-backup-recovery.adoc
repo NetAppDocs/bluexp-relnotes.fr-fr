@@ -1,0 +1,45 @@
+= La prise en charge a été ajoutée à la sauvegarde des volumes dans des compartiments sur les systèmes ONTAP configurés avec S3
+:allow-uri-read: 
+
+
+[IMPORTANT]
+====
+* En raison d'une amélioration importante de la sécurité, votre connecteur nécessite désormais un accès Internet sortant vers un terminal supplémentaire afin de gérer les ressources de sauvegarde et de restauration au sein de votre environnement de cloud public. Si ce point final n'a pas été ajouté à la liste « autorisé » de votre pare-feu, une erreur s'affiche dans l'interface utilisateur à propos de « Service indisponible » ou de « Echec de la détermination de l'état du service » :
++
+\https://netapp-cloud-account.auth0.com
+
+* Vous devez désormais souscrire un abonnement PAYGO pour la sauvegarde et la restauration lorsque vous utilisez le pack « CVO Professional » qui vous permet de regrouper les fonctionnalités de sauvegarde et de restauration de Cloud Volumes ONTAP et BlueXP. Cela n'était pas nécessaire par le passé. Aucun frais n'est facturé sur l'abonnement à la sauvegarde et à la récupération pour les systèmes Cloud Volumes ONTAP éligibles, mais il est requis lors de la configuration de la sauvegarde sur les nouveaux volumes.
+
+
+====
+
+
+=== La prise en charge a été ajoutée à la sauvegarde des volumes dans des compartiments sur les systèmes ONTAP configurés avec S3
+
+Vous pouvez désormais utiliser un système ONTAP configuré pour simple Storage Service (S3) pour sauvegarder des volumes dans le stockage objet. Ceci est pris en charge à la fois pour les systèmes ONTAP sur site et les systèmes Cloud Volumes ONTAP. Cette configuration est prise en charge dans les déploiements cloud et sur des sites sans accès à Internet (déploiement en mode « privé »).
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-ontap-s3.html["En savoir plus >>"].
+
+
+
+=== Vous pouvez désormais inclure les snapshots existants d'un volume protégé dans vos fichiers de sauvegarde
+
+Auparavant, vous aviez la possibilité d'inclure des copies Snapshot existantes à partir de volumes de lecture-écriture dans votre fichier de sauvegarde initial vers le stockage objet (au lieu de commencer avec la copie Snapshot la plus récente). Les copies Snapshot existantes de volumes en lecture seule (volumes de protection des données) n'ont pas été incluses dans le fichier de sauvegarde. Vous pouvez désormais choisir d'inclure d'anciennes copies Snapshot dans le fichier de sauvegarde des volumes « DP ».
+
+L'assistant de sauvegarde affiche une invite à la fin des étapes de sauvegarde, dans laquelle vous pouvez sélectionner ces « instantanés existants ».
+
+
+
+=== La sauvegarde et la restauration BlueXP ne prennent plus en charge la sauvegarde automatique des volumes ajoutés à l'avenir
+
+Vous pouviez auparavant cocher une case dans l'assistant de sauvegarde pour appliquer la règle de sauvegarde sélectionnée à tous les futurs volumes ajoutés au cluster. Cette fonction a été supprimée en fonction des commentaires de l'utilisateur et du manque d'utilisation de cette fonction. Vous devez activer manuellement les sauvegardes de tout nouveau volume ajouté au cluster.
+
+
+
+=== La page surveillance des travaux a été mise à jour avec de nouvelles fonctionnalités
+
+La page surveillance des tâches fournit maintenant plus d'informations sur la stratégie de sauvegarde 3-2-1. Le service fournit également des notifications d'alerte supplémentaires relatives à la stratégie de sauvegarde.
+
+Le filtre Type « cycle de vie de sauvegarde » a été renommé « conservation ». Utilisez ce filtre pour suivre le cycle de vie des sauvegardes et identifier l'expiration de toutes les copies de sauvegarde. Le type de tâche « conservation » capture toutes les tâches de suppression de Snapshot initiées sur un volume protégé par la sauvegarde et la restauration BlueXP.
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html["En savoir plus sur le moniteur de tâches mis à jour"].

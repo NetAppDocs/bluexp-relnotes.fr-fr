@@ -1,0 +1,11 @@
+= Prise en charge des installations sur site de la classification BlueXP sur RHEL version 9
+:allow-uri-read: 
+
+
+
+
+=== Prise en charge des installations sur site de la classification BlueXP sur RHEL version 9
+
+Les versions 8 et 9 de Red Hat Enterprise Linux ne prennent pas en charge le moteur Docker requis pour l'installation de classification BlueXP. Nous prenons désormais en charge l'installation de classification BlueXP sur RHEL 9.0, 9.1 et 9.2 en utilisant Podman version 4 ou ultérieure comme infrastructure de conteneur. Si votre environnement requiert l'utilisation des dernières versions de RHEL, vous pouvez désormais installer la classification BlueXP (version 1.26 ou supérieure) lorsque vous utilisez Podman.
+
+À l'heure actuelle, nous ne prenons pas en charge les installations de sites invisibles ou les environnements de numérisation distribués (à l'aide d'un scanner maître et distant) lors de l'utilisation de RHEL 9.x.

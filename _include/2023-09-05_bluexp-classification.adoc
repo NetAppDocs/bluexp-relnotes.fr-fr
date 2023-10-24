@@ -1,0 +1,21 @@
+= Petits et moyens déploiements temporairement indisponibles
+:allow-uri-read: 
+
+
+
+
+=== Petits et moyens déploiements temporairement indisponibles
+
+Lorsque vous déployez une instance de classification BlueXP dans AWS, l'option de sélectionner *Deploy > Configuration* et de choisir une instance de petite ou moyenne taille n'est pas disponible pour le moment. Vous pouvez toujours déployer l'instance à l'aide de la grande taille d'instance en sélectionnant *déployer > déployer*.
+
+
+
+=== Appliquez des balises sur un maximum de 100,000 éléments à partir de la page Résultats d'enquête
+
+Dans le passé, vous ne pouviez appliquer des balises qu'à une seule page à la fois dans la page Résultats d'enquête (20 éléments). Vous pouvez maintenant sélectionner *tous* éléments dans les pages Résultats d'enquête et appliquer des balises à tous les éléments - jusqu'à 100,000 éléments à la fois. https://docs.netapp.com/us-en/bluexp-classification/task-org-private-data.html#assigning-tags-to-files["Découvrez comment"].
+
+
+
+=== Identifiez les fichiers dupliqués avec une taille de fichier minimale de 1 Mo
+
+Classification BlueXP utilisée pour identifier les fichiers dupliqués uniquement lorsque les fichiers étaient de 50 Mo ou plus. Désormais, les fichiers dupliqués commençant par 1 Mo peuvent être identifiés. Vous pouvez utiliser les filtres de la page Investigation « taille du fichier » ainsi que « doublons » pour voir quels fichiers d'une certaine taille sont dupliqués dans votre environnement.

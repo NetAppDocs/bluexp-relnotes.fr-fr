@@ -1,0 +1,9 @@
+= Connecteur 3.9.34
+:allow-uri-read: 
+
+
+
+
+=== Connecteur 3.9.34
+
+Cette version contient des améliorations mineures et des corrections de bogues.

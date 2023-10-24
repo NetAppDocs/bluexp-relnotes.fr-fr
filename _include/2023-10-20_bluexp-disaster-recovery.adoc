@@ -1,0 +1,12 @@
+= 
+:allow-uri-read: 
+
+
+Cette version préliminaire de la reprise d'activité de BlueXP inclut les mises à jour suivantes.
+
+Désormais, avec la reprise d'activité BlueXP, vous pouvez protéger vos workloads VMware sur site basés sur NFS contre les incidents vers un autre environnement VMware sur site et NFS en plus du cloud public. La reprise d'activité BlueXP orchestre l'achèvement des plans de reprise d'activité.
+
+
+NOTE: Avec cette offre de prévisualisation, NetApp se réserve le droit de modifier les détails, le contenu et le calendrier de l'offre avant la disponibilité générale.
+
+https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["En savoir plus sur la reprise d'activité BlueXP"].

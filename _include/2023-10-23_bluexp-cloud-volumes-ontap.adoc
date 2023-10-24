@@ -1,0 +1,23 @@
+= De nouvelles régions prises en charge pour les déploiements HA de zones de disponibilité multiples dans Azure
+:allow-uri-read: 
+
+
+Les modifications suivantes ont été introduites avec la version 3.9.34 du connecteur.
+
+
+
+=== De nouvelles régions prises en charge pour les déploiements HA de zones de disponibilité multiples dans Azure
+
+Les régions suivantes dans Azure prennent désormais en charge les déploiements de zones de disponibilité multiples haute disponibilité pour Cloud Volumes ONTAP 9.14.0 et versions ultérieures :
+
+* Australie Est
+* Asie de l'Est
+* France centrale
+* Europe du Nord
+* Qatar Central
+* Suède Centre
+* Europe de l'Ouest
+* Ouest des États-Unis 2
+
+
+Pour obtenir la liste de toutes les régions prenant en charge plusieurs zones de disponibilité, reportez-vous au https://bluexp.netapp.com/cloud-volumes-global-regions["Carte des régions globales sous Azure"^].
