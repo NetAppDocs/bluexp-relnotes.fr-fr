@@ -5,15 +5,12 @@ keywords: release notes
 summary: 'Affichez l"ensemble des notes de version pour chaque service.' 
 ---
 = Index des notes de version
-:toc: macro
 :hardbreaks:
 :allow-uri-read: 
-:toc: 
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
