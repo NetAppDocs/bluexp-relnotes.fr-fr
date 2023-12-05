@@ -30,6 +30,23 @@ Cette section décrit les nouvelles fonctionnalités liées aux fonctions d'admi
 
 
 
+=== 5 décembre 2023
+
+
+
+==== Version en mode privé
+
+Une nouvelle version du mode privé est maintenant disponible pour BlueXP. Cette version inclut la version 3.9.35 du connecteur et des versions des services BlueXP prises en charge avec le mode privé depuis octobre 2023.
+
+Cette nouvelle version est téléchargeable depuis le site du support NetApp.
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#private-mode["Découvrez les services BlueXP inclus avec le mode privé"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Découvrez comment démarrer avec BlueXP en mode privé"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["Apprenez à mettre à niveau le connecteur lorsque vous utilisez le mode privé"]
+
+
+
+
 === 8 novembre 2023
 
 
@@ -47,21 +64,6 @@ Cette version contient des améliorations mineures de la sécurité et des corre
 ==== Connecteur 3.9.34
 
 Cette version contient des améliorations mineures et des corrections de bogues.
-
-
-
-=== 10 septembre 2023
-
-
-
-==== Connecteur 3.9.33
-
-* Lorsque vous créez un connecteur dans AWS à partir de BlueXP, vous pouvez désormais rechercher dans le champ paire de clés pour trouver plus facilement la paire de clés que vous souhaitez utiliser avec l'instance de connecteur.
-+
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-connector-aws-key-pair.png["Capture d'écran de l'option de recherche dans le champ paire de clés qui s'affiche sur la page réseau lors de la création d'un connecteur dans AWS à partir de BlueXP."]
-
-* Cette mise à jour inclut également des correctifs.
-
 
 
 
@@ -475,6 +477,32 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 
+=== 26 novembre 2023
+
+
+
+==== Prise en charge de la classe de stockage à froid pour Azure Blob
+
+Le Tier de stockage à froid Azure Blob est désormais disponible lors de la création d'une relation de synchronisation.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html["En savoir plus sur la création d'une relation de synchronisation."]
+
+
+
+==== Prise en charge de la région de tel Aviv dans les courtiers de données AWS
+
+Tel Aviv est désormais prise en charge par une région lors de la création d'un courtier en données dans AWS.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#creating-the-data-broker["En savoir plus sur la création d'un courtier en données dans AWS"].
+
+
+
+==== Passez à la version du nœud pour les courtiers de données
+
+Tous les nouveaux courtiers de données utiliseront la version de nœud 21.2.0. Les courtiers de données non compatibles avec cette mise à jour, tels que CentOS 7.0 et Ubuntu Server 18.0, ne fonctionneront plus avec la copie et la synchronisation BlueXP.
+
+
+
 === 3 septembre 2023
 
 
@@ -527,53 +555,25 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/reference-requirements.html#googl
 
 
 
-=== 9 juillet 2023
-
-
-
-==== Supprimez plusieurs relations de synchronisation à la fois
-
-Les utilisateurs peuvent désormais supprimer plusieurs relations de synchronisation à la fois dans l'interface utilisateur.
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-relationships.html#deleting-relationships["En savoir plus sur la suppression des relelationsSync."]
-
-
-
-==== Liste de contrôle d'accès pour copie uniquement
-
-Les utilisateurs disposent désormais d'options supplémentaires pour copier les informations ACL dans les relations CIF et NFS. Lors de la création ou de la gestion d'une relation de synchronisation, vous pouvez uniquement copier des fichiers, copier uniquement des informations ACL ou copier des fichiers et des informations ACL.
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-copying-acls.html["En savoir plus sur la copie des listes de contrôle d'accès."]
-
-
-
-==== Mise à jour vers Node.js 20
-
-La copie et la synchronisation ont été mises à jour vers Node.js 20. Tous les courtiers de données disponibles seront mis à jour. Les systèmes d'exploitation incompatibles avec cette mise à jour ne peuvent pas être installés et les systèmes existants incompatibles peuvent rencontrer des problèmes de performances.
-
-
-
-=== 11 juin 2023
-
-
-
-==== Prend en charge l'abandon automatique en minutes
-
-Les synchronisations actives qui ne sont pas terminées peuvent maintenant être abandonnées après quinze minutes à l'aide de la fonction *Sync Timeout*.
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["En savoir plus sur le paramètre délai de synchronisation"].
-
-
-
-==== Métadonnées de la durée d'accès à la copie
-
-Dans les relations incluant un système de fichiers, la fonction *Copy for Objects* copie désormais les métadonnées du temps d'accès.
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["En savoir plus sur le paramètre Copier pour objets"].
-
-
-
 == Conseiller digital
+
+
+
+=== 16 novembre 2023
+
+
+
+=== Liste de surveillance
+
+Vous pouvez maintenant créer un maximum de 100 listes de surveillance.
+
+
+
+==== Widget de planification
+
+* Les recommandations de mise à jour technologique sont désormais disponibles dans les tableaux de bord des listes de suivi, des sites et des groupes.
+* Vous pouvez désormais afficher les candidats aux mises à jour technologiques potentiels lorsque le nombre de recommandations de mise à jour technologique est égal à zéro.
+
 
 
 
@@ -595,19 +595,6 @@ Le nombre de recommandations pour les mises à jour technologiques est inclus da
 
 * Vous pouvez accéder à la page Upgrade Advisor de votre liste de contrôle par défaut à l'aide de link:https://activeiq.netapp.com/redirect/upgrade-advisor["Upgrade Advisor"^] lien.
 * Le plan de mise à niveau est optimisé pour supprimer les étapes de mise à niveau redondantes et simplifier le plan de retrait. Les étapes courantes de tous les nœuds d'un cluster sont consolidées et disponibles dans la section informations générales du plan de mise à niveau. link:https://docs.netapp.com/us-en/active-iq/task_view_upgrade.html["Découvrez comment générer et afficher le plan de mise à niveau"].
-
-
-
-
-=== 16 juillet 2023
-
-
-
-==== Efficacité du stockage
-
-* Le libellé *efficacité du stockage*, qui affiche le ratio d'efficacité, est renommé *réduction des données*.
-* Le libellé *données sauvegardées par efficacité du stockage* est renommé *économies de réduction des données*.
-* La bascule *Savings without Snapshot backups* est renommée *with Snapshot copies* avec une modification de sa fonctionnalité. link:https://docs.netapp.com/us-en/active-iq/reference_aiq_faq.html#storage-efficiency["En savoir plus >>"].
 
 
 

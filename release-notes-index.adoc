@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: release-notes-index.html 
 keywords: release notes 
-summary: 'Affichez l"ensemble des notes de version pour chaque service.' 
+summary: 'Consultez l"ensemble des notes de version de chaque service BlueXP.' 
 ---
 = Index des notes de version
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Affichez l"ensemble des notes de version pour chaque service.'
 
 
 [role="lead"]
-Affichez l'ensemble des notes de version pour chaque service.
+Consultez l'ensemble des notes de version de chaque service BlueXP.
 
 
 

@@ -2,7 +2,6 @@
 <blocks>
   <block id="db502201c33ba3b3f867c8360cce228a" category="doc">Notes de version BlueXP</block>
   <block id="ad49677f8bac8ede065e8839632b6f38" category="doc">Index des notes de version</block>
-  <block id="58c23c6ea3bae0f0d75bd2cd80d15108" category="paragraph">Affichez l'ensemble des notes de version pour chaque service.</block>
   <block id="8c4aa541ee911e8d80451ef8cc304806" category="section-title">Stockage</block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link">Azure NetApp Files</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link">Amazon FSX pour ONTAP</block>
@@ -236,15 +235,6 @@
   <block id="da20ff5e68ae0641ae1925c968ac0244" category="paragraph">La mise en cache des volumes BlueXP vous offre des fonctionnalités de mise en cache pour le cloud, en particulier pour Amazon FSX pour NetApp ONTAP, Cloud Volumes ONTAP et pour vos environnements de travail sur site.</block>
   <block id="62f5b0396e259b44122ad3fd5f9581e0" category="inline-link-macro">En savoir plus sur la mise en cache de volumes BlueXP</block>
   <block id="2ffe4affb627afa20f3783de7a26c8af" category="paragraph"><block ref="c926d704a05a7f256c6c14f4d9e77466" category="inline-link-macro-rx"></block>.</block>
-  <block id="9b7d935c674579c8c8e305e2dcadc1b9" category="section-title">11 juin 2023</block>
-  <block id="b18ac5fa90a568a24f98c73b9192cb6d" category="section-title">Prend en charge l'abandon automatique en minutes</block>
-  <block id="33c110842a0fe3f7891980d750e48fa2" category="paragraph">Les synchronisations actives qui ne sont pas terminées peuvent maintenant être abandonnées après quinze minutes à l'aide de la fonction *Sync Timeout*.</block>
-  <block id="44856e8753e0c19c0341499a434c7c97" category="inline-link">En savoir plus sur le paramètre délai de synchronisation</block>
-  <block id="3266d16b8714caecb4f4231dca5dae65" category="paragraph"><block ref="bfd432c58dd0bb0c71b937c5a3336867" category="inline-link-rx"></block>.</block>
-  <block id="69540ae9a9da395711f1e900d88e4cc5" category="section-title">Métadonnées de la durée d'accès à la copie</block>
-  <block id="a706d4045e92e504f4aa9e79191d81f5" category="paragraph">Dans les relations incluant un système de fichiers, la fonction *Copy for Objects* copie désormais les métadonnées du temps d'accès.</block>
-  <block id="bac04a3b125486e43e5adcb9275b0cb7" category="inline-link">En savoir plus sur le paramètre Copier pour objets</block>
-  <block id="b9101f79b22863de2373d338b3f2fd49" category="paragraph"><block ref="61cd45fc857d1053eae8b58e970eda27" category="inline-link-rx"></block>.</block>
   <block id="942e802a236d6542c0c6f797428d8abb" category="section-title">02 juillet 2023</block>
   <block id="d41b120a4f792ebe6195de3355c6309a" category="inline-link-macro">Ajout d'une VM de stockage</block>
   <block id="ef4fe9904a05c0168f433db5ef979256" category="list-text">C'est possible maintenant <block ref="73429b7c98363ef2dcc9eca20bd224e7" category="inline-link-macro-rx"></block> Au système de fichiers Amazon FSX pour NetApp ONTAP à l'aide de BlueXP.</block>
@@ -264,17 +254,6 @@
   <block id="57f9b94b395c8e293b7f892fe5995ac7" category="paragraph">Cette notification est une « recommandation » pour vous aider à rendre vos systèmes plus efficaces et à réduire vos coûts de stockage. Il fournit un lien vers le<block ref="c9d262883689ef94201e8739cb50c7f6" category="inline-link-rx"></block> pour vous aider à calculer vos économies.</block>
   <block id="833c2c211a541e50ad94433664e4b5c1" category="inline-link">Google Cloud Storage</block>
   <block id="68269a7fe7304a0e7d5a0232d5e7141b" category="list-text"><block ref="68269a7fe7304a0e7d5a0232d5e7141b" category="inline-link-rx"></block></block>
-  <block id="744c3e2d9eefd2af0d741a4bdf013531" category="section-title">9 juillet 2023</block>
-  <block id="0d31f76acc0f0585c0ce6603aae95bf9" category="section-title">Supprimez plusieurs relations de synchronisation à la fois</block>
-  <block id="86f4ab992201dfe7e7a91d9236676ea1" category="paragraph">Les utilisateurs peuvent désormais supprimer plusieurs relations de synchronisation à la fois dans l'interface utilisateur.</block>
-  <block id="f56872f7cec9149a7ac802d7a22773f7" category="inline-link">En savoir plus sur la suppression des relelationsSync.</block>
-  <block id="8841a5cc4fff05bb6e2a277bb234a5e9" category="paragraph"><block ref="8841a5cc4fff05bb6e2a277bb234a5e9" category="inline-link-rx"></block></block>
-  <block id="0bf8da16e84dc021192c3cce07860470" category="section-title">Liste de contrôle d'accès pour copie uniquement</block>
-  <block id="dda93ca03de99accfa039adc8007a91c" category="paragraph">Les utilisateurs disposent désormais d'options supplémentaires pour copier les informations ACL dans les relations CIF et NFS. Lors de la création ou de la gestion d'une relation de synchronisation, vous pouvez uniquement copier des fichiers, copier uniquement des informations ACL ou copier des fichiers et des informations ACL.</block>
-  <block id="75188372815d8c81aa145bb6bd881697" category="inline-link">En savoir plus sur la copie des listes de contrôle d'accès.</block>
-  <block id="f14be32be1b0e46b478529e782afc130" category="paragraph"><block ref="f14be32be1b0e46b478529e782afc130" category="inline-link-rx"></block></block>
-  <block id="c3605c10e6753f736b31bbe56975b312" category="section-title">Mise à jour vers Node.js 20</block>
-  <block id="62ace2991e0846010d9d30c14cb37645" category="paragraph">La copie et la synchronisation ont été mises à jour vers Node.js 20. Tous les courtiers de données disponibles seront mis à jour. Les systèmes d'exploitation incompatibles avec cette mise à jour ne peuvent pas être installés et les systèmes existants incompatibles peuvent rencontrer des problèmes de performances.</block>
   <block id="145634d473d937448dc7bdb5a6797ea7" category="section-title">10 juillet 2023</block>
   <block id="5a6d96b9a020e520981bf7fe4c7af203" category="section-title">Possibilité d'ajouter de nouveaux compartiments et de gérer les compartiments existants à partir de BlueXP</block>
   <block id="2706c3785e1f78099c28d555600c918b" category="inline-link">Découvrez comment ajouter de nouveaux compartiments de stockage Google Cloud</block>
@@ -394,13 +373,6 @@
   <block id="8454892d6268011bb79d98eedd4f8afb" category="paragraph"><block ref="10a687fb14a41a274bb5d883fcf5c124" category="inline-link-macro-rx"></block>.</block>
   <block id="405e835e0544bb4cc8bbd26a2c840b54" category="section-title">18 mai 2023</block>
   <block id="acff175f1bababdb2baa1348412d501d" category="paragraph">Il s'agit de la version initiale de la reprise d'activité de BlueXP.</block>
-  <block id="51f8ba1e739f07ed09f1ba20bff5e7fc" category="section-title">16 juillet 2023</block>
-  <block id="91b681e174a782226d26fb4056e14081" category="section-title">Efficacité du stockage</block>
-  <block id="520e6a90f7dfce96c54641856d8584f2" category="list-text">Le libellé *efficacité du stockage*, qui affiche le ratio d'efficacité, est renommé *réduction des données*.</block>
-  <block id="cc50d008d8b1e1f6ba13bbe127a1bf29" category="list-text">Le libellé *données sauvegardées par efficacité du stockage* est renommé *économies de réduction des données*.</block>
-  <block id="2a88859b894ead28756789553bc66754" category="list-text">La bascule *Savings without Snapshot backups* est renommée *with Snapshot copies* avec une modification de sa fonctionnalité. <block ref="3a01d99aaa6c74ce8f92a2ac5ca4e5e9" category="inline-link-macro-rx"></block>.</block>
-  <block id="200c9dcd65b566ab41bf3c1946647dce" category="section-title">10 septembre 2023</block>
-  <block id="f2d77c003fbfd61002c06e73a629086c" category="section-title">Connecteur 3.9.33</block>
   <block id="d8465669650730f887acd3754f3dea9f" category="list-text">Lorsque vous créez un connecteur dans AWS à partir de BlueXP, vous pouvez désormais rechercher dans le champ paire de clés pour trouver plus facilement la paire de clés que vous souhaitez utiliser avec l'instance de connecteur.</block>
   <block id="5fa35188b7dd9c428afc77ce84eeb10b" category="inline-image-macro">Capture d'écran de l'option de recherche dans le champ paire de clés qui s'affiche sur la page réseau lors de la création d'un connecteur dans AWS à partir de BlueXP.</block>
   <block id="37570078060157a3624ff806701689b8" category="paragraph"><block ref="37570078060157a3624ff806701689b8" category="inline-image-macro-rx" type="image"></block></block>
@@ -495,7 +467,6 @@
 <block ref="c6a2e575c9cd7913e0bdc96abdd66269" category="inline-link-macro-rx"></block></block>
   <block id="d36a1ccbf2d01a1ff61c0e50416882e9" category="section-title">04 octobre 2023</block>
   <block id="ec795e7f7ea26d9d59bc0e1e031d4234" category="section-title">Widget de planification</block>
-  <block id="cf75b31aeb339e309fa309a49a276a28" category="paragraph">Le nombre de recommandations pour les mises à jour technologiques est inclus dans le widget de planification du tableau de bord du niveau client. Ces recommandations aident à planifier les activités de mise à jour technologique du matériel lorsque le support matériel est épuisé ou arrive à sa fin.</block>
   <block id="2971377ab46c11db3998ef23731b52cf" category="section-title">20 octobre 2023</block>
   <block id="b56e223e6fc7ca1dfacb6233ed47b35e" category="paragraph">Cette version préliminaire de la reprise d'activité de BlueXP inclut les mises à jour suivantes.</block>
   <block id="af242308972c98cd4207cc26ee6edaa9" category="paragraph">Désormais, avec la reprise d'activité BlueXP, vous pouvez protéger vos workloads VMware sur site basés sur NFS contre les incidents vers un autre environnement VMware sur site et NFS en plus du cloud public. La reprise d'activité BlueXP orchestre l'achèvement des plans de reprise d'activité.</block>
@@ -554,4 +525,32 @@
   <block id="04c6b318fe9c7f19ae925a90e52c6569" category="paragraph">Le moniteur des tâches de sauvegarde et de restauration BlueXP inclut désormais des tâches planifiées pour les snapshots locaux, les réplications et les sauvegardes vers le stockage objet.</block>
   <block id="35214f9b3df21ed35db22cb765a9b147" category="section-title">13 novembre 2023</block>
   <block id="c14af667110ffb482c0adaaed623dbe2" category="paragraph">Vous pouvez désormais créer des rapports pour les volumes qui utilisent le protocole SMB/CIFS.</block>
+  <block id="563cbb5befcc35d67fb204c94be0bffb" category="summary">Consultez l'ensemble des notes de version de chaque service BlueXP.</block>
+  <block id="e8a0c291b754a75e0e91ecf69d567912" category="section-title">5 décembre 2023</block>
+  <block id="1771e2f4014c6ccd829b84cf9e8c7d27" category="section-title">Version en mode privé</block>
+  <block id="5a78b457c661dc3d01c5125da794f0ed" category="paragraph">Une nouvelle version du mode privé est maintenant disponible pour BlueXP. Cette version inclut la version 3.9.35 du connecteur et des versions des services BlueXP prises en charge avec le mode privé depuis octobre 2023.</block>
+  <block id="ec34e91164e39c9df1bfb906cff07162" category="paragraph">Cette nouvelle version est téléchargeable depuis le site du support NetApp.</block>
+  <block id="2e57b160bcd31ccd527a6670d94879de" category="inline-link">Découvrez les services BlueXP inclus avec le mode privé</block>
+  <block id="d51183b71ba843f2f97d0b54a084f7e8" category="list-text"><block ref="d51183b71ba843f2f97d0b54a084f7e8" category="inline-link-rx"></block></block>
+  <block id="8156defa13b44a36e67cab400c3b8bd4" category="inline-link">Découvrez comment démarrer avec BlueXP en mode privé</block>
+  <block id="1183e1b8915696495b308d0bdfa59bd4" category="list-text"><block ref="1183e1b8915696495b308d0bdfa59bd4" category="inline-link-rx"></block></block>
+  <block id="b29a186d936b198dcafa3a0308485e2c" category="inline-link">Apprenez à mettre à niveau le connecteur lorsque vous utilisez le mode privé</block>
+  <block id="4e208e7f54024bf731fae02025ce34d9" category="list-text"><block ref="4e208e7f54024bf731fae02025ce34d9" category="inline-link-rx"></block></block>
+  <block id="a76b69f0eac891a6dad210c8c894f70c" category="section-title">26 novembre 2023</block>
+  <block id="5dbbe39e8d4eedbcb5aafdf7e0e66a80" category="section-title">Prise en charge de la classe de stockage à froid pour Azure Blob</block>
+  <block id="2be7473e47d2102f9d51ff1a3cd36305" category="paragraph">Le Tier de stockage à froid Azure Blob est désormais disponible lors de la création d'une relation de synchronisation.</block>
+  <block id="6e90305f3ad22c32d20c662a0bb06726" category="inline-link">En savoir plus sur la création d'une relation de synchronisation.</block>
+  <block id="2bfe6803528ed3d1b4758e7bc6eb4cb6" category="paragraph"><block ref="2bfe6803528ed3d1b4758e7bc6eb4cb6" category="inline-link-rx"></block></block>
+  <block id="e35f035cdd0e53d6ac8e57e89c9a3994" category="section-title">Prise en charge de la région de tel Aviv dans les courtiers de données AWS</block>
+  <block id="bc601240bd77a257f82ad29245da02ee" category="paragraph">Tel Aviv est désormais prise en charge par une région lors de la création d'un courtier en données dans AWS.</block>
+  <block id="f296e44bbf15ea94dfcce2d2a4649e6d" category="inline-link">En savoir plus sur la création d'un courtier en données dans AWS</block>
+  <block id="48938ec2ae208dc89827f9e55c8f1c41" category="paragraph"><block ref="42f00e873b388cac01d84d3ba1605497" category="inline-link-rx"></block>.</block>
+  <block id="e24f754057dce2d0f9791240fec7d494" category="section-title">Passez à la version du nœud pour les courtiers de données</block>
+  <block id="a020a6afcaa5c0d333b5cfb93c8d4d79" category="paragraph">Tous les nouveaux courtiers de données utiliseront la version de nœud 21.2.0. Les courtiers de données non compatibles avec cette mise à jour, tels que CentOS 7.0 et Ubuntu Server 18.0, ne fonctionneront plus avec la copie et la synchronisation BlueXP.</block>
+  <block id="20cc757c4cb0c9b6153ae0f56705ae36" category="section-title">16 novembre 2023</block>
+  <block id="e057979f7791f37ec4a8704baa00923d" category="section-title">Liste de surveillance</block>
+  <block id="20015eaa9dc8feb8cbf1eaadb95c6b20" category="paragraph">Vous pouvez maintenant créer un maximum de 100 listes de surveillance.</block>
+  <block id="752f0c78427b5fffe498798d609a58a7" category="list-text">Les recommandations de mise à jour technologique sont désormais disponibles dans les tableaux de bord des listes de suivi, des sites et des groupes.</block>
+  <block id="5abb66a3f2a4a3a5e6083eb0e9cb8016" category="list-text">Vous pouvez désormais afficher les candidats aux mises à jour technologiques potentiels lorsque le nombre de recommandations de mise à jour technologique est égal à zéro.</block>
+  <block id="bd644bc36e5d6955b3d49189c83c45f3" category="paragraph">Le nombre de recommandations pour les mises à jour technologiques est inclus dans le widget de planification du tableau de bord du niveau client. Ces recommandations aident à planifier les activités de mise à jour technologique du matériel lorsque le support matériel est épuisé ou arrive à sa fin.</block>
 </blocks>
