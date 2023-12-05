@@ -381,6 +381,52 @@ Classification BlueXP utilisée pour identifier les fichiers dupliqués uniqueme
 
 
 
+=== 6 décembre 2023
+
+
+
+==== Cloud Volumes ONTAP 9.14.1 RC1
+
+BlueXP peut désormais déployer et gérer Cloud Volumes ONTAP 9.14.1 dans AWS, Azure et Google Cloud.
+
+
+
+=== 5 décembre 2023
+
+Les modifications suivantes ont été introduites.
+
+
+
+==== Prise en charge de nouvelles régions dans Azure
+
+
+
+===== Prise en charge des régions à zone de disponibilité unique
+
+Les régions suivantes prennent désormais en charge les déploiements de zones de disponibilité uniques hautement disponibles dans Azure pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures :
+
+* Tel Aviv
+* Milan
+
+
+
+
+===== Prise en charge de plusieurs zones de disponibilité par région
+
+Les régions suivantes prennent désormais en charge les déploiements de zones de disponibilité multiples hautement disponibles dans Azure pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures :
+
+* Inde centrale
+* Norvège est
+* Suisse Nord
+* Afrique du Sud Nord
+* Émirats arabes Unis Nord
+* Chine Nord 3
+
+
+Pour obtenir la liste de toutes les régions, reportez-vous au https://bluexp.netapp.com/cloud-volumes-global-regions["Carte des régions globales sous Azure"^].
+
+
+
 === 10 novembre 2023
 
 Le changement suivant a été introduit avec la version 3.9.35 du connecteur.
@@ -390,34 +436,6 @@ Le changement suivant a été introduit avec la version 3.9.35 du connecteur.
 ==== Région de Berlin désormais prise en charge dans Google Cloud
 
 La région de Berlin est désormais prise en charge dans Google Cloud pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures.
-
-Pour obtenir la liste de toutes les régions, reportez-vous au https://bluexp.netapp.com/cloud-volumes-global-regions["Carte des régions du monde sous Google Cloud"^].
-
-
-
-=== 8 novembre 2023
-
-Le changement suivant a été introduit avec la version 3.9.35 du connecteur.
-
-
-
-==== La région de tel Aviv est désormais prise en charge dans AWS
-
-La région de tel Aviv est désormais prise en charge dans AWS pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures.
-
-Pour obtenir la liste de toutes les régions, reportez-vous au https://bluexp.netapp.com/cloud-volumes-global-regions["Carte des régions globales sous AWS"^].
-
-
-
-=== 1er novembre 2023
-
-Le changement suivant a été introduit avec la version 3.9.34 du connecteur.
-
-
-
-==== La région de l'Arabie saoudite est désormais prise en charge dans Google Cloud
-
-La région Arabie saoudite est désormais prise en charge dans Google Cloud pour Cloud Volumes ONTAP et dans Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures.
 
 Pour obtenir la liste de toutes les régions, reportez-vous au https://bluexp.netapp.com/cloud-volumes-global-regions["Carte des régions du monde sous Google Cloud"^].
 

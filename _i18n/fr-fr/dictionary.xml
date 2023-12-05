@@ -504,20 +504,12 @@
   <block id="e25bae53fb1951841531279fa78ee63a" category="section-title">Les problèmes suivants ont été résolus dans cette version</block>
   <block id="299ea648aaf9c598beed6ef12a6ef415" category="list-text">Correction d'une incohérence lors de la présentation du nombre de fichiers analysés par le système dans les tableaux de bord.</block>
   <block id="c6e9efb915fb85dd556a71294988c99a" category="list-text">Amélioration du comportement de numérisation en gérant et en signalant les fichiers et répertoires avec des caractères spéciaux dans le nom et les métadonnées.</block>
-  <block id="499efcb2be11e80e5bdfc003278352e3" category="section-title">1er novembre 2023</block>
-  <block id="992f57af99811ae146ed6df67eccc26f" category="section-title">La région de l'Arabie saoudite est désormais prise en charge dans Google Cloud</block>
-  <block id="9e06c986efeeff600f0b04c67d5d6354" category="paragraph">La région Arabie saoudite est désormais prise en charge dans Google Cloud pour Cloud Volumes ONTAP et dans Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures.</block>
   <block id="2bc724993144e8002899059117620062" category="inline-link">Carte des régions du monde sous Google Cloud</block>
   <block id="6a050b5b1c64124ef335bf9dbf64e03f" category="paragraph">Pour obtenir la liste de toutes les régions, reportez-vous au<block ref="5328f934c7a30e2b8b67732fc162a525" category="inline-link-rx"></block>.</block>
   <block id="e95c0c487a8aec79b7d3484dc5452526" category="section-title">10 novembre 2023</block>
   <block id="8e40e7e4940e30b2ce260ff97ad74d25" category="paragraph">Le changement suivant a été introduit avec la version 3.9.35 du connecteur.</block>
   <block id="1c13ec96dac1171608b6dbd65bb2245c" category="section-title">Région de Berlin désormais prise en charge dans Google Cloud</block>
   <block id="56e0da46254ac9c6f784da40f466bda0" category="paragraph">La région de Berlin est désormais prise en charge dans Google Cloud pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures.</block>
-  <block id="bbb4cf526641d95bbb8ab8bada56fa79" category="section-title">La région de tel Aviv est désormais prise en charge dans AWS</block>
-  <block id="04afad264aa486baec91a1ade145665a" category="paragraph">La région de tel Aviv est désormais prise en charge dans AWS pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures.</block>
-  <block id="0970aa81dd486fe1c8e03549b29f3d46" category="inline-link">Carte des régions globales sous AWS</block>
-  <block id="96c6a6277896e4ed7c2cef558b5542c1" category="paragraph">Pour obtenir la liste de toutes les régions, reportez-vous au<block ref="24faa078890c2d8c97de1a6b5a5789e3" category="inline-link-rx"></block>.</block>
-  <block id="8904b1f88c62ce8a8381c8474f2ccb42" category="paragraph">Le changement suivant a été introduit avec la version 3.9.34 du connecteur.</block>
   <block id="41e96c41b82196674a6b6c99d0c0b8ad" category="section-title">08 novembre 2023</block>
   <block id="c4cd570753ca79cf809d24d7723c0e82" category="paragraph">Cette version de BlueXP Economic Efficiency comprend une nouvelle option qui permet d'évaluer vos ressources et d'identifier si une mise à jour technologique est recommandée. Le service inclut une nouvelle option de mise à jour technologique dans le menu de navigation de gauche, de nouvelles pages sur lesquelles vous pouvez évaluer vos charges de travail et ressources actuelles, ainsi qu'un rapport qui vous fournit des recommandations.</block>
   <block id="aa4c67fd3731395f4450c9686b20f799" category="section-title">Prise en charge des tâches planifiées dans le moniteur des tâches</block>
@@ -553,4 +545,22 @@
   <block id="752f0c78427b5fffe498798d609a58a7" category="list-text">Les recommandations de mise à jour technologique sont désormais disponibles dans les tableaux de bord des listes de suivi, des sites et des groupes.</block>
   <block id="5abb66a3f2a4a3a5e6083eb0e9cb8016" category="list-text">Vous pouvez désormais afficher les candidats aux mises à jour technologiques potentiels lorsque le nombre de recommandations de mise à jour technologique est égal à zéro.</block>
   <block id="bd644bc36e5d6955b3d49189c83c45f3" category="paragraph">Le nombre de recommandations pour les mises à jour technologiques est inclus dans le widget de planification du tableau de bord du niveau client. Ces recommandations aident à planifier les activités de mise à jour technologique du matériel lorsque le support matériel est épuisé ou arrive à sa fin.</block>
+  <block id="a037be7aafc2f071c4517e8f2c6e58e9" category="section-title">6 décembre 2023</block>
+  <block id="4a76045b19fb3233070f77ae414d5810" category="section-title">Cloud Volumes ONTAP 9.14.1 RC1</block>
+  <block id="efb4d9478ba663f514e18b3310c2de65" category="paragraph">BlueXP peut désormais déployer et gérer Cloud Volumes ONTAP 9.14.1 dans AWS, Azure et Google Cloud.</block>
+  <block id="1fdbf90814a4e25f5b9e765470846181" category="paragraph">Les modifications suivantes ont été introduites.</block>
+  <block id="de3678aecacdbfc2cde1f365589103a8" category="section-title">Prise en charge de nouvelles régions dans Azure</block>
+  <block id="2d87524b148f67773bbd84eaceabd1a8" category="section-title">Prise en charge des régions à zone de disponibilité unique</block>
+  <block id="b778fb7051f3e08881d95bd99b033b37" category="paragraph">Les régions suivantes prennent désormais en charge les déploiements de zones de disponibilité uniques hautement disponibles dans Azure pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures :</block>
+  <block id="b5eed9442adc540b3e59ae08aa129632" category="list-text">Tel Aviv</block>
+  <block id="437d461430ecc08e2d51abbcf5ce9b3c" category="list-text">Milan</block>
+  <block id="657afe0033330876ccc58b79bded6c83" category="section-title">Prise en charge de plusieurs zones de disponibilité par région</block>
+  <block id="20576a03f90633178b591a3e73ee5d59" category="paragraph">Les régions suivantes prennent désormais en charge les déploiements de zones de disponibilité multiples hautement disponibles dans Azure pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures :</block>
+  <block id="910918c80516a55b4ba940f0b485cea1" category="list-text">Inde centrale</block>
+  <block id="e57064b31b815fd4c1124aa7f2cc1fd4" category="list-text">Norvège est</block>
+  <block id="524a897e665c757be360f9ceaca6b0a5" category="list-text">Suisse Nord</block>
+  <block id="d5daca31a462e138266141f6d01ca814" category="list-text">Afrique du Sud Nord</block>
+  <block id="92e19d728517dc371c0f37ee23fa9d03" category="list-text">Émirats arabes Unis Nord</block>
+  <block id="343c78956fe2e30b58a341de94a8673a" category="list-text">Chine Nord 3</block>
+  <block id="ee39417afe0e7b7726a65f6235448846" category="paragraph">Pour obtenir la liste de toutes les régions, reportez-vous au<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>.</block>
 </blocks>
