@@ -566,7 +566,7 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/reference-requirements.html#googl
 
 
 
-=== Upgrade Advisor
+==== Upgrade Advisor
 
 Upgrade Advisor est amélioré pour proposer des plans de mise à niveau automatisés sans interruption pour un ou plusieurs clusters. Vous ne pouvez afficher les recommandations de mise à niveau que pour un seul cluster, qui inclut un récapitulatif des risques, un rapport de vérification avant la mise à niveau et des informations sur les nouvelles fonctionnalités et les améliorations. link:https://docs.netapp.com/us-en/active-iq/upgrade_advisor_overview.html["Découvrez comment consulter les recommandations de mise à niveau et générer un plan de mise à niveau."]
 
@@ -576,7 +576,7 @@ Upgrade Advisor est amélioré pour proposer des plans de mise à niveau automat
 
 
 
-=== Liste de surveillance
+==== Liste de surveillance
 
 Vous pouvez maintenant créer un maximum de 100 listes de surveillance.
 
