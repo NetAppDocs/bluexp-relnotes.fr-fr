@@ -308,7 +308,7 @@ Les résultats filtrés de la page Investigation affichent désormais la taille 
 
 ==== Configurer des ID de groupe supplémentaires comme « ouvert à l'entreprise »
 
-Vous pouvez désormais configurer les ID de groupe dans NFS pour qu'ils soient considérés comme ouverts à l'entreprise directement dans la classification BlueXP s'ils n'avaient pas été définis initialement avec cette autorisation. Découvrez comment https://docs.netapp.com/us-en/bluexp-classification/task-add-group-id-as-open["Ajouter des ID de groupe supplémentaires comme « ouvert à l'organisation »"].
+Vous pouvez désormais configurer les ID de groupe dans NFS pour qu'ils soient considérés comme « ouverts à l'entreprise » directement dans la classification BlueXP si le groupe n'avait pas été défini initialement avec cette autorisation. Tous les fichiers et dossiers auxquels ces ID de groupe sont joints s'affichent comme « Ouvrir à l'organisation » dans la page Détails de l'enquête. Découvrez comment https://docs.netapp.com/us-en/bluexp-classification/task-add-group-id-as-open.html["Ajouter des ID de groupe supplémentaires comme « ouvert à l'organisation »"].
 
 
 
@@ -362,6 +362,18 @@ Classification BlueXP utilisée pour identifier les fichiers dupliqués uniqueme
 
 
 
+=== 16 janvier 2024
+
+
+
+==== Versions de correctifs dans BlueXP
+
+Les versions de correctifs sont disponibles dans BlueXP uniquement pour les trois dernières versions d'Cloud Volumes ONTAP.
+
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#patch-releases["Mettez à niveau Cloud Volumes ONTAP"^]
+
+
+
 === 8 janvier 2024
 
 
@@ -387,42 +399,6 @@ link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-config
 ==== Cloud Volumes ONTAP 9.14.1 RC1
 
 BlueXP peut désormais déployer et gérer Cloud Volumes ONTAP 9.14.1 dans AWS, Azure et Google Cloud.
-
-
-
-=== 5 décembre 2023
-
-Les modifications suivantes ont été introduites.
-
-
-
-==== Prise en charge de nouvelles régions dans Azure
-
-
-
-===== Prise en charge des régions à zone de disponibilité unique
-
-Les régions suivantes prennent désormais en charge les déploiements de zones de disponibilité uniques hautement disponibles dans Azure pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures :
-
-* Tel Aviv
-* Milan
-
-
-
-
-===== Prise en charge de plusieurs zones de disponibilité par région
-
-Les régions suivantes prennent désormais en charge les déploiements de zones de disponibilité multiples hautement disponibles dans Azure pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures :
-
-* Inde centrale
-* Norvège est
-* Suisse Nord
-* Afrique du Sud Nord
-* Émirats arabes Unis Nord
-* Chine Nord 3
-
-
-Pour obtenir la liste de toutes les régions, reportez-vous au https://bluexp.netapp.com/cloud-volumes-global-regions["Carte des régions globales sous Azure"^].
 
 
 

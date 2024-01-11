@@ -102,12 +102,6 @@
   <block id="dc8bb8905a6984d0c45a4ada9e618ace" category="section-title">Prise en charge de StorageGRID</block>
   <block id="0b17baeba205d071cc0142cf4aba9b76" category="paragraph">Vous pouvez désormais découvrir vos systèmes StorageGRID directement depuis BlueXP. La découverte de StorageGRID vous offre une vue complète sur les données dans l'ensemble de votre environnement multicloud hybride.</block>
   <block id="dcf4ee5c8f297d1f5e0da7b22e359023" category="sidebar">Modifications récentes</block>
-  <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">Quoi de neuf</block>
-  <block id="f5f7a4d1535be1d0940e398b2997dfc0" category="sidebar">Notes de version par service</block>
-  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Communauté sur les blogs</block>
-  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Communauté NetApp</block>
-  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Webinaires sur le cloud</block>
-  <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">Blogs BlueXP</block>
   <block id="6beb41a356d9287866f0b22c4b4eadcb" category="paragraph">Découvrez les derniers changements apportés aux services Cloud intégrés à la plateforme BlueXP. Pour en savoir plus, consultez la <block ref="1e9f4589e5d2713376df79f13fc9ba0a" category="inline-link-macro-rx"></block> pour chaque service.</block>
   <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">5 mars 2023</block>
   <block id="eea1e3b9ecdd5e32692761a0a78b9463" category="section-title">05 mars 2023</block>
@@ -539,21 +533,6 @@
   <block id="a037be7aafc2f071c4517e8f2c6e58e9" category="section-title">6 décembre 2023</block>
   <block id="4a76045b19fb3233070f77ae414d5810" category="section-title">Cloud Volumes ONTAP 9.14.1 RC1</block>
   <block id="efb4d9478ba663f514e18b3310c2de65" category="paragraph">BlueXP peut désormais déployer et gérer Cloud Volumes ONTAP 9.14.1 dans AWS, Azure et Google Cloud.</block>
-  <block id="1fdbf90814a4e25f5b9e765470846181" category="paragraph">Les modifications suivantes ont été introduites.</block>
-  <block id="de3678aecacdbfc2cde1f365589103a8" category="section-title">Prise en charge de nouvelles régions dans Azure</block>
-  <block id="2d87524b148f67773bbd84eaceabd1a8" category="section-title">Prise en charge des régions à zone de disponibilité unique</block>
-  <block id="b778fb7051f3e08881d95bd99b033b37" category="paragraph">Les régions suivantes prennent désormais en charge les déploiements de zones de disponibilité uniques hautement disponibles dans Azure pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures :</block>
-  <block id="b5eed9442adc540b3e59ae08aa129632" category="list-text">Tel Aviv</block>
-  <block id="437d461430ecc08e2d51abbcf5ce9b3c" category="list-text">Milan</block>
-  <block id="657afe0033330876ccc58b79bded6c83" category="section-title">Prise en charge de plusieurs zones de disponibilité par région</block>
-  <block id="20576a03f90633178b591a3e73ee5d59" category="paragraph">Les régions suivantes prennent désormais en charge les déploiements de zones de disponibilité multiples hautement disponibles dans Azure pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures :</block>
-  <block id="910918c80516a55b4ba940f0b485cea1" category="list-text">Inde centrale</block>
-  <block id="e57064b31b815fd4c1124aa7f2cc1fd4" category="list-text">Norvège est</block>
-  <block id="524a897e665c757be360f9ceaca6b0a5" category="list-text">Suisse Nord</block>
-  <block id="d5daca31a462e138266141f6d01ca814" category="list-text">Afrique du Sud Nord</block>
-  <block id="92e19d728517dc371c0f37ee23fa9d03" category="list-text">Émirats arabes Unis Nord</block>
-  <block id="343c78956fe2e30b58a341de94a8673a" category="list-text">Chine Nord 3</block>
-  <block id="ee39417afe0e7b7726a65f6235448846" category="paragraph">Pour obtenir la liste de toutes les régions, reportez-vous au<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>.</block>
   <block id="17c3c89f25f7684516a883f30f10b747" category="section-title">11 janvier 2024</block>
   <block id="dfbe132af57c8e3ca0aa9a94fc940839" category="section-title">Connecteur 3.9.36</block>
   <block id="c86344b833d64024dcd801a79f3f366e" category="paragraph">Cette version inclut des améliorations mineures, des correctifs et la prise en charge de Connector dans les régions cloud suivantes :</block>
@@ -583,7 +562,6 @@
   <block id="81b243d81f786faa99d42ef659adac3a" category="paragraph">Les résultats filtrés de la page Investigation affichent désormais la taille totale des éléments en plus du nombre total de fichiers. Cela peut vous aider lors du déplacement de fichiers, de la suppression de fichiers, etc.</block>
   <block id="bb5b2f81c2aa7d8df9263c590efda3e6" category="section-title">Configurer des ID de groupe supplémentaires comme « ouvert à l'entreprise »</block>
   <block id="617de59f0823cef046ababc40408cb92" category="inline-link">Ajouter des ID de groupe supplémentaires comme « ouvert à l'organisation »</block>
-  <block id="f51c5ae20e9943d0b0e6e5c5fff847e4" category="paragraph">Vous pouvez désormais configurer les ID de groupe dans NFS pour qu'ils soient considérés comme ouverts à l'entreprise directement dans la classification BlueXP s'ils n'avaient pas été définis initialement avec cette autorisation. Découvrez comment<block ref="a69630de08e764820516472e7391212c" category="inline-link-rx"></block>.</block>
   <block id="fd9107be3db2a4144e054c68a7eab15f" category="section-title">8 janvier 2024</block>
   <block id="dba248d0d18e6170f9bd4a4286edda53" category="section-title">Nouvelles machines virtuelles pour Azure dans plusieurs zones de disponibilité</block>
   <block id="c8d113632e2ef2b901829a0843658f2c" category="paragraph">À partir de Cloud Volumes ONTAP 9.13.1, plusieurs types de VM prennent en charge Azure plusieurs zones de disponibilité pour les déploiements de paires haute disponibilité, nouveaux et existants :</block>
@@ -596,4 +574,10 @@
   <block id="0850cf3036348eacfcb9da9c7e6dff71" category="section-title">03 janvier 2024</block>
   <block id="9c818280eee76d75834ab648289ae85f" category="inline-link-macro">Découvrez comment consulter les recommandations de mise à niveau et générer un plan de mise à niveau.</block>
   <block id="bdc2200252b96cc6ed0c081012882ca8" category="paragraph">Upgrade Advisor est amélioré pour proposer des plans de mise à niveau automatisés sans interruption pour un ou plusieurs clusters. Vous ne pouvez afficher les recommandations de mise à niveau que pour un seul cluster, qui inclut un récapitulatif des risques, un rapport de vérification avant la mise à niveau et des informations sur les nouvelles fonctionnalités et les améliorations. <block ref="5432771afbfeb8bee17b110b384d0041" category="inline-link-macro-rx"></block></block>
+  <block id="a6523313c047adabe12f8226b1c17a58" category="paragraph">Vous pouvez désormais configurer les ID de groupe dans NFS pour qu'ils soient considérés comme « ouverts à l'entreprise » directement dans la classification BlueXP si le groupe n'avait pas été défini initialement avec cette autorisation. Tous les fichiers et dossiers auxquels ces ID de groupe sont joints s'affichent comme « Ouvrir à l'organisation » dans la page Détails de l'enquête. Découvrez comment<block ref="1de46bddc056a512b561c93990312fff" category="inline-link-rx"></block>.</block>
+  <block id="35588fa7f53bdbd040bfa9c96c87bf3d" category="section-title">16 janvier 2024</block>
+  <block id="9ed7d4ae8d042664394e899e9c1f5e9a" category="section-title">Versions de correctifs dans BlueXP</block>
+  <block id="5c04c0351e9f1e168f13ca5689c21d92" category="paragraph">Les versions de correctifs sont disponibles dans BlueXP uniquement pour les trois dernières versions d'Cloud Volumes ONTAP.</block>
+  <block id="3a3843b2672bd389702bef2d50b13ac2" category="inline-link-macro">Mettez à niveau Cloud Volumes ONTAP</block>
+  <block id="debc8fcbe9103b95d21857d1276dbb26" category="paragraph"><block ref="debc8fcbe9103b95d21857d1276dbb26" category="inline-link-macro-rx"></block></block>
 </blocks>
