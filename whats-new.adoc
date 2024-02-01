@@ -18,12 +18,6 @@ Découvrez les derniers changements apportés aux services Cloud intégrés à l
 
 
 
-== Introduction de BlueXP
-
-NetApp BlueXP a été lancé le 1er novembre 2022. BlueXP étend et améliore les fonctionnalités fournies via Cloud Manager. https://docs.netapp.com/us-en/bluexp-family/concept-overview.html["En savoir plus sur l'introduction de BlueXP"^]
-
-
-
 == Fonctionnalités administratives
 
 Cette section décrit les nouvelles fonctionnalités liées aux fonctions d'administration de BlueXP : comptes, connecteurs, informations d'identification du fournisseur cloud, etc.
@@ -333,28 +327,6 @@ Vous pouvez désormais configurer les ID de groupe dans NFS pour qu'ils soient c
 Les versions 8 et 9 de Red Hat Enterprise Linux ne prennent pas en charge le moteur Docker requis pour l'installation de classification BlueXP. Nous prenons désormais en charge l'installation de classification BlueXP sur RHEL 9.0, 9.1 et 9.2 en utilisant Podman version 4 ou ultérieure comme infrastructure de conteneur. Si votre environnement requiert l'utilisation des dernières versions de RHEL, vous pouvez désormais installer la classification BlueXP (version 1.26 ou supérieure) lorsque vous utilisez Podman.
 
 À l'heure actuelle, nous ne prenons pas en charge les installations de sites invisibles ou les environnements de numérisation distribués (à l'aide d'un scanner maître et distant) lors de l'utilisation de RHEL 9.x.
-
-
-
-=== 5 septembre (version 1.25)
-
-
-
-==== Petits et moyens déploiements temporairement indisponibles
-
-Lorsque vous déployez une instance de classification BlueXP dans AWS, l'option de sélectionner *Deploy > Configuration* et de choisir une instance de petite ou moyenne taille n'est pas disponible pour le moment. Vous pouvez toujours déployer l'instance à l'aide de la grande taille d'instance en sélectionnant *déployer > déployer*.
-
-
-
-==== Appliquez des balises sur un maximum de 100,000 éléments à partir de la page Résultats d'enquête
-
-Dans le passé, vous ne pouviez appliquer des balises qu'à une seule page à la fois dans la page Résultats d'enquête (20 éléments). Vous pouvez maintenant sélectionner *tous* éléments dans les pages Résultats d'enquête et appliquer des balises à tous les éléments - jusqu'à 100,000 éléments à la fois. https://docs.netapp.com/us-en/bluexp-classification/task-org-private-data.html#assigning-tags-to-files["Découvrez comment"].
-
-
-
-==== Identifiez les fichiers dupliqués avec une taille de fichier minimale de 1 Mo
-
-Classification BlueXP utilisée pour identifier les fichiers dupliqués uniquement lorsque les fichiers étaient de 50 Mo ou plus. Désormais, les fichiers dupliqués commençant par 1 Mo peuvent être identifiés. Vous pouvez utiliser les filtres de la page Investigation « taille du fichier » ainsi que « doublons » pour voir quels fichiers d'une certaine taille sont dupliqués dans votre environnement.
 
 
 
