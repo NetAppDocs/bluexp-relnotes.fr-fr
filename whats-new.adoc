@@ -175,6 +175,18 @@ Vous avez depuis longtemps la possibilité d'afficher les compartiments Amazon S
 
 
 
+=== 01 février 2024
+
+
+
+==== Améliorations apportées à la sauvegarde et à la restauration BlueXP pour les machines virtuelles
+
+* Prise en charge de la restauration de machines virtuelles vers un autre emplacement
+* Prise en charge de l'annulation de la protection des datastores
+
+
+
+
 === 15 décembre 2023
 
 
@@ -230,14 +242,6 @@ Le moniteur des tâches de sauvegarde et de restauration BlueXP affiche égaleme
 
 
 
-==== Augmentation de la conservation des sauvegardes des données ONTAP sur site vers des compartiments StorageGRID
-
-StorageGRID peut désormais conserver jusqu'à 30 sauvegardes de données ONTAP sur site à partir de la sauvegarde et de la restauration BlueXP dans un compartiment unique. Auparavant, le nombre maximum de sauvegardes était de 7 dans un compartiment.
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html["En savoir plus sur la sauvegarde des données ONTAP sur site dans StorageGRID"].
-
-
-
 ==== Prise en charge des tâches planifiées dans le moniteur des tâches
 
 Le moniteur de tâches de sauvegarde et de restauration BlueXP a précédemment surveillé les tâches planifiées de sauvegarde et de restauration volume à magasin d'objets, mais pas les tâches Snapshot, de réplication, de sauvegarde et de restauration locales qui ont été planifiées via l'interface utilisateur ou l'API.
@@ -245,44 +249,6 @@ Le moniteur de tâches de sauvegarde et de restauration BlueXP a précédemment 
 Le moniteur des tâches de sauvegarde et de restauration BlueXP inclut désormais des tâches planifiées pour les snapshots locaux, les réplications et les sauvegardes vers le stockage objet.
 
 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html["En savoir plus sur le moniteur de tâches mis à jour"].
-
-
-
-=== 13 octobre 2023
-
-
-
-==== Améliorations apportées à la sauvegarde et à la restauration BlueXP pour les applications (cloud natif)
-
-* Base de données Microsoft SQL Server
-+
-** Prend en charge la sauvegarde, la restauration et la restauration des bases de données Microsoft SQL Server résidant sur Amazon FSX pour NetApp ONTAP
-** Toutes les opérations ne sont prises en charge que par le biais des API REST.
-
-
-* Systèmes SAP HANA
-+
-** Lors de l'actualisation du système, le montage et le démontage automatiques des volumes sont effectués à l'aide de workflows au lieu de scripts
-** Prend en charge l'ajout, la suppression, la modification, la suppression, la maintenance, et mise à niveau de l'hôte du plug-in à l'aide de l'interface utilisateur
-
-
-
-
-
-
-==== Améliorations apportées à la sauvegarde et à la restauration BlueXP pour les applications (hybride)
-
-* Prend en charge le verrouillage des données et la protection contre les ransomware
-* Prise en charge du déplacement des sauvegardes de StorageGRID vers le niveau d'archivage
-* Prise en charge de la sauvegarde des données d'applications MongoDB, MySQL et PostgreSQL à partir des systèmes ONTAP sur site vers Amazon Web Services, Microsoft Azure, Google Cloud Platform et StorageGRID. Vous pouvez restaurer les données si nécessaire.
-
-
-
-
-==== Améliorations apportées à la sauvegarde et à la restauration BlueXP pour les machines virtuelles
-
-* Prise en charge du modèle de déploiement de proxy de connecteur
-
 
 
 
@@ -334,6 +300,26 @@ Les versions 8 et 9 de Red Hat Enterprise Linux ne prennent pas en charge le mot
 
 
 
+=== 2 février 2024
+
+
+
+==== Prise en charge des machines virtuelles Edv5-series dans Azure
+
+Cloud Volumes ONTAP prend désormais en charge les machines virtuelles de la série Edv5 suivantes à partir de la version 9.14.1.
+
+* E4ds_v5
+* E8ds_v5
+* E20s_v5
+* E32ds_v5
+* E48ds_v5
+* E64ds_v5
+
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Configurations prises en charge dans Azure"^]
+
+
+
 === 16 janvier 2024
 
 
@@ -361,16 +347,6 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-onta
 
 
 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Configurations prises en charge dans Azure"^]
-
-
-
-=== 6 décembre 2023
-
-
-
-==== Cloud Volumes ONTAP 9.14.1 RC1
-
-BlueXP peut désormais déployer et gérer Cloud Volumes ONTAP 9.14.1 dans AWS, Azure et Google Cloud.
 
 
 
