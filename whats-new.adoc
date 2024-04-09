@@ -24,6 +24,18 @@ Cette section décrit les nouvelles fonctionnalités liées aux fonctions d'admi
 
 
 
+=== 11 avril 2024
+
+
+
+==== Mise à jour de Docker Engine
+
+Nous avons mis à jour la configuration requise pour Docker Engine afin de spécifier la version maximale prise en charge sur le connecteur, à savoir 25.0.5. La version minimale prise en charge est toujours 19.3.1.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["Afficher la configuration requise pour l'hôte du connecteur"].
+
+
+
 === 26 mars 2024
 
 
@@ -84,7 +96,7 @@ https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-pr
 
 Le service IMDS (instance Metadata Service) est activé comme suit sur les instances EC2 :
 
-* Pour le déploiement de nouveaux connecteurs depuis BlueXP, sur AWS Marketplace ou à l'aide de https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html["Scripts Terraform"^], IMDSv2 est activé par défaut sur l'instance EC2.
+* Pour les déploiements de nouveaux connecteurs à partir de BlueXP ou à l'aide de https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html["Scripts Terraform"^], IMDSv2 est activé par défaut sur l'instance EC2.
 * Si vous lancez une nouvelle instance EC2 dans AWS, puis installez manuellement le logiciel Connector, IMDSv2 est également activé par défaut.
 * Pour les connecteurs existants, IMDSv1 est toujours pris en charge, mais vous pouvez configurer manuellement IMDSv2 sur l'instance EC2 si vous le souhaitez.
 * Pour Cloud Volumes ONTAP, IMDSv1 est activé par défaut sur les instances nouvelles et existantes. Si vous le souhaitez, vous pouvez configurer manuellement IMDSv2 sur les instances EC2.
@@ -111,28 +123,6 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["D�
 De plus, nous avons renommé la page *Paramètres du connecteur* en *Paramètres Cloud Volumes ONTAP*.
 
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-cvo-settings.png["Capture d'écran affichant l'option Paramètres Cloud Volumes ONTAP disponible dans le menu Paramètres."]
-
-
-
-=== 15 février 2024
-
-
-
-==== Connecteur 3.9.37
-
-Cette version de BlueXP Connector inclut des améliorations mineures de la sécurité et des correctifs.
-
-À ce stade, la version 3.9.37 est disponible pour le mode standard et le mode restreint.
-
-
-
-==== Modifier le nom
-
-Si vous utilisez les identifiants cloud NetApp pour vous connecter à BlueXP, vous pouvez maintenant modifier votre nom dans *Paramètres utilisateur*.
-
-image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-edit-name.png["Capture d'écran qui montre la possibilité de modifier votre nom sous Paramètres utilisateur."]
-
-La modification de votre nom n'est pas prise en charge si vous vous connectez avec une connexion fédérée ou avec votre compte sur le site de support NetApp.
 
 
 
