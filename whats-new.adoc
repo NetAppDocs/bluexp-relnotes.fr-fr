@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, kubernetes, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, cloud manager, bluexp, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, kubernetes, reports, ontap clusters' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, kubernetes, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, kubernetes, reports, ontap clusters' 
 summary: Découvrez les derniers changements apportés aux services Cloud intégrés à la plateforme BlueXP. Pour plus de détails, consultez la série complète des notes de version pour chaque service. 
 ---
 = Changements récents dans BlueXP
@@ -351,6 +351,40 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.ht
 
 
 
+=== 1er avril 2024 (version 1.30)
+
+
+
+==== Prise en charge de la classification BlueXP RHEL v8.8 et v9.3
+
+Cette version prend en charge Red Hat Enterprise Linux v8.8 et v9.3 en plus de la version 9.x précédemment prise en charge, qui nécessite Podman, plutôt que le moteur Docker. Cela s'applique à toute installation manuelle sur site de la classification BlueXP.
+
+Les systèmes d'exploitation suivants nécessitent l'utilisation du moteur de conteneur Podman et requièrent la classification BlueXP version 1.30 ou supérieure : Red Hat Enterprise Linux version 8.8, 9.0, 9.1, 9.2 et 9.3.
+
+En savoir plus sur https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["Présentation des déploiements de classifications BlueXP"].
+
+
+
+==== Option d'activation de la collection de journaux d'audit supprimée
+
+L'option permettant d'activer la collecte des journaux d'audit a été désactivée.
+
+
+
+==== Vitesse de numérisation améliorée
+
+Les performances de numérisation sur les nœuds de scanner secondaires ont été améliorées. Vous pouvez ajouter d'autres nœuds de scanner si vous avez besoin d'une puissance de traitement supplémentaire pour vos numérisations. Pour plus de détails, reportez-vous à https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["Installez la classification BlueXP sur un hôte disposant d'un accès Internet"].
+
+
+
+==== Mises à niveau automatiques
+
+Si vous avez déployé la classification BlueXP sur un système disposant d'un accès Internet, le système est automatiquement mis à niveau. Auparavant, la mise à niveau s'est produite après un temps spécifique écoulé depuis la dernière activité de l'utilisateur. Avec cette version, la classification BlueXP est mise à niveau automatiquement si l'heure locale est comprise entre 1:00 AM et 5:00 AM. Si l'heure locale est en dehors de ces heures, la mise à niveau se produit après un délai spécifique écoulé depuis la dernière activité de l'utilisateur. Pour plus de détails, reportez-vous à https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["Installez sur un hôte Linux avec accès à Internet"].
+
+Si vous avez déployé la classification BlueXP sans accès à Internet, vous devez effectuer une mise à niveau manuelle. Pour plus de détails, reportez-vous à https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html["Installez la classification BlueXP sur un hôte Linux sans accès Internet"].
+
+
+
 === 4 mars 2024 (version 1.29)
 
 
@@ -384,19 +418,6 @@ Les résultats filtrés de la page Investigation affichent désormais la taille 
 ==== Configurer des ID de groupe supplémentaires comme « ouvert à l'entreprise »
 
 Vous pouvez désormais configurer les ID de groupe dans NFS pour qu'ils soient considérés comme « ouverts à l'entreprise » directement dans la classification BlueXP si le groupe n'avait pas été défini initialement avec cette autorisation. Tous les fichiers et dossiers auxquels ces ID de groupe sont joints s'affichent comme « Ouvrir à l'organisation » dans la page Détails de l'enquête. Découvrez comment https://docs.netapp.com/us-en/bluexp-classification/task-add-group-id-as-open.html["Ajouter des ID de groupe supplémentaires comme « ouvert à l'organisation »"].
-
-
-
-=== 14 décembre 2023 (version 1.26.6)
-
-Cette version comprend quelques améliorations mineures.
-
-La version a également temporairement supprimé les options suivantes :
-
-* L'option permettant d'activer la collecte des journaux d'audit a été désactivée. Reportez-vous à la section link:task-manage-file-access-events.html["Contrôlez et gérez les événements d'accès aux fichiers"].
-* Lors de l'enquête répertoires, l'option permettant de calculer le nombre de données d'informations personnelles identifiables (PII) par répertoires n'est pas disponible. Reportez-vous à la section link:task-investigate-data.html#filter-data-by-sensitivity-and-content["Examinez les données stockées dans votre organisation"].
-* L'option d'intégration des données à l'aide d'étiquettes Azure information protection (AIP) a été désactivée. Reportez-vous à la section link:task-org-private-data.html["Organisez vos données privées"].
-
 
 
 
@@ -500,6 +521,18 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 
+=== 8 avril 2024
+
+
+
+==== Prise en charge de RHEL 8.9
+
+Le courtier en données est désormais pris en charge sur les hôtes exécutant Red Hat Enterprise Linux 8.9.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#linux-host-requirements["Afficher la configuration requise pour l'hôte Linux"].
+
+
+
 === 11 février 2024
 
 
@@ -538,27 +571,17 @@ Tous les nouveaux courtiers de données utiliseront la version de nœud 21.2.0. 
 
 
 
-=== 3 septembre 2023
-
-
-
-==== Exclure les fichiers par regex
-
-Les utilisateurs ont désormais la possibilité d'exclure des fichiers à l'aide de regex.
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#create-other-types-of-sync-relationships["En savoir plus sur la fonction *Exclude File Extensions*."]
-
-
-
-==== Ajoutez des clés S3 lors de la création d'un courtier en données Azure
-
-Lors de la création d'un courtier de données Azure, les utilisateurs peuvent désormais ajouter des clés d'accès AWS S3 et des clés secrètes.
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html#creating-the-data-broker["En savoir plus sur la création d'un courtier en données dans Azure."]
-
-
-
 == Conseiller digital
+
+
+
+=== 28 mars 2024
+
+
+
+==== Upgrade Advisor
+
+L'ancienne version de Upgrade Advisor est maintenant obsolète. Vous pouvez utiliser la version améliorée de Upgrade Advisor pour générer des plans de mise à niveau pour un seul cluster et plusieurs clusters. link:https://docs.netapp.com/us-en/active-iq/upgrade_advisor_overview.html["Découvrez comment afficher des recommandations de mise à niveau et générer un plan de mise à niveau."]
 
 
 
@@ -587,22 +610,6 @@ Le calendrier des dossiers techniques est amélioré pour afficher l'historique 
 ==== Liste de surveillance
 
 Vous pouvez désormais créer une liste de suivi à partir des numéros d'abonnement Keystone et rechercher un abonnement Keystone à l'aide des trois premiers caractères d'un numéro d'abonnement ou d'un nom de liste de suivi.
-
-
-
-=== 08 février 2024
-
-
-
-==== Tableau de bord durabilité
-
-Vous pouvez désormais accéder aux mesures Sustainability pour votre tableau de bord ou votre liste de contrôle par défaut directement à l'aide du link:https://activeiq.netapp.com/redirect/sustainability["Tableau de bord durabilité"^] lien.
-
-
-
-==== ClusterViewer
-
-Vous pouvez maintenant afficher les informations relatives au régime du disque dans la section Résumé du disque, disponible dans l'onglet stockage et dans les rapports ClusterViewer.
 
 
 
