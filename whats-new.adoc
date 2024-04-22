@@ -128,6 +128,16 @@ Vous avez pu afficher Azure Blob Storage sur BlueXP Canvas pendant un certain te
 
 
 
+=== 22 avril 2024
+
+
+
+==== Les modèles de volume ne sont plus pris en charge
+
+Vous ne pouvez plus créer de volume à partir d'un modèle. Cette action a été associée au service de correction BlueXP, qui n'est plus disponible.
+
+
+
 === 11 avril 2021
 
 
@@ -151,26 +161,6 @@ Un nouveau service modèles d'applications vous permet de configurer un modèle 
 Vous pouvez désormais modifier le niveau de service d'un volume de manière dynamique afin de répondre aux besoins d'une charge de travail et d'optimiser vos coûts. Le volume est déplacé vers l'autre pool de capacité sans aucun impact sur le volume.
 
 https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-manage-volumes.html#change-the-volumes-service-level["Découvrez comment modifier le niveau de service d'un volume"].
-
-
-
-=== 3 août 2020
-
-
-
-==== Configuration et gestion Azure NetApp Files
-
-Configurez et gérez Azure NetApp Files directement à partir de Cloud Manager. Une fois que vous avez créé un environnement de travail Azure NetApp Files, vous pouvez effectuer les tâches suivantes :
-
-* Créer des volumes NFS et SMB.
-* Gestion des pools de capacité et des copies Snapshot de volumes
-+
-Cloud Manager vous permet de créer, de supprimer et de restaurer des snapshots de volumes. Vous avez également la possibilité de créer de nouveaux pools de capacité et de spécifier leurs niveaux de service.
-
-* Modifiez un volume en modifiant sa taille et en gérant les balises.
-
-
-La possibilité de créer et de gérer Azure NetApp Files directement à partir de Cloud Manager remplace la fonctionnalité précédente de migration de données.
 
 
 
@@ -353,6 +343,40 @@ Vous pouvez désormais configurer les ID de groupe dans NFS pour qu'ils soient c
 
 
 
+=== 23 avril 2024
+
+
+
+==== Prise en charge de nouvelles régions pour les déploiements de zones de disponibilité multiples dans Azure
+
+Les régions suivantes prennent désormais en charge les déploiements HA de zones de disponibilité multiples dans Azure pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures :
+
+* Allemagne de l'ouest du centre
+* Pologne Centre
+* Ouest des États-Unis 3
+* Israël Central
+* Italie Nord
+* Canada Central
+
+
+Pour obtenir la liste de toutes les régions, reportez-vous au https://bluexp.netapp.com/cloud-volumes-global-regions["Carte des régions globales sous Azure"^].
+
+
+
+==== La région de Johannesburg est désormais prise en charge par Google Cloud
+
+La région de Johannesburg (`africa-south1` Région) est désormais pris en charge par Google Cloud pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures.
+
+Pour obtenir la liste de toutes les régions, reportez-vous au https://bluexp.netapp.com/cloud-volumes-global-regions["Carte des régions du monde sous Google Cloud"^].
+
+
+
+==== Les balises et les modèles de volumes ne sont plus pris en charge
+
+Vous ne pouvez plus créer de volume à partir d'un modèle ni modifier les balises d'un volume. Ces actions ont été associées au service de correction BlueXP, qui n'est plus disponible.
+
+
+
 === 8 mars 2024
 
 
@@ -372,26 +396,6 @@ Si vos stratégies de sécurité l'exigent, vous pouvez configurer vos instances
 ==== Cloud Volumes ONTAP 9.14.1 GA
 
 BlueXP peut désormais déployer et gérer la version Cloud Volumes ONTAP 9.14.1 General Availability dans AWS, Azure et Google Cloud.
-
-
-
-=== 2 février 2024
-
-
-
-==== Prise en charge des machines virtuelles Edv5-series dans Azure
-
-Cloud Volumes ONTAP prend désormais en charge les machines virtuelles de la série Edv5 suivantes à partir de la version 9.14.1.
-
-* E4ds_v5
-* E8ds_v5
-* E20s_v5
-* E32ds_v5
-* E48ds_v5
-* E64ds_v5
-
-
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Configurations prises en charge dans Azure"^]
 
 
 
@@ -889,6 +893,16 @@ link:https://docs.netapp.com/us-en/bluexp-reports/get-started/intro.html["En sav
 
 
 
+=== 22 avril 2024
+
+
+
+==== Les modèles de volume ne sont plus pris en charge
+
+Vous ne pouvez plus créer de volume à partir d'un modèle. Cette action a été associée au service de correction BlueXP, qui n'est plus disponible.
+
+
+
 === 30 juillet 2023
 
 
@@ -912,25 +926,6 @@ Si vous gérez un cluster avec un connecteur, vous pouvez maintenant créer des 
 Vous pouvez désormais détecter les clusters ONTAP sur site à partir de *Canvas > My Estate* en sélectionnant un cluster que BlueXP a prédécouvert en fonction des clusters ONTAP associés à l'adresse e-mail de votre connexion BlueXP.
 
 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html#add-a-pre-discovered-cluster["Découvrez comment découvrir des clusters sur la page My Estate"].
-
-
-
-=== 4 mai 2023
-
-
-
-==== Sauvegardez et restaurez vos données BlueXP
-
-Depuis ONTAP 9.13.1, vous pouvez utiliser System Manager (vue avancée) pour activer la sauvegarde et la restauration BlueXP si vous avez découvert le cluster à l'aide d'un connecteur. link:https://docs.netapp.com/us-en/ontap/task_cloud_backup_data_using_cbs.html["En savoir plus sur l'activation de la sauvegarde et de la restauration BlueXP"^]
-
-
-
-==== Mettez à niveau l'image de la version ONTAP et le micrologiciel du matériel
-
-Depuis ONTAP 9.10.1, vous pouvez utiliser System Manager (vue avancée) pour mettre à niveau l'image de la version ONTAP et le micrologiciel du matériel. Vous pouvez choisir de recevoir des mises à niveau automatiques pour rester à jour, ou d'effectuer des mises à jour manuelles à partir de votre machine locale ou d'un serveur accessible via BlueXP. link:https://docs.netapp.com/us-en/ontap/task_admin_update_firmware.html#prepare-for-firmware-update["En savoir plus sur la mise à niveau du ONTAP et du micrologiciel"^]
-
-
-NOTE: Si vous ne possédez pas de connecteur, vous ne pouvez pas effectuer de mises à jour à partir de votre ordinateur local, uniquement à partir d'un serveur auquel vous pouvez accéder à l'aide de BlueXP.
 
 
 
