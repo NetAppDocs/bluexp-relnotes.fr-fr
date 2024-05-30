@@ -85,7 +85,7 @@ Cette version de BlueXP Connector inclut la prise en charge de systèmes d'explo
 
 ===== Prise en charge de RHEL 8 et 9
 
-Le connecteur est désormais pris en charge sur les hôtes exécutant les versions suivantes de Red Hat Enterprise Linux avec des installations _New_ Connector :
+Le connecteur est désormais pris en charge sur les hôtes exécutant les versions suivantes de Red Hat Enterprise Linux avec des installations _New_ Connector lors de l'utilisation de BlueXP en mode standard ou en mode restreint :
 
 * 8.6 à 8.9
 * 9.1 à 9.3
@@ -345,6 +345,48 @@ Vous pouvez exécuter cette fonction en utilisant le processus de recherche et d
 
 
 
+=== 5 juin 2024 (version 1.32)
+
+Cette version inclut les mises à jour suivantes.
+
+
+
+==== Les analyses de mappage rassemblent les métadonnées
+
+Les métadonnées suivantes sont extraites des fichiers lors des analyses de mappage et sont affichées dans les tableaux de bord gouvernance, conformité et investigation :
+
+* Environnement de travail
+* Type d'environnement de travail
+* Référentiel de stockage
+* Type de fichier
+* Capacité utilisée
+* Nombre de fichiers
+* Taille du fichier
+* Création de fichier
+* Dernier accès au fichier
+* Dernier fichier modifié
+* Heure de découverte du fichier
+* Extraction des autorisations
+
+
+
+
+==== Données supplémentaires dans les tableaux de bord
+
+Cette version met à jour les données qui apparaissent dans les tableaux de bord gouvernance, conformité et investigation lors des analyses de mappage.
+
+Pour plus de détails, voir https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["Quelle est la différence entre les analyses de cartographie et de classification"]
+
+
+
+==== Nouvelle colonne État de mappage de la page Configuration
+
+Cette version affiche désormais une nouvelle colonne d'état de mappage dans la page Configuration. La nouvelle colonne vous permet d'identifier si le mappage est en cours d'exécution, en file d'attente, en pause ou plus.
+
+Pour une explication des États, voir https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html["Modifier les paramètres de numérisation"].
+
+
+
 === 15 mai 2024 (version 1.31)
 
 
@@ -390,26 +432,6 @@ Les performances de numérisation sur les nœuds de scanner secondaires ont ét�
 Si vous avez déployé la classification BlueXP sur un système disposant d'un accès Internet, le système est automatiquement mis à niveau. Auparavant, la mise à niveau s'est produite après un temps spécifique écoulé depuis la dernière activité de l'utilisateur. Avec cette version, la classification BlueXP est mise à niveau automatiquement si l'heure locale est comprise entre 1:00 AM et 5:00 AM. Si l'heure locale est en dehors de ces heures, la mise à niveau se produit après un délai spécifique écoulé depuis la dernière activité de l'utilisateur. Pour plus de détails, reportez-vous à https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["Installez sur un hôte Linux avec accès à Internet"].
 
 Si vous avez déployé la classification BlueXP sans accès à Internet, vous devez effectuer une mise à niveau manuelle. Pour plus de détails, reportez-vous à https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html["Installez la classification BlueXP sur un hôte Linux sans accès Internet"].
-
-
-
-=== 4 mars 2024 (version 1.29)
-
-
-
-==== Vous pouvez maintenant exclure les données de numérisation qui résident dans certains répertoires de sources de données
-
-Si vous souhaitez que la classification BlueXP exclut les données d'analyse qui résident dans certains répertoires de sources de données, vous pouvez ajouter ces noms de répertoires à un fichier de configuration traité par la classification BlueXP. Cette fonction vous permet d'éviter d'analyser des répertoires qui ne sont pas nécessaires ou qui pourraient renvoyer de faux résultats positifs pour les données personnelles.
-
-https://docs.netapp.com/us-en/bluexp-classification/task-exclude-scan-paths.html["En savoir plus >>"].
-
-
-
-==== La prise en charge des instances extra-volumineuses est désormais qualifiée
-
-Si vous avez besoin de la classification BlueXP pour analyser plus de 250 millions de fichiers, vous pouvez utiliser une très grande instance dans votre déploiement cloud ou votre installation sur site. Ce type de système peut analyser jusqu'à 500 millions de fichiers.
-
-https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#using-a-smaller-instance-type["En savoir plus >>"].
 
 
 
@@ -563,6 +585,16 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#
 
 
 == Conseiller digital
+
+
+
+=== 15 mai 2024
+
+
+
+==== Tableau de bord durabilité
+
+Une durabilité est désormais prise en charge sur les systèmes E-Series et StorageGRID. Vous pouvez afficher une liste des actions recommandées et des indicateurs environnementaux qui affichent des projections d'énergie, de consommation directe de carbone et de chaleur à partir du tableau de bord Sustainability pour ces systèmes. Pour en savoir plus, voir link:https://docs.netapp.com/us-en/active-iq/BlueXP_sustainability_dashboard_overview.html["Présentation du tableau de bord Sustainability"^].
 
 
 
