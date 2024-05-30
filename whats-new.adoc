@@ -214,6 +214,24 @@ Vous avez depuis longtemps la possibilité d'afficher les compartiments Amazon S
 
 
 
+=== 17 mai 2024
+
+
+
+==== Limitations lors de l'utilisation de RHEL 8 et RHEL 9 pour votre connecteur sur site
+
+BlueXP Connector version 3.9.40 prend en charge certaines versions de Red Hat Enterprise Linux versions 8 et 9 pour toute installation manuelle du logiciel Connector sur un hôte RHEL 8 ou 9, quel que soit l'emplacement en plus des systèmes d'exploitation mentionnés dans le https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-private-mode.html#step-3-review-host-requirements["configuration requise pour l'hôte"^]. Ces nouvelles versions de RHEL nécessitent le moteur Podman au lieu du moteur Docker. À l'heure actuelle, la sauvegarde et la restauration BlueXP n'ont que deux limites lors de l'utilisation du moteur Podman.
+
+Voir https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-limitations.html["Limites de la sauvegarde et de la restauration"] pour plus d'informations.
+
+Les procédures suivantes incluent de nouvelles instructions Podman :
+
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-restart-backup.html["Redémarrez la sauvegarde et la restauration BlueXP"]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-backup-cbs-db-in-dark-site.html["Restaurez les données de sauvegarde et de restauration BlueXP dans un site invisible"]
+
+
+
+
 === 30 avril 2024
 
 
@@ -280,6 +298,18 @@ Vous pouvez exécuter cette fonction en utilisant le processus de recherche et d
 
 
 
+=== 15 mai 2024 (version 1.31)
+
+
+
+==== La classification est disponible en tant que service principal dans BlueXP
+
+La classification BlueXP est désormais disponible en tant que fonctionnalité clé dans BlueXP, sans frais supplémentaires pour un maximum de 500 To de données numérisées. Aucune licence de classification ou abonnement payant n'est nécessaire. Alors que nous nous concentrons sur la fonctionnalité de classification BlueXP lors de l'analyse des systèmes de stockage NetApp avec cette nouvelle version, certaines fonctionnalités héritées ne seront disponibles que pour les clients qui avaient déjà payé pour une licence. L'utilisation de ces fonctions héritées expirera lorsque le contrat payé atteindra sa date de fin.
+
+link:reference-free-paid.html["En savoir plus sur les fonctionnalités obsolètes"].
+
+
+
 === 1er avril 2024 (version 1.30)
 
 
@@ -291,6 +321,8 @@ Cette version prend en charge Red Hat Enterprise Linux v8.8 et v9.3 en plus de l
 Les systèmes d'exploitation suivants nécessitent l'utilisation du moteur de conteneur Podman et requièrent la classification BlueXP version 1.30 ou supérieure : Red Hat Enterprise Linux version 8.8, 9.0, 9.1, 9.2 et 9.3.
 
 En savoir plus sur https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["Présentation des déploiements de classifications BlueXP"].
+
+La classification BlueXP est prise en charge si vous installez le connecteur sur un hôte RHEL 8 ou 9 résidant sur site. Elle n'est pas prise en charge si l'hôte RHEL 8 ou 9 réside dans AWS, Azure ou Google Cloud.
 
 
 
@@ -334,23 +366,19 @@ https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.htm
 
 
 
-=== 10 janvier 2024 (version 1.27)
-
-
-
-==== Les résultats de la page d'enquête affichent désormais la taille totale en plus du nombre total d'éléments
-
-Les résultats filtrés de la page Investigation affichent désormais la taille totale des éléments en plus du nombre total de fichiers. Cela peut vous aider lors du déplacement de fichiers, de la suppression de fichiers, etc.
-
-
-
-==== Configurer des ID de groupe supplémentaires comme « ouvert à l'entreprise »
-
-Vous pouvez désormais configurer les ID de groupe dans NFS pour qu'ils soient considérés comme « ouverts à l'entreprise » directement dans la classification BlueXP si le groupe n'avait pas été défini initialement avec cette autorisation. Tous les fichiers et dossiers auxquels ces ID de groupe sont joints s'affichent comme « Ouvrir à l'organisation » dans la page Détails de l'enquête. Découvrez comment https://docs.netapp.com/us-en/bluexp-classification/task-add-group-id-as-open.html["Ajouter des ID de groupe supplémentaires comme « ouvert à l'organisation »"].
-
-
-
 == Cloud Volumes ONTAP
+
+
+
+=== 17 mai 2024
+
+
+
+==== Prise en charge des zones locales Amazon Web Services
+
+La prise en charge des zones locales AWS est désormais disponible pour les déploiements haute disponibilité Cloud Volumes ONTAP. AWS local zones est un déploiement d'infrastructure où le stockage, le calcul, la base de données et d'autres services AWS spécifiques sont situés à proximité de grandes villes et de secteurs.
+
+Pour plus d'informations sur les zones locales AWS avec déploiements HA, reportez-vous à la section link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha.html#aws-local-zones["Zones locales AWS"^].
 
 
 
@@ -397,16 +425,6 @@ Vous ne pouvez plus créer de volume à partir d'un modèle ni modifier les bali
 Dans AWS, Cloud Volumes ONTAP, le médiateur et le connecteur prennent désormais en charge Amazon Instant Metadata Service v2 (IMDSv2) pour toutes les fonctions. IMDSv2 fournit une protection améliorée contre les vulnérabilités. Seul IMDSv1 était précédemment pris en charge.
 
 Si vos stratégies de sécurité l'exigent, vous pouvez configurer vos instances EC2 pour qu'elles utilisent IMDSv2. Pour obtenir des instructions, reportez-vous à la section link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#require-the-use-of-imdsv2-on-amazon-ec2-instances["Documentation d'installation et d'administration BlueXP pour la gestion des connecteurs existants"^].
-
-
-
-=== 5 mars 2024
-
-
-
-==== Cloud Volumes ONTAP 9.14.1 GA
-
-BlueXP peut désormais déployer et gérer la version Cloud Volumes ONTAP 9.14.1 General Availability dans AWS, Azure et Google Cloud.
 
 
 
@@ -642,6 +660,21 @@ https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-license
 
 
 
+=== 15 mai 2024
+
+Cette version de reprise d'activité de BlueXP inclut les mises à jour suivantes :
+
+* *La réplication des charges de travail VMware du stockage sur site vers le stockage sur site* est maintenant proposée en tant que fonction de disponibilité générale. Auparavant, il s'agissait d'un aperçu technologique avec des fonctionnalités limitées.
+* *Mises à jour des licences* : avec BlueXP Disaster Recovery, vous pouvez vous inscrire à un essai gratuit de 90 jours, acheter un abonnement PAYGO avec Amazon Marketplace ou BYOL (Bring Your Own License), un fichier de licence NetApp (NLF) que vous pouvez obtenir auprès de votre ingénieur commercial NetApp ou auprès du site de support NetApp (NSS).
++
+Pour plus d'informations sur la configuration des licences pour la reprise d'activité BlueXP, reportez-vous à la section link:../get-started/dr-licensing.html["Configuration des licences"].
+
+
+
+https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["En savoir plus sur la reprise d'activité BlueXP"].
+
+
+
 === 5 mars 2024
 
 Il s'agit de la version General Availability de BlueXP Disaster Recovery, qui comprend les mises à jour suivantes.
@@ -697,30 +730,6 @@ Pour plus de détails, reportez-vous à https://docs.netapp.com/us-en/bluexp-dis
 Pour plus de détails, reportez-vous à https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Créer un plan de réplication"].
 
 
-
-
-
-=== 11 janvier 2024
-
-Cette version préliminaire de la reprise d'activité de BlueXP inclut les mises à jour suivantes :
-
-* Cette version vous permet d'accéder plus rapidement aux informations d'autres pages du tableau de bord.
-
-
-https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["Découvrez la reprise d'activité BlueXP"].
-
-
-
-=== 20 octobre 2023
-
-Cette version préliminaire de la reprise d'activité de BlueXP inclut les mises à jour suivantes.
-
-Désormais, avec la reprise d'activité BlueXP, vous pouvez protéger vos workloads VMware sur site basés sur NFS contre les incidents vers un autre environnement VMware sur site et NFS en plus du cloud public. La reprise d'activité BlueXP orchestre l'achèvement des plans de reprise d'activité.
-
-
-NOTE: Avec cette offre de prévisualisation, NetApp se réserve le droit de modifier les détails, le contenu et le calendrier de l'offre avant la disponibilité générale.
-
-https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["En savoir plus sur la reprise d'activité BlueXP"].
 
 
 
