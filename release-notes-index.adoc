@@ -57,6 +57,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html["Configuration e
 * https://docs.netapp.com/us-en/bluexp-operational-resiliency/release-notes/whats-new.html["Résilience opérationnelle"^]
 * https://docs.netapp.com/us-en/bluexp-ransomware-protection/whats-new.html["Protection par ransomware"^]
 * https://docs.netapp.com/us-en/bluexp-replication/whats-new.html["La réplication"^]
+* https://docs.netapp.com/us-en/bluexp-software-updates/release-notes/whats-new.html["Mises à jour de logiciels"^]
 * https://docs.netapp.com/us-en/bluexp-tiering/whats-new.html["Tiering"^]
 * https://docs.netapp.com/us-en/bluexp-volume-caching/release-notes/cache-whats-new.html["Mise en cache du volume"^]
 

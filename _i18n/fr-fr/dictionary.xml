@@ -453,22 +453,6 @@
   <block id="4df3ea515a84d83efad2c0e3bc03c438" category="paragraph">Le service de correction BlueXP a été supprimé le 22 avril 2024.</block>
   <block id="2d177a5ce778fe0e6f460ac5e9449f84" category="section-title">Les modèles de volume ne sont plus pris en charge</block>
   <block id="14b1c6bd63866971a4cd695c3c2a3d80" category="paragraph">Vous ne pouvez plus créer de volume à partir d'un modèle. Cette action a été associée au service de correction BlueXP, qui n'est plus disponible.</block>
-  <block id="31e2ca9cb7755d06bc40e30fd8e408d3" category="section-title">23 avril 2024</block>
-  <block id="a2fefc65df2136938b995f8abbe643c2" category="section-title">Prise en charge de nouvelles régions pour les déploiements de zones de disponibilité multiples dans Azure</block>
-  <block id="0cc914ed23f0f7d6bc902ae731843213" category="paragraph">Les régions suivantes prennent désormais en charge les déploiements HA de zones de disponibilité multiples dans Azure pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures :</block>
-  <block id="1dab3491cdeeb2a6d567b21ee3063ae4" category="list-text">Allemagne de l'ouest du centre</block>
-  <block id="26b4bdc11dfead08029a688129c42cf9" category="list-text">Pologne Centre</block>
-  <block id="64fb50bb758fe12b94faa568a567e13c" category="list-text">Ouest des États-Unis 3</block>
-  <block id="eb1aea8107eeeb90c841d5710262dd52" category="list-text">Israël Central</block>
-  <block id="6c2cb03afda0af373b8df47f9dc47ed7" category="list-text">Italie Nord</block>
-  <block id="1d0f99876d748759fce5e852f79fca96" category="list-text">Canada Central</block>
-  <block id="ee39417afe0e7b7726a65f6235448846" category="paragraph">Pour obtenir la liste de toutes les régions, reportez-vous au<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>.</block>
-  <block id="0b745a8416b0a8e3b89e7e01ba13af65" category="section-title">La région de Johannesburg est désormais prise en charge par Google Cloud</block>
-  <block id="ec826289e3407edb59d3c5ed0aca5c74" category="paragraph">La région de Johannesburg <block ref="6d1d2d77b70fb38d060e5653977838a2" prefix="(" category="inline-code"></block> Région) est désormais pris en charge par Google Cloud pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures.</block>
-  <block id="2bc724993144e8002899059117620062" category="inline-link">Carte des régions du monde sous Google Cloud</block>
-  <block id="6a050b5b1c64124ef335bf9dbf64e03f" category="paragraph">Pour obtenir la liste de toutes les régions, reportez-vous au<block ref="5328f934c7a30e2b8b67732fc162a525" category="inline-link-rx"></block>.</block>
-  <block id="ee94ea94211470599a81d49f8c4b586f" category="section-title">Les balises et les modèles de volumes ne sont plus pris en charge</block>
-  <block id="96b0b2a19dd9deb6b94e53f2e29f4387" category="paragraph">Vous ne pouvez plus créer de volume à partir d'un modèle ni modifier les balises d'un volume. Ces actions ont été associées au service de correction BlueXP, qui n'est plus disponible.</block>
   <block id="0a9bbb6e81dd21b77886235f2ce33af9" category="paragraph">Découvrez les derniers changements apportés aux services Cloud intégrés à la plateforme BlueXP. Pour consulter l'historique complet des versions, accédez au <block ref="1e9f4589e5d2713376df79f13fc9ba0a" category="inline-link-macro-rx"></block> pour chaque service.</block>
   <block id="188fd7f75e50a8a882a75c15dcb630a1" category="section-title">17 mai 2024</block>
   <block id="4d3035dcb7b114e2c87c82e5ae7e626c" category="inline-link">Découvrez la prise en charge de RHEL 8 et 9 avec le connecteur</block>
@@ -704,4 +688,40 @@
   <block id="7ef5c031e9bd4c1394a8093c50afe4e2" category="paragraph">Vous avez désormais la possibilité d'examiner et d'approuver un certificat d'interface de gestion StorageGRID lors de la découverte du système StorageGRID à partir de BlueXP . Vous pouvez également vérifier et approuver le dernier certificat d'interface de gestion StorageGRID sur une grille découverte.</block>
   <block id="4a314d3b77101d6faf44fa4063c45276" category="inline-link">Découvrez comment vérifier et approuver le certificat du serveur lors de la découverte du système.</block>
   <block id="045269b1f12b0a8f2aee954f43a8daa6" category="paragraph"><block ref="045269b1f12b0a8f2aee954f43a8daa6" category="inline-link-rx"></block></block>
+  <block id="5009e1070e5138d1308165bc75e5706b" category="inline-link">Mises à jour de logiciels</block>
+  <block id="7c26a70dd4c64672aaff5da10a3afaec" category="list-text"><block ref="7c26a70dd4c64672aaff5da10a3afaec" category="inline-link-rx"></block></block>
+  <block id="9cc3df8e0a65f95d62b0d0dc557d0fa9" category="section-title">8 août 2024</block>
+  <block id="34c56ac41d4e5a004cc5b7c87b0e2d87" category="section-title">Connecteur 3.9.43</block>
+  <block id="be1b4db310d7b6590c7af9eb4751b6ce" category="paragraph">Cette version comprend des améliorations mineures, des correctifs de bogues et l'exigence de nouvelles autorisations Azure.</block>
+  <block id="05797637e0cfec59d8a5478eba1acfdf" category="paragraph">La version 3.9.43 est disponible pour le mode standard et le mode restreint.</block>
+  <block id="45c4fb485dfa6a5d0af975aa668648a9" category="section-title">Mise à jour des exigences en termes de CPU et de RAM</block>
+  <block id="07279af47b8b78d8d96257fb42d7c5d9" category="paragraph">Pour offrir une plus grande fiabilité et améliorer les performances de BlueXP  et du connecteur, nous avons besoin de processeurs et de RAM supplémentaires pour la machine virtuelle du connecteur :</block>
+  <block id="ab0a05181cb2ac15cc8151f858731517" category="list-text">CPU : 8 cœurs ou 8 vCPU (la configuration précédente était de 4)</block>
+  <block id="f8cac741f7a99da8594b5802a47567ab" category="list-text">RAM : 32 Go (la configuration précédente était de 14 Go)</block>
+  <block id="de1d56fb73daa2b65c2efd1f73d24a1b" category="paragraph">Suite à cette modification, le type d'instance de VM par défaut lors du déploiement du connecteur depuis BlueXP  ou depuis le Marketplace du fournisseur cloud est le suivant :</block>
+  <block id="43a4336ace07071a0817d23211d30402" category="list-text">AWS : t3.2xlarge</block>
+  <block id="70e7db9a896d903493a8716aa3885ee7" category="list-text">Azure : standard_D8s_v3</block>
+  <block id="1a0e003291457a847a85677ad5244c4e" category="list-text">Google Cloud : n2-standard-8</block>
+  <block id="7ef0b49c93a0c955c309b5fea693d698" category="paragraph">Cette exigence s'applique aux connecteurs nouveaux et existants.</block>
+  <block id="fecbdb7e41beb7c2b4125b62d71b116d" category="section-title">Prise en charge de Podman 4.9.4 avec RHEL 8.10</block>
+  <block id="601e92646453def880eec16da18e4390" category="paragraph">Podman version 4.9.4 est désormais pris en charge lors de l'installation du connecteur sur un hôte Red Hat Enterprise Linux 8.10.</block>
+  <block id="18ecc589a4f329e3ba95ac4e285b4504" category="section-title">Validation de l'utilisateur pour la fédération des identités</block>
+  <block id="8b71299c32997f38948f7e56b11d69b8" category="paragraph">Si vous utilisez la fédération des identités avec BlueXP , chaque utilisateur qui se connecte pour la première fois à BlueXP  devra remplir un formulaire rapide pour valider son identité.</block>
+  <block id="e84c1e70dc9a2186ec21e22a3e9cbda0" category="section-title">Les packages de licences Edge cache sont obsolètes</block>
+  <block id="882b50ca44d46bfb8d9502390cfeaf96" category="paragraph">Les offres de licences basées sur la capacité Edge cache ne seront plus disponibles pour les déploiements futurs de Cloud Volumes ONTAP. Cependant, vous pouvez utiliser l'API pour bénéficier de cette fonctionnalité.</block>
+  <block id="a5729938408dc232ea97fb5d7d00b71c" category="section-title">Version ONTAP minimale prise en charge pour Flash cache sur Azure</block>
+  <block id="9eed4224485f0ec8f22ac2ca0b031514" category="paragraph">La version minimale de ONTAP requise pour la configuration de Flash cache sur Azure est la version 9.13.1 GA. Seuls ONTAP 9.13.1 GA et versions ultérieures peuvent être utilisés pour le déploiement de Flash cache sur les systèmes Cloud Volumes ONTAP pour Azure.</block>
+  <block id="e4b60b51b40a0907e38b3293d36780e6" category="inline-link">Configurations prises en charge dans Azure</block>
+  <block id="2936dc7efe93e6248aca38d21b92cc62" category="paragraph">Pour les configurations prises en charge, voir<block ref="10c1bb30d666a83202b9e687d7b06d1b" category="inline-link-rx"></block>.</block>
+  <block id="bc5af032a5cd69ef4ac57b8c2cd1f1d6" category="section-title">Les essais gratuits pour les abonnements au marché sont obsolètes</block>
+  <block id="860dc5e7395e0f2c15a42ffdef98eca4" category="paragraph">L'essai automatique gratuit de 30 jours pour les abonnements avec paiement à l'utilisation sur le marché du fournisseur cloud ne sera plus disponible dans Cloud Volumes ONTAP. La facturation de tout type d'abonnement au marché (PAYGO ou contrat annuel) sera activée à partir de la première utilisation, sans aucune période d'essai gratuite.</block>
+  <block id="2c8ad7deb621eae9ecb23ccf84d9c22c" category="section-title">La région du Canada Ouest est maintenant prise en charge dans AWS</block>
+  <block id="184c928c73aa00c7569ba55c0b9e0064" category="paragraph">La région du Canada-Ouest est maintenant prise en charge dans le système AWS pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures.</block>
+  <block id="0970aa81dd486fe1c8e03549b29f3d46" category="inline-link">Carte des régions globales sous AWS</block>
+  <block id="96c6a6277896e4ed7c2cef558b5542c1" category="paragraph">Pour obtenir une liste de toutes les régions, reportez-vous à la<block ref="24faa078890c2d8c97de1a6b5a5789e3" category="inline-link-rx"></block>.</block>
+  <block id="d6b2c344cefb2303b488f51358e47bad" category="section-title">07 août 2024</block>
+  <block id="a262e6e8b2140ed65b4662f6ea3826e9" category="section-title">Mise à jour ONTAP</block>
+  <block id="bfcca17c4ea8c7320a1a54960ce35444" category="paragraph">Le service de mises à jour logicielles BlueXP  offre aux utilisateurs une expérience de mise à jour fluide en limitant les risques et en leur permettant d'exploiter pleinement les fonctionnalités ONTAP.</block>
+  <block id="8e28797de414b72e6beab6ed5932133f" category="inline-link-macro">Mises à jour du logiciel BlueXP</block>
+  <block id="3b51dbc206ff39db31b586cff27b62b6" category="paragraph">En savoir plus sur <block ref="5932964ef1a5389f9863c988396d1e93" category="inline-link-macro-rx"></block>.</block>
 </blocks>
