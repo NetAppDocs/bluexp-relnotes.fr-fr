@@ -468,10 +468,6 @@
   <block id="ac229efd3fa61c5457dcab252996be0b" category="paragraph">La classification BlueXP est désormais disponible en tant que fonctionnalité clé dans BlueXP, sans frais supplémentaires pour un maximum de 500 To de données numérisées. Aucune licence de classification ou abonnement payant n'est nécessaire. Alors que nous nous concentrons sur la fonctionnalité de classification BlueXP lors de l'analyse des systèmes de stockage NetApp avec cette nouvelle version, certaines fonctionnalités héritées ne seront disponibles que pour les clients qui avaient déjà payé pour une licence. L'utilisation de ces fonctions héritées expirera lorsque le contrat payé atteindra sa date de fin.</block>
   <block id="3607a722a9a09bb6d405f4d84609e858" category="inline-link-macro">En savoir plus sur les fonctionnalités obsolètes</block>
   <block id="1a50d9154328b370f6d9bbbab041964a" category="paragraph"><block ref="671322b9b43cc49264f86b21ef88a11d" category="inline-link-macro-rx"></block>.</block>
-  <block id="b3e67e9d7f5be7902fd87917d0acb3e0" category="section-title">Prise en charge des zones locales Amazon Web Services</block>
-  <block id="6f9fa4d02a6081aa6d33b131d8532328" category="paragraph">La prise en charge des zones locales AWS est désormais disponible pour les déploiements haute disponibilité Cloud Volumes ONTAP. AWS local zones est un déploiement d'infrastructure où le stockage, le calcul, la base de données et d'autres services AWS spécifiques sont situés à proximité de grandes villes et de secteurs.</block>
-  <block id="e0b08acf0828bf4594a0b9bd6411df1b" category="inline-link-macro">Zones locales AWS</block>
-  <block id="b75accaa363606f733ab4203f45f8193" category="paragraph">Pour plus d'informations sur les zones locales AWS avec déploiements HA, reportez-vous à la section <block ref="6830ae69d7be576a68a954338edafef9" category="inline-link-macro-rx"></block>.</block>
   <block id="93716955add4f66b2af685a33bac4789" category="section-title">15 mai 2024</block>
   <block id="9df62cb4d6f151b560e84723841bd523" category="paragraph">Cette version de reprise d'activité de BlueXP inclut les mises à jour suivantes :</block>
   <block id="7f1d1e9df7ef6953a6e373e29826ca55" category="list-text">*La réplication des charges de travail VMware du stockage sur site vers le stockage sur site* est maintenant proposée en tant que fonction de disponibilité générale. Auparavant, il s'agissait d'un aperçu technologique avec des fonctionnalités limitées.</block>
@@ -485,7 +481,6 @@
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Webinaires sur le cloud</block>
   <block id="6849ea484f5664c887acc6f1ff990dfd" category="section-title">2 juin 2024</block>
   <block id="cfa477f3b89d95c12ff30d6390b89dd9" category="paragraph">Le service de copie et de synchronisation BlueXP a été mis à jour pour corriger quelques bugs. Le courtier en données a également été mis à jour pour appliquer des mises à jour de sécurité. La nouvelle version du courtier de données est 1.0.52.</block>
-  <block id="d4cffcdfb4fe4fc69dc234950d0f4151" category="admonition">Les zones locales AWS sont prises en charge lorsque BlueXP est utilisé en mode standard. À l'heure actuelle, les zones locales AWS ne sont pas prises en charge si BlueXP est utilisé en mode restreint ou en mode privé.</block>
   <block id="bf5237098b7bb15bc07f1d47863a9b8a" category="section-title">5 juin 2024 (version 1.32)</block>
   <block id="b9620e9aadf9827ac9bb29001772b3f0" category="paragraph">Cette version inclut les mises à jour suivantes.</block>
   <block id="b83927d03444ee961e834ea1c3b0581b" category="section-title">Les analyses de mappage rassemblent les métadonnées</block>
@@ -700,15 +695,10 @@
   <block id="e84c1e70dc9a2186ec21e22a3e9cbda0" category="section-title">Les packages de licences Edge cache sont obsolètes</block>
   <block id="882b50ca44d46bfb8d9502390cfeaf96" category="paragraph">Les offres de licences basées sur la capacité Edge cache ne seront plus disponibles pour les déploiements futurs de Cloud Volumes ONTAP. Cependant, vous pouvez utiliser l'API pour bénéficier de cette fonctionnalité.</block>
   <block id="a5729938408dc232ea97fb5d7d00b71c" category="section-title">Version ONTAP minimale prise en charge pour Flash cache sur Azure</block>
-  <block id="9eed4224485f0ec8f22ac2ca0b031514" category="paragraph">La version minimale de ONTAP requise pour la configuration de Flash cache sur Azure est la version 9.13.1 GA. Seuls ONTAP 9.13.1 GA et versions ultérieures peuvent être utilisés pour le déploiement de Flash cache sur les systèmes Cloud Volumes ONTAP pour Azure.</block>
   <block id="e4b60b51b40a0907e38b3293d36780e6" category="inline-link">Configurations prises en charge dans Azure</block>
   <block id="2936dc7efe93e6248aca38d21b92cc62" category="paragraph">Pour les configurations prises en charge, voir<block ref="10c1bb30d666a83202b9e687d7b06d1b" category="inline-link-rx"></block>.</block>
   <block id="bc5af032a5cd69ef4ac57b8c2cd1f1d6" category="section-title">Les essais gratuits pour les abonnements au marché sont obsolètes</block>
   <block id="860dc5e7395e0f2c15a42ffdef98eca4" category="paragraph">L'essai automatique gratuit de 30 jours pour les abonnements avec paiement à l'utilisation sur le marché du fournisseur cloud ne sera plus disponible dans Cloud Volumes ONTAP. La facturation de tout type d'abonnement au marché (PAYGO ou contrat annuel) sera activée à partir de la première utilisation, sans aucune période d'essai gratuite.</block>
-  <block id="2c8ad7deb621eae9ecb23ccf84d9c22c" category="section-title">La région du Canada Ouest est maintenant prise en charge dans AWS</block>
-  <block id="184c928c73aa00c7569ba55c0b9e0064" category="paragraph">La région du Canada-Ouest est maintenant prise en charge dans le système AWS pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures.</block>
-  <block id="0970aa81dd486fe1c8e03549b29f3d46" category="inline-link">Carte des régions globales sous AWS</block>
-  <block id="96c6a6277896e4ed7c2cef558b5542c1" category="paragraph">Pour obtenir une liste de toutes les régions, reportez-vous à la<block ref="24faa078890c2d8c97de1a6b5a5789e3" category="inline-link-rx"></block>.</block>
   <block id="d6b2c344cefb2303b488f51358e47bad" category="section-title">07 août 2024</block>
   <block id="a262e6e8b2140ed65b4662f6ea3826e9" category="section-title">Mise à jour ONTAP</block>
   <block id="bfcca17c4ea8c7320a1a54960ce35444" category="paragraph">Le service de mises à jour logicielles BlueXP  offre aux utilisateurs une expérience de mise à jour fluide en limitant les risques et en leur permettant d'exploiter pleinement les fonctionnalités ONTAP.</block>
@@ -716,4 +706,22 @@
   <block id="3b51dbc206ff39db31b586cff27b62b6" category="paragraph">En savoir plus sur <block ref="5932964ef1a5389f9863c988396d1e93" category="inline-link-macro-rx"></block>.</block>
   <block id="a5cfb1c769f5b79bb515811f8e2d3256" category="section-title">11 août 2024</block>
   <block id="91c579c47837abf6f4d04e29b24b1d72" category="paragraph">Nous avons mis à jour le service de copie et de synchronisation BlueXP ainsi que le courtier en données pour corriger quelques bugs. La nouvelle version du courtier de données est 1.0.54.</block>
+  <block id="22e645000db07af6682e1c6517a3c82a" category="section-title">22 août 2024</block>
+  <block id="335b63351c39337de35ede84c3852d4d" category="section-title">Connecteur 3.9.43 patch</block>
+  <block id="262115d0d4a65fe9bcd074ab5666018a" category="paragraph">Nous avons mis à jour le connecteur pour prendre en charge la version Cloud Volumes ONTAP 9.15.1.</block>
+  <block id="ede74fed38968a6f0c0dcebc3102b859" category="paragraph">La prise en charge de cette version inclut une mise à jour de la règle de connecteur pour Azure. La stratégie inclut désormais les autorisations suivantes :</block>
+  <block id="c78a856f5972910d86f9b588fe9783e6" category="paragraph">Ces autorisations sont requises pour la prise en charge par Cloud Volumes ONTAP des ensembles d'échelles des machines virtuelles. Si vous disposez de connecteurs et que vous souhaitez utiliser cette nouvelle fonctionnalité, vous devez ajouter ces autorisations aux rôles personnalisés associés à vos informations d'identification Azure.</block>
+  <block id="33deee49118b5c8f42cddf68ea82eb12" category="inline-link">En savoir plus sur la prise en charge de Cloud Volumes ONTAP pour les jeux d'échelle de machines virtuelles</block>
+  <block id="d68b9311c71dab46bbfe2456fb69212b" category="list-text"><block ref="d68b9311c71dab46bbfe2456fb69212b" category="inline-link-rx"></block></block>
+  <block id="21952e368aec0a06297b408b56d39588" category="inline-link">Afficher les autorisations Azure pour le connecteur</block>
+  <block id="aee78f717e27d8af727663a423980af9" category="list-text"><block ref="30ea7e04713feb92caddbe86eeb922d8" category="inline-link-rx"></block>.</block>
+  <block id="bfe1024d3c9f1a02aa5dd1d7e5dccb34" category="section-title">22 août 2024</block>
+  <block id="cf153c7d2cb432b6e772832926525a09" category="section-title">Cloud Volumes ONTAP 9.15.1 GA</block>
+  <block id="ffa2c93a775db2cb6243bf2a224cf240" category="paragraph">BlueXP  peut désormais déployer et gérer Cloud Volumes ONTAP 9.15.1 General Availability dans AWS, Azure et Google Cloud.</block>
+  <block id="5e5a8323b53f79c61a277215cb801b01" category="paragraph">La version minimale de ONTAP requise pour la configuration de Flash cache sur Azure est la version 9.13.1 GA. Vous pouvez utiliser ONTAP 9.13.1 GA et versions ultérieures uniquement pour déployer Flash cache sur les systèmes Cloud Volumes ONTAP pour Azure.</block>
+  <block id="788b77f1903c86b79d6ab3fa3aeac01e" category="section-title">21 août 2024</block>
+  <block id="c91c7b93c28cd18741b71f727ee81ee3" category="section-title">Rapports</block>
+  <block id="fc1d748db1b5b488ce7af7d17ea15d55" category="inline-link-macro">Prise en charge des versions logicielles</block>
+  <block id="846815401f996d92d6775164d37e6015" category="inline-link-macro">Mise à niveau des systèmes de stockage Data ONTAP 7-mode</block>
+  <block id="bebf3b3af19cc5d4d44b97e70e8b3ffb" category="paragraph">Le rapport *plans d'assistance pour la mise à niveau 7-mode* n'est plus disponible, car les systèmes 7-mode ont atteint la fin du support limité. Pour plus d'informations, voir <block ref="20732c2f8b67b7236a6509e096709359" category="inline-link-macro-rx"></block>. En savoir plus sur <block ref="ee2cd00409c56591f09249cc9e682f11" category="inline-link-macro-rx"></block>.</block>
 </blocks>
