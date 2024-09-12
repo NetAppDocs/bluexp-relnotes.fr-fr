@@ -406,16 +406,6 @@
   <block id="7478f8f98c41fc2f5747e6f31892fe6f" category="section-title">Protection par ransomware</block>
   <block id="c615da36d364061ce672b091d8aa7d3b" category="list-text"><block ref="c615da36d364061ce672b091d8aa7d3b" category="inline-link-rx"></block></block>
   <block id="19532230e3ff8a5fc0c27cc8389cac67" category="list-text"><block ref="19532230e3ff8a5fc0c27cc8389cac67" category="inline-link-rx"></block></block>
-  <block id="2d67cd05b64a3416bc8bae12b4ef5685" category="cell">12 mars 2024</block>
-  <block id="e713d6072685bf32f36150e9f76ce0c1" category="section-title">Possibilité d'effectuer des restaurations rapides depuis les sauvegardes cloud vers des volumes ONTAP sur site</block>
-  <block id="5a9ee632cba573d0f7355f7d12d908ca" category="paragraph">Vous pouvez désormais effectuer une _restauration rapide_ d'un volume depuis le stockage cloud vers un volume de destination ONTAP sur site. Auparavant, vous pouviez effectuer une restauration rapide uniquement sur un système Cloud Volumes ONTAP. La restauration rapide est idéale pour les reprises après incident où vous devez fournir un accès à un volume dès que possible. Une restauration rapide est bien plus rapide que la restauration d'un volume complet. Elle restaure les métadonnées depuis une copie Snapshot cloud vers un volume de destination ONTAP. La source peut provenir d'AWS S3, d'Azure Blob, de Google Cloud Services ou d'NetApp StorageGRID.</block>
-  <block id="07f61dfe973846130f7066ef7bc459ef" category="paragraph">Le système de destination ONTAP sur site doit exécuter ONTAP version 9.14.1 ou ultérieure.</block>
-  <block id="1a68bb97275f0f5acd506d7ad906fa05" category="paragraph">Pour ce faire, vous pouvez utiliser le processus Parcourir et restaurer, et non le processus Rechercher et restaurer.</block>
-  <block id="bb03c52ec2a68c9eed4513c8ecf6c24d" category="inline-link">Restaurez les données ONTAP à partir de fichiers de sauvegarde</block>
-  <block id="2c3b2694da8405de44d10ad024f9a37a" category="paragraph">Pour plus de détails, voir<block ref="d2c90c25b1a6379e29db7390401794cc" category="inline-link-rx"></block>.</block>
-  <block id="0b15186b9aa75ae921c55dd69591ae94" category="section-title">Possibilité de restaurer des fichiers et des dossiers à partir de copies Snapshot et de réplication</block>
-  <block id="8f859da29f9bc64e255dd02fc2821d0a" category="paragraph">Auparavant, vous pouviez restaurer des fichiers et des dossiers uniquement à partir de copies de sauvegarde dans AWS, Azure et Google Cloud Services. Désormais, vous pouvez restaurer des fichiers et des dossiers à partir de copies Snapshot locales et de copies de réplication.</block>
-  <block id="71931edd27b41979c47f73ca3194f9c3" category="paragraph">Vous pouvez exécuter cette fonction en utilisant le processus de recherche et de restauration, et non en utilisant le processus de navigation et de restauration.</block>
   <block id="bd43fc9501d9e9ddb964eda155be38b8" category="section-title">14 mars 2024</block>
   <block id="2910a4560c79f740cc97d113def24905" category="paragraph">Si vous disposez de ressources existantes et souhaitez déterminer si une technologie doit être mise à jour, vous pouvez utiliser les options de mise à jour technologique d'efficacité économique BlueXP. Vous pouvez soit examiner une courte évaluation de vos workloads actuels et obtenir des recommandations, soit envoyer des journaux AutoSupport à NetApp au cours des 90 derniers jours, le service peut maintenant fournir une simulation des workloads pour voir les performances de vos workloads sur du nouveau matériel.</block>
   <block id="10fa032662780ff6f01bd6647d92c626" category="paragraph">Vous pouvez également ajouter une charge de travail et exclure des charges de travail existantes de la simulation.</block>
@@ -427,17 +417,7 @@
   <block id="888059a12fa3532d54872d17517e780c" category="inline-link-macro">Découvrez comment afficher des recommandations de mise à niveau et générer un plan de mise à niveau.</block>
   <block id="9d10674ae163e749f65c1eeb852cdf2b" category="paragraph">L'ancienne version de Upgrade Advisor est maintenant obsolète. Vous pouvez utiliser la version améliorée de Upgrade Advisor pour générer des plans de mise à niveau pour un seul cluster et plusieurs clusters. <block ref="b6cac2681a05b9a8dd19bf0553cd1066" category="inline-link-macro-rx"></block></block>
   <block id="9d5b3307d5a7d5905623bf21ab049bdd" category="section-title">22 avril 2024</block>
-  <block id="22c5942eb497ecdc45ab31895da620cb" category="section-title">04 avril 2024</block>
-  <block id="58ca11ae6c2b33188443fbfd95e6b93d" category="section-title">Activation ou désactivation des analyses par ransomware</block>
-  <block id="6dc490eff019755a2978212c0ff0515d" category="paragraph">Auparavant, lorsque vous avez activé la détection des ransomwares dans une règle de sauvegarde, les analyses se sont automatiquement produites lors de la création de la première sauvegarde et de la restauration d'une sauvegarde. Dans les versions antérieures, le service a analysé toutes les copies Snapshot et vous ne pouviez pas désactiver les analyses.</block>
-  <block id="d48498af5a5419c6130b506ce86226aa" category="paragraph">Avec cette version, vous pouvez désormais activer ou désactiver les analyses anti-ransomware sur la dernière copie Snapshot à l'aide de l'option de la page Paramètres avancés. Si vous l'activez, les analyses sont effectuées chaque semaine par défaut.</block>
-  <block id="d7e0995e5e0ecfb32470e10070175d63" category="paragraph">Pour plus de détails, reportez-vous aux informations suivantes :</block>
-  <block id="cb79697c10a273ae05f814fdc378a3b6" category="inline-link">Gérer les paramètres de sauvegarde</block>
-  <block id="b9efb0b81ee5dede04d703accaa3ac50" category="list-text"><block ref="b9efb0b81ee5dede04d703accaa3ac50" category="inline-link-rx"></block></block>
-  <block id="6b28ac02ff2a9de6b423b9f57d6a4d09" category="inline-link">Gérez les règles des volumes ONTAP</block>
-  <block id="4987d2d58127a881e304bbe4ce3b5f7b" category="list-text"><block ref="4987d2d58127a881e304bbe4ce3b5f7b" category="inline-link-rx"></block></block>
   <block id="17c54e9ba828968f120b82b8cd07abfa" category="inline-link">Paramètres de la règle de sauvegarde sur objet</block>
-  <block id="9e59a4332ff7e195837a4721f8adaf92" category="list-text"><block ref="9e59a4332ff7e195837a4721f8adaf92" category="inline-link-rx"></block></block>
   <block id="4df3ea515a84d83efad2c0e3bc03c438" category="paragraph">Le service de correction BlueXP a été supprimé le 22 avril 2024.</block>
   <block id="2d177a5ce778fe0e6f460ac5e9449f84" category="section-title">Les modèles de volume ne sont plus pris en charge</block>
   <block id="14b1c6bd63866971a4cd695c3c2a3d80" category="paragraph">Vous ne pouvez plus créer de volume à partir d'un modèle. Cette action a été associée au service de correction BlueXP, qui n'est plus disponible.</block>
@@ -445,10 +425,6 @@
   <block id="188fd7f75e50a8a882a75c15dcb630a1" category="section-title">17 mai 2024</block>
   <block id="4d3035dcb7b114e2c87c82e5ae7e626c" category="inline-link">Découvrez la prise en charge de RHEL 8 et 9 avec le connecteur</block>
   <block id="5fb3739fbc4ea4c4f6ecf12db77ae604" category="paragraph"><block ref="a34a36a25f711a4d3e7acd813af66ea1" category="inline-link-rx"></block>.</block>
-  <block id="701c188698e8adc8e0dffa2a107bf9f4" category="section-title">30 avril 2024</block>
-  <block id="24c8d17b3d2e5d56e90675c0755252e0" category="section-title">Activation ou désactivation des analyses de ransomware planifiées</block>
-  <block id="1d5d9f598ed0ef9d579321fc5f2dea76" category="paragraph">Auparavant, vous pouviez activer ou désactiver les analyses par ransomware, mais pas les analyses planifiées.</block>
-  <block id="c05a6e1c401ef496decb0a82c8e569e3" category="paragraph">Avec cette version, vous pouvez désormais activer ou désactiver les analyses par ransomware planifiées sur la dernière copie Snapshot en utilisant l'option de la page Paramètres avancés. Si vous l'activez, les analyses sont effectuées chaque semaine par défaut. Vous pouvez modifier ce planning en jours ou en semaines ou le désactiver, ce qui vous permet d'économiser des coûts.</block>
   <block id="a0f248fceae83613cf99c651e3c24be5" category="inline-link">En savoir plus sur la configuration des licences</block>
   <block id="17f6ba003825118fb67d19c8c26be794" category="paragraph"><block ref="36f38233d2460bc4dacb6b4bd4fd46ab" category="inline-link-rx"></block>.</block>
   <block id="c817ad6139f116906ee3d7991cfdcba9" category="section-title">Limitations lors de l'utilisation de RHEL 8 et RHEL 9 pour votre connecteur sur site</block>
@@ -494,13 +470,6 @@
   <block id="072d1a387472fb47fdfa33e48ff08ffd" category="section-title">Tableau de bord durabilité</block>
   <block id="8934fed115a0b826a4b438906a11bfa9" category="inline-link-macro">Présentation du tableau de bord Sustainability</block>
   <block id="73cb3e305b75665c1f29817b70dd8a1f" category="summary">Découvrez les derniers changements apportés aux services Cloud intégrés à la plateforme BlueXP.</block>
-  <block id="5bde46ec5f2d435355447c38b00c1d9c" category="section-title">15 juillet 2024</block>
-  <block id="415b27bc5d78b639dc8c74a6e8f93e19" category="section-title">Prise en charge de RHEL 8.10</block>
-  <block id="562442342bba071ba7f2e5fa834d4464" category="paragraph">BlueXP prend désormais en charge l'installation du connecteur sur un hôte Red Hat Enterprise Linux 8.10 en mode standard ou en mode restreint.</block>
-  <block id="8d330209f05c51bacefbee76e24d82e9" category="section-title">8 juillet 2024</block>
-  <block id="cfcc30e7f5ca49191957ff6a4f02c34d" category="section-title">Connecteur 3.9.42</block>
-  <block id="b1360a775c6891602e0321f2a2a1aa2b" category="paragraph">Cette version comprend des améliorations mineures, des correctifs et la prise en charge du connecteur dans la région d'AWS Canada-Ouest (Calgary).</block>
-  <block id="096051910b67309e40aa0d0e1d279007" category="paragraph">La version 3.9.42 est disponible pour le mode standard et le mode restreint.</block>
   <block id="bbe4d8abcc3519b138a73b8e46ee2119" category="section-title">12 juin 2024</block>
   <block id="bb123d17400bea06780499dfee0aa1eb" category="section-title">Nouvelle autorisation requise</block>
   <block id="19c74b0651bd4a8c13580d2b199c9dcb" category="paragraph">L'autorisation suivante est désormais requise pour gérer les volumes Azure NetApp Files à partir de BlueXP :</block>
@@ -512,7 +481,6 @@
   <block id="3b08fbca8f3b3deaf466cedfd425cfc6" category="section-title">1er juillet 2024 (version 1.33)</block>
   <block id="d61892207457d808cffbfc18b9dcd8ad" category="section-title">Ubuntu pris en charge</block>
   <block id="0db04e76c6afbdb79f128758ee937013" category="paragraph">Cette version prend en charge la plate-forme Linux Ubuntu 24.04.</block>
-  <block id="8009eebf05fd33b87750f8b4048986f7" category="section-title">10 juin 2024</block>
   <block id="a6cba69e97a9115b21cbf35b24b33d83" category="section-title">04 juillet 2024</block>
   <block id="5e63fb298525a46837cedfd7fc3c5002" category="paragraph">Des indicateurs environnementaux fournissant des informations sur l'état de santé de vos systèmes de stockage fournissent désormais des valeurs plus précises pour la consommation d'énergie projetée, la consommation directe de carbone et les émissions de chaleur, basées sur un modèle prédictif avancé. Pour en savoir plus, reportez-vous <block ref="8ef455a63dd9427c902954b8e3c7f21b" category="inline-link-macro-rx"></block>à la section .</block>
   <block id="8352fdd61dbba9f97925bd7797c4eb47" category="paragraph">Une durabilité est désormais prise en charge sur les systèmes E-Series et StorageGRID. Vous pouvez afficher une liste des actions recommandées et des indicateurs environnementaux qui affichent des projections d'énergie, de consommation directe de carbone et de chaleur à partir du tableau de bord Sustainability pour ces systèmes. Pour en savoir plus, reportez-vous <block ref="8ef455a63dd9427c902954b8e3c7f21b" category="inline-link-macro-rx"></block>à la section .</block>
@@ -546,41 +514,21 @@
   <block id="5bc0cd3e3204e2ab72bd03661373648f" category="inline-link">Découvrez comment protéger vos workloads et gérer vos stratégies de protection contre les ransomwares</block>
   <block id="20eb1918e9de308789133c5a0b0cc2c4" category="paragraph"><block ref="88ddee768f79e382777baf84277fe57c" category="inline-link-rx"></block>.</block>
   <block id="4c57408166809e028adf9be27b861c0a" category="paragraph">Cette version de la protection contre les ransomwares BlueXP inclut les mises à jour suivantes :</block>
-  <block id="01a9b44907bcb1139b6868b9fe7073d0" category="paragraph">La prise en charge de RHEL 8.10 commence avec la version 3.9.40 du connecteur.</block>
   <block id="9fc076386261ca80bfc67f7f57c641d3" category="section-title">14 juillet 2024</block>
   <block id="c18c776847f6d7588ddeab0632527364" category="paragraph">Nous avons mis à jour le service de copie et de synchronisation BlueXP ainsi que le courtier en données pour corriger quelques bugs. La nouvelle version du courtier de données est 1.0.53.</block>
-  <block id="4f11400d5bfc49418f8fe9e78ffbc58c" category="section-title">31 juillet 2024</block>
-  <block id="b9cf377931ad2ee7b1d42618c6c12fa5" category="section-title">Version en mode privé (3.9.42)</block>
   <block id="5d515ef1c3774ed67ad6115621a1ca59" category="paragraph">Une nouvelle version en mode privé est désormais disponible au téléchargement sur le site du support NetApp.</block>
-  <block id="a5dacfcdb1adb3167b081f091b368732" category="section-title">Prise en charge de RHEL 8 et 9</block>
-  <block id="de4d4b8489d091cd028889fa8739a4a3" category="paragraph">Cette version inclut la prise en charge de l'installation de Connector sur un hôte Red Hat Enterprise Linux 8 ou 9 lors de l'utilisation de BlueXP en mode privé. Les versions suivantes de RHEL sont prises en charge :</block>
   <block id="597f1630cd21d22c527f63002e42f059" category="list-text">8.6 à 8.10</block>
-  <block id="d80ef147e70626ef64e723b33860d715" category="list-text">9.1 à 9.3</block>
-  <block id="00ed051332ed28fe5b1ab0a4ae7aa4f6" category="paragraph">Podman est requis comme outil d'orchestration de conteneurs pour ces systèmes d'exploitation.</block>
-  <block id="3d007e1710eb9efcb8c51296efc8eb4f" category="paragraph">Vous devez connaître les exigences de Podman, les limitations connues, un résumé de la prise en charge du système d'exploitation, ce qu'il faut faire si vous disposez d'un hôte RHEL 7, comment démarrer, et bien plus encore.</block>
-  <block id="2791ae5af0f1b2a708aaa92b1fddb49e" category="section-title">Versions incluses dans cette version</block>
-  <block id="ee91704d04c9c24001ba7aa413122767" category="paragraph">Cette version inclut les versions suivantes des services BlueXP prises en charge avec le mode privé.</block>
   <block id="c2ba7e785c49050f48da9aacc45c2b85" category="cell">Service</block>
   <block id="b742a03d26cdd3a73daedbab8ce0898b" category="cell">Version incluse</block>
   <block id="edf21d7ecb364e8210ddd3dfaeca6fbf" category="cell">Connecteur</block>
-  <block id="58660abbd738b63f91f751c0fcd3787d" category="cell">3.9.42</block>
-  <block id="09fcc3c3a46a63684b907c89bb2e4b7b" category="cell">18 juillet 2024</block>
-  <block id="4736cb006ef02fa673f618379e2106bd" category="cell">1er juillet 2024 (version 1.33)</block>
   <block id="20f71c84b5a0e44a35f3a8c4207c85a9" category="cell">Gestion Cloud Volumes ONTAP</block>
   <block id="900dd8f50d2294930a102034524e26b7" category="cell">Gestion des clusters ONTAP sur site</block>
-  <block id="64cc8195fcb01e582343c910736d1abd" category="paragraph">Pour en savoir plus sur le contenu des versions de ces services BlueXP, consultez les notes de version de chaque service BlueXP.</block>
   <block id="a52b83d1b32a42f8a6aff3771048ba3c" category="inline-link">En savoir plus sur le mode privé</block>
   <block id="cdeb608610a882c24cefcb7daa878a1d" category="list-text"><block ref="cdeb608610a882c24cefcb7daa878a1d" category="inline-link-rx"></block></block>
   <block id="8156defa13b44a36e67cab400c3b8bd4" category="inline-link">Découvrez comment démarrer avec BlueXP en mode privé</block>
   <block id="1183e1b8915696495b308d0bdfa59bd4" category="list-text"><block ref="1183e1b8915696495b308d0bdfa59bd4" category="inline-link-rx"></block></block>
   <block id="b29a186d936b198dcafa3a0308485e2c" category="inline-link">Apprenez à mettre à niveau le connecteur lorsque vous utilisez le mode privé</block>
   <block id="e5d325f390c70091b07096d63ab8f353" category="list-text"><block ref="e5d325f390c70091b07096d63ab8f353" category="inline-link-rx"></block></block>
-  <block id="451cc12943297b25b1cf250cc5d0e60a" category="inline-link">Découvrez les nouveautés de la sauvegarde et de la restauration BlueXP</block>
-  <block id="d846859679a4eca86e97e1887623b347" category="list-text"><block ref="d846859679a4eca86e97e1887623b347" category="inline-link-rx"></block></block>
-  <block id="dd890c1f1f06a084e8274154f3f07ebe" category="inline-link">Découvrez les nouveautés de la classification BlueXP</block>
-  <block id="0dcda936d538d36f9e02f54b88ffefca" category="list-text"><block ref="0dcda936d538d36f9e02f54b88ffefca" category="inline-link-rx"></block></block>
-  <block id="d06e6f96135d8cd2fa9fea9a4d9de16b" category="inline-link">Découvrez les nouveautés de la gestion Cloud Volumes ONTAP dans BlueXP</block>
-  <block id="29e66847d781138b54aa8aa55b70fb20" category="list-text"><block ref="29e66847d781138b54aa8aa55b70fb20" category="inline-link-rx"></block></block>
   <block id="ba874eb3ffbdba518b95ce26bc81a861" category="section-title">22 juillet 2024</block>
   <block id="9d5f0e2f1682000ac365243e21301823" category="section-title">Restaurez des volumes inférieurs à 1 Go</block>
   <block id="a429eb8c690c0a48131f4ae1267eafd1" category="paragraph">Avec cette version, vous pouvez désormais restaurer des volumes créés dans ONTAP de moins de 1 Go. La taille minimale du volume que vous pouvez créer à l'aide de ONTAP est de 20 Mo.</block>
@@ -648,21 +596,6 @@
   <block id="045269b1f12b0a8f2aee954f43a8daa6" category="paragraph"><block ref="045269b1f12b0a8f2aee954f43a8daa6" category="inline-link-rx"></block></block>
   <block id="5009e1070e5138d1308165bc75e5706b" category="inline-link">Mises à jour de logiciels</block>
   <block id="7c26a70dd4c64672aaff5da10a3afaec" category="list-text"><block ref="7c26a70dd4c64672aaff5da10a3afaec" category="inline-link-rx"></block></block>
-  <block id="9cc3df8e0a65f95d62b0d0dc557d0fa9" category="section-title">8 août 2024</block>
-  <block id="34c56ac41d4e5a004cc5b7c87b0e2d87" category="section-title">Connecteur 3.9.43</block>
-  <block id="05797637e0cfec59d8a5478eba1acfdf" category="paragraph">La version 3.9.43 est disponible pour le mode standard et le mode restreint.</block>
-  <block id="45c4fb485dfa6a5d0af975aa668648a9" category="section-title">Mise à jour des exigences en termes de CPU et de RAM</block>
-  <block id="07279af47b8b78d8d96257fb42d7c5d9" category="paragraph">Pour offrir une plus grande fiabilité et améliorer les performances de BlueXP  et du connecteur, nous avons besoin de processeurs et de RAM supplémentaires pour la machine virtuelle du connecteur :</block>
-  <block id="ab0a05181cb2ac15cc8151f858731517" category="list-text">CPU : 8 cœurs ou 8 vCPU (la configuration précédente était de 4)</block>
-  <block id="f8cac741f7a99da8594b5802a47567ab" category="list-text">RAM : 32 Go (la configuration précédente était de 14 Go)</block>
-  <block id="de1d56fb73daa2b65c2efd1f73d24a1b" category="paragraph">Suite à cette modification, le type d'instance de VM par défaut lors du déploiement du connecteur depuis BlueXP  ou depuis le Marketplace du fournisseur cloud est le suivant :</block>
-  <block id="43a4336ace07071a0817d23211d30402" category="list-text">AWS : t3.2xlarge</block>
-  <block id="70e7db9a896d903493a8716aa3885ee7" category="list-text">Azure : standard_D8s_v3</block>
-  <block id="1a0e003291457a847a85677ad5244c4e" category="list-text">Google Cloud : n2-standard-8</block>
-  <block id="fecbdb7e41beb7c2b4125b62d71b116d" category="section-title">Prise en charge de Podman 4.9.4 avec RHEL 8.10</block>
-  <block id="601e92646453def880eec16da18e4390" category="paragraph">Podman version 4.9.4 est désormais pris en charge lors de l'installation du connecteur sur un hôte Red Hat Enterprise Linux 8.10.</block>
-  <block id="18ecc589a4f329e3ba95ac4e285b4504" category="section-title">Validation de l'utilisateur pour la fédération des identités</block>
-  <block id="8b71299c32997f38948f7e56b11d69b8" category="paragraph">Si vous utilisez la fédération des identités avec BlueXP , chaque utilisateur qui se connecte pour la première fois à BlueXP  devra remplir un formulaire rapide pour valider son identité.</block>
   <block id="d6b2c344cefb2303b488f51358e47bad" category="section-title">07 août 2024</block>
   <block id="a262e6e8b2140ed65b4662f6ea3826e9" category="section-title">Mise à jour ONTAP</block>
   <block id="bfcca17c4ea8c7320a1a54960ce35444" category="paragraph">Le service de mises à jour logicielles BlueXP  offre aux utilisateurs une expérience de mise à jour fluide en limitant les risques et en leur permettant d'exploiter pleinement les fonctionnalités ONTAP.</block>
@@ -715,8 +648,6 @@
   <block id="b0c050c316c776928b8b8bc0c327449e" category="list-text"><block ref="aff0e765a5d2f4e281feabd61d1dd500" category="inline-link-rx"></block>.</block>
   <block id="2f036a4385aa02ab7c67e7932bd4036f" category="inline-link">Découvrez ce qui a changé la règle Azure</block>
   <block id="31fa3b726cc2ab8e192bc70a792168a7" category="list-text"><block ref="c65ef862e4776cf4a66f5e1d7163d89e" category="inline-link-rx"></block>.</block>
-  <block id="d30916c53949113e97a8033f02e41364" category="paragraph">Cette version comprend des améliorations mineures et des correctifs.</block>
-  <block id="9d97f1d57b6500707266656cdf2bf526" category="paragraph">Les exigences mises à jour en matière de CPU et de RAM s'appliquent à tous les nouveaux connecteurs. Pour les connecteurs existants, il est recommandé d'augmenter le processeur et la RAM pour améliorer les performances et la fiabilité.</block>
   <block id="597f26a63507bfee99f67909c68d5354" category="section-title">2 septembre 2024 (version 1.35)</block>
   <block id="4f13d17cc7a60ec8546d7892c87e3acf" category="section-title">Analyser les données StorageGRID</block>
   <block id="83bceb987dd495cde1a148944580e473" category="paragraph">La classification BlueXP  peut maintenant analyser les données dans StorageGRID.</block>
@@ -755,4 +686,39 @@
   <block id="395f31b2f1bc9cb3993acbb14cf4fb1f" category="paragraph"><block ref="724b4d6e1bb3e6bea768572a2ce7c10e" category="inline-link-rx"></block>.</block>
   <block id="577f5f9474f1f4f6f56c1fb216328baf" category="section-title">16 septembre 2024</block>
   <block id="bc2c6ba9505b9e6d38d9f10c18186d1c" category="paragraph">Nous avons mis à jour le service de copie et de synchronisation BlueXP ainsi que le courtier en données pour corriger quelques bugs. La nouvelle version du courtier de données est 1.0.55.</block>
+  <block id="964635dcf6206ebb279b58d13cf69a92" category="section-title">30 septembre 2024</block>
+  <block id="0beb94109608ff82d313b33947162f96" category="section-title">Version en mode privé (3.9.44)</block>
+  <block id="f1fb6fd189345cf04ef77974b58bcbfc" category="paragraph">Cette version inclut les versions suivantes des composants et services BlueXP  pris en charge avec le mode privé.</block>
+  <block id="8dd8dbe371973ff01954f1d0db6a6c30" category="cell">3.9.44</block>
+  <block id="5fcc5d3ffc4bbbcf6d018ab4a9639205" category="cell">27 septembre 2024</block>
+  <block id="918de91f5332dad6620331712ef5c21d" category="cell">15 mai 2024 (version 1.31)</block>
+  <block id="48f2931f061b9d56d7805eddf6969cea" category="paragraph">Pour le connecteur, la version 3.9.44 du mode privé inclut les mises à jour introduites dans les versions d'août 2024 et de septembre 2024. Plus particulièrement, la prise en charge de Red Hat Enterprise Linux 9.4.</block>
+  <block id="288ce8ff800de0648500c62f0658b96c" category="paragraph">Pour en savoir plus sur les versions de ces composants et services BlueXP , consultez les notes de version de chaque service BlueXP  :</block>
+  <block id="65439cdb7546ae11a93a141421129d1a" category="inline-link">Nouveautés de la version de septembre 2024 du connecteur</block>
+  <block id="46c02b08a8d12f7b5b9a43c01b252fe0" category="list-text"><block ref="46c02b08a8d12f7b5b9a43c01b252fe0" category="inline-link-rx"></block></block>
+  <block id="c531086859410bbf7d79b1d007644e8c" category="inline-link">Nouveautés de la version d'août 2024 du connecteur</block>
+  <block id="3447cde4c00b98b6428bff77da46fd8c" category="list-text"><block ref="3447cde4c00b98b6428bff77da46fd8c" category="inline-link-rx"></block></block>
+  <block id="116a2755907d33cc76c6cdc442c467b0" category="inline-link">Nouveautés de la sauvegarde et de la restauration BlueXP </block>
+  <block id="4e02af58c02d9f0704b79eb4e000eb20" category="list-text"><block ref="4e02af58c02d9f0704b79eb4e000eb20" category="inline-link-rx"></block></block>
+  <block id="cdcec1bb4c8f6524979a702b1691d4f7" category="inline-link">Nouveautés de la classification BlueXP </block>
+  <block id="9212eddb7e41302606e7873d754ab3aa" category="list-text"><block ref="9212eddb7e41302606e7873d754ab3aa" category="inline-link-rx"></block></block>
+  <block id="00dc7f0b165829f9f81bfaf12a8db2e4" category="inline-link">Nouveautés de la gestion Cloud Volumes ONTAP dans BlueXP </block>
+  <block id="941cdb6d27c83c929d4abe28f2321665" category="list-text"><block ref="941cdb6d27c83c929d4abe28f2321665" category="inline-link-rx"></block></block>
+  <block id="6aa6935f7c0067aba2624a4ad2862e39" category="paragraph">Pour plus d'informations sur le mode privé, notamment sur la mise à niveau, reportez-vous aux sections suivantes :</block>
+  <block id="aa6a53998d98bae73a6913ff1c2eecbc" category="section-title">Prise en charge de Podman sur RHEL 8 ou 9 avec Browse and Restore</block>
+  <block id="c6bad3b272d5eeec569990b050d88123" category="paragraph">La sauvegarde et la restauration BlueXP  prennent désormais en charge les restaurations de fichiers et de dossiers sur Red Hat Enterprise Linux (RHEL) versions 8 et 9 à l'aide du moteur Podman. Ceci s'applique à la méthode de sauvegarde et de restauration BlueXP .</block>
+  <block id="f5d370ee9e029c4d62db915f308e04c0" category="paragraph">BlueXP  Connector version 3.9.40 prend en charge certaines versions de Red Hat Enterprise Linux versions 8 et 9 pour toute installation manuelle du logiciel Connector sur un hôte RHEL 8 ou 9, quel que soit l'emplacement en plus des systèmes d'exploitation mentionnés dans le<block ref="9b2a96babeed2ab711a4327ec7f34b5c" category="inline-link-rx"></block>. Ces nouvelles versions de RHEL nécessitent le moteur Podman au lieu du moteur Docker. Auparavant, la sauvegarde et la restauration BlueXP  présentaient deux limitations lors de l'utilisation du moteur Podman. Ces limitations ont été supprimées.</block>
+  <block id="6111aa812639d5e432842ceca200ea78" category="inline-link">En savoir plus sur la restauration des données ONTAP à partir de fichiers de sauvegarde</block>
+  <block id="007a407431de4321913728dae6423904" category="paragraph"><block ref="056f97dce802386385ce3734740613e1" category="inline-link-rx"></block>.</block>
+  <block id="3abe4a789c1c33e285d9452cca8c493b" category="section-title">Une indexation plus rapide du catalogue améliore la recherche et la restauration</block>
+  <block id="9353e94049314c6236b51712848f2572" category="paragraph">Cette version inclut un index de catalogue amélioré qui termine l'indexation de base beaucoup plus rapidement. L'indexation plus rapide vous permet d'utiliser la fonction de recherche et de restauration plus rapidement.</block>
+  <block id="eaecda6db64f5346d5c63bfe0094e040" category="section-title">20 septembre 2024</block>
+  <block id="ee811bd919a27bd2eb705f65ed45e4f6" category="paragraph">Cette version de reprise sur incident BlueXP  inclut la mise à jour suivante.</block>
+  <block id="b077aa4f9a421cc2e2782608fb5caf4f" category="list-text">*Prise en charge des datastores VMware VMFS sur site à sur site* : cette version inclut la prise en charge des machines virtuelles montées sur des datastores VMware vSphere Virtual machine File System (VMFS) pour iSCSI et FC protégées sur le stockage sur site. Auparavant, le service fournissait un _aperçu de la technologie_ prenant en charge les datastores VMFS pour iSCSI et FC.</block>
+  <block id="0eb65976c0b0c5ffa90b07d4a062e509" category="paragraph">Voici quelques considérations supplémentaires concernant à la fois les protocoles iSCSI et FC :</block>
+  <block id="d671bd2f503deef1e03581ce8d516507" category="list-text">La prise en charge de FC concerne les protocoles client frontaux, pas la réplication.</block>
+  <block id="cf1967c6d778937fae37b9e43582b1b6" category="list-text">La reprise d'activité BlueXP  ne prend en charge qu'une seule LUN par volume ONTAP. Le volume ne doit pas avoir plusieurs LUN.</block>
+  <block id="f3a37c3560d0027bc0f49abfab4ab0e3" category="list-text">Pour tout plan de réplication, le volume ONTAP de destination doit utiliser les mêmes protocoles que le volume ONTAP source hébergeant les VM protégées. Par exemple, si la source utilise un protocole FC, la destination doit également utiliser FC.</block>
+  <block id="a1c75029051cebc5ca5ea85a84cfc065" category="inline-link">En savoir plus sur le regroupement des workloads de partage de fichiers dans des stratégies de protection contre les ransomwares</block>
+  <block id="1784b8aa983497f6e69069b3b862287f" category="list-text">*Regroupement personnalisé des charges de travail de partage de fichiers* : avec cette version, vous pouvez désormais regrouper les partages de fichiers en groupes pour faciliter la protection de votre patrimoine de données. Le service peut protéger simultanément tous les volumes d'un groupe. Auparavant, chaque volume devait être protégé séparément. <block ref="8790005620a6e0339d9d5a6985b6f062" category="inline-link-rx"></block>.</block>
 </blocks>

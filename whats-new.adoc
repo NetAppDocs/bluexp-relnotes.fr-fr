@@ -24,6 +24,61 @@ Cette section décrit les nouvelles fonctionnalités liées aux fonctions d'admi
 
 
 
+=== 30 septembre 2024
+
+
+
+==== Version en mode privé (3.9.44)
+
+Une nouvelle version en mode privé est désormais disponible au téléchargement sur le site du support NetApp.
+
+Cette version inclut les versions suivantes des composants et services BlueXP  pris en charge avec le mode privé.
+
+[cols="2*"]
+|===
+| Service | Version incluse 
+
+
+| Connecteur | 3.9.44 
+
+
+| Sauvegarde et restauration | 27 septembre 2024 
+
+
+| Classement | 15 mai 2024 (version 1.31) 
+
+
+| Gestion Cloud Volumes ONTAP | 9 septembre 2024 
+
+
+| Portefeuille digital | 30 juillet 2023 
+
+
+| Gestion des clusters ONTAP sur site | 22 avril 2024 
+
+
+| La réplication | 18 septembre 2022 
+|===
+Pour le connecteur, la version 3.9.44 du mode privé inclut les mises à jour introduites dans les versions d'août 2024 et de septembre 2024. Plus particulièrement, la prise en charge de Red Hat Enterprise Linux 9.4.
+
+Pour en savoir plus sur les versions de ces composants et services BlueXP , consultez les notes de version de chaque service BlueXP  :
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#9-september-2024["Nouveautés de la version de septembre 2024 du connecteur"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#8-august-2024["Nouveautés de la version d'août 2024 du connecteur"]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["Nouveautés de la sauvegarde et de la restauration BlueXP "^]
+* https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["Nouveautés de la classification BlueXP "^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Nouveautés de la gestion Cloud Volumes ONTAP dans BlueXP "^]
+
+
+Pour plus d'informations sur le mode privé, notamment sur la mise à niveau, reportez-vous aux sections suivantes :
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["En savoir plus sur le mode privé"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Découvrez comment démarrer avec BlueXP en mode privé"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Apprenez à mettre à niveau le connecteur lorsque vous utilisez le mode privé"]
+
+
+
+
 === 9 septembre 2024
 
 
@@ -117,142 +172,6 @@ Ces autorisations sont requises pour la prise en charge par Cloud Volumes ONTAP 
 * https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["En savoir plus sur la version Cloud Volumes ONTAP 9.15.1"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Afficher les autorisations Azure pour le connecteur"].
 
-
-
-
-=== 8 août 2024
-
-
-
-==== Connecteur 3.9.43
-
-Cette version comprend des améliorations mineures et des correctifs.
-
-La version 3.9.43 est disponible pour le mode standard et le mode restreint.
-
-
-
-==== Mise à jour des exigences en termes de CPU et de RAM
-
-Pour offrir une plus grande fiabilité et améliorer les performances de BlueXP  et du connecteur, nous avons besoin de processeurs et de RAM supplémentaires pour la machine virtuelle du connecteur :
-
-* CPU : 8 cœurs ou 8 vCPU (la configuration précédente était de 4)
-* RAM : 32 Go (la configuration précédente était de 14 Go)
-
-
-Suite à cette modification, le type d'instance de VM par défaut lors du déploiement du connecteur depuis BlueXP  ou depuis le Marketplace du fournisseur cloud est le suivant :
-
-* AWS : t3.2xlarge
-* Azure : standard_D8s_v3
-* Google Cloud : n2-standard-8
-
-
-Les exigences mises à jour en matière de CPU et de RAM s'appliquent à tous les nouveaux connecteurs. Pour les connecteurs existants, il est recommandé d'augmenter le processeur et la RAM pour améliorer les performances et la fiabilité.
-
-
-
-==== Prise en charge de Podman 4.9.4 avec RHEL 8.10
-
-Podman version 4.9.4 est désormais pris en charge lors de l'installation du connecteur sur un hôte Red Hat Enterprise Linux 8.10.
-
-
-
-==== Validation de l'utilisateur pour la fédération des identités
-
-Si vous utilisez la fédération des identités avec BlueXP , chaque utilisateur qui se connecte pour la première fois à BlueXP  devra remplir un formulaire rapide pour valider son identité.
-
-
-
-=== 31 juillet 2024
-
-
-
-==== Version en mode privé (3.9.42)
-
-Une nouvelle version en mode privé est désormais disponible au téléchargement sur le site du support NetApp.
-
-
-
-===== Prise en charge de RHEL 8 et 9
-
-Cette version inclut la prise en charge de l'installation de Connector sur un hôte Red Hat Enterprise Linux 8 ou 9 lors de l'utilisation de BlueXP en mode privé. Les versions suivantes de RHEL sont prises en charge :
-
-* 8.6 à 8.10
-* 9.1 à 9.3
-
-
-Podman est requis comme outil d'orchestration de conteneurs pour ces systèmes d'exploitation.
-
-Vous devez connaître les exigences de Podman, les limitations connues, un résumé de la prise en charge du système d'exploitation, ce qu'il faut faire si vous disposez d'un hôte RHEL 7, comment démarrer, et bien plus encore.
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["Découvrez la prise en charge de RHEL 8 et 9 avec le connecteur"].
-
-
-
-===== Versions incluses dans cette version
-
-Cette version inclut les versions suivantes des services BlueXP prises en charge avec le mode privé.
-
-[cols="2*"]
-|===
-| Service | Version incluse 
-
-
-| Connecteur | 3.9.42 
-
-
-| Sauvegarde et restauration | 18 juillet 2024 
-
-
-| Classement | 1er juillet 2024 (version 1.33) 
-
-
-| Gestion Cloud Volumes ONTAP | 10 juin 2024 
-
-
-| Portefeuille digital | 30 juillet 2023 
-
-
-| Gestion des clusters ONTAP sur site | 30 juillet 2023 
-
-
-| La réplication | 18 septembre 2022 
-|===
-Pour en savoir plus sur le contenu des versions de ces services BlueXP, consultez les notes de version de chaque service BlueXP.
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["En savoir plus sur le mode privé"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Découvrez comment démarrer avec BlueXP en mode privé"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Apprenez à mettre à niveau le connecteur lorsque vous utilisez le mode privé"]
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["Découvrez les nouveautés de la sauvegarde et de la restauration BlueXP"^]
-* https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["Découvrez les nouveautés de la classification BlueXP"^]
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Découvrez les nouveautés de la gestion Cloud Volumes ONTAP dans BlueXP"^]
-
-
-
-
-=== 15 juillet 2024
-
-
-
-==== Prise en charge de RHEL 8.10
-
-BlueXP prend désormais en charge l'installation du connecteur sur un hôte Red Hat Enterprise Linux 8.10 en mode standard ou en mode restreint.
-
-La prise en charge de RHEL 8.10 commence avec la version 3.9.40 du connecteur.
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["Découvrez la prise en charge de RHEL 8 et 9 avec le connecteur"].
-
-
-
-=== 8 juillet 2024
-
-
-
-==== Connecteur 3.9.42
-
-Cette version comprend des améliorations mineures, des correctifs et la prise en charge du connecteur dans la région d'AWS Canada-Ouest (Calgary).
-
-La version 3.9.42 est disponible pour le mode standard et le mode restreint.
 
 
 
@@ -362,6 +281,28 @@ Vous avez depuis longtemps la possibilité d'afficher les compartiments Amazon S
 
 
 
+=== 27 septembre 2024
+
+
+
+==== Prise en charge de Podman sur RHEL 8 ou 9 avec Browse and Restore
+
+La sauvegarde et la restauration BlueXP  prennent désormais en charge les restaurations de fichiers et de dossiers sur Red Hat Enterprise Linux (RHEL) versions 8 et 9 à l'aide du moteur Podman. Ceci s'applique à la méthode de sauvegarde et de restauration BlueXP .
+
+BlueXP  Connector version 3.9.40 prend en charge certaines versions de Red Hat Enterprise Linux versions 8 et 9 pour toute installation manuelle du logiciel Connector sur un hôte RHEL 8 ou 9, quel que soit l'emplacement en plus des systèmes d'exploitation mentionnés dans le https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-private-mode.html#step-3-review-host-requirements["configuration requise pour l'hôte"^]. Ces nouvelles versions de RHEL nécessitent le moteur Podman au lieu du moteur Docker. Auparavant, la sauvegarde et la restauration BlueXP  présentaient deux limitations lors de l'utilisation du moteur Podman. Ces limitations ont été supprimées.
+
+https://review.docs.netapp.com/us-en/bluexp-backup-recovery_br-se-ja/task-restore-backups-ontap.html["En savoir plus sur la restauration des données ONTAP à partir de fichiers de sauvegarde"].
+
+
+
+==== Une indexation plus rapide du catalogue améliore la recherche et la restauration
+
+Cette version inclut un index de catalogue amélioré qui termine l'indexation de base beaucoup plus rapidement. L'indexation plus rapide vous permet d'utiliser la fonction de recherche et de restauration plus rapidement.
+
+https://review.docs.netapp.com/us-en/bluexp-backup-recovery_br-se-ja/task-restore-backups-ontap.html["En savoir plus sur la restauration des données ONTAP à partir de fichiers de sauvegarde"].
+
+
+
 === 22 juillet 2024
 
 
@@ -419,68 +360,6 @@ Les procédures suivantes incluent de nouvelles instructions Podman :
 * https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-restart-backup.html["Redémarrez la sauvegarde et la restauration BlueXP"]
 * https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-backup-cbs-db-in-dark-site.html["Restaurez les données de sauvegarde et de restauration BlueXP dans un site invisible"]
 
-
-
-
-=== 30 avril 2024
-
-
-
-==== Activation ou désactivation des analyses de ransomware planifiées
-
-Auparavant, vous pouviez activer ou désactiver les analyses par ransomware, mais pas les analyses planifiées.
-
-Avec cette version, vous pouvez désormais activer ou désactiver les analyses par ransomware planifiées sur la dernière copie Snapshot en utilisant l'option de la page Paramètres avancés. Si vous l'activez, les analyses sont effectuées chaque semaine par défaut. Vous pouvez modifier ce planning en jours ou en semaines ou le désactiver, ce qui vous permet d'économiser des coûts.
-
-Pour plus de détails, reportez-vous aux informations suivantes :
-
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-manage-backup-settings-ontap.html["Gérer les paramètres de sauvegarde"]
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-create-policies-ontap.html["Gérez les règles des volumes ONTAP"]
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-cloud-backup-policies.html["Paramètres de la règle de sauvegarde sur objet"]
-
-
-
-
-=== 04 avril 2024
-
-
-
-==== Activation ou désactivation des analyses par ransomware
-
-Auparavant, lorsque vous avez activé la détection des ransomwares dans une règle de sauvegarde, les analyses se sont automatiquement produites lors de la création de la première sauvegarde et de la restauration d'une sauvegarde. Dans les versions antérieures, le service a analysé toutes les copies Snapshot et vous ne pouviez pas désactiver les analyses.
-
-Avec cette version, vous pouvez désormais activer ou désactiver les analyses anti-ransomware sur la dernière copie Snapshot à l'aide de l'option de la page Paramètres avancés. Si vous l'activez, les analyses sont effectuées chaque semaine par défaut.
-
-Pour plus de détails, reportez-vous aux informations suivantes :
-
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-manage-backup-settings-ontap.html["Gérer les paramètres de sauvegarde"]
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-create-policies-ontap.html["Gérez les règles des volumes ONTAP"]
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-cloud-backup-policies.html["Paramètres de la règle de sauvegarde sur objet"]
-
-
-
-
-=== 12 mars 2024
-
-
-
-==== Possibilité d'effectuer des restaurations rapides depuis les sauvegardes cloud vers des volumes ONTAP sur site
-
-Vous pouvez désormais effectuer une _restauration rapide_ d'un volume depuis le stockage cloud vers un volume de destination ONTAP sur site. Auparavant, vous pouviez effectuer une restauration rapide uniquement sur un système Cloud Volumes ONTAP. La restauration rapide est idéale pour les reprises après incident où vous devez fournir un accès à un volume dès que possible. Une restauration rapide est bien plus rapide que la restauration d'un volume complet. Elle restaure les métadonnées depuis une copie Snapshot cloud vers un volume de destination ONTAP. La source peut provenir d'AWS S3, d'Azure Blob, de Google Cloud Services ou d'NetApp StorageGRID.
-
-Le système de destination ONTAP sur site doit exécuter ONTAP version 9.14.1 ou ultérieure.
-
-Pour ce faire, vous pouvez utiliser le processus Parcourir et restaurer, et non le processus Rechercher et restaurer.
-
-Pour plus de détails, voir https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["Restaurez les données ONTAP à partir de fichiers de sauvegarde"].
-
-
-
-==== Possibilité de restaurer des fichiers et des dossiers à partir de copies Snapshot et de réplication
-
-Auparavant, vous pouviez restaurer des fichiers et des dossiers uniquement à partir de copies de sauvegarde dans AWS, Azure et Google Cloud Services. Désormais, vous pouvez restaurer des fichiers et des dossiers à partir de copies Snapshot locales et de copies de réplication.
-
-Vous pouvez exécuter cette fonction en utilisant le processus de recherche et de restauration, et non en utilisant le processus de navigation et de restauration.
 
 
 
@@ -809,18 +688,18 @@ https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-license
 
 
 
-=== eaecda6db64f5346d5c63bfe0094e040
+=== 20 septembre 2024
 
-ee811bd919a27bd2eb705f65ed45e4f6
+Cette version de reprise sur incident BlueXP  inclut la mise à jour suivante.
 
-* b077aa4f9a421cc2e2782608fb5caf4f
+* *Prise en charge des datastores VMware VMFS sur site à sur site* : cette version inclut la prise en charge des machines virtuelles montées sur des datastores VMware vSphere Virtual machine File System (VMFS) pour iSCSI et FC protégées sur le stockage sur site. Auparavant, le service fournissait un _aperçu de la technologie_ prenant en charge les datastores VMFS pour iSCSI et FC.
 +
-0eb65976c0b0c5ffa90b07d4a062e509
+Voici quelques considérations supplémentaires concernant à la fois les protocoles iSCSI et FC :
 
 +
-** d671bd2f503deef1e03581ce8d516507
-** cf1967c6d778937fae37b9e43582b1b6
-** f3a37c3560d0027bc0f49abfab4ab0e3
+** La prise en charge de FC concerne les protocoles client frontaux, pas la réplication.
+** La reprise d'activité BlueXP  ne prend en charge qu'une seule LUN par volume ONTAP. Le volume ne doit pas avoir plusieurs LUN.
+** Pour tout plan de réplication, le volume ONTAP de destination doit utiliser les mêmes protocoles que le volume ONTAP source hébergeant les VM protégées. Par exemple, si la source utilise un protocole FC, la destination doit également utiliser FC.
 
 
 
@@ -1076,6 +955,15 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 
 == Protection par ransomware
+
+
+
+=== 30 septembre 2024
+
+Cette version de la protection contre les ransomware BlueXP  inclut la mise à jour suivante.
+
+* *Regroupement personnalisé des charges de travail de partage de fichiers* : avec cette version, vous pouvez désormais regrouper les partages de fichiers en groupes pour faciliter la protection de votre patrimoine de données. Le service peut protéger simultanément tous les volumes d'un groupe. Auparavant, chaque volume devait être protégé séparément. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["En savoir plus sur le regroupement des workloads de partage de fichiers dans des stratégies de protection contre les ransomwares"].
+
 
 
 
