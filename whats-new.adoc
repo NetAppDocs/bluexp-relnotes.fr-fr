@@ -63,7 +63,7 @@ Lorsque vous vous connectez à BlueXP , vous remarquerez les modifications suiv
 * Sous Paramètres, vous pouvez accéder à la gestion des identités et des accès BlueXP  pour tirer parti de ces améliorations
 
 
-image:screenshot-iam-introduction.png["Capture d'écran de BlueXP  qui montre l'organisation et le projet sélectionnables en haut de l'interface ainsi que la gestion des identités et des accès disponible dans le menu Paramètres."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-iam-introduction.png["Capture d'écran de BlueXP  qui montre l'organisation et le projet sélectionnables en haut de l'interface ainsi que la gestion des identités et des accès disponible dans le menu Paramètres."]
 
 Notez ce qui suit :
 
@@ -89,8 +89,8 @@ BlueXP  IAM est pris en charge lorsque BlueXP  est utilisé en mode standard. 
 
 ===== Par où aller plus loin
 
-* link:concept-identity-and-access-management.html["En savoir plus sur BlueXP  IAM"]
-* link:task-iam-get-started.html["Lancez-vous avec BlueXP  IAM"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-identity-and-access-management.html["En savoir plus sur BlueXP  IAM"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-get-started.html["Lancez-vous avec BlueXP  IAM"]
 
 
 
@@ -383,7 +383,7 @@ La sauvegarde et la restauration BlueXP  prennent désormais en charge les rest
 
 BlueXP  Connector version 3.9.40 prend en charge certaines versions de Red Hat Enterprise Linux versions 8 et 9 pour toute installation manuelle du logiciel Connector sur un hôte RHEL 8 ou 9, quel que soit l'emplacement en plus des systèmes d'exploitation mentionnés dans le https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-private-mode.html#step-3-review-host-requirements["configuration requise pour l'hôte"^]. Ces nouvelles versions de RHEL nécessitent le moteur Podman au lieu du moteur Docker. Auparavant, la sauvegarde et la restauration BlueXP  présentaient deux limitations lors de l'utilisation du moteur Podman. Ces limitations ont été supprimées.
 
-https://review.docs.netapp.com/us-en/bluexp-backup-recovery_br-se-ja/task-restore-backups-ontap.html["En savoir plus sur la restauration des données ONTAP à partir de fichiers de sauvegarde"].
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["En savoir plus sur la restauration des données ONTAP à partir de fichiers de sauvegarde"].
 
 
 
@@ -391,7 +391,7 @@ https://review.docs.netapp.com/us-en/bluexp-backup-recovery_br-se-ja/task-restor
 
 Cette version inclut un index de catalogue amélioré qui termine l'indexation de base beaucoup plus rapidement. L'indexation plus rapide vous permet d'utiliser la fonction de recherche et de restauration plus rapidement.
 
-https://review.docs.netapp.com/us-en/bluexp-backup-recovery_br-se-ja/task-restore-backups-ontap.html["En savoir plus sur la restauration des données ONTAP à partir de fichiers de sauvegarde"].
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["En savoir plus sur la restauration des données ONTAP à partir de fichiers de sauvegarde"].
 
 
 
@@ -409,7 +409,7 @@ Avec cette version, vous pouvez désormais restaurer des volumes créés dans ON
 
 La fonction DataLock protège vos fichiers de sauvegarde contre toute modification ou suppression pendant une période de temps spécifiée. Ceci est utile pour protéger vos fichiers contre les attaques par ransomware.
 
-Pour plus de détails sur DataLock et des conseils sur la manière de réduire les coûts associés, reportez-vous link:concept-cloud-backup-policies.html["Paramètres de la règle de sauvegarde sur objet"]à la section .
+Pour plus de détails sur DataLock et des conseils sur la manière de réduire les coûts associés, reportez-vous https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-cloud-backup-policies.html["Paramètres de la règle de sauvegarde sur objet"] à la section .
 
 
 
@@ -429,7 +429,7 @@ Auparavant, les volumes FlexVol pouvaient être restaurés, mais vous ne pouviez
 
 Avec cette version, la prise en charge de la restauration de dossiers FlexGroup est un aperçu technologique.
 
-Pour plus de détails, reportez-vous à link:task-restore-backups-ontap.html#restore-folders-and-files-using-browse-restore["Restaurez des dossiers et des fichiers à l'aide de l'option Parcourir et restaurer"].
+Pour plus de détails, reportez-vous à https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html#restore-ontap-data-using-browse-restore["Restaurez des dossiers et des fichiers à l'aide de l'option Parcourir et restaurer"] .
 
 Pour plus de détails sur l'activation manuelle, reportez-vous https://community.netapp.com/t5/Tech-ONTAP-Blogs/BlueXP-Backup-and-Recovery-July-2024-Release/ba-p/453993["Sauvegarde et restauration BlueXP, blog sur la version de juillet 2024"]à la section .
 

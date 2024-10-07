@@ -534,7 +534,6 @@
   <block id="a429eb8c690c0a48131f4ae1267eafd1" category="paragraph">Avec cette version, vous pouvez désormais restaurer des volumes créés dans ONTAP de moins de 1 Go. La taille minimale du volume que vous pouvez créer à l'aide de ONTAP est de 20 Mo.</block>
   <block id="ccbf8c45039ba817be81bbf5fa2a7521" category="section-title">Conseils pour réduire les coûts liés à DataLock</block>
   <block id="f959c5a51fb8f2a9e9c0063bbb8adb63" category="paragraph">La fonction DataLock protège vos fichiers de sauvegarde contre toute modification ou suppression pendant une période de temps spécifiée. Ceci est utile pour protéger vos fichiers contre les attaques par ransomware.</block>
-  <block id="4822bd9fd85c6d5438ecd9963b5c6897" category="paragraph">Pour plus de détails sur DataLock et des conseils sur la manière de réduire les coûts associés, reportez-vous <block ref="d72e0969f8971a4b91ad44a04438bfb9" category="inline-link-macro-rx"></block>à la section .</block>
   <block id="79cfacda817c1e599649823ffa32c8d7" category="section-title">Intégration AWS IAM Roles Anywhere</block>
   <block id="bebfb016f9defe9a78fff65f418f213b" category="paragraph">Le service Amazon Web Services (AWS) Identity and Access Management (IAM) Roles Anywhere vous permet d'utiliser des rôles IAM et des identifiants à court terme pour vos workloads _hors_ d'AWS pour accéder aux API AWS en toute sécurité, de la même manière que vous utilisez les rôles IAM pour les workloads _sur_ AWS. Lorsque vous utilisez l'infrastructure de clés privées IAM Roles Anywhere et les jetons AWS, vous n'avez pas besoin de clés d'accès AWS à long terme et de clés secrètes. Cela vous permet de faire pivoter les informations d'identification plus fréquemment, ce qui améliore la sécurité.</block>
   <block id="24c6cf6b2747b390a5d9eb672e1d54d4" category="paragraph">Avec cette version, la prise en charge du service AWS IAM Roles Anywhere est un aperçu technologique.</block>
@@ -544,7 +543,6 @@
   <block id="a821e6c079044462f6ffc9a01ed28fc9" category="paragraph">Auparavant, les volumes FlexVol pouvaient être restaurés, mais vous ne pouviez pas restaurer les dossiers ou les répertoires FlexGroup. Avec ONTAP 9.15.1 p2, vous pouvez restaurer des dossiers FlexGroup à l'aide de l'option Parcourir et restaurer.</block>
   <block id="cd4619af82dfe7627dc934e29e85a6e9" category="paragraph">Avec cette version, la prise en charge de la restauration de dossiers FlexGroup est un aperçu technologique.</block>
   <block id="abbf2484b45da9fd7be677fe96c511eb" category="inline-link-macro">Restaurez des dossiers et des fichiers à l'aide de l'option Parcourir et restaurer</block>
-  <block id="9b7af6cb2e410e55ce793003b7110047" category="paragraph">Pour plus de détails, reportez-vous à <block ref="07023d18b01371174abc5a157da41b99" category="inline-link-macro-rx"></block>.</block>
   <block id="707304f314bfa71975e8ffb352535092" category="paragraph">Pour plus de détails sur l'activation manuelle, reportez-vous<block ref="7de2d0863d92330816fac8b7768edb68" category="inline-link-rx"></block>à la section .</block>
   <block id="70d1ac1a529ac546d3e60b81ee464a1d" category="paragraph">Cette version de classification BlueXP  inclut la mise à jour suivante.</block>
   <block id="44a73383773bebac3194e73bd06397a8" category="section-title">Passez de CentOS à Ubuntu</block>
@@ -694,7 +692,6 @@
   <block id="c6bad3b272d5eeec569990b050d88123" category="paragraph">La sauvegarde et la restauration BlueXP  prennent désormais en charge les restaurations de fichiers et de dossiers sur Red Hat Enterprise Linux (RHEL) versions 8 et 9 à l'aide du moteur Podman. Ceci s'applique à la méthode de sauvegarde et de restauration BlueXP .</block>
   <block id="f5d370ee9e029c4d62db915f308e04c0" category="paragraph">BlueXP  Connector version 3.9.40 prend en charge certaines versions de Red Hat Enterprise Linux versions 8 et 9 pour toute installation manuelle du logiciel Connector sur un hôte RHEL 8 ou 9, quel que soit l'emplacement en plus des systèmes d'exploitation mentionnés dans le<block ref="9b2a96babeed2ab711a4327ec7f34b5c" category="inline-link-rx"></block>. Ces nouvelles versions de RHEL nécessitent le moteur Podman au lieu du moteur Docker. Auparavant, la sauvegarde et la restauration BlueXP  présentaient deux limitations lors de l'utilisation du moteur Podman. Ces limitations ont été supprimées.</block>
   <block id="6111aa812639d5e432842ceca200ea78" category="inline-link">En savoir plus sur la restauration des données ONTAP à partir de fichiers de sauvegarde</block>
-  <block id="007a407431de4321913728dae6423904" category="paragraph"><block ref="056f97dce802386385ce3734740613e1" category="inline-link-rx"></block>.</block>
   <block id="3abe4a789c1c33e285d9452cca8c493b" category="section-title">Une indexation plus rapide du catalogue améliore la recherche et la restauration</block>
   <block id="9353e94049314c6236b51712848f2572" category="paragraph">Cette version inclut un index de catalogue amélioré qui termine l'indexation de base beaucoup plus rapidement. L'indexation plus rapide vous permet d'utiliser la fonction de recherche et de restauration plus rapidement.</block>
   <block id="eaecda6db64f5346d5c63bfe0094e040" category="section-title">20 septembre 2024</block>
@@ -726,7 +723,6 @@
   <block id="402601978c4c05e28bf41ea74b2c118a" category="list-text">_Compliance Viewer_ est maintenant _Classification Viewer_</block>
   <block id="396758cef44fe7d4ebed2010a8ee7761" category="list-text">Sous Paramètres, vous pouvez accéder à la gestion des identités et des accès BlueXP  pour tirer parti de ces améliorations</block>
   <block id="0909fc2dd5049052e70dfa0e18f7fbcf" category="inline-image-macro">Capture d'écran de BlueXP  qui montre l'organisation et le projet sélectionnables en haut de l'interface ainsi que la gestion des identités et des accès disponible dans le menu Paramètres.</block>
-  <block id="bc9b550d1734b431c662a14aa92c06df" category="paragraph"><block ref="bc9b550d1734b431c662a14aa92c06df" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">Notez ce qui suit :</block>
   <block id="d9c4ef914f4f136c37c3df051aaedb70" category="list-text">Vous n'avez rien à modifier pour vos utilisateurs ou vos environnements de travail.</block>
   <block id="31243c2d285073a1e31df388c65d726f" category="list-text">Bien que les noms des rôles aient changé, il n'y a pas de différences du point de vue des autorisations. Les utilisateurs continueront à avoir accès aux mêmes environnements de travail qu'auparavant.</block>
@@ -739,9 +735,7 @@
   <block id="a737f6ac26156f3770a49e30a21f7d73" category="paragraph">BlueXP  IAM est pris en charge lorsque BlueXP  est utilisé en mode standard. Si vous utilisez BlueXP  en mode restreint ou privé, vous continuerez à utiliser un _compte_ BlueXP  pour gérer les espaces de travail, les utilisateurs et les ressources.</block>
   <block id="3163b3d4dc92f42d04ad4c79906dcdc3" category="section-title">Par où aller plus loin</block>
   <block id="a5a81005322e1187e396e2f1252dca71" category="inline-link-macro">En savoir plus sur BlueXP  IAM</block>
-  <block id="0a3f88a939958973fc19097a4507c320" category="list-text"><block ref="0a3f88a939958973fc19097a4507c320" category="inline-link-macro-rx"></block></block>
   <block id="c12e8c3134a6d5ff2ec2657f6357e8ec" category="inline-link-macro">Lancez-vous avec BlueXP  IAM</block>
-  <block id="8e537ea51347d673ce98d63017478ab1" category="list-text"><block ref="8e537ea51347d673ce98d63017478ab1" category="inline-link-macro-rx"></block></block>
   <block id="52b3f16d7e534fa9f1eb5be8603ccd2e" category="section-title">Connecteur 3.9.45</block>
   <block id="7cecac935b533838cda5bd0fc68012c1" category="paragraph">Cette version inclut une prise en charge étendue du système d'exploitation et des correctifs.</block>
   <block id="5a45d9d610a1bb698a260ef7f9494081" category="paragraph">La version 3.9.45 est disponible pour le mode standard et le mode restreint.</block>
@@ -776,4 +770,10 @@
   <block id="2182ff9388484137699eb937c0df0141" category="inline-link">Mettez à niveau le logiciel Cloud Volumes ONTAP</block>
   <block id="c2f5c6d8ccd2cc8bdc92db0ad0c79342" category="paragraph"><block ref="c2f5c6d8ccd2cc8bdc92db0ad0c79342" category="inline-link-rx"></block></block>
   <block id="c5686848892b4de33534dcc294c33fff" category="paragraph">Les fonctionnalités intégrées de protection des données et de sécurité de WORM (Write Once Read Many) et ARP (protection anti-ransomware autonome) seront proposées avec les licences Cloud Volumes ONTAP sans frais supplémentaires. Le nouveau modèle de tarification s'applique aussi bien aux modèles BYOL, actuels ou encore aux modèles BYOL, ainsi qu'aux modèles PAYGO/Marketplace d'AWS, d'Azure et de Google Cloud. Les licences basées sur la capacité et sur les nœuds contiennent ARP et WORM pour toutes les configurations, y compris les paires à un seul nœud et les paires haute disponibilité, sans frais supplémentaires.</block>
+  <block id="f08676e8a1e41f582ac0537747703230" category="paragraph"><block ref="f08676e8a1e41f582ac0537747703230" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4d3e366c7ef57f5c2037203fa77c103c" category="list-text"><block ref="4d3e366c7ef57f5c2037203fa77c103c" category="inline-link-rx"></block></block>
+  <block id="6b7b64b4bdd6080baf05e2c37372258a" category="list-text"><block ref="6b7b64b4bdd6080baf05e2c37372258a" category="inline-link-rx"></block></block>
+  <block id="84142ff06d4e9d4646fc2a3b18cc1d91" category="paragraph"><block ref="a21af64035213e0424a2bf24b7431646" category="inline-link-rx"></block>.</block>
+  <block id="2f080abae9949a746e32fbd78d3382f7" category="paragraph">Pour plus de détails sur DataLock et des conseils sur la manière de réduire les coûts associés, reportez-vous<block ref="116b2987b0e6fcf4c15ff7c1a1a47ed3" category="inline-link-rx"></block> à la section .</block>
+  <block id="b1b12c3c76c5dc414df3c68e8a811c2a" category="paragraph">Pour plus de détails, reportez-vous à<block ref="ef40acf6b73cf65ed40d9b8f7f6be1c3" category="inline-link-rx"></block> .</block>
 </blocks>
