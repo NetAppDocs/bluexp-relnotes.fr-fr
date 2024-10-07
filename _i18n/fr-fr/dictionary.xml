@@ -78,7 +78,6 @@
   <block id="efc0c4f71709b261c273fb935757cfae" category="section-title">Résilience opérationnelle</block>
   <block id="207aaa44f72ba634c18fcc9bae44d655" category="inline-link">Découvrez comment afficher la capacité consommée dans votre compte</block>
   <block id="2e79231a13ecf62585403e20da2dea4a" category="section-title">L'onglet licences a été supprimé</block>
-  <block id="66a0b4752150538292b81c073ca0b83b" category="section-title">Les onglets de hiérarchisation ont été renommés et le contenu a été mis à jour</block>
   <block id="ae74e3db3615f676968300b7cc6e8ae1" category="paragraph">La résilience opérationnelle est un service qui vous aide à analyser les alertes et les événements afin de préserver l'intégrité, la disponibilité et les performances des services et des solutions.</block>
   <block id="6d924727c00a77a63749e2f8aa0860d4" category="summary">Ces notes de version décrivent les dernières améliorations apportées aux services cloud intégrés à BlueXP. Des liens sont disponibles dans la série complète des notes de version pour chaque service.</block>
   <block id="bb50e2459e4e016aa4b14a56adb2358f" category="inline-link">Configuration et administration</block>
@@ -163,9 +162,7 @@
   <block id="5a7621b5dce7d879d4fc86499c34c6e6" category="inline-link">Découvrez comment découvrir des clusters sur la page My Estate</block>
   <block id="92adae4e241e70163adb8c5469771a82" category="paragraph"><block ref="24b3a807a9407b81f5101322f988421d" category="inline-link-rx"></block>.</block>
   <block id="28acda3f8bdb20220a5658f1cd81f226" category="section-title">4 juillet 2023</block>
-  <block id="f955a076eeae4df4466469593ff635ca" category="section-title">Vous pouvez désormais ajuster la bande passante utilisée pour télécharger les données inactives vers le stockage objet</block>
   <block id="1d59c82c13288b53f26d652175016f90" category="paragraph">Lorsque vous activez le Tiering BlueXP, ONTAP peut utiliser une quantité illimitée de bande passante réseau pour transférer les données inactives des volumes du cluster vers le stockage objet. Si vous remarquez que le trafic de hiérarchisation affecte les charges de travail normales des utilisateurs, vous pouvez limiter la quantité de bande passante qui peut être utilisée pendant le transfert.<block ref="bd661c8ba5ce12ee5a1adc1010618597" category="inline-link-rx"></block>.</block>
-  <block id="eb516d1f8f028dbd0333948ae6fc06a5" category="section-title">L'événement de hiérarchisation pour « niveau bas » s'affiche dans le Centre de notification</block>
   <block id="250f0923d20814211c14c5a6cd0e2643" category="paragraph">La fonctionnalité de Tiering « transférer des données supplémentaires d'une &lt;name&gt; de cluster vers un stockage objet pour améliorer votre efficacité du stockage » s'affiche désormais sous forme de notification lorsqu'un cluster effectue le Tiering de moins de 20 % de ses données inactives, y compris les clusters qui ne hiérarchise aucune donnée.</block>
   <block id="3c23988fbf7c203a2c811a5ce84251c0" category="inline-link">Calculateur de coût total de possession et d'économies du Tiering BlueXP</block>
   <block id="57f9b94b395c8e293b7f892fe5995ac7" category="paragraph">Cette notification est une « recommandation » pour vous aider à rendre vos systèmes plus efficaces et à réduire vos coûts de stockage. Il fournit un lien vers le<block ref="c9d262883689ef94201e8739cb50c7f6" category="inline-link-rx"></block> pour vous aider à calculer vos économies.</block>
@@ -756,8 +753,12 @@
   <block id="b7f7cb3b83ae19c923f62035dd4305fd" category="paragraph">En savoir plus sur<block ref="cea7a7dae9f7d88b97fa434e79201c9b" category="inline-link-rx"></block>.</block>
   <block id="7062dd46798946172bc9078744756dfc" category="section-title">Amélioration des performances de numérisation</block>
   <block id="8455b67ff73ad2f75c922d81e0449780" category="paragraph">Cette version offre des performances de numérisation améliorées.</block>
-  <block id="d26c29507d869d48f4861c9b4bae1f6e" category="paragraph">Vous pouvez désormais découvrir les systèmes NetApp ASA r2 dans BlueXP  lorsque vous utilisez BlueXP  en mode standard ou privé. Une fois que vous avez découvert un système NetApp ASA r2 et ouvert votre environnement de travail, vous accédez directement à System Manager.</block>
   <block id="f2fba5567ec0d8ae5addf04c960ba6d0" category="paragraph">La découverte des systèmes ASA r2 n'est pas prise en charge lorsque vous utilisez BlueXP  en mode privé.</block>
   <block id="62bd7572081df25dd3f1f52151883c4a" category="inline-link">Découvrez les modes de déploiement BlueXP</block>
   <block id="d3342e15149bfef7fd9289d7025e506e" category="list-text"><block ref="d3342e15149bfef7fd9289d7025e506e" category="inline-link-rx"></block></block>
+  <block id="0c02bcea354671c5372f06a37c547a7d" category="paragraph">Vous pouvez désormais découvrir les systèmes NetApp ASA r2 dans BlueXP  lorsque vous utilisez BlueXP  en mode standard ou en mode restreint. Une fois que vous avez découvert un système NetApp ASA r2 et ouvert votre environnement de travail, vous accédez directement à System Manager.</block>
+  <block id="101e8e97885c05702335faecd0fb3f50" category="section-title">Utilisez un préfixe personnalisé pour le nom du compartiment</block>
+  <block id="a4e53922ceec159164a3765ff05e1458" category="section-title">Réglez la bande passante pour transférer les données inactives</block>
+  <block id="904ea3c3aba6edae61ba696b01808a11" category="section-title">Événement de hiérarchisation affiché dans le Centre de notification</block>
+  <block id="344a2fbdf46c3a4ef07e7c73566f42f3" category="section-title">Les onglets de hiérarchisation ont été renommés et mis à jour</block>
 </blocks>

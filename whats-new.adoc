@@ -970,7 +970,7 @@ Le service de rapports de migration BlueXP  a été supprimé le 7 août 2024.
 
 ==== Prise en charge des systèmes ASA r2
 
-Vous pouvez désormais découvrir les systèmes NetApp ASA r2 dans BlueXP  lorsque vous utilisez BlueXP  en mode standard ou privé. Une fois que vous avez découvert un système NetApp ASA r2 et ouvert votre environnement de travail, vous accédez directement à System Manager.
+Vous pouvez désormais découvrir les systèmes NetApp ASA r2 dans BlueXP  lorsque vous utilisez BlueXP  en mode standard ou en mode restreint. Une fois que vous avez découvert un système NetApp ASA r2 et ouvert votre environnement de travail, vous accédez directement à System Manager.
 
 Aucune autre option de gestion n'est disponible avec les systèmes ASA r2. Vous ne pouvez pas utiliser la vue Standard et vous ne pouvez pas activer les services BlueXP.
 
@@ -1217,7 +1217,7 @@ Vous pouvez désormais découvrir vos systèmes StorageGRID directement depuis B
 
 
 
-==== Utilisez un préfixe personnalisé pour le nom du compartiment dans lequel les données hiérarchisées sont stockées
+==== Utilisez un préfixe personnalisé pour le nom du compartiment
 
 Auparavant, vous aviez besoin d'utiliser le préfixe par défaut « fabric-pool » lors de la définition du nom du compartiment, par exemple, _fabric-pool-bucket1_. Vous pouvez désormais utiliser un préfixe personnalisé pour nommer votre compartiment. Cette fonctionnalité n'est disponible que lors du Tiering des données vers Amazon S3. https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#prepare-your-aws-environment["En savoir plus >>"].
 
@@ -1233,13 +1233,13 @@ Si vous utilisez plusieurs connecteurs pour gérer tous les systèmes de stockag
 
 
 
-==== Vous pouvez désormais ajuster la bande passante utilisée pour télécharger les données inactives vers le stockage objet
+==== Réglez la bande passante pour transférer les données inactives
 
 Lorsque vous activez le Tiering BlueXP, ONTAP peut utiliser une quantité illimitée de bande passante réseau pour transférer les données inactives des volumes du cluster vers le stockage objet. Si vous remarquez que le trafic de hiérarchisation affecte les charges de travail normales des utilisateurs, vous pouvez limiter la quantité de bande passante qui peut être utilisée pendant le transfert. https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#changing-the-network-bandwidth-available-to-upload-inactive-data-to-object-storage["En savoir plus >>"].
 
 
 
-==== L'événement de hiérarchisation pour « niveau bas » s'affiche dans le Centre de notification
+==== Événement de hiérarchisation affiché dans le Centre de notification
 
 La fonctionnalité de Tiering « transférer des données supplémentaires d'une <name> de cluster vers un stockage objet pour améliorer votre efficacité du stockage » s'affiche désormais sous forme de notification lorsqu'un cluster effectue le Tiering de moins de 20 % de ses données inactives, y compris les clusters qui ne hiérarchise aucune donnée.
 
@@ -1257,7 +1257,7 @@ L'onglet Licensing a été supprimé de l'interface de Tiering BlueXP. Toutes le
 
 
 
-==== Les onglets de hiérarchisation ont été renommés et le contenu a été mis à jour
+==== Les onglets de hiérarchisation ont été renommés et mis à jour
 
 L'onglet « clusters » a été renommé « clusters » et l'onglet « Présentation sur site » a été renommé « Tableau de bord sur site ». Ces pages ont ajouté des informations qui vous aideront à déterminer si vous pouvez optimiser votre espace de stockage avec une configuration de hiérarchisation supplémentaire.
 
