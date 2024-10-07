@@ -723,7 +723,6 @@
   <block id="6a9f822bb587b015bf3224364464cbed" category="section-title">Offres de support</block>
   <block id="65077e068c20e8afeca74c12711e893e" category="paragraph">L'offre de service NetApp SupportEdge Basic inclut désormais toutes les fonctionnalités Digital Advisor disponibles dans SupportEdge Advisor et SupportEdge Expert, à l'exception de la topologie de pile complète (VMware), qui n'offre pas de visibilité sur la surveillance de l'ensemble de la pile VMware, même si elle est activée.</block>
   <block id="1e095c69621645fccc8f12cd7f35f6fc" category="section-title">Prise en charge des systèmes ASA r2</block>
-  <block id="effcb34ce55a7b0374e99feabbc3c970" category="paragraph">Vous pouvez désormais découvrir les systèmes NetApp ASA r2 dans BlueXP . Une fois que vous avez découvert un système NetApp ASA r2 et ouvert votre environnement de travail, vous accédez directement à System Manager.</block>
   <block id="d5861f4539296095cd7c9fdfd0c5a2c9" category="paragraph">Aucune autre option de gestion n'est disponible avec les systèmes ASA r2. Vous ne pouvez pas utiliser la vue Standard et vous ne pouvez pas activer les services BlueXP.</block>
   <block id="989977a18a476a92018e04dd60ec37c1" category="inline-link">En savoir plus sur les systèmes ASA r2</block>
   <block id="a7c7539e11570decc041c60258667032" category="paragraph"><block ref="a7c7539e11570decc041c60258667032" category="inline-link-rx"></block></block>
@@ -757,4 +756,8 @@
   <block id="b7f7cb3b83ae19c923f62035dd4305fd" category="paragraph">En savoir plus sur<block ref="cea7a7dae9f7d88b97fa434e79201c9b" category="inline-link-rx"></block>.</block>
   <block id="7062dd46798946172bc9078744756dfc" category="section-title">Amélioration des performances de numérisation</block>
   <block id="8455b67ff73ad2f75c922d81e0449780" category="paragraph">Cette version offre des performances de numérisation améliorées.</block>
+  <block id="d26c29507d869d48f4861c9b4bae1f6e" category="paragraph">Vous pouvez désormais découvrir les systèmes NetApp ASA r2 dans BlueXP  lorsque vous utilisez BlueXP  en mode standard ou privé. Une fois que vous avez découvert un système NetApp ASA r2 et ouvert votre environnement de travail, vous accédez directement à System Manager.</block>
+  <block id="f2fba5567ec0d8ae5addf04c960ba6d0" category="paragraph">La découverte des systèmes ASA r2 n'est pas prise en charge lorsque vous utilisez BlueXP  en mode privé.</block>
+  <block id="62bd7572081df25dd3f1f52151883c4a" category="inline-link">Découvrez les modes de déploiement BlueXP</block>
+  <block id="d3342e15149bfef7fd9289d7025e506e" category="list-text"><block ref="d3342e15149bfef7fd9289d7025e506e" category="inline-link-rx"></block></block>
 </blocks>
