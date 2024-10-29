@@ -783,6 +783,61 @@ https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-license
 
 
 
+=== 30 octobre 2024
+
+Cette version de reprise d'activité de BlueXP inclut les mises à jour suivantes :
+
+* *Reporting*: Avec cette version, vous pouvez maintenant générer et télécharger des rapports pour vous aider à analyser votre paysage. Des rapports prédéfinis résument les basculements et les basculements, affichent les détails de réplication sur tous les sites et affichent les détails des tâches des sept derniers jours.
++
+Reportez-vous à la https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/reports.html["Créez des rapports de reprise d'activité"].
+
+* *Essai gratuit de 30 jours* : avec cette version, vous pouvez maintenant vous inscrire pour un essai gratuit de 30 jours de la reprise après sinistre BlueXP . Auparavant, les essais gratuits étaient de 90 jours.
++
+Reportez-vous à la https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html["Configuration des licences"].
+
+* *Désactiver et activer les plans de réplication* : une version précédente comprenait des mises à jour de la structure de planification des tests de basculement, qui était nécessaire pour prendre en charge les plannings quotidiens et hebdomadaires. Cette mise à jour exige que vous désactiviez et réactiviez tous les plans de réplication existants afin de pouvoir utiliser les nouveaux programmes de tests de basculement quotidiens et hebdomadaires. Il s'agit d'une exigence ponctuelle.
++
+Voici comment :
+
++
+.. Dans le menu supérieur, sélectionnez *plans de réplication*.
+.. Sélectionnez un plan et sélectionnez l'icône actions pour afficher le menu déroulant.
+.. Sélectionnez *Désactiver*.
+.. Après quelques minutes, sélectionnez *Activer*.
+
+
+* *Mappage de dossiers* : lorsque vous créez un plan de réplication et mappez des ressources de calcul, vous pouvez maintenant mapper des dossiers de sorte que les machines virtuelles soient restaurées dans un dossier que vous spécifiez pour le centre de données, le cluster et l'hôte.
++
+Pour plus de détails, reportez-vous à https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Créer un plan de réplication"] .
+
+* *Informations sur les machines virtuelles disponibles pour le basculement, le retour arrière et le basculement de test* : lorsqu'une panne se produit et que vous démarrez un basculement, effectuez un retour arrière ou testez le basculement, vous pouvez désormais afficher les détails des machines virtuelles et identifier celles qui n'ont pas redémarré.
++
+Reportez-vous à la https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html["Basculement des applications vers un site distant"].
+
+* *Délai de démarrage de la machine virtuelle avec séquence de démarrage ordonnée* : lorsque vous créez un plan de réplication, vous pouvez maintenant définir un délai de démarrage pour chaque machine virtuelle du plan. Cela vous permet de définir une séquence pour que les machines virtuelles commencent à s'assurer que toutes vos machines virtuelles prioritaires sont en cours d'exécution avant que les machines virtuelles prioritaires suivantes ne soient démarrées.
++
+Pour plus de détails, reportez-vous à https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Créer un plan de réplication"] .
+
+* *Informations sur le système d'exploitation VM* : lorsque vous créez un plan de réplication, vous pouvez maintenant voir le système d'exploitation de chaque VM dans le plan. Ceci est utile pour décider comment regrouper des machines virtuelles dans un groupe de ressources.
++
+Pour plus de détails, reportez-vous à https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Créer un plan de réplication"] .
+
+* *Alias de nom de VM* : lorsque vous créez un plan de réplication, vous pouvez maintenant ajouter un préfixe et un suffixe aux noms de VM sur le SIT de reprise après sinistre. Cela vous permet d'utiliser un nom plus descriptif pour les VM du plan.
++
+Pour plus de détails, reportez-vous à https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Créer un plan de réplication"] .
+
+* *Nettoyer les anciens snapshots* : avec cette version, vous pouvez supprimer tous les snapshots qui ne sont plus nécessaires au-delà du nombre de rétention spécifié. Les snapshots peuvent s'accumuler au fil du temps lorsque vous réduisez le nombre de conservation des snapshots et vous pouvez désormais les supprimer pour libérer de l'espace. Vous pouvez le faire à tout moment à la demande ou lorsque vous supprimez un plan de réplication.
++
+Pour plus de détails, reportez-vous à https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html["Gérez les sites, les groupes de ressources, les plans de réplication, les datastores et les informations sur les machines virtuelles"] .
+
+* *Réconcilier instantanés* : avec cette version, vous pouvez désormais réconcilier les instantanés qui sont désynchronisés entre la source et la cible. Cela peut se produire si des snapshots sont supprimés sur une cible en dehors de la reprise sur incident BlueXP . Le service supprime automatiquement le snapshot sur la source toutes les 24 heures. Cependant, vous pouvez effectuer cette opération à la demande. Cette fonction vous permet de vous assurer que les snapshots sont cohérents sur tous les sites.
++
+Pour plus de détails, reportez-vous à https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html["Gérer les plans de réplication"] .
+
+
+
+
+
 === 20 septembre 2024
 
 Cette version de reprise sur incident BlueXP  inclut la mise à jour suivante.
@@ -815,95 +870,6 @@ NOTE: NetApp ne vous facture pas pour la capacité de workloads prévisualisée.
 Reportez-vous à la https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/monitor-jobs.html["Surveiller les tâches"].
 
 
-
-
-
-=== 17 juillet 2024
-
-Cette version de reprise d'activité de BlueXP inclut les mises à jour suivantes :
-
-* *Plannings de test de basculement* : cette version inclut des mises à jour de la structure de planification de test de basculement, qui était nécessaire pour prendre en charge les plannings quotidiens et hebdomadaires. Cette mise à jour nécessite que vous désactiviez et réactiviez tous les plans de réplication existants afin de pouvoir utiliser les nouveaux programmes de tests de basculement quotidiens et hebdomadaires. Il s'agit d'une exigence ponctuelle.
-+
-Voici comment :
-
-+
-.. Dans le menu supérieur, sélectionnez *plans de réplication*.
-.. Sélectionnez un plan et sélectionnez l'icône actions pour afficher le menu déroulant.
-.. Sélectionnez *Désactiver*.
-.. Après quelques minutes, sélectionnez *Activer*.
-
-
-* *Mises à jour du plan de réplication* : cette version inclut des mises à jour des données du plan de réplication, ce qui résout un problème de "snapshot introuvable". Pour ce faire, vous devez définir le nombre de rétention dans tous les plans de réplication sur 1 et lancer un instantané à la demande. Ce processus crée une nouvelle sauvegarde et supprime toutes les anciennes sauvegardes.
-+
-Voici comment :
-
-+
-.. Dans le menu supérieur, sélectionnez *plans de réplication*.
-.. Sélectionnez le plan de réplication, cliquez sur l'onglet *mappage de basculement*, puis cliquez sur l'icône crayon *Modifier*.
-.. Cliquez sur la flèche *datastores* pour la développer.
-+
-image:use/dr-plan-failover-edit.png["Modifier les mappages de basculement"]
-
-.. Notez la valeur du nombre de rétention dans le plan de réplication. Vous devrez rétablir cette valeur d'origine lorsque vous aurez terminé ces étapes.
-.. Réduisez le compte à 1.
-.. Lancez un snapshot à la demande. Pour ce faire, sur la page Plan de réplication, sélectionnez le plan, cliquez sur l'icône actions et sélectionnez *prendre instantané maintenant*.
-.. Une fois la procédure de snapshot terminée, augmentez le nombre dans le plan de réplication à sa valeur d'origine, que vous avez notée à la première étape.
-.. Répétez ces étapes pour tous les plans de réplication existants.
-
-
-
-
-
-
-=== 5 juillet 2024
-
-Cette version de reprise d'activité de BlueXP inclut les mises à jour suivantes :
-
-* *Prise en charge de AFF série A* : cette version prend en charge les plates-formes matérielles NetApp AFF série A.
-
-
-* *Prise en charge des datastores VMware VMFS sur site à sur site* : cette version inclut un _aperçu technologique_ de la prise en charge des machines virtuelles montées sur des datastores VMFS (Virtual machine File System) VMware vSphere protégés sur le stockage sur site. Avec cette version, la reprise après incident est prise en charge dans un aperçu technologique pour les workloads VMware sur site vers un environnement VMware sur site avec des datastores VMFS.
-+
-
-NOTE: NetApp ne vous facture pas pour la capacité de workloads prévisualisée.
-
-* *Mises à jour du plan de réplication* : vous pouvez ajouter un plan de réplication plus facilement en filtrant les machines virtuelles par datastore sur la page applications et en selecti//reportez-vous à link:../use/drplan-create.html["Créer un plan de réplication"]. Reportez-vous à la https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Créer un plan de réplication"]. Ng plus de détails sur les cibles sur la page mappage des ressources.
-* *Modifier les plans de réplication* : avec cette version, la page mappages de basculement a été améliorée pour plus de clarté.
-+
-Reportez-vous à la https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html["Gérer les plans"].
-
-* *Edit VM* : avec cette version, le processus de modification des machines virtuelles dans le plan comprenait quelques améliorations mineures de l'interface utilisateur.
-+
-Reportez-vous à la https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html["Gestion des VM"].
-
-* *Basculement des mises à jour* : avant de lancer un basculement, vous pouvez maintenant déterminer l'état des machines virtuelles et s'ils sont sous ou hors tension. Le processus de basculement vous permet maintenant de prendre un instantané ou de choisir les snapshots.
-+
-Reportez-vous à la https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html["Basculement des applications vers un site distant"].
-
-* *Plannings de test de basculement* : vous pouvez maintenant modifier les tests de basculement et définir des plannings quotidiens, hebdomadaires et mensuels pour le test de basculement.
-+
-Reportez-vous à la https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html["Gérer les plans"].
-
-* *Mises à jour des informations prérequis* : les informations sur les conditions préalables à la reprise d'activité BlueXP ont été mises à jour.
-+
-Reportez-vous à la https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-prerequisites.html["Conditions préalables à la reprise d'activité BlueXP"].
-
-
-
-
-
-=== 15 mai 2024
-
-Cette version de reprise d'activité de BlueXP inclut les mises à jour suivantes :
-
-* *La réplication des charges de travail VMware du stockage sur site vers le stockage sur site* est maintenant proposée en tant que fonction de disponibilité générale. Auparavant, il s'agissait d'un aperçu technologique avec des fonctionnalités limitées.
-* *Mises à jour des licences* : avec BlueXP Disaster Recovery, vous pouvez vous inscrire à un essai gratuit de 90 jours, acheter un abonnement PAYGO avec Amazon Marketplace ou BYOL (Bring Your Own License), un fichier de licence NetApp (NLF) que vous pouvez obtenir auprès de votre ingénieur commercial NetApp ou auprès du site de support NetApp (NSS).
-+
-Pour plus d'informations sur la configuration des licences pour la reprise d'activité BlueXP, reportez-vous à la section link:../get-started/dr-licensing.html["Configuration des licences"].
-
-
-
-https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["En savoir plus sur la reprise d'activité BlueXP"].
 
 
 
