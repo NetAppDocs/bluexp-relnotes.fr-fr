@@ -475,19 +475,10 @@
   <block id="fc1d748db1b5b488ce7af7d17ea15d55" category="inline-link-macro">Prise en charge des versions logicielles</block>
   <block id="846815401f996d92d6775164d37e6015" category="inline-link-macro">Mise à niveau des systèmes de stockage Data ONTAP 7-mode</block>
   <block id="bebf3b3af19cc5d4d44b97e70e8b3ffb" category="paragraph">Le rapport *plans d'assistance pour la mise à niveau 7-mode* n'est plus disponible, car les systèmes 7-mode ont atteint la fin du support limité. Pour plus d'informations, voir <block ref="20732c2f8b67b7236a6509e096709359" category="inline-link-macro-rx"></block>. En savoir plus sur <block ref="ee2cd00409c56591f09249cc9e682f11" category="inline-link-macro-rx"></block>.</block>
-  <block id="c842acaca9e3ea9ec2dc61f28e69ea15" category="section-title">9 septembre 2024</block>
   <block id="44b53ed30a4c420b95b8adba575b84a6" category="section-title">Prise en charge de RHEL 9.4</block>
   <block id="4f13d17cc7a60ec8546d7892c87e3acf" category="section-title">Analyser les données StorageGRID</block>
   <block id="83bceb987dd495cde1a148944580e473" category="paragraph">La classification BlueXP  peut maintenant analyser les données dans StorageGRID.</block>
   <block id="60c09f1a3afdb367fc787929a52bce2c" category="paragraph">Pour plus de détails, reportez-vous à <block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block>.</block>
-  <block id="cdd78645b017b927a25b5449e345f823" category="section-title">Les fonctionnalités WORM et ARP ne sont plus payantes</block>
-  <block id="9dab6b96899670128353b1e92c2b8997" category="paragraph">La tarification simplifiée offre les avantages suivants :</block>
-  <block id="000f6c26eec43af35931bc5e6fbf9f49" category="list-text">Les comptes qui incluent actuellement WORM et ARP n'entraînent plus de frais pour ces fonctionnalités. À l'avenir, votre facturation n'aura que des frais pour l'utilisation de la capacité, comme c'était avant ce changement. WORM et ARP ne seront plus inclus dans vos factures futures.</block>
-  <block id="3817bf50b7761fc5155c59e4a334d37a" category="list-text">Si vos comptes actuels n'incluent pas ces fonctionnalités, vous pouvez désormais opter pour WORM et ARP sans frais supplémentaires.</block>
-  <block id="1974af11cb1ac87d0b58d8696f893e4d" category="list-text">Toutes les offres Cloud Volumes ONTAP pour les nouveaux comptes excluent les frais pour WORM et ARP.</block>
-  <block id="0e3986fb787ff1e55f1d15206f8b39d9" category="paragraph">En savoir plus sur ces fonctionnalités :</block>
-  <block id="0c0c93dcca58dc6ba5a46ef2bf56980b" category="inline-link">Renforcer la protection contre les attaques par ransomware</block>
-  <block id="8aca368ccd90320c96e8a69a43545003" category="inline-link">Le stockage WORM</block>
   <block id="ec6210d470db7cd7b6f5408f088e1c02" category="paragraph">Certaines fonctionnalités d'efficacité économique de BlueXP  ont été temporairement désactivées :</block>
   <block id="d519fe60b31330425fdb5e1c21309f78" category="list-text">Mise à jour technologique</block>
   <block id="dbaae314ffc8b46919877d02b85696cb" category="list-text">Ajoutez de la capacité</block>
@@ -579,7 +570,6 @@
   <block id="1b658f77da3dfa84be0559359889c6d1" category="section-title">Expérience utilisateur améliorée lors de la sélection de la version pour la mise à niveau</block>
   <block id="76723ae6fdfacae29242fdb7085394b0" category="paragraph">À partir de cette version, lorsque vous essayez de mettre à niveau Cloud Volumes ONTAP à l'aide de la notification BlueXP , vous recevrez des conseils sur les versions par défaut, les dernières et les versions compatibles à utiliser. De plus, vous pouvez maintenant sélectionner le dernier correctif ou la version majeure compatible avec votre instance Cloud Volumes ONTAP, ou entrer manuellement une version pour la mise à niveau.</block>
   <block id="2182ff9388484137699eb937c0df0141" category="inline-link">Mettez à niveau le logiciel Cloud Volumes ONTAP</block>
-  <block id="c5686848892b4de33534dcc294c33fff" category="paragraph">Les fonctionnalités intégrées de protection des données et de sécurité de WORM (Write Once Read Many) et ARP (protection anti-ransomware autonome) seront proposées avec les licences Cloud Volumes ONTAP sans frais supplémentaires. Le nouveau modèle de tarification s'applique aussi bien aux modèles BYOL, actuels ou encore aux modèles BYOL, ainsi qu'aux modèles PAYGO/Marketplace d'AWS, d'Azure et de Google Cloud. Les licences basées sur la capacité et sur les nœuds contiennent ARP et WORM pour toutes les configurations, y compris les paires à un seul nœud et les paires haute disponibilité, sans frais supplémentaires.</block>
   <block id="f08676e8a1e41f582ac0537747703230" category="paragraph"><block ref="f08676e8a1e41f582ac0537747703230" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4d3e366c7ef57f5c2037203fa77c103c" category="list-text"><block ref="4d3e366c7ef57f5c2037203fa77c103c" category="inline-link-rx"></block></block>
   <block id="6b7b64b4bdd6080baf05e2c37372258a" category="list-text"><block ref="6b7b64b4bdd6080baf05e2c37372258a" category="inline-link-rx"></block></block>
@@ -654,8 +644,6 @@
   <block id="5413a43995a4a97a249b7b24fbf3e785" category="section-title">Version 1.36</block>
   <block id="2808185c0a48de3cd5dcc0d92f453531" category="section-title">Version 1.35</block>
   <block id="448c087351c52cb72f971666e2159491" category="paragraph"><block ref="448c087351c52cb72f971666e2159491" category="inline-link-rx"></block></block>
-  <block id="7a73f560e215c4ff952d3384c5435ae9" category="list-text"><block ref="7a73f560e215c4ff952d3384c5435ae9" category="inline-link-rx"></block></block>
-  <block id="c8eac8ecc3bb9bb52e4fa6b3d34c3c38" category="list-text"><block ref="c8eac8ecc3bb9bb52e4fa6b3d34c3c38" category="inline-link-rx"></block></block>
   <block id="2a81eb3b4a7f22fb1fdb159561b71f3f" category="section-title">Correctifs de bogues</block>
   <block id="cd0b2a52b53e1925d55439a6132bad52" category="section-title">Offres de support</block>
   <block id="38d80ed5e3a33df19ee71c05059b6258" category="paragraph">Des indicateurs environnementaux fournissant des informations sur l'état de santé de vos systèmes de stockage fournissent désormais des valeurs plus précises pour la consommation d'énergie projetée, la consommation directe de carbone et les émissions de chaleur, basées sur un modèle prédictif avancé. Pour en savoir plus, reportez-vous <block ref="093aadbd7a28ff730cdbe5efbf5b8c02" category="inline-link-macro-rx"></block>à la section .</block>
@@ -736,4 +724,33 @@
   <block id="d2feef96259a41a7842dc5e7af577d63" category="paragraph">Vous pouvez désormais utiliser l'usine de charge de travail à partir de <block ref="391de7a3bac2bc77fa53dffb3f53801a" category="inline-link-macro-rx"></block>. L'expérience de la console BlueXP  offre les mêmes fonctionnalités que la console d'usine de la charge de travail.</block>
   <block id="717f9c6475fbb39a24ab9942c1a903c0" category="inline-link-macro">Découvrez comment accéder à l'usine des workloads à partir de la console BlueXP</block>
   <block id="1a34f743bd98b1658401ce2f8206ff9a" category="paragraph"><block ref="1a34f743bd98b1658401ce2f8206ff9a" category="inline-link-macro-rx"></block></block>
+  <block id="622ad6297367666ca450d994236cbc2d" category="paragraph">Si vous recherchez l'option _Advanced View_, qui vous permet de gérer un système de fichiers FSX for ONTAP à l'aide du Gestionnaire système ONTAP, vous pouvez désormais trouver cette option dans le canevas BlueXP  après avoir sélectionné l'environnement de travail.</block>
+  <block id="50a397404296b3dd547fbabeb18e9092" category="inline-image-macro">Capture d'écran du panneau de droite de la zone de travail BlueXP  après avoir sélectionné un environnement de travail affichant l'option System Manager.</block>
+  <block id="66cff4f3970f46872862ee60b7f0a832" category="paragraph"><block ref="66cff4f3970f46872862ee60b7f0a832" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="059b6fdd2ea839d9327c322a4c87e168" category="section-title">Fin de disponibilité des licences basées sur les nœuds</block>
+  <block id="73dfeef5d38f87e4c1d9e4b6417db109" category="paragraph">NetApp a prévu la fin de disponibilité et la fin de prise en charge des licences basées sur des nœuds Cloud Volumes ONTAP. Depuis le 11 novembre 2024, la disponibilité limitée des licences basées sur les nœuds a pris fin. La prise en charge des licences basées sur les nœuds prend fin le 31 décembre 2024. Après la fin de disponibilité de vos licences basées sur les nœuds, vous devez passer à une licence basée sur la capacité en utilisant l'outil de conversion de licences BlueXP .</block>
+  <block id="412842ace3db013f5cc3f99342aac206" category="paragraph">Pour les engagements annuels ou à long terme, NetApp vous recommande de contacter votre représentant NetApp avant la date de fin de disponibilité ou d'expiration de licence afin de vous assurer que les conditions préalables à la transition sont bien remplies. Si vous ne disposez pas d'un contrat à long terme pour un nœud Cloud Volumes ONTAP et que vous exécutez votre système avec un abonnement PAYGO à la demande, il est important de planifier votre conversion avant la date de fin de support. Pour les contrats à long terme et les abonnements PAYGO, vous pouvez utiliser l'outil de conversion de licences BlueXP  pour une conversion transparente.</block>
+  <block id="90df487d076cd9295a7192268b4439ee" category="inline-link">Fin de disponibilité des licences basées sur les nœuds</block>
+  <block id="342dcce6bda294bb4b60fc9333bcafbe" category="inline-link">Conversion des licences basées sur les nœuds en licences basées sur la capacité</block>
+  <block id="2293617fe352e42e5a1e5d757463cb39" category="paragraph"><block ref="677ce77d69762bd9f63d8a2760e6a0c4" category="inline-link-rx"></block> <block ref="5987d844b1ad687ea551a96a31c7c0df" category="inline-link-rx"></block></block>
+  <block id="a4b4a128b8ea43df8551a18d37b0bfcd" category="section-title">Suppression des déploiements basés sur des nœuds de BlueXP</block>
+  <block id="04b144a0be31129b4ac9a0f2751271d9" category="paragraph">La possibilité de déployer des systèmes Cloud Volumes ONTAP à l'aide de licences basées sur les nœuds est obsolète sur BlueXP . Sauf dans certains cas particuliers, vous ne pouvez pas utiliser de licences basées sur les nœuds pour les déploiements Cloud Volumes ONTAP, quel que soit le fournisseur de cloud.</block>
+  <block id="11c97a8e296f1428a1d4c9a2253b1bfb" category="paragraph">NetApp reconnaît les exigences de licence uniques suivantes en conformité avec les obligations contractuelles et les besoins opérationnels. Dans les situations suivantes, elle continue de prendre en charge les licences basées sur des nœuds :</block>
+  <block id="57389c1aef6c1264d9ad4bbe74640b2e" category="list-text">Clients USPS</block>
+  <block id="43b1a7bfd4243a44cf321f03e7878ffd" category="list-text">Déploiements en mode privé</block>
+  <block id="bbef1435f544b56bbed0e1c536c2515e" category="list-text">Déploiements de Cloud Volumes ONTAP dans AWS dans la région chinoise</block>
+  <block id="e6eb4bcca3ad358d710ea99dd5c577d1" category="list-text">Si vous disposez d'une licence BYOL (Bring Your Own License) valide et non expirée par nœud</block>
+  <block id="677ce77d69762bd9f63d8a2760e6a0c4" category="paragraph"><block ref="677ce77d69762bd9f63d8a2760e6a0c4" category="inline-link-rx"></block></block>
+  <block id="02077474df02850d5f691ab4c25f3b7c" category="section-title">Ajout d'un Tier inactif pour les données Cloud Volumes ONTAP sur le stockage Azure Blob</block>
+  <block id="b37931f01938eae6736d1bea8fd72fed" category="paragraph">BlueXP  vous permet désormais de sélectionner un Tier à froid pour stocker les données de Tier de capacité inactives sur Azure Blob Storage. L'ajout du Tier inactif aux tiers actifs et inactifs existants vous offre une option de stockage plus économique et une meilleure rentabilité.</block>
+  <block id="176cd61977ca55fd13eff7c7ba3659f5" category="inline-link">Tiering des données dans Azure</block>
+  <block id="2ede20fe3152113b3c27cd841c879ccf" category="paragraph"><block ref="2ede20fe3152113b3c27cd841c879ccf" category="inline-link-rx"></block></block>
+  <block id="7a315b4592c0ed57964da376a6b04868" category="section-title">Option pour restreindre l'accès public au compte de stockage pour Azure</block>
+  <block id="c11ad5eeb4b3088d2c151593e9c1204e" category="paragraph">Vous pouvez désormais restreindre l'accès public à votre compte de stockage pour les systèmes Cloud Volumes ONTAP sur Azure. En désactivant l'accès, vous pouvez protéger votre adresse IP privée contre toute exposition, même au sein du même vnet, en cas de nécessité de respecter les politiques de sécurité de votre organisation. Cette option désactive également le Tiering des données pour vos systèmes Cloud Volumes ONTAP, et s'applique aussi bien aux paires à un seul nœud qu'aux paires haute disponibilité.</block>
+  <block id="390a3dfacd9551e05363b9eb09a0464c" category="inline-link">Règles de groupe de sécurité</block>
+  <block id="69e89afe4b2013c34ff51df883ddc022" category="paragraph"><block ref="9064ea2dae3c9dc76b91a834ab88d8bf" category="inline-link-rx"></block>.</block>
+  <block id="f87269f0bcffd4dd379148db58c41b11" category="section-title">Activation WORM après le déploiement de Cloud Volumes ONTAP</block>
+  <block id="8d9d085ab6acd5074907258fafcff341" category="paragraph">Vous pouviez activer le stockage WORM en créant un environnement de travail Cloud Volumes ONTAP sur BlueXP . BlueXP  vous offre désormais la possibilité d'activer WORM dans un environnement de travail même si WORM n'y a pas été activé lors de la création. Après l'avoir activée, vous ne pouvez pas désactiver WORM.</block>
+  <block id="664bf259381c1fa1513c4c79450fb0f4" category="inline-link">Activation de WORM dans un environnement de travail Cloud Volumes ONTAP</block>
+  <block id="42009eda159da22132429f44bf400e6c" category="paragraph"><block ref="42009eda159da22132429f44bf400e6c" category="inline-link-rx"></block></block>
 </blocks>
