@@ -796,4 +796,10 @@
   <block id="5781bb449b503c5fcaefb20bfaa81cc4" category="section-title">Cloud Volumes ONTAP 9.16.1 GA</block>
   <block id="efa5e5522cbd4457ef4e551fb5d60491" category="paragraph">Vous pouvez désormais utiliser BlueXP  pour déployer et gérer la version Cloud Volumes ONTAP 9.16.1 General Availability dans Azure et Google Cloud. Cependant, cette version n'est pas disponible pour le déploiement et la mise à niveau dans AWS.</block>
   <block id="e622e2ddfce6c06eca3078953e9e6186" category="section-title">Prise en charge de la région nord de la Nouvelle-Zélande dans Azure</block>
+  <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">10 mars 2025</block>
+  <block id="4fce1192bdd8d2ff506dd6d380e85fdd" category="section-title">Version 1.41</block>
+  <block id="3bc103100363af5c774f4610f1cd7eec" category="paragraph">Cette version de classification BlueXP  inclut des améliorations générales et des correctifs. Elle comprend également :</block>
+  <block id="52c386a5357f2ccbc556ebac8ae2b5f2" category="paragraph-title">État de l'acquisition</block>
+  <block id="9f4be2ee88f8d600b3db6a9021b88d97" category="paragraph">La classification BlueXP  suit désormais la progression en temps réel des acquisitions de cartographie et de classification _initial_ sur un volume. Des barres progressives séparées suivent les analyses de cartographie et de classification, présentant un pourcentage du total des fichiers analysés. Vous pouvez également passer le curseur de la souris sur une barre de progression pour afficher le nombre de fichiers analysés et le nombre total de fichiers. Le suivi de l'état de vos analyses permet d'obtenir des informations plus détaillées sur la progression de l'analyse, ce qui vous permet de mieux planifier vos analyses et de comprendre l'allocation des ressources.</block>
+  <block id="dea24de819351c63f66685576d21ee25" category="paragraph">Pour afficher l'état de vos acquisitions, accédez à **Configuration** dans la classification BlueXP , puis sélectionnez la **Configuration de l'environnement de travail**. La progression est affichée en ligne pour chaque volume.</block>
 </blocks>

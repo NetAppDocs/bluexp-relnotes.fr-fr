@@ -487,6 +487,21 @@ Pour plus de détails sur l'activation manuelle, reportez-vous https://community
 
 
 
+=== 10 mars 2025
+
+
+
+==== Version 1.41
+
+Cette version de classification BlueXP  inclut des améliorations générales et des correctifs. Elle comprend également :
+
+.État de l'acquisition
+La classification BlueXP  suit désormais la progression en temps réel des acquisitions de cartographie et de classification _initial_ sur un volume. Des barres progressives séparées suivent les analyses de cartographie et de classification, présentant un pourcentage du total des fichiers analysés. Vous pouvez également passer le curseur de la souris sur une barre de progression pour afficher le nombre de fichiers analysés et le nombre total de fichiers. Le suivi de l'état de vos analyses permet d'obtenir des informations plus détaillées sur la progression de l'analyse, ce qui vous permet de mieux planifier vos analyses et de comprendre l'allocation des ressources.
+
+Pour afficher l'état de vos acquisitions, accédez à **Configuration** dans la classification BlueXP , puis sélectionnez la **Configuration de l'environnement de travail**. La progression est affichée en ligne pour chaque volume.
+
+
+
 === 19 février 2025
 
 
