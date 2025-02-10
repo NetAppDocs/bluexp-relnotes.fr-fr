@@ -536,6 +536,9 @@ Pour réessayer toutes les acquisitions :
 . Pour réessayer toutes les acquisitions ayant échoué, sélectionnez *Réessayer toutes les acquisitions*.
 
 
+.Amélioration de la précision du modèle de catégorisation
+La précision du modèle de machine learning du link:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-sensitive-personal-datapredefined-categories["catégories prédéfinies"] a augmenté de 11 %.
+
 
 
 === 22 janvier 2025
