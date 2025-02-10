@@ -42,14 +42,9 @@ Cette version de BlueXP Connector inclut des améliorations mineures de la sécu
 * Les rôles sont désormais associés à l'une des deux catégories suivantes : plate-forme et service de données.
 
 
-[]
-====
-* Les rôles sont désormais associés à l'une des trois catégories suivantes : plate-forme, application et services de données.
-* Deux nouveaux rôles sont associés à la catégorie d'application : Storage Viewer et Storage admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["En savoir plus sur les rôles IAM"]
-* L'IAM est maintenant utilisé en mode restreint BlueXP
 
 
-==== le mode restreint utilise maintenant BlueXP  IAM
+===== Le mode restreint utilise désormais l'IAM BlueXP
 
 La gestion des identités et des accès BlueXP  est désormais utilisée en mode restreint.
 
@@ -104,21 +99,38 @@ Cette modification introduit une nouvelle API pour BlueXP  IAM, mais elle est r
 .Modes de déploiement pris en charge
 BlueXP  IAM est pris en charge lorsque BlueXP  est utilisé en mode standard et restreint. Si vous utilisez BlueXP  en mode privé, vous continuerez à utiliser un _compte_ BlueXP  pour gérer les espaces de travail, les utilisateurs et les ressources.
 
-== 13 janvier 2025
+.Autres améliorations de l'IAM
+* Prise en charge de l'attribution de plusieurs rôles à un utilisateur.
+* Les rôles sont désormais associés à l'une des trois catégories suivantes : plate-forme, application et services de données.
+* Deux nouveaux rôles sont associés à la catégorie d'application : Storage Viewer et Storage admin.
++
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["En savoir plus sur les rôles IAM"]
 
-=== connecteur 3.9.48
+
+
+
+
+=== 13 janvier 2025
+
+
+
+==== Connecteur 3.9.48
 
 Cette version de BlueXP Connector inclut des améliorations mineures de la sécurité et des correctifs.
 
 À ce stade, la version 3.9.48 est disponible pour le mode standard et le mode restreint.
 
-=== gestion des accès et des identités BlueXP
+
+
+==== Gestion des identités et des accès BlueXP
 
 * La page Ressources affiche désormais les ressources non découvertes. Les ressources non découvertes sont des ressources de stockage dont BlueXP  dispose, mais pour lesquelles vous n'avez pas créé d'environnement de travail. Par exemple, les ressources qui s'affichent dans Digital Advisor et qui n'ont pas encore d'environnement de travail s'affichent sur la page Ressources en tant que ressources non découvertes.
 * Les ressources Amazon FSX pour NetApp ONTAP ne s'affichent pas sur la page des ressources IAM car vous ne pouvez pas les associer à un rôle IAM. Vous pouvez afficher ces ressources sur leur canevas respectif ou à partir de workloads.
 
 
-=== Créer un dossier de demande de support pour des services BlueXP  supplémentaires
+
+
+==== Créez un dossier de demande de support pour d'autres services BlueXP
 
 Une fois que vous avez enregistré BlueXP  pour le support, vous pouvez créer un dossier de demande de support directement à partir de la console Web BlueXP . Lorsque vous créez le cas, vous devez sélectionner le service auquel le problème est associé.
 
@@ -130,9 +142,13 @@ Depuis cette version, vous pouvez désormais créer un dossier de demande de sup
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html["En savoir plus sur la création d'un dossier de demande de support"].
 
-== 16 décembre 2024
 
-=== nouveaux points d'extrémité sécurisés pour obtenir des images de connecteur
+
+=== 16 décembre 2024
+
+
+
+==== Nouveaux points d'extrémité sécurisés pour obtenir des images de connecteur
 
 Lorsque vous installez le connecteur ou lors d'une mise à niveau automatique, le connecteur contacte les référentiels pour télécharger des images pour l'installation ou la mise à niveau. Par défaut, le connecteur a toujours contacté les points finaux suivants :
 
@@ -167,41 +183,95 @@ Pour ces deux scénarios, vous pouvez continuer à utiliser les noeuds finaux ex
 
 
 
-== alertes
 
-== 7 octobre 2024 === page de liste des alertes BlueXP  vous pouvez identifier rapidement les clusters ONTAP dont la capacité est faible ou les performances sont faibles, évaluer l'étendue de la disponibilité et identifier les risques de sécurité. Vous pouvez afficher les alertes relatives à la capacité, aux performances, à la protection, à la disponibilité, à la sécurité et à la configuration.
 
-=== Détails des alertes vous pouvez explorer les détails des alertes et trouver des recommandations.
+== Alertes
 
-=== Afficher les détails du cluster liés à System Manager avec les alertes BlueXP , vous pouvez afficher les alertes associées à votre environnement de stockage ONTAP et explorer les détails liés à ONTAP System Manager.
+
+
+=== 7 octobre 2024
+
+
+
+==== Page de liste des alertes BlueXP
+
+Vous pouvez rapidement identifier les clusters ONTAP dont la capacité est faible ou les performances sont faibles, évaluer l'étendue de la disponibilité et identifier les risques de sécurité. Vous pouvez afficher les alertes relatives à la capacité, aux performances, à la protection, à la disponibilité, à la sécurité et à la configuration.
+
+
+
+==== Détails des alertes
+
+Vous pouvez explorer les détails des alertes et trouver des recommandations.
+
+
+
+==== Afficher les détails du cluster liés à System Manager
+
+Avec les alertes BlueXP , vous pouvez consulter les alertes associées à votre environnement de stockage ONTAP et explorer les détails liés à ONTAP System Manager.
 
 https://docs.netapp.com/us-en/bluexp-alerts/concept-alerts.html["En savoir plus sur les alertes BlueXP"].
 
+
+
 == Amazon FSX pour ONTAP
 
-== 02 février 2025 ==== associer le système de fichiers FSX pour ONTAP à un espace de travail dans BlueXP  après l'intégration de BlueXP  en novembre 2024, les systèmes de fichiers FSX pour ONTAP nouvellement créés n'étaient pas associés à un espace de travail dans BlueXP . Désormais, lorsque vous créez ou découvrez des systèmes de fichiers FSX pour ONTAP, ils sont associés à un espace de travail au sein d'un compte BlueXP .
+
+
+=== 02 février 2025
+
+
+
+==== Associer le système de fichiers FSX pour ONTAP à un espace de travail dans BlueXP
+
+Après l'intégration de BlueXP  en novembre 2024, les nouveaux systèmes de fichiers FSX pour ONTAP n'étaient associés à aucun espace de travail dans BlueXP . Désormais, lorsque vous créez ou découvrez des systèmes de fichiers FSX pour ONTAP, ils sont associés à un espace de travail au sein d'un compte BlueXP .
 
 Si vous disposez déjà de systèmes de fichiers FSX pour ONTAP qui ne sont pas associés à un espace de travail, nous vous aiderons à les associer à un espace de travail dans BlueXP . Vous pouvez le link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#create-a-case-with-netapp-support["Créer un dossier de demande de support avec le support NetApp"^]faire à partir de la console BlueXP . Sélectionnez *Workload Factory* comme service.
 
-=== Suppression du système de fichiers du canevas BlueXP  vous pouvez maintenant supprimer un système de fichiers FSX pour ONTAP d'un espace de travail dans le canevas BlueXP . Cette opération dissocie le système de fichiers d'un espace de travail pour vous permettre de l'associer à un autre espace de travail dans le même compte BlueXP .
+
+
+==== Suppression du système de fichiers du canevas BlueXP
+
+Vous pouvez maintenant supprimer un système de fichiers FSX pour ONTAP d'un espace de travail dans le canevas BlueXP . Cette opération dissocie le système de fichiers d'un espace de travail pour vous permettre de l'associer à un autre espace de travail dans le même compte BlueXP .
 
 link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-remove-filesystem.html["Découvrez comment supprimer un système de fichiers FSX pour ONTAP d'un espace de travail dans BlueXP"^]
 
-=== Tracker disponible pour la surveillance et le suivi des opérations le Tracker, une nouvelle fonctionnalité de surveillance, est disponible dans BlueXP  Amazon FSX pour NetApp ONTAP. Vous pouvez utiliser Tracker pour surveiller et suivre la progression et l'état des informations d'identification, du stockage et des opérations de liaison, examiner les détails des tâches d'opération et des sous-tâches, diagnostiquer tout problème ou échec, modifier les paramètres pour les opérations ayant échoué et réessayer les opérations ayant échoué.
+
+
+==== Tracker disponible pour les opérations de surveillance et de suivi
+
+Tracker, une nouvelle fonctionnalité de surveillance, est disponible dans BlueXP  Amazon FSX pour NetApp ONTAP. Vous pouvez utiliser Tracker pour surveiller et suivre la progression et l'état des informations d'identification, du stockage et des opérations de liaison, examiner les détails des tâches d'opération et des sous-tâches, diagnostiquer tout problème ou échec, modifier les paramètres pour les opérations ayant échoué et réessayer les opérations ayant échoué.
 
 link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-monitor-operations.html["Découvrez comment surveiller et suivre les opérations FSX pour ONTAP dans BlueXP"^]
 
-=== CloudShell disponible dans les charges de travail BlueXP 
+
+
+==== CloudShell disponible pour les charges de travail BlueXP
 
 CloudShell est disponible lorsque vous travaillez avec des charges de travail BlueXP  au sein de la console BlueXP . CloudShell vous permet d'utiliser les informations d'identification AWS et ONTAP que vous avez fournies dans votre compte BlueXP  et d'exécuter les commandes CLI AWS ou les commandes de l'interface de ligne de commande ONTAP dans un environnement de type shell.
 
 link:https://docs.netapp.com/us-en/workload-setup-admin/use-cloudshell.html["Utilisez CloudShell"^]
 
-== 06 janvier 2025 === NetApp publie d'autres ressources CloudFormation NetApp fournit désormais des ressources CloudFormation qui permettent aux clients d'utiliser des composants ONTAP avancés qui ne sont pas exposés dans la console AWS. CloudFormation est le mécanisme d'infrastructure-as-code d'AWS. Vous pourrez créer des relations de réplication, des partages CIFS, des règles d'exportation NFS, des snapshots, etc.
+
+
+=== 06 janvier 2025
+
+
+
+==== NetApp publie d'autres ressources CloudFormation
+
+NetApp fournit désormais des ressources CloudFormation qui permettent aux clients d'utiliser des composants ONTAP avancés qui ne sont pas exposés dans la console AWS. CloudFormation est le mécanisme d'infrastructure-as-code d'AWS. Vous pourrez créer des relations de réplication, des partages CIFS, des règles d'exportation NFS, des snapshots, etc.
 
 link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-environment.html["Gérez les systèmes de fichiers Amazon FSX pour NetApp ONTAP à l'aide de CloudFormation"]
 
-== 11 novembre 2024 === FSX for ONTAP s'intègre au stockage dans l'usine de workloads BlueXP  les tâches de gestion des systèmes de fichiers FSX for ONTAP telles que l'ajout de volumes, l'extension de la capacité du système de fichiers et la gestion des machines virtuelles de stockage sont désormais gérées en usine de workloads BlueXP , un nouveau service proposé par NetApp et Amazon FSX for NetApp ONTAP. Vous pouvez utiliser vos informations d'identification et autorisations existantes comme auparavant. La différence est que vous pouvez désormais faire plus avec l'usine de workloads BlueXP  pour gérer vos systèmes de fichiers. Lorsque vous ouvrez un environnement de travail FSX pour ONTAP à partir du canevas BlueXP , vous vous rendez directement à l'usine de workloads BlueXP .
+
+
+=== 11 novembre 2024
+
+
+
+==== FSX for ONTAP s'intègre au stockage dans l'usine de workloads BlueXP
+
+Les tâches de gestion de système de fichiers FSX for ONTAP, telles que l'ajout de volumes, l'extension de la capacité du système de fichiers et la gestion des machines virtuelles de stockage, sont désormais gérées en usine de workloads BlueXP , un nouveau service proposé par NetApp et Amazon FSX for NetApp ONTAP. Vous pouvez utiliser vos informations d'identification et autorisations existantes comme auparavant. La différence est que vous pouvez désormais faire plus avec l'usine de workloads BlueXP  pour gérer vos systèmes de fichiers. Lorsque vous ouvrez un environnement de travail FSX pour ONTAP à partir du canevas BlueXP , vous vous rendez directement à l'usine de workloads BlueXP .
 
 link:https://docs.netapp.com/us-en/workload-fsx-ontap/learn-fsx-ontap.html#features["Découvrez les fonctionnalités de FSX for ONTAP en usine de workloads BlueXP"^]
 
@@ -209,29 +279,55 @@ Si vous recherchez l'option _Advanced View_, qui vous permet de gérer un systè
 
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-fsx-ontap/main/media/screenshot-system-manager.png["Capture d'écran du panneau de droite de la zone de travail BlueXP  après avoir sélectionné un environnement de travail affichant l'option System Manager."]
 
-== stockage Amazon S3
 
-== 5 mars 2023
 
-=== possibilité d'ajouter de nouveaux compartiments à partir de BlueXP 
+== Le stockage Amazon S3
+
+
+
+=== 5 mars 2023
+
+
+
+==== Possibilité d'ajouter de nouveaux compartiments à partir de BlueXP
 
 Vous avez depuis longtemps la possibilité d'afficher les compartiments Amazon S3 sur BlueXP Canvas. Vous pouvez désormais ajouter de nouveaux compartiments et modifier les propriétés des compartiments existants directement à partir de BlueXP . https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["Découvrez comment ajouter de nouveaux compartiments Amazon S3"].
 
-== stockage Azure Blob
 
-== 5 juin 2023 :icons: Font :imagesdir: ../media/
 
-=== possibilité d'ajouter de nouveaux comptes de stockage depuis BlueXP 
+== Stockage Azure Blob
+
+
+
+=== 5 juin 2023
+
+
+
+==== Possibilité d'ajouter de nouveaux comptes de stockage à partir de BlueXP
 
 Vous avez pu afficher Azure Blob Storage sur BlueXP Canvas pendant un certain temps. Vous pouvez désormais ajouter de nouveaux comptes de stockage et modifier les propriétés des comptes de stockage existants directement à partir de BlueXP . https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html["Découvrez comment ajouter de nouveaux comptes de stockage Azure Blob"].
 
+
+
 == Azure NetApp Files
 
-== 13 janvier 2025
 
-=== fonctions réseau maintenant prises en charge dans BlueXP  lors de la configuration d'un volume dans Azure NetApp Files à partir de BlueXP , vous pouvez maintenant indiquer les fonctionnalités réseau. Cette configuration s'aligne sur la fonctionnalité disponible dans Azure NetApp Files natif.
 
-== 12 juin 2024 === Nouvelle autorisation requise
+=== 13 janvier 2025
+
+
+
+==== Fonctionnalités réseau désormais prises en charge dans BlueXP
+
+Lors de la configuration d'un volume dans Azure NetApp Files à partir de BlueXP , vous pouvez maintenant indiquer les fonctionnalités réseau. Cette configuration s'aligne sur la fonctionnalité disponible dans Azure NetApp Files natif.
+
+
+
+=== 12 juin 2024
+
+
+
+==== Nouvelle autorisation requise
 
 L'autorisation suivante est désormais requise pour gérer les volumes Azure NetApp Files à partir de BlueXP :
 
@@ -243,21 +339,39 @@ Si vous gérez actuellement Azure NetApp Files à partir de BlueXP, vous devez a
 
 https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-set-up-azure-ad.html["Découvrez comment configurer une application Microsoft Entra et afficher les autorisations de rôle personnalisées"].
 
-== 22 avril 2024 === les modèles de volume ne sont plus pris en charge
+
+
+=== 22 avril 2024
+
+
+
+==== Les modèles de volume ne sont plus pris en charge
 
 Vous ne pouvez plus créer de volume à partir d'un modèle. Cette action a été associée au service de correction BlueXP, qui n'est plus disponible.
 
-== sauvegarde et restauration
 
-== 22 novembre 2024 cette version de sauvegarde et de restauration BlueXP  comprend les mises à jour suivantes.
 
-=== modes de protection SnapLock Compliance et SnapLock Enterprise
+== Sauvegarde et restauration
+
+
+
+=== 22 novembre 2024
+
+Cette version de sauvegarde et de restauration BlueXP  comprend les mises à jour suivantes.
+
+
+
+==== Modes de protection SnapLock Compliance et SnapLock Enterprise
 
 La sauvegarde et la restauration BlueXP  peuvent désormais sauvegarder des volumes FlexVol et FlexGroup sur site configurés en mode de protection SnapLock Compliance ou SnapLock Enterprise. Pour cette prise en charge, vos clusters doivent exécuter ONTAP 9.14 ou une version ultérieure. La sauvegarde de volumes FlexVol à l'aide de SnapLock Enterprise mode est prise en charge depuis ONTAP version 9.11.1. Les versions antérieures de ONTAP ne prennent pas en charge la sauvegarde des volumes de protection SnapLock.
 
 Consultez la liste complète des volumes pris en charge dans le https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["Découvrez la sauvegarde et la restauration BlueXP"].
 
-=== indexation du processus de recherche et de restauration sur la page volumes avant de pouvoir utiliser la fonction de recherche et de restauration, vous devez activer l'indexation sur chaque environnement de travail source à partir duquel vous souhaitez restaurer les données de volume. Cela permet au catalogue indexé de suivre les fichiers de sauvegarde de chaque volume. La page volumes affiche désormais l'état de l'indexation :
+
+
+==== Indexation pour le processus de recherche et de restauration sur la page volumes
+
+Avant de pouvoir utiliser la fonction de recherche et de restauration, vous devez activer « indexation » sur chaque environnement de travail source à partir duquel vous souhaitez restaurer les données du volume. Cela permet au catalogue indexé de suivre les fichiers de sauvegarde de chaque volume. La page volumes affiche désormais l'état de l'indexation :
 
 * Indexé : les volumes ont été indexés.
 * En cours
@@ -267,31 +381,51 @@ Consultez la liste complète des volumes pris en charge dans le https://docs.net
 * Non activé
 
 
-== 27 septembre 2024 cette version de sauvegarde et de restauration BlueXP  comprend les mises à jour suivantes.
 
-=== prise en charge de Podman sur RHEL 8 ou 9 avec Parcourir et restaurer la sauvegarde et la restauration BlueXP  prend désormais en charge les restaurations de fichiers et de dossiers sur Red Hat Enterprise Linux (RHEL) versions 8 et 9 à l'aide du moteur Podman. Ceci s'applique à la méthode de sauvegarde et de restauration BlueXP .
+
+=== 27 septembre 2024
+
+Cette version de sauvegarde et de restauration BlueXP  comprend les mises à jour suivantes.
+
+
+
+==== Prise en charge de Podman sur RHEL 8 ou 9 avec Browse and Restore
+
+La sauvegarde et la restauration BlueXP  prennent désormais en charge les restaurations de fichiers et de dossiers sur Red Hat Enterprise Linux (RHEL) versions 8 et 9 à l'aide du moteur Podman. Ceci s'applique à la méthode de sauvegarde et de restauration BlueXP .
 
 BlueXP  Connector version 3.9.40 prend en charge certaines versions de Red Hat Enterprise Linux versions 8 et 9 pour toute installation manuelle du logiciel Connector sur un hôte RHEL 8 ou 9, quel que soit l'emplacement en plus des systèmes d'exploitation mentionnés dans le https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-private-mode.html#step-3-review-host-requirements["configuration requise pour l'hôte"^]. Ces nouvelles versions de RHEL nécessitent le moteur Podman au lieu du moteur Docker. Auparavant, la sauvegarde et la restauration BlueXP  présentaient deux limitations lors de l'utilisation du moteur Podman. Ces limitations ont été supprimées.
 
 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["En savoir plus sur la restauration des données ONTAP à partir de fichiers de sauvegarde"].
 
-=== accélération de l'indexation du catalogue améliore la recherche et la restauration cette version comprend un index de catalogue amélioré qui termine l'indexation de la base beaucoup plus rapidement. L'indexation plus rapide vous permet d'utiliser la fonction de recherche et de restauration plus rapidement.
+
+
+==== Une indexation plus rapide du catalogue améliore la recherche et la restauration
+
+Cette version inclut un index de catalogue amélioré qui termine l'indexation de base beaucoup plus rapidement. L'indexation plus rapide vous permet d'utiliser la fonction de recherche et de restauration plus rapidement.
 
 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["En savoir plus sur la restauration des données ONTAP à partir de fichiers de sauvegarde"].
 
-== 22 juillet 2024
 
-=== Restaurer des volumes inférieurs à 1 Go
+
+=== 22 juillet 2024
+
+
+
+==== Restaurez des volumes inférieurs à 1 Go
 
 Avec cette version, vous pouvez désormais restaurer des volumes créés dans ONTAP de moins de 1 Go. La taille minimale du volume que vous pouvez créer à l'aide de ONTAP est de 20 Mo.
 
-=== conseils sur la façon de réduire les coûts DataLock
+
+
+==== Conseils pour réduire les coûts liés à DataLock
 
 La fonction DataLock protège vos fichiers de sauvegarde contre toute modification ou suppression pendant une période de temps spécifiée. Ceci est utile pour protéger vos fichiers contre les attaques par ransomware.
 
 Pour plus de détails sur DataLock et des conseils sur la manière de réduire les coûts associés, reportez-vous https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-cloud-backup-policies.html["Paramètres de la règle de sauvegarde sur objet"] à la section .
 
-=== intégration AWS IAM Roles Anywhere
+
+
+==== Intégration AWS IAM Roles Anywhere
 
 Le service Amazon Web Services (AWS) Identity and Access Management (IAM) Roles Anywhere vous permet d'utiliser des rôles IAM et des identifiants à court terme pour vos workloads _hors_ d'AWS pour accéder aux API AWS en toute sécurité, de la même manière que vous utilisez les rôles IAM pour les workloads _sur_ AWS. Lorsque vous utilisez l'infrastructure de clés privées IAM Roles Anywhere et les jetons AWS, vous n'avez pas besoin de clés d'accès AWS à long terme et de clés secrètes. Cela vous permet de faire pivoter les informations d'identification plus fréquemment, ce qui améliore la sécurité.
 
@@ -299,7 +433,11 @@ Avec cette version, la prise en charge du service AWS IAM Roles Anywhere est un 
 
 Reportez-vous à la https://community.netapp.com/t5/Tech-ONTAP-Blogs/BlueXP-Backup-and-Recovery-July-2024-Release/ba-p/453993["Sauvegarde et restauration BlueXP, blog sur la version de juillet 2024"].
 
-=== restauration de dossiers ou de répertoires FlexGroup désormais disponible auparavant, les volumes FlexVol pouvaient être restaurés, mais vous ne pouviez pas restaurer les dossiers ou les répertoires FlexGroup. Avec ONTAP 9.15.1 p2, vous pouvez restaurer des dossiers FlexGroup à l'aide de l'option Parcourir et restaurer.
+
+
+==== Restauration de dossier ou de répertoire FlexGroup maintenant disponible
+
+Auparavant, les volumes FlexVol pouvaient être restaurés, mais vous ne pouviez pas restaurer les dossiers ou les répertoires FlexGroup. Avec ONTAP 9.15.1 p2, vous pouvez restaurer des dossiers FlexGroup à l'aide de l'option Parcourir et restaurer.
 
 Avec cette version, la prise en charge de la restauration de dossiers FlexGroup est un aperçu technologique.
 
@@ -307,9 +445,19 @@ Pour plus de détails, reportez-vous à https://docs.netapp.com/us-en/bluexp-bac
 
 Pour plus de détails sur l'activation manuelle, reportez-vous https://community.netapp.com/t5/Tech-ONTAP-Blogs/BlueXP-Backup-and-Recovery-July-2024-Release/ba-p/453993["Sauvegarde et restauration BlueXP, blog sur la version de juillet 2024"]à la section .
 
-== Classification
 
-== 22 janvier 2025 === version 1.39 cette version de classification BlueXP  met à jour le processus d'exportation du rapport d'enquête sur les données. Cette mise à jour d'exportation est utile pour effectuer des analyses supplémentaires sur vos données, créer des visualisations supplémentaires sur les données ou partager les résultats de votre enquête de données avec d'autres personnes.
+
+== Classement
+
+
+
+=== 22 janvier 2025
+
+
+
+==== Version 1.39
+
+Cette version de classification BlueXP  met à jour le processus d'exportation du rapport d'investigation de données. Cette mise à jour d'exportation est utile pour effectuer des analyses supplémentaires sur vos données, créer des visualisations supplémentaires sur les données ou partager les résultats de votre enquête de données avec d'autres personnes.
 
 Auparavant, l'exportation du rapport d'investigation de données était limitée à 10,000 lignes. Avec cette version, la limite a été supprimée afin que vous puissiez exporter toutes vos données. Cette modification vous permet d'exporter davantage de données à partir de vos rapports d'investigation de données, vous offrant ainsi une plus grande flexibilité dans votre analyse de données.
 
@@ -331,9 +479,25 @@ L'exportation de données à partir du rapport d'investigation de données compo
 
 Pour plus de détails sur l'investigation des données et le rapport, voir https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html["Analysez les données stockées dans votre entreprise"].
 
-== 16 décembre 2024 === version 1.38 cette version de classification BlueXP  comprend des améliorations générales et des corrections de bogues.
 
-== 4 novembre 2024 === version 1.37 cette version de classification BlueXP  comprend les mises à jour suivantes.
+
+=== 16 décembre 2024
+
+
+
+==== Version 1.38
+
+Cette version de classification BlueXP  inclut des améliorations générales et des correctifs.
+
+
+
+=== 4 novembre 2024
+
+
+
+==== Version 1.37
+
+Cette version de classification BlueXP  inclut les mises à jour suivantes.
 
 .Prise en charge de RHEL 8.10
 Cette version prend en charge Red Hat Enterprise Linux v8.10 en plus des versions précédemment prises en charge. Cela s'applique à toute installation manuelle sur site de la classification BlueXP , y compris les déploiements de sites invisibles.
@@ -347,17 +511,35 @@ Cette version assure la prise en charge de NFS v4.1 en plus des versions précé
 
 En savoir plus sur https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Classification BlueXP"].
 
+
+
 == Cloud Volumes ONTAP
 
-== 10 février 2025 === authentification utilisateur activée pour accéder au Gestionnaire système à partir de BlueXP  en tant qu'administrateur BlueXP , vous pouvez maintenant activer l'authentification pour les utilisateurs ONTAP accédant au Gestionnaire système ONTAP à partir de BlueXP . Vous pouvez activer cette option en modifiant les paramètres du connecteur BlueXP . Cette option est disponible pour les modes standard et privé.
+
+
+=== 10 février 2025
+
+
+
+==== Authentification utilisateur activée pour l'accès à System Manager depuis BlueXP
+
+En tant qu'administrateur BlueXP , vous pouvez désormais activer l'authentification des utilisateurs ONTAP qui accèdent à ONTAP System Manager depuis BlueXP . Vous pouvez activer cette option en modifiant les paramètres du connecteur BlueXP . Cette option est disponible pour les modes standard et privé.
 
 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-administer-advanced-view.html["Administrez Cloud Volumes ONTAP à l'aide de System Manager"^].
 
-=== vue avancée BlueXP  renommée Gestionnaire système l'option de gestion avancée de Cloud Volumes ONTAP de BlueXP  à ONTAP Gestionnaire système a été renommée de *vue avancée* en *Gestionnaire système*.
+
+
+==== La vue avancée de BlueXP  a été renommée Gestionnaire système
+
+L'option de gestion avancée de Cloud Volumes ONTAP de BlueXP  à ONTAP System Manager a été renommée de *vue avancée* en *Gestionnaire système*.
 
 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-administer-advanced-view.html["Administrez Cloud Volumes ONTAP à l'aide de System Manager"^].
 
-=== le portefeuille digital BlueXP  offre un moyen plus simple de gérer les licences grâce à une gestion simplifiée des licences Cloud Volumes ONTAP grâce à des points de navigation améliorés dans le portefeuille digital BlueXP  :
+
+
+==== Découvrez un moyen plus simple de gérer les licences avec le portefeuille digital BlueXP
+
+La gestion des licences Cloud Volumes ONTAP est simplifiée grâce à des points de navigation améliorés dans le portefeuille digital BlueXP  :
 
 * Accédez facilement aux informations relatives à votre licence Cloud Volumes ONTAP via les onglets *gouvernance > portefeuille numérique > Présentation/licences de service de données*.
 * Cliquez sur *Afficher* dans le panneau ONTAP de volume cloud de l'onglet *Présentation* pour obtenir une compréhension complète de vos licences basées sur la capacité. Cette vue avancée offre des informations détaillées sur vos licences et vos abonnements.
@@ -366,15 +548,25 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-administer-ad
 
 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["Gestion des licences basées sur la capacité"^].
 
-== 9 décembre 2024
 
-=== liste des VM prises en charge et mises à jour pour Azure afin de s'aligner sur les bonnes pratiques
+
+=== 9 décembre 2024
+
+
+
+==== Liste des machines virtuelles prises en charge mises à jour pour Azure conformément aux bonnes pratiques
 
 Les familles de machines DS_v2 et es_v3 ne peuvent plus être sélectionnées sur BlueXP  lors du déploiement de nouvelles instances de Cloud Volumes ONTAP dans Azure. Ces familles seront conservées et prises en charge uniquement dans les anciens systèmes existants. Les nouveaux déploiements de Cloud Volumes ONTAP sont pris en charge dans Azure uniquement à partir de la version 9.12.1. Nous vous recommandons de passer à es_v4 ou à toute autre série compatible avec Cloud Volumes ONTAP 9.12.1 et versions ultérieures. Les machines des séries DS_v2 et es_v3, cependant, seront disponibles pour les nouveaux déploiements effectués via l'API.
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Configurations prises en charge dans Azure"^]
 
-== 11 novembre 2024 === fin de disponibilité des licences basées sur des nœuds
+
+
+=== 11 novembre 2024
+
+
+
+==== Fin de disponibilité des licences basées sur les nœuds
 
 NetApp a prévu la fin de disponibilité et la fin de prise en charge des licences basées sur des nœuds Cloud Volumes ONTAP. Depuis le 11 novembre 2024, la disponibilité limitée des licences basées sur les nœuds a pris fin. La prise en charge des licences basées sur les nœuds prend fin le 31 décembre 2024. Après la fin de disponibilité de vos licences basées sur les nœuds, vous devez passer à une licence basée sur la capacité en utilisant l'outil de conversion de licences BlueXP .
 
@@ -382,7 +574,11 @@ Pour les engagements annuels ou à long terme, NetApp vous recommande de contact
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["Fin de disponibilité des licences basées sur les nœuds"^] https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-convert-node-capacity.html["Conversion des licences basées sur les nœuds en licences basées sur la capacité"^]
 
-=== Suppression des déploiements basés sur les nœuds de BlueXP  l'option de déploiement des systèmes Cloud Volumes ONTAP à l'aide de licences basées sur les nœuds est obsolète sur BlueXP . Sauf dans certains cas particuliers, vous ne pouvez pas utiliser de licences basées sur les nœuds pour les déploiements Cloud Volumes ONTAP, quel que soit le fournisseur de cloud.
+
+
+==== Suppression des déploiements basés sur des nœuds de BlueXP
+
+La possibilité de déployer des systèmes Cloud Volumes ONTAP à l'aide de licences basées sur les nœuds est obsolète sur BlueXP . Sauf dans certains cas particuliers, vous ne pouvez pas utiliser de licences basées sur les nœuds pour les déploiements Cloud Volumes ONTAP, quel que soit le fournisseur de cloud.
 
 NetApp reconnaît les exigences de licence uniques suivantes en conformité avec les obligations contractuelles et les besoins opérationnels. Dans les situations suivantes, elle continue de prendre en charge les licences basées sur des nœuds :
 
@@ -394,27 +590,41 @@ NetApp reconnaît les exigences de licence uniques suivantes en conformité avec
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["Fin de disponibilité des licences basées sur les nœuds"^]
 
-=== Ajout d'un Tier inactif pour les données Cloud Volumes ONTAP sur le stockage Azure Blob
+
+
+==== Ajout d'un Tier inactif pour les données Cloud Volumes ONTAP sur le stockage Azure Blob
 
 BlueXP  vous permet désormais de sélectionner un Tier à froid pour stocker les données de Tier de capacité inactives sur Azure Blob Storage. L'ajout du Tier inactif aux tiers actifs et inactifs existants vous offre une option de stockage plus économique et une meilleure rentabilité.
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html#data-tiering-in-azure["Tiering des données dans Azure"^]
 
-=== option de restriction de l'accès public au compte de stockage pour Azure vous avez désormais la possibilité de restreindre l'accès public à votre compte de stockage pour les systèmes Cloud Volumes ONTAP sur Azure. En désactivant l'accès, vous pouvez protéger votre adresse IP privée contre toute exposition, même au sein du même vnet, en cas de nécessité de respecter les politiques de sécurité de votre organisation. Cette option désactive également le Tiering des données pour vos systèmes Cloud Volumes ONTAP, et s'applique aussi bien aux paires à un seul nœud qu'aux paires haute disponibilité.
+
+
+==== Option pour restreindre l'accès public au compte de stockage pour Azure
+
+Vous pouvez désormais restreindre l'accès public à votre compte de stockage pour les systèmes Cloud Volumes ONTAP sur Azure. En désactivant l'accès, vous pouvez protéger votre adresse IP privée contre toute exposition, même au sein du même vnet, en cas de nécessité de respecter les politiques de sécurité de votre organisation. Cette option désactive également le Tiering des données pour vos systèmes Cloud Volumes ONTAP, et s'applique aussi bien aux paires à un seul nœud qu'aux paires haute disponibilité.
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-azure.html#security-group-rules["Règles de groupe de sécurité"^].
 
-=== activation WORM après le déploiement de Cloud Volumes ONTAP
+
+
+==== Activation WORM après le déploiement de Cloud Volumes ONTAP
 
 Vous pouvez désormais activer le stockage WORM (Write Once, Read Many) sur un système Cloud Volumes ONTAP existant à l'aide de BlueXP . Cette fonctionnalité vous offre la flexibilité d'activer WORM dans un environnement de travail, même si WORM n'y a pas été activé lors de sa création. Une fois activé, vous ne pouvez pas désactiver WORM.
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html#enabling-worm-on-a-cloud-volumes-ontap-working-environment["Activation de WORM dans un environnement de travail Cloud Volumes ONTAP"^]
 
+
+
 == Cloud Volumes Service pour Google Cloud
 
-== 9 septembre 2020
 
-=== prise en charge de Cloud Volumes Service pour Google Cloud
+
+=== 9 septembre 2020
+
+
+
+==== Prise en charge de Cloud Volumes Service pour Google Cloud
 
 Vous pouvez désormais gérer Cloud Volumes Service pour Google Cloud directement depuis BlueXP :
 
@@ -424,15 +634,29 @@ Vous pouvez désormais gérer Cloud Volumes Service pour Google Cloud directemen
 * Créez, supprimez et restaurez des snapshots de volume
 
 
-== opérations cloud
 
-== 7 décembre 2020 === navigation entre Cloud Manager et Spot
+
+== OPS cloud
+
+
+
+=== 7 décembre 2020
+
+
+
+==== Navigation entre Cloud Manager et Spot
 
 La navigation entre Cloud Manager et Spot devient plus simple.
 
 Une nouvelle section *Storage Operations* dans Spot vous permet de naviguer directement vers Cloud Manager. Une fois terminé, vous pouvez revenir à Spot à partir de l'onglet *Compute* de Cloud Manager.
 
-== 18 octobre 2020 === Présentation du service Compute
+
+
+=== 18 octobre 2020
+
+
+
+==== Présentation du service de calcul
 
 Valorisation https://spot.io/products/cloud-analyzer/["Spot's Cloud Analyzer"^], Cloud Manager peut désormais fournir une analyse des coûts généraux de vos dépenses de calcul dans le cloud et identifier les économies potentielles. Ces informations sont disponibles dans le service *Compute* de Cloud Manager.
 
@@ -440,57 +664,129 @@ https://docs.netapp.com/us-en/bluexp-cloud-ops/concept-compute.html["En savoir p
 
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/screenshot_compute_dashboard.gif["Capture d'écran affichant la page d'analyse des coûts dans Cloud Manager"]
 
-== copie et synchronisation
 
-== 2 février 2025 === Nouvelle prise en charge du système d'exploitation pour le courtier de données le courtier de données est maintenant pris en charge sur les hôtes exécutant Red Hat Enterprise 9.4, Ubuntu 23.04 et Ubuntu 24.04.
+
+== Copie et synchronisation
+
+
+
+=== 2 février 2025
+
+
+
+==== Nouvelle prise en charge du système d'exploitation pour le courtier de données
+
+Le courtier de données est désormais pris en charge sur les hôtes exécutant Red Hat Enterprise 9.4, Ubuntu 23.04 et Ubuntu 24.04.
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#linux-host-requirements["Afficher la configuration requise pour l'hôte Linux"].
 
-== 27 octobre 2024 === corrections de bogues
+
+
+=== 27 octobre 2024
+
+
+
+==== Correctifs de bogues
 
 Nous avons mis à jour le service de copie et de synchronisation BlueXP ainsi que le courtier en données pour corriger quelques bugs. La nouvelle version du courtier de données est 1.0.56.
 
-== 16 septembre 2024 === corrections de bogues nous avons mis à jour le service de copie et de synchronisation BlueXP  et le courtier en données pour corriger quelques bugs. La nouvelle version du courtier de données est 1.0.55.
 
-== conseiller numérique
 
-== 12 décembre 2024
+=== 16 septembre 2024
 
-=== Upgrade Advisor vous pouvez maintenant afficher le firmware de stockage, le firmware SP/BMC et le paquet anti-ransomware autonome (ARP) recommandés pour une mise à jour. link:https://docs.netapp.com/us-en/active-iq/view-firmware-update-recommendations.html["Découvrez comment consulter les recommandations de mise à jour du firmware"].
 
-== 04 décembre 2024
 
-=== widget AutoSupport le widget AutoSupport a été ajouté à l'écran principal du tableau de bord pour avertir les clients des problèmes liés à l'état de AutoSupport.
+==== Correctifs de bogues
 
-== 23 septembre 2024
+Nous avons mis à jour le service de copie et de synchronisation BlueXP ainsi que le courtier en données pour corriger quelques bugs. La nouvelle version du courtier de données est 1.0.55.
 
-==== offres de support l'offre de service NetApp SupportEdge Basic inclut désormais toutes les fonctionnalités Digital Advisor disponibles dans SupportEdge Advisor et SupportEdge Expert, à l'exception de la topologie de pile complète (VMware), qui n'offre pas de visibilité sur le contrôle de l'ensemble de la pile VMware, même si elle est activée.
 
-== porte-monnaie numérique
 
-== 10 février 2025
+== Conseiller digital
+
+
+
+=== 12 décembre 2024
+
+
+
+==== Upgrade Advisor
+
+Vous pouvez désormais afficher le firmware de stockage, le firmware SP/BMC et le paquet anti-ransomware autonome (ARP) recommandés pour une mise à jour. link:https://docs.netapp.com/us-en/active-iq/view-firmware-update-recommendations.html["Découvrez comment consulter les recommandations de mise à jour du firmware"].
+
+
+
+=== 04 décembre 2024
+
+
+
+==== Widget AutoSupport
+
+Le widget AutoSupport a été ajouté à l'écran principal du tableau de bord pour alerter les clients des problèmes liés à l'état de AutoSupport.
+
+
+
+=== 23 septembre 2024
+
+
+
+==== Offres de support
+
+L'offre de service NetApp SupportEdge Basic inclut désormais toutes les fonctionnalités Digital Advisor disponibles dans SupportEdge Advisor et SupportEdge Expert, à l'exception de la topologie de pile complète (VMware), qui n'offre pas de visibilité sur la surveillance de l'ensemble de la pile VMware, même si elle est activée.
+
+
+
+== Portefeuille digital
+
+
+
+=== 10 février 2025
 
 Le portefeuille digital BlueXP  a été repensé pour être facile à utiliser. Il offre désormais une gestion supplémentaire des abonnements et des licences.
 
-=== Nouveau tableau de bord de présentation la page d'accueil du portefeuille digital dispose d'un tableau de bord mis à jour de vos licences NetApp et de vos abonnements Marketplace, avec la possibilité d'explorer en détail certains services, types de licences et actions requises.
 
-=== Configuration des abonnements aux informations d'identification le portefeuille numérique BlueXP  vous permet maintenant de configurer vos abonnements aux informations d'identification du fournisseur. En général, vous le faites lors de votre premier abonnement à un abonnement Marketplace ou à un contrat annuel. Auparavant, la modification des informations d'identification de l'abonnement ne pouvait être effectuée que sur la page informations d'identification.
 
-=== Association d'abonnements à des organisations vous pouvez maintenant mettre à jour l'organisation à laquelle un abonnement est associé directement à partir du portefeuille numérique.
+==== Nouveau tableau de bord vue d'ensemble
 
-=== gestion des licences Cloud Volume ONTAP vous gérez maintenant les licences Cloud Volumes ONTAP via la page d'accueil ou l'onglet *licences de service de données*. Utilisez l'onglet *abonnements Marketplace* pour afficher les informations relatives à votre abonnement.
+La page d'accueil du portefeuille digital comprend un tableau de bord mis à jour de vos licences NetApp et de vos abonnements Marketplace. Vous pouvez ainsi zoomer sur les services, les types de licences et les actions requises.
 
-== 5 mars 2024
 
-=== reprise sur incident BlueXP 
+
+==== Configuration des abonnements aux informations d'identification
+
+Le portefeuille numérique BlueXP  vous permet désormais de configurer vos abonnements aux informations d'identification du fournisseur. En général, vous le faites lors de votre premier abonnement à un abonnement Marketplace ou à un contrat annuel. Auparavant, la modification des informations d'identification de l'abonnement ne pouvait être effectuée que sur la page informations d'identification.
+
+
+
+==== Association d'abonnements à des organisations
+
+Vous pouvez maintenant mettre à jour l'organisation à laquelle un abonnement est associé directement depuis le portefeuille digital.
+
+
+
+==== Gestion des licences Cloud volumes ONTAP
+
+Vous gérez maintenant les licences Cloud Volumes ONTAP via la page d'accueil ou l'onglet *licences de service de données*. Utilisez l'onglet *abonnements Marketplace* pour afficher les informations relatives à votre abonnement.
+
+
+
+=== 5 mars 2024
+
+
+
+==== Reprise d'activité BlueXP
 
 Le portefeuille digital BlueXP vous permet désormais de gérer les licences pour la reprise d'activité BlueXP. Vous pouvez ajouter des licences, mettre à jour des licences et afficher des détails sur la capacité sous licence.
 
 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["Découvrez comment gérer les licences des services de données BlueXP"]
 
-== 30 juillet 2023
 
-=== améliorations apportées aux rapports d'utilisation
+
+=== 30 juillet 2023
+
+
+
+==== Améliorations apportées aux rapports d'utilisation
 
 Plusieurs améliorations apportées aux rapports d'utilisation de Cloud Volumes ONTAP sont désormais disponibles :
 
@@ -504,17 +800,35 @@ Plusieurs améliorations apportées aux rapports d'utilisation de Cloud Volumes 
 
 Pour plus d'informations sur les rapports d'utilisation, reportez-vous à la section https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html#download-usage-reports["Télécharger les rapports d'utilisation"].
 
-== reprise après incident
 
-== 30 octobre 2024 === Rapports vous pouvez maintenant générer et télécharger des rapports pour vous aider à analyser votre paysage. Des rapports prédéfinis résument les basculements et les basculements, affichent les détails de réplication sur tous les sites et affichent les détails des tâches des sept derniers jours.
+
+== Reprise après incident
+
+
+
+=== 30 octobre 2024
+
+
+
+==== Création de rapports
+
+Vous pouvez désormais générer et télécharger des rapports pour vous aider à analyser votre environnement. Des rapports prédéfinis résument les basculements et les basculements, affichent les détails de réplication sur tous les sites et affichent les détails des tâches des sept derniers jours.
 
 Reportez-vous à la https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/reports.html["Créez des rapports de reprise d'activité"].
 
-=== essai gratuit de 30 jours vous pouvez maintenant vous inscrire pour un essai gratuit de 30 jours de reprise d'activité BlueXP . Auparavant, les essais gratuits étaient de 90 jours.
+
+
+==== essai gratuit de 30 jours
+
+Vous pouvez désormais vous inscrire pour bénéficier d'un essai gratuit de 30 jours de reprise d'activité BlueXP . Auparavant, les essais gratuits étaient de 90 jours.
 
 Reportez-vous à la https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html["Configuration des licences"].
 
-==== Désactiver et activer les plans de réplication Une version précédente comprenait des mises à jour de la structure de planification des tests de basculement, qui était nécessaire pour prendre en charge les plannings quotidiens et hebdomadaires. Cette mise à jour exige que vous désactiviez et réactiviez tous les plans de réplication existants afin de pouvoir utiliser les nouveaux programmes de tests de basculement quotidiens et hebdomadaires. Il s'agit d'une exigence ponctuelle.
+
+
+==== Désactivez et activez les plans de réplication
+
+Une version précédente incluait des mises à jour de la structure de planification des tests de basculement, qui devait prendre en charge les planifications quotidiennes et hebdomadaires. Cette mise à jour exige que vous désactiviez et réactiviez tous les plans de réplication existants afin de pouvoir utiliser les nouveaux programmes de tests de basculement quotidiens et hebdomadaires. Il s'agit d'une exigence ponctuelle.
 
 Voici comment :
 
@@ -524,37 +838,71 @@ Voici comment :
 . Après quelques minutes, sélectionnez *Activer*.
 
 
-=== mappage de dossiers lorsque vous créez un plan de réplication et mappez des ressources de calcul, vous pouvez désormais mapper des dossiers de sorte que les machines virtuelles soient restaurées dans un dossier que vous spécifiez pour le centre de données, le cluster et l'hôte.
+
+
+==== Mappage de dossiers
+
+Lorsque vous créez un plan de réplication et que vous mappez des ressources de calcul, vous pouvez désormais mapper des dossiers de sorte que les machines virtuelles soient restaurées dans un dossier que vous spécifiez pour le centre de données, le cluster et l'hôte.
 
 Pour plus de détails, reportez-vous à https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Créer un plan de réplication"] .
 
-=== informations sur les machines virtuelles disponibles pour le basculement, le retour arrière et le basculement de test en cas de défaillance et si vous démarrez un basculement, effectuez un retour arrière ou testez le basculement, vous pouvez désormais afficher les détails des machines virtuelles et identifier celles qui n'ont pas redémarré.
+
+
+==== Détails sur les machines virtuelles disponibles pour le basculement, la restauration et le basculement de test
+
+Lorsqu'une panne se produit et que vous démarrez un basculement, effectuez un retour arrière ou testez le basculement, vous pouvez désormais afficher les détails des machines virtuelles et identifier celles qui n'ont pas redémarré.
 
 Reportez-vous à la https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html["Basculement des applications vers un site distant"].
 
-=== délai de démarrage de la machine virtuelle avec séquence de démarrage ordonnée lorsque vous créez un plan de réplication, vous pouvez maintenant définir un délai de démarrage pour chaque machine virtuelle du plan. Cela vous permet de définir une séquence pour que les machines virtuelles commencent à s'assurer que toutes vos machines virtuelles prioritaires sont en cours d'exécution avant que les machines virtuelles prioritaires suivantes ne soient démarrées.
+
+
+==== Délai de démarrage de la machine virtuelle avec séquence de démarrage ordonnée
+
+Lorsque vous créez un plan de réplication, vous pouvez maintenant définir un délai de démarrage pour chaque machine virtuelle du plan. Cela vous permet de définir une séquence pour que les machines virtuelles commencent à s'assurer que toutes vos machines virtuelles prioritaires sont en cours d'exécution avant que les machines virtuelles prioritaires suivantes ne soient démarrées.
 
 Pour plus de détails, reportez-vous à https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Créer un plan de réplication"] .
 
-=== informations sur le système d'exploitation de la machine virtuelle lorsque vous créez un plan de réplication, vous pouvez maintenant voir le système d'exploitation de chaque machine virtuelle du plan. Ceci est utile pour décider comment regrouper des machines virtuelles dans un groupe de ressources.
+
+
+==== Informations sur le système d'exploitation des machines virtuelles
+
+Lorsque vous créez un plan de réplication, vous pouvez maintenant voir le système d'exploitation pour chaque machine virtuelle du plan. Ceci est utile pour décider comment regrouper des machines virtuelles dans un groupe de ressources.
 
 Pour plus de détails, reportez-vous à https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Créer un plan de réplication"] .
 
-=== alias de nom de machine virtuelle lorsque vous créez un plan de réplication, vous pouvez maintenant ajouter un préfixe et un suffixe aux noms de machine virtuelle sur le SIT de reprise après sinistre. Cela vous permet d'utiliser un nom plus descriptif pour les VM du plan.
+
+
+==== Alias de nom de VM
+
+Lorsque vous créez un plan de réplication, vous pouvez à présent ajouter un préfixe et un suffixe aux noms des machines virtuelles sur le SIT de reprise après incident. Cela vous permet d'utiliser un nom plus descriptif pour les VM du plan.
 
 Pour plus de détails, reportez-vous à https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Créer un plan de réplication"] .
 
-=== nettoyer les anciens snapshots vous pouvez supprimer tous les snapshots qui ne sont plus nécessaires au-delà du nombre de rétention spécifié. Les snapshots peuvent s'accumuler au fil du temps lorsque vous réduisez le nombre de conservation des snapshots et vous pouvez désormais les supprimer pour libérer de l'espace. Vous pouvez le faire à tout moment à la demande ou lorsque vous supprimez un plan de réplication.
+
+
+==== Nettoyez les anciens snapshots
+
+Vous pouvez supprimer tous les snapshots qui ne sont plus nécessaires au-delà du nombre de conservation spécifié. Les snapshots peuvent s'accumuler au fil du temps lorsque vous réduisez le nombre de conservation des snapshots et vous pouvez désormais les supprimer pour libérer de l'espace. Vous pouvez le faire à tout moment à la demande ou lorsque vous supprimez un plan de réplication.
 
 Pour plus de détails, reportez-vous à https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html["Gérez les sites, les groupes de ressources, les plans de réplication, les datastores et les informations sur les machines virtuelles"] .
 
-=== réconcilier instantanés vous pouvez maintenant réconcilier les instantanés qui sont désynchronisés entre la source et la cible. Cela peut se produire si des snapshots sont supprimés sur une cible en dehors de la reprise sur incident BlueXP . Le service supprime automatiquement le snapshot sur la source toutes les 24 heures. Cependant, vous pouvez effectuer cette opération à la demande. Cette fonction vous permet de vous assurer que les snapshots sont cohérents sur tous les sites.
+
+
+==== Réconcilier les instantanés
+
+Vous pouvez désormais réconcilier les instantanés qui sont désynchronisés entre la source et la cible. Cela peut se produire si des snapshots sont supprimés sur une cible en dehors de la reprise sur incident BlueXP . Le service supprime automatiquement le snapshot sur la source toutes les 24 heures. Cependant, vous pouvez effectuer cette opération à la demande. Cette fonction vous permet de vous assurer que les snapshots sont cohérents sur tous les sites.
 
 Pour plus de détails, reportez-vous à https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html["Gérer les plans de réplication"] .
 
-== 20 septembre 2024
 
-=== prise en charge des datastores VMware VMFS sur site et sur site cette version inclut la prise en charge des machines virtuelles montées sur des datastores VMware vSphere Virtual machine File System (VMFS) pour iSCSI et FC protégées sur le stockage sur site. Auparavant, le service fournissait un _aperçu de la technologie_ prenant en charge les datastores VMFS pour iSCSI et FC.
+
+=== 20 septembre 2024
+
+
+
+==== Prise en charge des datastores VMware VMFS sur site et sur site
+
+Cette version inclut la prise en charge des machines virtuelles montées sur des datastores VMFS (Virtual machine File System) VMware vSphere pour iSCSI et FC protégées sur le stockage sur site. Auparavant, le service fournissait un _aperçu de la technologie_ prenant en charge les datastores VMFS pour iSCSI et FC.
 
 Voici quelques considérations supplémentaires concernant à la fois les protocoles iSCSI et FC :
 
@@ -563,36 +911,68 @@ Voici quelques considérations supplémentaires concernant à la fois les protoc
 * Pour tout plan de réplication, le volume ONTAP de destination doit utiliser les mêmes protocoles que le volume ONTAP source hébergeant les VM protégées. Par exemple, si la source utilise un protocole FC, la destination doit également utiliser FC.
 
 
-== 2 août 2024
 
-=== prise en charge des datastores VMware VMFS sur site vers sur site pour FC cette version inclut un _aperçu technologique_ de la prise en charge des machines virtuelles montées sur des datastores VMware vSphere Virtual machine File System (VMFS) pour FC protégées sur un stockage sur site. Auparavant, le service offrait un aperçu de la technologie prenant en charge les datastores VMFS pour iSCSI.
+
+=== 2 août 2024
+
+
+
+==== Prise en charge des datastores VMware VMFS pour FC sur site vers sur site
+
+Cette version inclut un _aperçu de la technologie_ de la prise en charge des machines virtuelles montées sur des datastores VMFS (Virtual machine File System) VMware vSphere pour la protection FC sur un stockage sur site. Auparavant, le service offrait un aperçu de la technologie prenant en charge les datastores VMFS pour iSCSI.
 
 
 NOTE: NetApp ne vous facture pas pour la capacité de workloads prévisualisée.
 
-=== Annulation du travail avec cette version, vous pouvez maintenant annuler un travail dans l'interface utilisateur de Job Monitor.
+
+
+==== Annulation du travail
+
+Avec cette version, vous pouvez maintenant annuler un travail dans l'interface utilisateur de Job Monitor.
 
 Reportez-vous à la https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/monitor-jobs.html["Surveiller les tâches"].
 
-== systèmes E-Series
 
-== 18 septembre 2022
 
-=== prise en charge des E-Series vous pouvez désormais découvrir vos systèmes E-Series directement dans BlueXP . La découverte des systèmes E-Series vous offre une vue complète des données dans l'ensemble de votre multicloud hybride.
+== Systèmes E-Series
 
-== efficacité économique
 
-== 15 mai 2024
 
-=== fonctions désactivées certaines fonctions d'efficacité économique BlueXP  ont été temporairement désactivées :
+=== 18 septembre 2022
+
+
+
+==== Prise en charge des baies E-Series
+
+Vous pouvez désormais découvrir vos systèmes E-Series directement à partir de BlueXP. La découverte des systèmes E-Series vous offre une vue complète des données dans l'ensemble de votre multicloud hybride.
+
+
+
+== Efficacité économique
+
+
+
+=== 15 mai 2024
+
+
+
+==== Fonctionnalités désactivées
+
+Certaines fonctionnalités d'efficacité économique de BlueXP  ont été temporairement désactivées :
 
 * Mise à jour technologique
 * Ajoutez de la capacité
 
 
-== 14 mars 2024
 
-=== Options de mise à jour technologique si des ressources sont en place et si vous souhaitez déterminer si une technologie doit être mise à jour, vous pouvez utiliser les options de mise à jour technologique d'efficacité économique BlueXP . Vous pouvez soit examiner une courte évaluation de vos workloads actuels et obtenir des recommandations, soit envoyer des journaux AutoSupport à NetApp au cours des 90 derniers jours, le service peut maintenant fournir une simulation des workloads pour voir les performances de vos workloads sur du nouveau matériel.
+
+=== 14 mars 2024
+
+
+
+==== Options de mise à jour technologique
+
+Si vous disposez de ressources existantes et souhaitez déterminer si une technologie doit être mise à jour, vous pouvez utiliser les options de mise à jour technologique d'efficacité économique BlueXP. Vous pouvez soit examiner une courte évaluation de vos workloads actuels et obtenir des recommandations, soit envoyer des journaux AutoSupport à NetApp au cours des 90 derniers jours, le service peut maintenant fournir une simulation des workloads pour voir les performances de vos workloads sur du nouveau matériel.
 
 Vous pouvez également ajouter une charge de travail et exclure des charges de travail existantes de la simulation.
 
@@ -602,33 +982,59 @@ La fonction fait désormais partie de l'option Tech Refresh dans le menu de navi
 
 En savoir plus sur https://docs.netapp.com/us-en/bluexp-economic-efficiency/use/tech-refresh.html["Évaluer une mise à jour technologique"] le .
 
-== 08 novembre 2023
 
-=== mise à jour technologique cette version de BlueXP  Economic Efficiency comprend une nouvelle option pour évaluer vos ressources et déterminer si une mise à jour technologique est recommandée. Le service inclut une nouvelle option de mise à jour technologique dans le menu de navigation de gauche, de nouvelles pages sur lesquelles vous pouvez évaluer vos charges de travail et ressources actuelles, ainsi qu'un rapport qui vous fournit des recommandations.
 
-== mise en cache en périphérie
+=== 08 novembre 2023
+
+
+
+==== Mise à jour technologique
+
+Cette version de BlueXP Economic Efficiency comprend une nouvelle option qui permet d'évaluer vos ressources et d'identifier si une mise à jour technologique est recommandée. Le service inclut une nouvelle option de mise à jour technologique dans le menu de navigation de gauche, de nouvelles pages sur lesquelles vous pouvez évaluer vos charges de travail et ressources actuelles, ainsi qu'un rapport qui vous fournit des recommandations.
+
+
+
+== La mise en cache en périphérie
 
 Le service de mise en cache BlueXP  Edge a été supprimé le 7 août 2024.
 
-== stockage Google Cloud
 
-== 10 juillet 2023
 
-=== possibilité d'ajouter de nouveaux compartiments et de gérer des compartiments existants depuis BlueXP  vous avez eu la possibilité d'afficher les compartiments de stockage Google Cloud sur le canevas BlueXP  pendant un certain temps. Vous pouvez désormais ajouter de nouveaux compartiments et modifier les propriétés des compartiments existants directement à partir de BlueXP . https://docs.netapp.com/us-en/bluexp-google-cloud-storage/task-add-gcp-bucket.html["Découvrez comment ajouter de nouveaux compartiments de stockage Google Cloud"].
+== Google Cloud Storage
+
+
+
+=== 10 juillet 2023
+
+
+
+==== Possibilité d'ajouter de nouveaux compartiments et de gérer les compartiments existants à partir de BlueXP
+
+Vous avez pu afficher les compartiments Google Cloud Storage sur le canevas BlueXP pendant un certain temps. Vous pouvez désormais ajouter de nouveaux compartiments et modifier les propriétés des compartiments existants directement à partir de BlueXP . https://docs.netapp.com/us-en/bluexp-google-cloud-storage/task-add-gcp-bucket.html["Découvrez comment ajouter de nouveaux compartiments de stockage Google Cloud"].
+
+
 
 == Kubernetes
 
 La prise en charge de la détection et de la gestion des clusters Kubernetes a été supprimée le 7 août 2024.
 
+
+
 == Rapports de migration
 
 Le service de rapports de migration BlueXP  a été supprimé le 7 août 2024.
 
-== clusters ONTAP sur site
 
-== 26 novembre 2024
 
-=== prise en charge des systèmes ASA r2 en mode privé
+== Clusters ONTAP sur site
+
+
+
+=== 26 novembre 2024
+
+
+
+==== Prise en charge des systèmes ASA r2 en mode privé
 
 Vous pouvez désormais découvrir les systèmes NetApp ASA r2 lorsque vous utilisez BlueXP  en mode privé. Cette prise en charge est disponible à partir de la version 3.9.46 du mode privé de BlueXP .
 
@@ -636,9 +1042,13 @@ Vous pouvez désormais découvrir les systèmes NetApp ASA r2 lorsque vous utili
 * https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Découvrez les modes de déploiement BlueXP"^]
 
 
-== 7 octobre 2024
 
-=== prise en charge des systèmes ASA r2
+
+=== 7 octobre 2024
+
+
+
+==== Prise en charge des systèmes ASA r2
 
 Vous pouvez désormais découvrir les systèmes NetApp ASA r2 dans BlueXP  lorsque vous utilisez BlueXP  en mode standard ou en mode restreint. Une fois que vous avez découvert un système NetApp ASA r2 et ouvert votre environnement de travail, vous accédez directement à System Manager.
 
@@ -650,25 +1060,45 @@ La découverte des systèmes ASA r2 n'est pas prise en charge lorsque vous utili
 * https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Découvrez les modes de déploiement BlueXP"^]
 
 
-== 22 avril 2024
 
-=== modèles de volume non pris en charge vous ne pouvez plus créer de volume à partir d'un modèle. Cette action a été associée au service de correction BlueXP, qui n'est plus disponible.
 
-== résilience opérationnelle
+=== 22 avril 2024
 
-== 02 avril 2023
 
-=== service de résilience opérationnelle BlueXP  en utilisant le nouveau service de résilience opérationnelle BlueXP  et ses suggestions automatisées de résolution des problèmes opérationnels IT, vous pouvez implémenter des solutions suggérées avant une panne ou une défaillance.
+
+==== Les modèles de volume ne sont plus pris en charge
+
+Vous ne pouvez plus créer de volume à partir d'un modèle. Cette action a été associée au service de correction BlueXP, qui n'est plus disponible.
+
+
+
+== Résilience opérationnelle
+
+
+
+=== 02 avril 2023
+
+
+
+==== Service de résilience opérationnelle BlueXP
+
+Grâce au nouveau service de résilience opérationnelle BlueXP et à ses suggestions automatisées de résolution des problèmes opérationnels IT, vous pouvez implémenter des solutions suggérées avant une panne ou une défaillance.
 
 La résilience opérationnelle est un service qui vous aide à analyser les alertes et les événements afin de préserver l'intégrité, la disponibilité et les performances des services et des solutions.
 
 link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/intro.html["En savoir plus sur la résilience opérationnelle de BlueXP"].
 
-== protection contre les ransomware
 
-== 16 décembre 2024
 
-=== détecter le comportement anormal des utilisateurs à l'aide de Data Infrastructure Insights Storage Workload Security
+== Protection par ransomware
+
+
+
+=== 16 décembre 2024
+
+
+
+==== Détectez les comportements anormaux des utilisateurs avec Data Infrastructure Insights Storage Workload Security
 
 Avec cette version, vous pouvez utiliser Data Infrastructure Insights Storage Workload Security pour détecter les comportements anormaux des utilisateurs dans vos workloads de stockage. Cette fonctionnalité vous aide à identifier les menaces de sécurité potentielles et à bloquer les utilisateurs potentiellement malveillants pour protéger vos données.
 
@@ -678,7 +1108,9 @@ Avant d'utiliser Data Infrastructure Insights Storage Workload Security pour dé
 
 Reportez-vous à la https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Configurez les paramètres de protection contre les ransomwares BlueXP"].
 
-=== Choisissez les workloads à découvrir et à protéger
+
+
+==== Sélectionnez les workloads à découvrir et à protéger
 
 Avec cette version, vous pouvez maintenant effectuer les opérations suivantes :
 
@@ -689,7 +1121,15 @@ Avec cette version, vous pouvez maintenant effectuer les opérations suivantes :
 
 Reportez-vous à la https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Découvrir les workloads"].
 
-== 7 novembre 2024 ==== Activer la classification des données et l'analyse des informations à caractère personnel (PII) avec cette version, vous pouvez activer la classification BlueXP , un composant clé de la gamme BlueXP , pour analyser et classer les données de vos workloads de partage de fichiers. La classification des données vous aide à déterminer si vos données incluent des informations personnelles ou privées, ce qui peut augmenter les risques de sécurité. Ce processus a également un impact sur l'importance des workloads et vous aide à vous assurer que vous protégez ces mêmes workloads avec le niveau de protection approprié.
+
+
+=== 7 novembre 2024
+
+
+
+==== Permettre la classification et l'analyse des données pour identifier les informations personnelles
+
+Avec cette version, vous pouvez activer la classification BlueXP , un composant clé de la gamme BlueXP , pour analyser et classer les données dans les workloads de partage de fichiers. La classification des données vous aide à déterminer si vos données incluent des informations personnelles ou privées, ce qui peut augmenter les risques de sécurité. Ce processus a également un impact sur l'importance des workloads et vous aide à vous assurer que vous protégez ces mêmes workloads avec le niveau de protection approprié.
 
 L'analyse des données de RP dans la protection contre les ransomwares BlueXP  est généralement disponible pour les clients qui ont déployé la classification BlueXP . La classification BlueXP  est disponible gratuitement en tant que composant de la plateforme BlueXP  et peut être déployée sur site ou dans le cloud du client.
 
@@ -699,35 +1139,71 @@ Pour lancer la numérisation, sur la page protection, cliquez sur *identifier l'
 
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classify.html["Analysez les données sensibles à caractère personnel pour les classer BlueXP"].
 
-=== intégration SIEM à Microsoft Sentinel vous pouvez désormais envoyer des données à votre système de gestion des événements et de sécurité (SIEM) pour l'analyse et la détection des menaces à l'aide de Microsoft Sentinel. Auparavant, vous pouviez sélectionner AWS Security Hub ou Splunk Cloud en tant que système SIEM.
+
+
+==== Intégration de SIEM à Microsoft Sentinel
+
+Vous pouvez désormais envoyer des données à votre système de gestion de la sécurité et des événements (SIEM) pour l'analyse et la détection des menaces à l'aide de Microsoft Sentinel. Auparavant, vous pouviez sélectionner AWS Security Hub ou Splunk Cloud en tant que système SIEM.
 
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["En savoir plus sur la configuration des paramètres de protection contre les ransomwares de BlueXP"].
 
-=== essai gratuit 30 jours avec cette version, les nouveaux déploiements de la protection contre les ransomware BlueXP  ont maintenant 30 jours pour un essai gratuit. Auparavant, la protection contre les ransomwares de BlueXP  nous a permis de bénéficier de 90 jours d'essai gratuit. Si vous êtes déjà dans l'essai gratuit de 90 jours, cette offre se poursuit pendant les 90 jours.
 
-=== Restauration du workload applicatif au niveau du fichier pour Podman avant de restaurer un workload applicatif au niveau du fichier, vous pouvez désormais afficher la liste des fichiers susceptibles d'avoir été affectés par une attaque et identifier ceux que vous souhaitez restaurer. Auparavant, si les connecteurs BlueXP  d'une organisation (auparavant un compte) utilisaient Podman, cette fonction était désactivée. Il est maintenant activé pour Podman. Vous pouvez laisser la protection contre les ransomwares BlueXP choisir les fichiers à restaurer, vous pouvez télécharger un fichier CSV qui répertorie tous les fichiers impactés par une alerte ou vous pouvez identifier manuellement les fichiers à restaurer.
+
+==== Essai gratuit de 30 jours
+
+Avec cette version, les nouveaux déploiements de la protection contre les ransomware BlueXP  disposent désormais de 30 jours pour un essai gratuit. Auparavant, la protection contre les ransomwares de BlueXP  nous a permis de bénéficier de 90 jours d'essai gratuit. Si vous êtes déjà dans l'essai gratuit de 90 jours, cette offre se poursuit pendant les 90 jours.
+
+
+
+==== Restaurez la charge de travail applicative au niveau des fichiers pour Podman
+
+Avant de restaurer une charge applicative au niveau des fichiers, vous pouvez afficher la liste des fichiers susceptibles d'avoir été affectés par une attaque et identifier ceux que vous souhaitez restaurer. Auparavant, si les connecteurs BlueXP  d'une organisation (auparavant un compte) utilisaient Podman, cette fonction était désactivée. Il est maintenant activé pour Podman. Vous pouvez laisser la protection contre les ransomwares BlueXP choisir les fichiers à restaurer, vous pouvez télécharger un fichier CSV qui répertorie tous les fichiers impactés par une alerte ou vous pouvez identifier manuellement les fichiers à restaurer.
 
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["En savoir plus sur la restauration suite à une attaque par ransomware"].
 
-== 30 septembre 2024 === Groupe personnalisé de workloads de partage de fichiers avec cette version, vous pouvez désormais regrouper les partages de fichiers en groupes afin de protéger plus facilement votre patrimoine de données. Le service peut protéger simultanément tous les volumes d'un groupe. Auparavant, chaque volume devait être protégé séparément.
+
+
+=== 30 septembre 2024
+
+
+
+==== Regroupement personnalisé des workloads de partage de fichiers
+
+Avec cette version, vous pouvez désormais regrouper les partages de fichiers en groupes afin de protéger plus facilement l'intégrité de vos données. Le service peut protéger simultanément tous les volumes d'un groupe. Auparavant, chaque volume devait être protégé séparément.
 
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["En savoir plus sur le regroupement des workloads de partage de fichiers dans des stratégies de protection contre les ransomwares"].
 
-== correction
+
+
+== Résolution
 
 Le service de correction BlueXP a été supprimé le 22 avril 2024.
 
-== réplication
 
-== 18 septembre 2022
 
-== FSX for ONTAP vers Cloud Volumes ONTAP vous pouvez maintenant répliquer des données à partir d'un système de fichiers Amazon FSX for ONTAP vers Cloud Volumes ONTAP.
+== La réplication
+
+
+
+=== 18 septembre 2022
+
+
+
+==== FSX pour ONTAP vers Cloud Volumes ONTAP
+
+Vous pouvez désormais répliquer des données d'un système de fichiers Amazon FSX pour ONTAP vers Cloud Volumes ONTAP.
 
 https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["Découvrez comment configurer la réplication des données"].
 
-== 31 juillet 2022
 
-=== FSX for ONTAP en tant que source de données vous pouvez maintenant répliquer des données à partir d'un système de fichiers Amazon FSX for ONTAP vers les destinations suivantes :
+
+=== 31 juillet 2022
+
+
+
+==== FSX pour ONTAP en tant que source de données
+
+Vous pouvez désormais répliquer des données d'un système de fichiers Amazon FSX pour ONTAP vers les destinations suivantes :
 
 * Amazon FSX pour ONTAP
 * Cluster ONTAP sur site
@@ -735,90 +1211,184 @@ https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["Dé
 
 https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["Découvrez comment configurer la réplication des données"].
 
-== 2 septembre 2021
 
-=== prise en charge d'Amazon FSX pour ONTAP vous pouvez maintenant répliquer les données à partir d'un système Cloud Volumes ONTAP ou d'un cluster ONTAP sur site vers un système de fichiers Amazon FSX pour ONTAP.
+
+=== 2 septembre 2021
+
+
+
+==== Prise en charge d'Amazon FSX pour ONTAP
+
+Vous pouvez désormais répliquer des données à partir d'un système Cloud Volumes ONTAP ou d'un cluster ONTAP sur site vers un système de fichiers Amazon FSX pour ONTAP.
 
 https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["Découvrez comment configurer la réplication des données"].
 
-== mises à jour logicielles
 
-== 07 août 2024
 
-=== mise à jour ONTAP le service de mise à jour du logiciel BlueXP  offre aux utilisateurs une expérience de mise à jour transparente en atténuant les risques et en s'assurant que les clients peuvent exploiter pleinement les fonctionnalités ONTAP.
+== Mises à jour de logiciels
+
+
+
+=== 07 août 2024
+
+
+
+==== Mise à jour ONTAP
+
+Le service de mises à jour logicielles BlueXP  offre aux utilisateurs une expérience de mise à jour fluide en limitant les risques et en leur permettant d'exploiter pleinement les fonctionnalités ONTAP.
 
 En savoir plus sur link:https://docs.netapp.com/us-en/bluexp-software-updates/get-started/software-updates.html["Mises à jour du logiciel BlueXP"].
 
+
+
 == StorageGRID
 
-== 7 août 2024
 
-=== Nouvelle vue avancée depuis StorageGRID 11.8, vous pouvez utiliser l'interface familière du Gestionnaire de grille pour gérer votre système StorageGRID depuis BlueXP .
+
+=== 7 août 2024
+
+
+
+==== Nouvelle vue avancée
+
+À partir de StorageGRID 11.8, vous pouvez utiliser l'interface familière du Gestionnaire de grille pour gérer votre système StorageGRID à partir de BlueXP .
 
 https://docs.netapp.com/us-en/bluexp-storagegrid/task-administer-storagegrid.html["Découvrez comment gérer StorageGRID à l'aide de la vue avancée"].
 
-=== capacité de réviser et d'approuver le certificat de l'interface de gestion StorageGRID vous avez désormais la possibilité de réviser et d'approuver un certificat de l'interface de gestion StorageGRID lors de la découverte du système StorageGRID à partir de BlueXP . Vous pouvez également vérifier et approuver le dernier certificat d'interface de gestion StorageGRID sur une grille découverte.
+
+
+==== Possibilité d'examiner et d'approuver le certificat d'interface de gestion StorageGRID
+
+Vous avez désormais la possibilité d'examiner et d'approuver un certificat d'interface de gestion StorageGRID lors de la découverte du système StorageGRID à partir de BlueXP . Vous pouvez également vérifier et approuver le dernier certificat d'interface de gestion StorageGRID sur une grille découverte.
 
 https://docs.netapp.com/us-en/bluexp-storagegrid/task-discover-storagegrid.html["Découvrez comment vérifier et approuver le certificat du serveur lors de la découverte du système."]
 
-== 18 septembre 2022
 
-=== prise en charge de StorageGRID vous pouvez désormais découvrir vos systèmes StorageGRID directement à partir de BlueXP . La découverte de StorageGRID vous offre une vue complète sur les données dans l'ensemble de votre environnement multicloud hybride.
+
+=== 18 septembre 2022
+
+
+
+==== Prise en charge de StorageGRID
+
+Vous pouvez désormais découvrir vos systèmes StorageGRID directement depuis BlueXP. La découverte de StorageGRID vous offre une vue complète sur les données dans l'ensemble de votre environnement multicloud hybride.
+
+
 
 == Tiering
 
-== 9 août 2023
 
-=== utilisez un préfixe personnalisé pour le nom du compartiment dans le passé, vous aviez besoin d'utiliser le préfixe par défaut « fabric-pool » lors de la définition du nom du compartiment, par exemple, _fabric-pool-bucket1_. Vous pouvez désormais utiliser un préfixe personnalisé pour nommer votre compartiment. Cette fonctionnalité n'est disponible que lors du Tiering des données vers Amazon S3. https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#prepare-your-aws-environment["En savoir plus >>"].
 
-=== recherche d'un cluster sur tous les connecteurs BlueXP  si vous utilisez plusieurs connecteurs pour gérer tous les systèmes de stockage de votre environnement, certains clusters sur lesquels vous souhaitez implémenter la hiérarchisation peuvent se trouver dans des connecteurs différents. Si vous n'êtes pas sûr de savoir quel connecteur gère un certain cluster, vous pouvez effectuer une recherche sur tous les connecteurs à l'aide de la hiérarchisation BlueXP . https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#search-for-a-cluster-across-all-bluexp-connectors["En savoir plus >>"].
+=== 9 août 2023
 
-== 4 juillet 2023
 
-=== Réglage de la bande passante pour le transfert des données inactives lorsque vous activez la hiérarchisation BlueXP , ONTAP peut utiliser une quantité illimitée de bande passante réseau pour transférer les données inactives des volumes du cluster vers le stockage objet. Si vous remarquez que le trafic de hiérarchisation affecte les charges de travail normales des utilisateurs, vous pouvez limiter la quantité de bande passante qui peut être utilisée pendant le transfert. https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#changing-the-network-bandwidth-available-to-upload-inactive-data-to-object-storage["En savoir plus >>"].
 
-=== événement de Tiering affiché dans le Centre de notification l'événement de Tiering « transférer des données supplémentaires d'un cluster <name> vers un stockage objet pour améliorer votre efficacité du stockage » s'affiche désormais sous forme de notification lorsqu'un cluster hiérarchise moins de 20 % de ses données inactives, y compris les clusters qui ne hiérarchise aucune donnée.
+==== Utilisez un préfixe personnalisé pour le nom du compartiment
+
+Auparavant, vous aviez besoin d'utiliser le préfixe par défaut « fabric-pool » lors de la définition du nom du compartiment, par exemple, _fabric-pool-bucket1_. Vous pouvez désormais utiliser un préfixe personnalisé pour nommer votre compartiment. Cette fonctionnalité n'est disponible que lors du Tiering des données vers Amazon S3. https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#prepare-your-aws-environment["En savoir plus >>"].
+
+
+
+==== Recherchez un cluster sur tous les connecteurs BlueXP
+
+Si vous utilisez plusieurs connecteurs pour gérer tous les systèmes de stockage de votre environnement, certains clusters sur lesquels vous souhaitez implémenter la hiérarchisation peuvent se trouver dans différents connecteurs. Si vous n'êtes pas sûr de quel connecteur gère un certain cluster, vous pouvez rechercher sur tous les connecteurs à l'aide du Tiering BlueXP. https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#search-for-a-cluster-across-all-bluexp-connectors["En savoir plus >>"].
+
+
+
+=== 4 juillet 2023
+
+
+
+==== Réglez la bande passante pour transférer les données inactives
+
+Lorsque vous activez le Tiering BlueXP, ONTAP peut utiliser une quantité illimitée de bande passante réseau pour transférer les données inactives des volumes du cluster vers le stockage objet. Si vous remarquez que le trafic de hiérarchisation affecte les charges de travail normales des utilisateurs, vous pouvez limiter la quantité de bande passante qui peut être utilisée pendant le transfert. https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#changing-the-network-bandwidth-available-to-upload-inactive-data-to-object-storage["En savoir plus >>"].
+
+
+
+==== Événement de hiérarchisation affiché dans le Centre de notification
+
+La fonctionnalité de Tiering « transférer des données supplémentaires d'une <name> de cluster vers un stockage objet pour améliorer votre efficacité du stockage » s'affiche désormais sous forme de notification lorsqu'un cluster effectue le Tiering de moins de 20 % de ses données inactives, y compris les clusters qui ne hiérarchise aucune donnée.
 
 Cette notification est une « recommandation » pour vous aider à rendre vos systèmes plus efficaces et à réduire vos coûts de stockage. Il fournit un lien vers le https://bluexp.netapp.com/cloud-tiering-service-tco["Calculateur de coût total de possession et d'économies du Tiering BlueXP"^] pour vous aider à calculer vos économies.
 
-== 3 avril 2023
 
-=== onglet licences supprimé l'onglet licences a été supprimé de l'interface de hiérarchisation BlueXP . Toutes les licences pour les abonnements PAYGO sont maintenant accessibles depuis le tableau de bord du Tiering BlueXP sur site. Il existe également un lien vers le portefeuille digital BlueXP depuis cette page pour afficher et gérer n'importe quel modèle de Tiering BlueXP BYOL (Bring Your Own License).
 
-=== les onglets Tiering ont été renommés et mis à jour l'onglet « clusters » a été renommé « clusters », et l'onglet « Présentation sur site » a été renommé « Tableau de bord sur site ». Ces pages ont ajouté des informations qui vous aideront à déterminer si vous pouvez optimiser votre espace de stockage avec une configuration de hiérarchisation supplémentaire.
+=== 3 avril 2023
 
-== mise en cache du volume
 
-== 04 juin 2023
 
-=== cache de volume la mise en cache de volume, une fonctionnalité du logiciel ONTAP 9, est une fonctionnalité de mise en cache à distance qui simplifie la distribution des fichiers et réduit la latence WAN en rapprochant les ressources de calcul et les utilisateurs, et en réduisant les coûts de bande passante WAN. La mise en cache du volume fournit un volume inscriptible persistant à un emplacement distant. Vous pouvez utiliser la mise en cache du volume BlueXP pour accélérer l'accès aux données ou pour décharger le trafic des volumes fortement sollicités. Les volumes de cache sont parfaitement adaptés aux charges de travail exigeant une capacité de lecture maximale, en particulier lorsque les clients doivent accéder aux mêmes données de manière répétée.
+==== L'onglet licences a été supprimé
+
+L'onglet Licensing a été supprimé de l'interface de Tiering BlueXP. Toutes les licences pour les abonnements PAYGO sont maintenant accessibles depuis le tableau de bord du Tiering BlueXP sur site. Il existe également un lien vers le portefeuille digital BlueXP depuis cette page pour afficher et gérer n'importe quel modèle de Tiering BlueXP BYOL (Bring Your Own License).
+
+
+
+==== Les onglets de hiérarchisation ont été renommés et mis à jour
+
+L'onglet « clusters » a été renommé « clusters » et l'onglet « Présentation sur site » a été renommé « Tableau de bord sur site ». Ces pages ont ajouté des informations qui vous aideront à déterminer si vous pouvez optimiser votre espace de stockage avec une configuration de hiérarchisation supplémentaire.
+
+
+
+== Mise en cache du volume
+
+
+
+=== 04 juin 2023
+
+
+
+==== Mise en cache du volume
+
+La mise en cache des volumes, fonctionnalité du logiciel ONTAP 9, est une fonctionnalité de mise en cache à distance qui simplifie la distribution des fichiers et réduit la latence des réseaux WAN en rapprochant vos utilisateurs et vos ressources de calcul, tout en réduisant les coûts de la bande passante WAN. La mise en cache du volume fournit un volume inscriptible persistant à un emplacement distant. Vous pouvez utiliser la mise en cache du volume BlueXP pour accélérer l'accès aux données ou pour décharger le trafic des volumes fortement sollicités. Les volumes de cache sont parfaitement adaptés aux charges de travail exigeant une capacité de lecture maximale, en particulier lorsque les clients doivent accéder aux mêmes données de manière répétée.
 
 La mise en cache des volumes BlueXP vous offre des fonctionnalités de mise en cache pour le cloud, en particulier pour Amazon FSX pour NetApp ONTAP, Cloud Volumes ONTAP et pour vos environnements de travail sur site.
 
 link:https://docs.netapp.com/us-en/bluexp-volume-caching/get-started/cache-intro.html["En savoir plus sur la mise en cache de volumes BlueXP"].
 
-== usine de workloads
 
-== 02 février 2025
 
-=== CloudShell disponible dans la console d'usine de la charge de travail BlueXP  CloudShell est disponible à partir de n'importe quel emplacement de la console d'usine de la charge de travail BlueXP . CloudShell vous permet d'utiliser les informations d'identification AWS et ONTAP que vous avez fournies dans votre compte BlueXP  et d'exécuter les commandes de la CLI AWS ou les commandes de la CLI ONTAP dans un environnement de type shell.
+== Usine de charge de travail
+
+
+
+=== 02 février 2025
+
+
+
+==== CloudShell est disponible dans la console d'usine des charges de travail BlueXP
+
+CloudShell est disponible à partir de n'importe quel emplacement de la console d'usine de la charge de travail BlueXP . CloudShell vous permet d'utiliser les informations d'identification AWS et ONTAP que vous avez fournies dans votre compte BlueXP  et d'exécuter les commandes de la CLI AWS ou les commandes de la CLI ONTAP dans un environnement de type shell.
 
 link:https://docs.netapp.com/us-en/workload-setup-admin/use-cloudshell.html["Utilisez CloudShell"]
 
-=== mise à jour des autorisations pour les bases de données l'autorisation suivante est maintenant disponible en mode _read_ pour les bases de données : `iam:SimulatePrincipalPolicy`.
+
+
+==== Mise à jour des autorisations pour les bases de données
+
+L'autorisation suivante est maintenant disponible en _read_ mode pour les bases de données : `iam:SimulatePrincipalPolicy`.
 
 link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html#change-log["Journal des modifications de référence des autorisations"]
 
-== 22 janvier 2025
 
-=== autorisations d'usine de workloads BlueXP  vous pouvez maintenant afficher les autorisations utilisées par l'usine de workloads BlueXP  pour exécuter diverses opérations, depuis la découverte de vos environnements de stockage jusqu'au déploiement de ressources AWS, telles que des systèmes de fichiers dans le stockage ou des bases de connaissances pour les workloads Genai. Vous pouvez afficher les règles et autorisations IAM pour les workloads Storage, Databases, VMware et GenAI.
+
+=== 22 janvier 2025
+
+
+
+==== Autorisations d'usine des workloads BlueXP
+
+Vous pouvez désormais afficher les autorisations utilisées par l'usine de workloads BlueXP  pour exécuter diverses opérations, depuis la découverte de vos environnements de stockage jusqu'au déploiement des ressources AWS, telles que les systèmes de fichiers dans le stockage ou les bases de connaissances pour les charges de travail GenAI. Vous pouvez afficher les règles et autorisations IAM pour les workloads Storage, Databases, VMware et GenAI.
 
 link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["Autorisations d'usine des workloads BlueXP"]
 
-== 5 janvier 2025
 
-=== prise en charge des comptes de service dans l'usine de workloads BlueXP  les comptes de service sont désormais pris en charge dans l'usine de workloads BlueXP . Vous pouvez créer des comptes de service qui agissent en tant qu'utilisateurs de machines pour automatiser les opérations d'infrastructure.
+
+=== 5 janvier 2025
+
+
+
+==== Prise en charge des comptes de service en usine de charges de travail BlueXP
+
+Les comptes de service sont désormais pris en charge par l'usine de workloads BlueXP . Vous pouvez créer des comptes de service qui agissent en tant qu'utilisateurs de machines pour automatiser les opérations d'infrastructure.
 
 link:https://docs.netapp.com/us-en/workload-setup-admin/manage-service-accounts.html["Création et gestion de comptes de service"]
-
-====
