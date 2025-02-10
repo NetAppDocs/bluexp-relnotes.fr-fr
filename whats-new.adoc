@@ -355,6 +355,60 @@ Vous ne pouvez plus créer de volume à partir d'un modèle. Cette action a ét�
 
 
 
+=== 21 février 2025
+
+Cette version de sauvegarde et de restauration BlueXP  comprend les mises à jour suivantes.
+
+
+
+==== Indexation haute performance
+
+La sauvegarde et la restauration BlueXP  proposent une fonction d'indexation mise à jour qui optimise l'indexation des données dans l'environnement de travail source. La nouvelle fonction d'indexation inclut des mises à jour de l'interface utilisateur, des performances améliorées de la méthode de recherche et de restauration des données, des mises à niveau vers des fonctionnalités de recherche globale et une meilleure évolutivité.
+
+Voici une description des améliorations :
+
+* *Consolidation des dossiers* : la version mise à jour regroupe les dossiers en utilisant des noms qui incluent des identificateurs spécifiques, rendant le processus d'indexation plus fluide.
+* *Compactage du fichier parquet* : la version mise à jour réduit le nombre de fichiers utilisés pour indexer chaque volume, ce qui simplifie le processus et élimine le besoin d'une base de données supplémentaire.
+* *Scale-out avec plus de sessions*: La nouvelle version ajoute plus de sessions pour gérer les tâches d'indexation, ce qui accélère le processus.
+* *Prise en charge de plusieurs conteneurs d'index* : la nouvelle version utilise plusieurs conteneurs pour mieux gérer et distribuer les tâches d'indexation.
+* *Flux de travail d'index partagé* : la nouvelle version divise le processus d'indexation en deux parties, améliorant ainsi l'efficacité.
+* *Concurrence améliorée* : la nouvelle version permet de supprimer ou de déplacer des répertoires en même temps, accélérant ainsi le processus d'indexation.
+
+
+.Qui bénéficie de cette fonctionnalité ?
+La nouvelle fonction d'indexation est disponible pour tous les nouveaux clients.
+
+.Comment activer l'indexation ?
+Avant de pouvoir utiliser la méthode Search & Restore de restauration des données, vous devez activer l'« indexation » sur chaque environnement de travail source à partir duquel vous prévoyez de restaurer des volumes ou des fichiers. Cela permet au catalogue indexé de suivre chaque volume et chaque fichier de sauvegarde, ce qui accélère et optimise vos recherches.
+
+Activez l'indexation sur l'environnement de travail source en sélectionnant l'option « Activer l'indexation » lorsque vous effectuez une recherche et une restauration.
+
+Pour plus d'informations, reportez-vous à la documentation https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html#restore-ontap-data-using-search-restore["Comment restaurer des données ONTAP à l'aide de la fonction recherche et ampli ; Restaurer"].
+
+.Échelle prise en charge
+La nouvelle fonction d'indexation prend en charge les éléments suivants :
+
+* Recherche globale efficace en moins de 3 minutes
+* Jusqu'à 5 milliards de fichiers
+* Jusqu'à 5000 volumes par cluster
+* Jusqu'à 100 000 snapshots par volume
+* La durée maximale pour l'indexation de la ligne de base est inférieure à 7 jours. La durée réelle varie en fonction de votre environnement.
+
+
+
+
+==== Amélioration des performances de recherche globale
+
+Cette version comprend également des améliorations des performances de recherche globale. Vous verrez maintenant des indicateurs de progression et des résultats de recherche plus détaillés, y compris le nombre de fichiers et le temps nécessaire à la recherche. Des conteneurs dédiés à la recherche et à l'indexation garantissent que les recherches globales sont effectuées en moins de cinq minutes.
+
+Notez les considérations suivantes relatives à la recherche globale :
+
+* Le nouvel index n'est pas effectué sur les instantanés libellés horaire.
+* La nouvelle fonctionnalité d'indexation ne fonctionne que sur les copies Snapshot sur FlexVols et non sur les copies Snapshot sur FlexGroups.
+
+
+
+
 === 22 novembre 2024
 
 Cette version de sauvegarde et de restauration BlueXP  comprend les mises à jour suivantes.
