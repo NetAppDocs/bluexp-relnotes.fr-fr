@@ -205,7 +205,7 @@ Vous pouvez explorer les détails des alertes et trouver des recommandations.
 
 
 
-==== Afficher les détails du cluster liés à System Manager
+==== Afficher les détails du cluster liés à ONTAP System Manager
 
 Avec les alertes BlueXP , vous pouvez consulter les alertes associées à votre environnement de stockage ONTAP et explorer les détails liés à ONTAP System Manager.
 
@@ -451,6 +451,48 @@ Pour plus de détails sur l'activation manuelle, reportez-vous https://community
 
 
 
+=== 19 février 2025
+
+
+
+==== Version 1.40
+
+Cette version de classification BlueXP  inclut les mises à jour suivantes.
+
+.Prise en charge de RHEL 9.5
+Cette version prend en charge Red Hat Enterprise Linux v9.5 en plus des versions précédemment prises en charge. Cela s'applique à toute installation manuelle sur site de la classification BlueXP , y compris les déploiements de sites invisibles.
+
+Les systèmes d'exploitation suivants nécessitent l'utilisation du moteur de conteneur Podman et requièrent la classification BlueXP  version 1.30 ou ultérieure : Red Hat Enterprise Linux version 8.8, 8.10, 9.0, 9.1, 9.2, 9.3, 9.4 et 9.5.
+
+.Hiérarchiser les acquisitions
+Lorsque vous effectuez des acquisitions de mappage uniquement, vous pouvez hiérarchiser les acquisitions les plus importantes. Cette fonction vous aide lorsque vous disposez de nombreux environnements de travail et que vous souhaitez vous assurer que les numérisations à haute priorité sont effectuées en premier.
+
+Par défaut, les analyses sont mises en file d'attente en fonction de l'ordre dans lequel elles sont initiées. Avec la possibilité de hiérarchiser les numérisations, vous pouvez désormais déplacer les numérisations vers l'avant de la file d'attente. Plusieurs acquisitions peuvent être classées par ordre de priorité. La priorité est désignée dans un ordre de premier entrée et de premier sortie, ce qui signifie que la première analyse prioritaire se déplace vers l'avant de la file d'attente ; la deuxième analyse prioritaire devient la deuxième dans la file d'attente, etc.
+
+La priorité est accordée une fois. Les nouvelles analyses automatiques des données de mappage sont effectuées dans l'ordre par défaut.
+
+La priorisation est limitée à link:concept-cloud-compliance.md#whats-the-difference-between-mapping-and-classification-scans["analyses de mappage uniquement"]; elle n'est pas disponible pour les acquisitions de cartes et de classification.
+
+Pour modifier la priorité :
+
+. Dans le menu BlueXP  Classification, sélectionnez *Configuration*.
+. Sélectionnez les ressources à hiérarchiser.
+. Dans l'option actions ..., sélectionnez *hiérarchiser l'acquisition*.
+
+
+.Réessayez toutes les acquisitions
+La classification BlueXP  prend désormais en charge la possibilité de recommencer par lots toutes les acquisitions ayant échoué.
+
+Vous pouvez à présent relancer des acquisitions en mode batch avec la fonction **Réessayer tout**. Si les analyses de classification échouent en raison d'un problème temporaire, tel qu'une panne réseau, vous pouvez réessayer toutes les analyses en même temps à l'aide d'un seul bouton au lieu de les essayer à nouveau individuellement. Les acquisitions peuvent être relancées autant de fois que nécessaire.
+
+Pour réessayer toutes les acquisitions :
+
+. Dans le menu BlueXP  Classification, sélectionnez *Configuration*.
+. Pour réessayer toutes les acquisitions ayant échoué, sélectionnez *Réessayer toutes les acquisitions*.
+
+
+
+
 === 22 janvier 2025
 
 
@@ -491,29 +533,21 @@ Cette version de classification BlueXP  inclut des améliorations générales e
 
 
 
-=== 4 novembre 2024
-
-
-
-==== Version 1.37
-
-Cette version de classification BlueXP  inclut les mises à jour suivantes.
-
-.Prise en charge de RHEL 8.10
-Cette version prend en charge Red Hat Enterprise Linux v8.10 en plus des versions précédemment prises en charge. Cela s'applique à toute installation manuelle sur site de la classification BlueXP , y compris les déploiements de sites invisibles.
-
-Les systèmes d'exploitation suivants nécessitent l'utilisation du moteur de conteneur Podman et requièrent la classification BlueXP  version 1.30 ou ultérieure : Red Hat Enterprise Linux version 8.8, 8.10, 9.0, 9.1, 9.2, 9.3 et 9.4.
-
-En savoir plus sur https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Classification BlueXP"].
-
-.Prise en charge de NFS v4.1
-Cette version assure la prise en charge de NFS v4.1 en plus des versions précédemment prises en charge.
-
-En savoir plus sur https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Classification BlueXP"].
-
-
-
 == Cloud Volumes ONTAP
+
+
+
+=== 18 février 2025
+
+
+
+==== Présentation du déploiement direct Azure Marketplace
+
+Grâce au déploiement direct d'Azure Marketplace, vous pouvez facilement et rapidement déployer Cloud Volumes ONTAP directement depuis Azure Marketplace. Grâce à cette méthode rationalisée, vous pouvez explorer les principales fonctionnalités de Cloud Volumes ONTAP dans votre environnement sans configurer BlueXP  Connector ni répondre à d'autres critères d'intégration requis pour le déploiement de Cloud Volumes ONTAP via BlueXP .
+
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-azure-mktplace-direct.html["Découvrez les options de déploiement de Cloud Volumes ONTAP dans Azure"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploy-cvo-azure-mktplc.html["Déployez Cloud Volumes ONTAP à partir d'Azure Marketplace"^]
+
 
 
 
@@ -559,60 +593,6 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capaci
 Les familles de machines DS_v2 et es_v3 ne peuvent plus être sélectionnées sur BlueXP  lors du déploiement de nouvelles instances de Cloud Volumes ONTAP dans Azure. Ces familles seront conservées et prises en charge uniquement dans les anciens systèmes existants. Les nouveaux déploiements de Cloud Volumes ONTAP sont pris en charge dans Azure uniquement à partir de la version 9.12.1. Nous vous recommandons de passer à es_v4 ou à toute autre série compatible avec Cloud Volumes ONTAP 9.12.1 et versions ultérieures. Les machines des séries DS_v2 et es_v3, cependant, seront disponibles pour les nouveaux déploiements effectués via l'API.
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Configurations prises en charge dans Azure"^]
-
-
-
-=== 11 novembre 2024
-
-
-
-==== Fin de disponibilité des licences basées sur les nœuds
-
-NetApp a prévu la fin de disponibilité et la fin de prise en charge des licences basées sur des nœuds Cloud Volumes ONTAP. Depuis le 11 novembre 2024, la disponibilité limitée des licences basées sur les nœuds a pris fin. La prise en charge des licences basées sur les nœuds prend fin le 31 décembre 2024. Après la fin de disponibilité de vos licences basées sur les nœuds, vous devez passer à une licence basée sur la capacité en utilisant l'outil de conversion de licences BlueXP .
-
-Pour les engagements annuels ou à long terme, NetApp vous recommande de contacter votre représentant NetApp avant la date de fin de disponibilité ou d'expiration de licence, afin de vous assurer que les conditions préalables à la transition sont bien remplies. Si vous ne disposez pas d'un contrat à long terme pour un nœud Cloud Volumes ONTAP et que vous envisagez d'utiliser votre système avec un abonnement PAYGO, il est important de planifier votre conversion avant la date de fin de support. Pour les contrats à long terme et les abonnements PAYGO, vous pouvez utiliser l'outil de conversion de licences BlueXP  pour une conversion transparente.
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["Fin de disponibilité des licences basées sur les nœuds"^] https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-convert-node-capacity.html["Conversion des licences basées sur les nœuds en licences basées sur la capacité"^]
-
-
-
-==== Suppression des déploiements basés sur des nœuds de BlueXP
-
-La possibilité de déployer des systèmes Cloud Volumes ONTAP à l'aide de licences basées sur les nœuds est obsolète sur BlueXP . Sauf dans certains cas particuliers, vous ne pouvez pas utiliser de licences basées sur les nœuds pour les déploiements Cloud Volumes ONTAP, quel que soit le fournisseur de cloud.
-
-NetApp reconnaît les exigences de licence uniques suivantes en conformité avec les obligations contractuelles et les besoins opérationnels. Dans les situations suivantes, elle continue de prendre en charge les licences basées sur des nœuds :
-
-* Aux États-Unis
-* Déploiements en mode privé
-* Déploiements de Cloud Volumes ONTAP dans AWS dans la région chinoise
-* Si vous disposez d'une licence BYOL (Bring Your Own License) valide et non expirée par nœud
-
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["Fin de disponibilité des licences basées sur les nœuds"^]
-
-
-
-==== Ajout d'un Tier inactif pour les données Cloud Volumes ONTAP sur le stockage Azure Blob
-
-BlueXP  vous permet désormais de sélectionner un Tier à froid pour stocker les données de Tier de capacité inactives sur Azure Blob Storage. L'ajout du Tier inactif aux tiers actifs et inactifs existants vous offre une option de stockage plus économique et une meilleure rentabilité.
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html#data-tiering-in-azure["Tiering des données dans Azure"^]
-
-
-
-==== Option pour restreindre l'accès public au compte de stockage pour Azure
-
-Vous pouvez désormais restreindre l'accès public à votre compte de stockage pour les systèmes Cloud Volumes ONTAP sur Azure. En désactivant l'accès, vous pouvez protéger votre adresse IP privée contre toute exposition, même au sein du même vnet, en cas de nécessité de respecter les politiques de sécurité de votre organisation. Cette option désactive également le Tiering des données pour vos systèmes Cloud Volumes ONTAP, et s'applique aussi bien aux paires à un seul nœud qu'aux paires haute disponibilité.
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-azure.html#security-group-rules["Règles de groupe de sécurité"^].
-
-
-
-==== Activation WORM après le déploiement de Cloud Volumes ONTAP
-
-Vous pouvez désormais activer le stockage WORM (Write Once, Read Many) sur un système Cloud Volumes ONTAP existant à l'aide de BlueXP . Cette fonctionnalité vous offre la flexibilité d'activer WORM dans un environnement de travail, même si WORM n'y a pas été activé lors de sa création. Une fois activé, vous ne pouvez pas désactiver WORM.
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html#enabling-worm-on-a-cloud-volumes-ontap-working-environment["Activation de WORM dans un environnement de travail Cloud Volumes ONTAP"^]
 
 
 
@@ -806,6 +786,28 @@ Pour plus d'informations sur les rapports d'utilisation, reportez-vous à la sec
 
 
 
+=== 19 février 2025
+
+Version 4.2
+
+
+
+==== Prise en charge de ASA r2 pour les machines virtuelles et les datastores sur stockage VMFS
+
+Cette version de BlueXP  Disaster Recovery prend en charge ASA r2 pour les machines virtuelles et les datastores sur le stockage VMFS. Sur un système ASA r2, le logiciel ONTAP prend en charge les fonctionnalités SAN essentielles, tout en supprimant les fonctionnalités non prises en charge dans les environnements SAN.
+
+Cette version prend en charge les fonctionnalités suivantes pour ASA r2 :
+
+* Provisionnement de groupes de cohérence pour le stockage primaire (groupe de cohérence plat uniquement, c'est-à-dire un seul niveau sans structure hiérarchique)
+* Opérations de sauvegarde (groupe de cohérence) incluant l'automatisation SnapMirror
+
+
+La prise en charge de ASA r2 dans la reprise sur incident BlueXP  utilise ONTAP 9.16.1.
+
+Les datastores peuvent être montés sur un volume ONTAP ou une unité de stockage ASA r2, mais un groupe de ressources dans BlueXP  Disaster Recovery ne peut pas inclure à la fois un datastore depuis ONTAP et un datastore depuis ASA r2. Vous pouvez sélectionner un datastore à partir de ONTAP ou un datastore à partir de ASA r2 dans un groupe de ressources.
+
+
+
 === 30 octobre 2024
 
 
@@ -910,27 +912,6 @@ Voici quelques considérations supplémentaires concernant à la fois les protoc
 * La reprise d'activité BlueXP  ne prend en charge qu'une seule LUN par volume ONTAP. Le volume ne doit pas avoir plusieurs LUN.
 * Pour tout plan de réplication, le volume ONTAP de destination doit utiliser les mêmes protocoles que le volume ONTAP source hébergeant les VM protégées. Par exemple, si la source utilise un protocole FC, la destination doit également utiliser FC.
 
-
-
-
-=== 2 août 2024
-
-
-
-==== Prise en charge des datastores VMware VMFS pour FC sur site vers sur site
-
-Cette version inclut un _aperçu de la technologie_ de la prise en charge des machines virtuelles montées sur des datastores VMFS (Virtual machine File System) VMware vSphere pour la protection FC sur un stockage sur site. Auparavant, le service offrait un aperçu de la technologie prenant en charge les datastores VMFS pour iSCSI.
-
-
-NOTE: NetApp ne vous facture pas pour la capacité de workloads prévisualisée.
-
-
-
-==== Annulation du travail
-
-Avec cette version, vous pouvez maintenant annuler un travail dans l'interface utilisateur de Job Monitor.
-
-Reportez-vous à la https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/monitor-jobs.html["Surveiller les tâches"].
 
 
 
