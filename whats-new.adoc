@@ -24,6 +24,41 @@ Cette section décrit les nouvelles fonctionnalités liées aux fonctions d'admi
 
 
 
+=== 6 mars 2025
+
+
+
+==== Mise à jour du connecteur 3.9.49
+
+
+
+===== Accès au gestionnaire système ONTAP lorsque BlueXP  utilise un connecteur
+
+Un administrateur BlueXP  (utilisateurs disposant du rôle d'administrateur d'organisation) peut configurer BlueXP  pour inviter les utilisateurs à saisir leurs informations d'identification ONTAP afin d'accéder au gestionnaire système ONTAP. Lorsque ce paramètre est activé, les utilisateurs doivent entrer leurs informations d'identification ONTAP chaque fois qu'elles ne sont pas stockées dans BlueXP .
+
+Cette fonction est disponible dans la version de connecteur 3.9.49 et supérieure. link:task-ontap-access-connector.html["Découvrez comment configurer les paramètres d'identification."^].
+
+
+
+==== Mise à jour du connecteur 3.9.48
+
+
+
+===== Possibilité de désactiver le paramètre de mise à niveau automatique pour le connecteur
+
+Vous pouvez désactiver la fonction de mise à niveau automatique du connecteur.
+
+Lorsque vous utilisez BlueXP  en mode standard ou restreint, BlueXP  met automatiquement à niveau votre connecteur vers la dernière version, tant que le connecteur dispose d'un accès Internet sortant pour obtenir la mise à jour logicielle. Si vous devez gérer manuellement lorsque le connecteur est mis à niveau, vous pouvez maintenant désactiver les mises à niveau automatiques pour le mode standard ou le mode restreint.
+
+
+NOTE: Ce changement n'a pas d'impact sur le mode privé BlueXP  où vous devez toujours mettre à niveau le connecteur vous-même.
+
+Cette fonction est disponible dans la version de connecteur 3.9.48 et supérieure.
+
+link:task-upgrade-connector.html["Découvrez comment désactiver la mise à niveau automatique pour le connecteur."^]
+
+
+
 === 10 février 2025
 
 
@@ -38,7 +73,8 @@ Cette version de BlueXP Connector inclut des améliorations mineures de la sécu
 
 ==== Gestion des identités et des accès BlueXP
 
-* Prise en charge de l'attribution de plusieurs rôles à un utilisateur.
+* Prise en charge de l'attribution de plusieurs rôles à un utilisateur BlueXP .
+* Prise en charge de l'attribution d'un rôle sur plusieurs ressources de l'organisation BlueXP  (Org/dossier/projet)
 * Les rôles sont désormais associés à l'une des deux catégories suivantes : plate-forme et service de données.
 
 
@@ -132,47 +168,6 @@ Depuis cette version, vous pouvez désormais créer un dossier de demande de sup
 
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html["En savoir plus sur la création d'un dossier de demande de support"].
-
-
-
-=== 16 décembre 2024
-
-
-
-==== Nouveaux points d'extrémité sécurisés pour obtenir des images de connecteur
-
-Lorsque vous installez le connecteur ou lors d'une mise à niveau automatique, le connecteur contacte les référentiels pour télécharger des images pour l'installation ou la mise à niveau. Par défaut, le connecteur a toujours contacté les points finaux suivants :
-
-* \https://*.blob.core.windows.net
-* \https://cloudmanagerinfraprod.azurecr.io
-
-
-Le premier point final inclut un caractère générique car nous ne pouvons pas fournir un emplacement définitif. L'équilibrage de charge du référentiel est géré par le fournisseur de services, ce qui signifie que les téléchargements peuvent se faire à partir de différents terminaux.
-
-Pour une sécurité accrue, le connecteur peut désormais télécharger des images d'installation et de mise à niveau à partir de terminaux dédiés :
-
-* \https://bluexpinfraprod.eastus2.data.azurecr.io
-* \https://bluexpinfraprod.azurecr.io
-
-
-Nous vous recommandons de commencer à utiliser ces nouveaux points de terminaison en supprimant les points de terminaison existants de vos règles de pare-feu et en autorisant les nouveaux points de terminaison.
-
-Ces nouveaux points finaux sont pris en charge à partir de la version 3.9.47 du connecteur. Il n'y a pas de rétrocompatibilité avec les versions précédentes du connecteur.
-
-Notez ce qui suit :
-
-* Les noeuds finaux existants sont toujours pris en charge. Si vous ne souhaitez pas utiliser les nouveaux noeuds finaux, aucune modification n'est requise.
-* Le connecteur entre d'abord en contact avec les extrémités existantes. Si ces points finaux ne sont pas accessibles, le connecteur entre automatiquement en contact avec les nouveaux points finaux.
-* Les nouveaux points finaux ne sont pas pris en charge dans les scénarios suivants :
-+
-** Si le connecteur est installé dans une région gouvernementale.
-** Si vous utilisez le connecteur avec la sauvegarde et la restauration BlueXP  ou la protection contre les ransomwares BlueXP .
-
-
-+
-Pour ces deux scénarios, vous pouvez continuer à utiliser les noeuds finaux existants.
-
-
 
 
 
@@ -581,11 +576,23 @@ Cette version de classification BlueXP  inclut des améliorations générales e
 
 
 
+=== 6 mars 2025
+
+
+
+==== Cloud Volumes ONTAP 9.16.1 GA
+
+Vous pouvez désormais utiliser BlueXP  pour déployer et gérer la version Cloud Volumes ONTAP 9.16.1 General Availability dans Azure et Google Cloud. Cependant, cette version n'est pas disponible pour le déploiement et la mise à niveau dans AWS.
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Découvrez les nouvelles fonctionnalités de cette version d'Cloud Volumes ONTAP"^].
+
+
+
 === 03 mars 2025
 
 
 
-==== Nouvelle-Zélande région du Nord désormais prise en charge dans Azure
+==== Prise en charge de la région nord de la Nouvelle-Zélande dans Azure
 
 La région nord de la Nouvelle-Zélande est désormais prise en charge dans Azure pour les configurations à un seul nœud et haute disponibilité (HA) de Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures. Notez que le type d'instance Lsv3 n'est pas pris en charge dans cette région.
 
@@ -604,39 +611,6 @@ Grâce au déploiement direct d'Azure Marketplace, vous pouvez facilement et rap
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-azure-mktplace-direct.html["Découvrez les options de déploiement de Cloud Volumes ONTAP dans Azure"^]
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploy-cvo-azure-mktplc.html["Déployez Cloud Volumes ONTAP à partir d'Azure Marketplace"^]
 
-
-
-
-=== 10 février 2025
-
-
-
-==== Authentification utilisateur activée pour l'accès à System Manager depuis BlueXP
-
-En tant qu'administrateur BlueXP , vous pouvez désormais activer l'authentification des utilisateurs ONTAP qui accèdent à ONTAP System Manager depuis BlueXP . Vous pouvez activer cette option en modifiant les paramètres du connecteur BlueXP . Cette option est disponible pour les modes standard et privé.
-
-link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-administer-advanced-view.html["Administrez Cloud Volumes ONTAP à l'aide de System Manager"^].
-
-
-
-==== La vue avancée de BlueXP  a été renommée Gestionnaire système
-
-L'option de gestion avancée de Cloud Volumes ONTAP de BlueXP  à ONTAP System Manager a été renommée de *vue avancée* en *Gestionnaire système*.
-
-link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-administer-advanced-view.html["Administrez Cloud Volumes ONTAP à l'aide de System Manager"^].
-
-
-
-==== Découvrez un moyen plus simple de gérer les licences avec le portefeuille digital BlueXP
-
-La gestion des licences Cloud Volumes ONTAP est simplifiée grâce à des points de navigation améliorés dans le portefeuille digital BlueXP  :
-
-* Accédez facilement aux informations relatives à votre licence Cloud Volumes ONTAP via les onglets *gouvernance > portefeuille numérique > Présentation/licences de service de données*.
-* Cliquez sur *Afficher* dans le panneau ONTAP de volume cloud de l'onglet *Présentation* pour obtenir une compréhension complète de vos licences basées sur la capacité. Cette vue avancée offre des informations détaillées sur vos licences et vos abonnements.
-* Si vous préférez l'interface précédente, vous pouvez cliquer sur le bouton *basculer vers la vue héritée* pour afficher les détails de la licence par type et modifier les méthodes de facturation de vos licences.
-
-
-link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["Gestion des licences basées sur la capacité"^].
 
 
 
