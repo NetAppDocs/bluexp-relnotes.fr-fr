@@ -28,7 +28,7 @@ Cette section décrit les nouvelles fonctionnalités liées aux fonctions d'admi
 
 
 
-==== 23b3b711859803a815b81aca1cc4811c
+==== Connecteur 3.9.50
 
 Cette version de BlueXP Connector inclut des améliorations mineures de la sécurité et des correctifs.
 
@@ -609,19 +609,19 @@ Cette version de classification BlueXP  inclut des améliorations générales e
 
 
 
-=== 0de5f5ade75808b90faefd69873b4b3c
+=== 12 mars 2025
 
 
 
-==== a2fefc65df2136938b995f8abbe643c2
+==== Prise en charge de nouvelles régions pour les déploiements de zones de disponibilité multiples dans Azure
 
-0cc914ed23f0f7d6bc902ae731843213
+Les régions suivantes prennent désormais en charge les déploiements HA de zones de disponibilité multiples dans Azure pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures :
 
-* 2e168141b8f719cbd37e6beec663b599
-* 7a6df46ff8e25ac610f60f312512afa4
+* Centre DES ÉTATS-UNIS
+* US Gov Virginia (région du gouvernement des États-Unis - Virginie)
 
 
-91aba3afcaafb3ecbed8f358c30b8a7a
+Pour obtenir la liste de toutes les régions, reportez-vous à la https://bluexp.netapp.com/cloud-volumes-global-regions["Carte des régions globales sous Azure"^].
 
 
 
