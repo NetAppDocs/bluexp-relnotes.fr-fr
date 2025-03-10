@@ -793,4 +793,19 @@
   <block id="0d4a9d16793bcc1fc3c4982137275a77" category="paragraph">Vous pouvez désormais supprimer les abonnements du portefeuille numérique si vous ne vous y êtes plus abonné.</block>
   <block id="86eb6e7f10c1d00078e563696c2882c7" category="section-title">Afficher la capacité consommée pour les abonnements Marketplace</block>
   <block id="0a85a2f78dadf31d5b3bcc7353bae9d1" category="paragraph">Lorsque vous consultez les abonnements PAYGO, vous pouvez maintenant afficher la capacité consommée de l'abonnement.</block>
+  <block id="ad84f24c65dd6930a049e0903256dc97" category="section-title">Simulez une attaque et répondez</block>
+  <block id="6cadf1d9d5289622136d042488809e73" category="paragraph">Avec cette version, simulez une attaque par ransomware pour tester votre réponse à une alerte. Cette fonctionnalité vous aide à être sûr d'être préparé en cas d'attaque par ransomware réelle en testant les processus de notification d'alerte, de réponse et de restauration.</block>
+  <block id="50b24b085ac9888ffc4b0ba727107bd7" category="inline-link">Évaluez le niveau de préparation à une attaque par ransomware</block>
+  <block id="9b1eb2dbe181e9f7b73db8a0785c0419" category="paragraph">Pour plus de détails, reportez-vous à<block ref="83090590e567818593b829ba2ced1db1" category="inline-link-rx"></block> .</block>
+  <block id="d36ca1f9466b055dd6adb80de5cce7d4" category="section-title">Améliorations du processus de découverte</block>
+  <block id="61541c0b99aec5f11fccef5bcb3fe5a1" category="paragraph">Cette version inclut des améliorations aux processus de découverte sélective et de redécouverte :</block>
+  <block id="cb3c0a83218c46d38ab0842ce49a7e6e" category="list-text">Avec cette version, vous pouvez découvrir les nouveaux workloads qui ont été ajoutés aux environnements de travail précédemment sélectionnés.</block>
+  <block id="6a4c9cc76f7f432efa274c3ff0dae3dd" category="list-text">Vous pouvez également sélectionner _New_ environnements de travail dans cette version. Cette fonctionnalité vous aide à protéger les nouvelles charges de travail ajoutées à votre environnement.</block>
+  <block id="3b7810e8427f006590b006af43d016ef" category="list-text">Si vous souhaitez choisir toutes les charges de travail découvertes, vous pouvez le faire en utilisant l'option *tout sélectionner*.</block>
+  <block id="28573ff4f820730a3eeae9cdd51b54d4" category="list-text">Vous pouvez effectuer ces processus de découverte au cours du processus de découverte initial ou à l'aide de l'option Paramètres.</block>
+  <block id="33e99171183cf72ac66db77d8dd5792a" category="inline-link">Découvrez les nouveaux workloads créés pour les environnements de travail précédemment sélectionnés</block>
+  <block id="16e3b92f9b1f5d1c29b18c748e6a228e" category="inline-link">Configurez les fœtus à l'aide de l'option Paramètres</block>
+  <block id="98e6e30b63e5242616c686684a17c03b" category="paragraph">Pour plus de détails, reportez-vous à<block ref="7d31e5b11cc548279f7c20a9569ec8fc" category="inline-link-rx"></block> et<block ref="026d9da5e400c1054ac1084b0f63056d" category="inline-link-rx"></block>.</block>
+  <block id="d957d0c80017f235b131c557ae0876b1" category="section-title">Alertes générées lors de la détection d'un cryptage élevé</block>
+  <block id="8c8c1a747835015c86248b11a2097c02" category="paragraph">Avec cette version, vous pouvez afficher des alertes lorsque un chiffrement élevé est détecté sur vos charges de travail, même sans modifications importantes des extensions de fichiers. Cette fonctionnalité, qui utilise l'IA ONTAP Autonomous ransomware protection (ARP), vous aide à identifier les workloads qui sont exposés à des attaques de ransomware. Utilisez cette fonction et téléchargez la liste complète des fichiers impactés avec ou sans modifications d'extension.</block>
 </blocks>
