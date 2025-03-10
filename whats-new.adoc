@@ -355,6 +355,36 @@ Vous ne pouvez plus créer de volume à partir d'un modèle. Cette action a ét�
 
 
 
+=== 17 mars 2025
+
+Cette version de sauvegarde et de restauration BlueXP  comprend les mises à jour suivantes.
+
+
+
+==== Exploration des snapshots SMB
+
+Cette mise à jour de sauvegarde et de restauration BlueXP  a résolu un problème qui empêchait les clients de parcourir les snapshots locaux dans un environnement SMB.
+
+
+
+==== Mise à jour de l'environnement AWS GovCloud
+
+Cette mise à jour de sauvegarde et de restauration BlueXP  a résolu un problème qui empêchait l'interface utilisateur de se connecter à un environnement AWS GovCloud en raison d'erreurs de certificat TLS. Le problème a été résolu en utilisant le nom d'hôte du connecteur BlueXP  au lieu de l'adresse IP.
+
+
+
+==== Limites de conservation des règles de sauvegarde
+
+Jusqu'à présent, l'interface de sauvegarde et de restauration de BlueXP  limitait les sauvegardes à 999 copies, tandis que l'interface de ligne de commandes permettait d'en effectuer davantage. Vous pouvez désormais relier jusqu'à 4,000 volumes à une règle de sauvegarde et inclure 1,018 volumes non rattachés à une règle de sauvegarde. Cette mise à jour inclut des validations supplémentaires qui empêchent de dépasser ces limites.
+
+
+
+==== Resynchronisation du cloud SnapMirror
+
+Cette mise à jour garantit que la resynchronisation du cloud SnapMirror ne peut pas être démarrée à partir de la sauvegarde et de la restauration BlueXP  pour les versions ONTAP non prises en charge après la suppression d'une relation SnapMirror.
+
+
+
 === 21 février 2025
 
 Cette version de sauvegarde et de restauration BlueXP  comprend les mises à jour suivantes.
@@ -434,70 +464,6 @@ Avant de pouvoir utiliser la fonction de recherche et de restauration, vous deve
 * Erreur
 * Non activé
 
-
-
-
-=== 27 septembre 2024
-
-Cette version de sauvegarde et de restauration BlueXP  comprend les mises à jour suivantes.
-
-
-
-==== Prise en charge de Podman sur RHEL 8 ou 9 avec Browse and Restore
-
-La sauvegarde et la restauration BlueXP  prennent désormais en charge les restaurations de fichiers et de dossiers sur Red Hat Enterprise Linux (RHEL) versions 8 et 9 à l'aide du moteur Podman. Ceci s'applique à la méthode de sauvegarde et de restauration BlueXP .
-
-BlueXP  Connector version 3.9.40 prend en charge certaines versions de Red Hat Enterprise Linux versions 8 et 9 pour toute installation manuelle du logiciel Connector sur un hôte RHEL 8 ou 9, quel que soit l'emplacement en plus des systèmes d'exploitation mentionnés dans le https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-private-mode.html#step-3-review-host-requirements["configuration requise pour l'hôte"^]. Ces nouvelles versions de RHEL nécessitent le moteur Podman au lieu du moteur Docker. Auparavant, la sauvegarde et la restauration BlueXP  présentaient deux limitations lors de l'utilisation du moteur Podman. Ces limitations ont été supprimées.
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["En savoir plus sur la restauration des données ONTAP à partir de fichiers de sauvegarde"].
-
-
-
-==== Une indexation plus rapide du catalogue améliore la recherche et la restauration
-
-Cette version inclut un index de catalogue amélioré qui termine l'indexation de base beaucoup plus rapidement. L'indexation plus rapide vous permet d'utiliser la fonction de recherche et de restauration plus rapidement.
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["En savoir plus sur la restauration des données ONTAP à partir de fichiers de sauvegarde"].
-
-
-
-=== 22 juillet 2024
-
-
-
-==== Restaurez des volumes inférieurs à 1 Go
-
-Avec cette version, vous pouvez désormais restaurer des volumes créés dans ONTAP de moins de 1 Go. La taille minimale du volume que vous pouvez créer à l'aide de ONTAP est de 20 Mo.
-
-
-
-==== Conseils pour réduire les coûts liés à DataLock
-
-La fonction DataLock protège vos fichiers de sauvegarde contre toute modification ou suppression pendant une période de temps spécifiée. Ceci est utile pour protéger vos fichiers contre les attaques par ransomware.
-
-Pour plus de détails sur DataLock et des conseils sur la manière de réduire les coûts associés, reportez-vous https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-cloud-backup-policies.html["Paramètres de la règle de sauvegarde sur objet"] à la section .
-
-
-
-==== Intégration AWS IAM Roles Anywhere
-
-Le service Amazon Web Services (AWS) Identity and Access Management (IAM) Roles Anywhere vous permet d'utiliser des rôles IAM et des identifiants à court terme pour vos workloads _hors_ d'AWS pour accéder aux API AWS en toute sécurité, de la même manière que vous utilisez les rôles IAM pour les workloads _sur_ AWS. Lorsque vous utilisez l'infrastructure de clés privées IAM Roles Anywhere et les jetons AWS, vous n'avez pas besoin de clés d'accès AWS à long terme et de clés secrètes. Cela vous permet de faire pivoter les informations d'identification plus fréquemment, ce qui améliore la sécurité.
-
-Avec cette version, la prise en charge du service AWS IAM Roles Anywhere est un aperçu technologique.
-
-Reportez-vous à la https://community.netapp.com/t5/Tech-ONTAP-Blogs/BlueXP-Backup-and-Recovery-July-2024-Release/ba-p/453993["Sauvegarde et restauration BlueXP, blog sur la version de juillet 2024"].
-
-
-
-==== Restauration de dossier ou de répertoire FlexGroup maintenant disponible
-
-Auparavant, les volumes FlexVol pouvaient être restaurés, mais vous ne pouviez pas restaurer les dossiers ou les répertoires FlexGroup. Avec ONTAP 9.15.1 p2, vous pouvez restaurer des dossiers FlexGroup à l'aide de l'option Parcourir et restaurer.
-
-Avec cette version, la prise en charge de la restauration de dossiers FlexGroup est un aperçu technologique.
-
-Pour plus de détails, reportez-vous à https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html#restore-ontap-data-using-browse-restore["Restaurez des dossiers et des fichiers à l'aide de l'option Parcourir et restaurer"] .
-
-Pour plus de détails sur l'activation manuelle, reportez-vous https://community.netapp.com/t5/Tech-ONTAP-Blogs/BlueXP-Backup-and-Recovery-July-2024-Release/ba-p/453993["Sauvegarde et restauration BlueXP, blog sur la version de juillet 2024"]à la section .
 
 
 
@@ -629,11 +595,11 @@ Pour obtenir la liste de toutes les régions, reportez-vous à la https://bluexp
 
 
 
-==== 322a339b221056f32120ffd18077d44d
+==== La création des machines virtuelles de stockage est automatisée au moyen des API dans Azure
 
-aa1c2167957b1092da7e43e77867748c
+Vous pouvez désormais utiliser les API BlueXP  pour créer, renommer et supprimer d'autres machines virtuelles de stockage servant les données pour Cloud Volumes ONTAP dans Azure. Ces API automatisent le processus de création des machines virtuelles de stockage, y compris la configuration des interfaces réseau, des LIF et d'une LIF de gestion, si vous devez utiliser une VM de stockage à des fins de gestion.
 
-5fc68a139fdd05790792b12eb853e84d
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-azure.html["Création de VM de stockage servant à la transmission des données pour Cloud Volumes ONTAP dans Azure"^]
 
 
 
@@ -1162,7 +1128,6 @@ Cette version inclut des améliorations aux processus de découverte sélective 
 
 * Avec cette version, vous pouvez découvrir les nouveaux workloads qui ont été ajoutés aux environnements de travail précédemment sélectionnés.
 * Vous pouvez également sélectionner _New_ environnements de travail dans cette version. Cette fonctionnalité vous aide à protéger les nouvelles charges de travail ajoutées à votre environnement.
-* Si vous souhaitez choisir toutes les charges de travail découvertes, vous pouvez le faire en utilisant l'option *tout sélectionner*.
 * Vous pouvez effectuer ces processus de découverte au cours du processus de découverte initial ou à l'aide de l'option Paramètres.
 
 
