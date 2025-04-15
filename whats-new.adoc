@@ -464,8 +464,8 @@ Pour plus d'informations, voir xref:task-custom-classification.adoc[Ajouter des 
 .Onglet recherches enregistrées
 L'onglet **politiques** a été renommé xref:task-using-policies.html[**Recherches enregistrées**]. La fonctionnalité est la même.
 
-.Envoyer les événements d'analyse au journal d'audit
-Les événements de numérisation BlueXP  peuvent maintenant être envoyés à xref:task-audit-data-sense-actions.html[journal d'audit]. La classification BlueXP  prend également en charge l'envoi d'événements de classification (lorsqu'une analyse est lancée et quand elle se termine) à link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["Chronologie BlueXP"^]. L'envoi d'événements d'acquisition de classification à la chronologie BlueXP  est uniquement pris en charge pour les environnements de travail.
+.Envoyer les événements d'analyse à la chronologie BlueXP 
+La classification BlueXP  prend désormais en charge l'envoi d'événements de classification (lorsqu'une analyse est lancée et quand elle se termine) à link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["Chronologie BlueXP"^].
 
 .Mises à jour de sécurité
 * Le paquet Keras a été mis à jour, atténuant les vulnérabilités (BDSA-2025-0107 et BDSA-2025-1984).

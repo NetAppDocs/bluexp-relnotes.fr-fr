@@ -812,10 +812,7 @@
   <block id="dcc61fc6bf6aa17ea807ec107b3f9682" category="paragraph-title">Onglet recherches enregistrées</block>
   <block id="1005b3a447fe9caf1ce373cf96b4dc01" category="inline-xref-macro">**Recherches enregistrées**</block>
   <block id="619964fa6c4dc175f106697cd53cd93b" category="paragraph">L'onglet **politiques** a été renommé <block ref="57cf69bfb5ee6dec8716152c342ad94c" category="inline-xref-macro-rx"></block>. La fonctionnalité est la même.</block>
-  <block id="260ad9aa0619e900a957ec4498a7084d" category="paragraph-title">Envoyer les événements d'analyse au journal d'audit</block>
   <block id="decaf26b476fc5aad56ba857036660b7" category="inline-link-macro">Chronologie BlueXP</block>
-  <block id="7d71019726dccc04ceb52b94f892b7f6" category="inline-xref-macro">journal d'audit</block>
-  <block id="1c6653b6dfd13a16237efa3ea5c87e2a" category="paragraph">Les événements de numérisation BlueXP  peuvent maintenant être envoyés à <block ref="e7616c9e5375866db0d455d96b016998" category="inline-xref-macro-rx"></block>. La classification BlueXP  prend également en charge l'envoi d'événements de classification (lorsqu'une analyse est lancée et quand elle se termine) à <block ref="bf2e0502217ecef5db4e8e3a077fc733" category="inline-link-macro-rx"></block>. L'envoi d'événements d'acquisition de classification à la chronologie BlueXP  est uniquement pris en charge pour les environnements de travail.</block>
   <block id="ddba4621d4e9a4c39c38ef2131834760" category="list-title">Mises à jour de sécurité</block>
   <block id="0a39c7bc14a0f00de22f1ead79c18b0c" category="list-text">Le paquet Keras a été mis à jour, atténuant les vulnérabilités (BDSA-2025-0107 et BDSA-2025-1984).</block>
   <block id="408f8b982d641a307784a27c0fb6d9c9" category="list-text">La configuration des containers Docker a été mise à jour. Le conteneur n'a plus accès aux interfaces réseau de l'hôte pour l'élaboration de paquets réseau bruts. En réduisant les accès inutiles, la mise à jour limite les risques potentiels pour la sécurité.</block>
@@ -846,4 +843,6 @@
   <block id="b618f30aeca114d464120de119b19ced" category="paragraph">Voir<block ref="5f37f8bd4230e4b629c60b7dc23a5850" category="inline-link-rx"></block>.</block>
   <block id="74d516ef8dfa098bb4cd92313c403475" category="section-title">Prise en charge de CloudShell avec remplissage automatique</block>
   <block id="df96b6f4ceabb5c4dbc915475fd821fe" category="paragraph">Lorsque vous utilisez BlueXP  Workload Factory CloudShell, vous pouvez commencer à taper une commande et appuyer sur la touche Tab pour afficher les options disponibles. S'il existe plusieurs possibilités, l'interface de ligne de commande affiche une liste de suggestions. Cette fonction améliore la productivité en réduisant au minimum les erreurs et en accélérant l'exécution des commandes.</block>
+  <block id="17fd2e7ebeeede6a03f9340d8abb7cb1" category="paragraph-title">Envoyer les événements d'analyse à la chronologie BlueXP </block>
+  <block id="2fb6ac863fbf4be01901268bf08e147f" category="paragraph">La classification BlueXP  prend désormais en charge l'envoi d'événements de classification (lorsqu'une analyse est lancée et quand elle se termine) à <block ref="bf2e0502217ecef5db4e8e3a077fc733" category="inline-link-macro-rx"></block>.</block>
 </blocks>
