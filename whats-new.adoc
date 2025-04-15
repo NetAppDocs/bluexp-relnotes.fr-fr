@@ -1274,20 +1274,11 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 ==== Signalement d'environnements de travail non pris en charge dans la protection contre les ransomwares BlueXP
 
-Au cours du workflow de découverte, la protection contre les ransomwares de BlueXP  fournit des informations supplémentaires lorsque vous survolez les workloads pris en charge ou non pris en charge. Ainsi, vous comprendrez pourquoi certaines de vos charges de travail ou environnements de travail ne font pas partie du tableau de bord ou ne sont pas gérés par un service de protection contre les ransomwares. Les environnements de travail suivants ne sont actuellement pas pris en charge par le service de protection contre les ransomwares BlueXP .
+Au cours du workflow de découverte, la protection contre les ransomwares de BlueXP  fournit des informations supplémentaires lorsque vous survolez les workloads pris en charge ou non pris en charge. Ainsi, vous comprendrez pourquoi certains de vos workloads ne sont pas découverts par le service de protection BlueXP  contre les ransomware.
 
-* Azure NetApp Files
-* Cloud Volumes Service
-* E-Series
-* Google Cloud Platform (GCP)
-* ONTAP 9.11.1 et versions antérieures
-* Clusters sur site ONTAP Direct qui ne sont pas gérés par un connecteur BlueXP
-* StorageGRID
+Il existe de nombreuses raisons pour lesquelles le service ne prend pas en charge un environnement de travail. Par exemple, la version ONTAP de votre environnement de travail peut être inférieure à la version requise. Lorsque vous placez le pointeur de la souris sur un environnement de travail non pris en charge, une info-bulle affiche la raison.
 
-
-Vous pouvez afficher les environnements de travail non pris en charge lors de la découverte initiale et ultérieurement à partir de l'option *Workload Discovery* de la page Paramètres. Il existe de nombreuses raisons pour lesquelles le service ne prend pas en charge un environnement de travail. Par exemple, la version ONTAP de votre environnement de travail peut être inférieure à la version requise. Lorsque vous placez le pointeur de la souris sur un environnement de travail non pris en charge, une info-bulle affiche la raison.
-
-Vous pouvez télécharger les résultats du processus de détection après la découverte.
+Vous pouvez afficher les environnements de travail non pris en charge lors de la découverte initiale, où vous pouvez également télécharger les résultats. Vous pouvez également afficher les résultats de la découverte à partir de l'option *Workload Discovery* de la page Paramètres.
 
 Pour plus de détails, reportez-vous à https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Découvrez les workloads dans la solution de protection BlueXP contre les ransomwares"] .
 
