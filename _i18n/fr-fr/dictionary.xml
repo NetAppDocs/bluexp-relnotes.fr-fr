@@ -642,11 +642,6 @@
   <block id="d957d0c80017f235b131c557ae0876b1" category="section-title">Alertes générées lors de la détection d'un cryptage élevé</block>
   <block id="8c8c1a747835015c86248b11a2097c02" category="paragraph">Avec cette version, vous pouvez afficher des alertes lorsque un chiffrement élevé est détecté sur vos charges de travail, même sans modifications importantes des extensions de fichiers. Cette fonctionnalité, qui utilise l'IA ONTAP Autonomous ransomware protection (ARP), vous aide à identifier les workloads qui sont exposés à des attaques de ransomware. Utilisez cette fonction et téléchargez la liste complète des fichiers impactés avec ou sans modifications d'extension.</block>
   <block id="23b3b711859803a815b81aca1cc4811c" category="section-title">Connecteur 3.9.50</block>
-  <block id="0de5f5ade75808b90faefd69873b4b3c" category="section-title">12 mars 2025</block>
-  <block id="a2fefc65df2136938b995f8abbe643c2" category="section-title">Prise en charge de nouvelles régions pour les déploiements de zones de disponibilité multiples dans Azure</block>
-  <block id="0cc914ed23f0f7d6bc902ae731843213" category="paragraph">Les régions suivantes prennent désormais en charge les déploiements HA de zones de disponibilité multiples dans Azure pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures :</block>
-  <block id="2e168141b8f719cbd37e6beec663b599" category="list-text">Centre DES ÉTATS-UNIS</block>
-  <block id="7a6df46ff8e25ac610f60f312512afa4" category="list-text">US Gov Virginia (région du gouvernement des États-Unis - Virginie)</block>
   <block id="91aba3afcaafb3ecbed8f358c30b8a7a" category="paragraph">Pour obtenir la liste de toutes les régions, reportez-vous à la<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>.</block>
   <block id="499d067ffbbd553e23809aa38aa67bfa" category="section-title">17 mars 2025</block>
   <block id="30ba4ee29fda0b7285b4297943459cf9" category="section-title">Exploration des snapshots SMB</block>
@@ -681,9 +676,6 @@
   <block id="b29a186d936b198dcafa3a0308485e2c" category="inline-link">Apprenez à mettre à niveau le connecteur lorsque vous utilisez le mode privé</block>
   <block id="e5d325f390c70091b07096d63ab8f353" category="list-text"><block ref="e5d325f390c70091b07096d63ab8f353" category="inline-link-rx"></block></block>
   <block id="c00e1d18d877d030ee92aec3422b1aeb" category="paragraph">La priorisation est limitée à <block ref="377ae34afcc76614c5602798befc8a4b" category="inline-link-macro-rx"></block>; elle n'est pas disponible pour les acquisitions de cartes et de classification.</block>
-  <block id="5920daf334ecef8057dd1e1d15f6124e" category="section-title">Déploiements en mode privé activés pour Cloud Volumes ONTAP 9.14.1</block>
-  <block id="f2035db09bb2be2db0508915fa584149" category="paragraph">Vous pouvez désormais déployer Cloud Volumes ONTAP 9.14.1 en mode privé dans AWS, Azure et Google Cloud. Le mode privé est activé pour les déploiements à un seul nœud et haute disponibilité (HA) de Cloud Volumes ONTAP 9.14.1.</block>
-  <block id="dc748283e7593515df9e8f2759a85349" category="paragraph">Pour plus d'informations sur les déploiements en mode privé, reportez-vous <block ref="312f421b6dd5cf62286ecf6a82a8132e" category="inline-link-rx"></block>à la section .</block>
   <block id="1b4189ae198caba09051ca2138497fc7" category="section-title">05 mars 2025</block>
   <block id="5542dbcb72159ed44fa6bf922b45c1e8" category="list-text">Le DQP (Disk qualification Package) permet désormais de mettre à jour automatiquement les contrôleurs de disque et le firmware du périphérique de stockage en fonction de critères prédéfinis d'intégrité et de performance. Cela réduit les défaillances potentielles et améliore la fiabilité globale du système.</block>
   <block id="90dd6f07c096c3965dc62d991f80f7fd" category="list-text">La base de données Timezone (DB) a été introduite pour maintenir automatiquement l'alignement du système avec les dernières définitions de fuseau horaire. Ainsi, les opérations dépendant du temps se poursuivent sans problème, même en cas de modification des règles du fuseau horaire.</block>
@@ -765,7 +757,6 @@
   <block id="e933dec5f784259760ab3c9400fb8e0b" category="section-title">Prise en charge d'un magasin d'objets Wasabi tiers (aperçu)</block>
   <block id="57a83bf4b6d8f755d141ebf2bb282ed3" category="paragraph">La sauvegarde et la restauration BlueXP  étendent désormais sa prise en charge aux magasins d'objets tiers, en mettant l'accent sur Wasabi. Cette nouvelle fonctionnalité de préversion vous permet d'exploiter un magasin d'objets compatible S3 pour vos besoins de sauvegarde et de restauration.</block>
   <block id="da21b58c44ce1975cb8550ec689df5b3" category="section-title">Mise en route de Wasabi</block>
-  <block id="f3afa8b48aa14a1da6a21d82ad964f5d" category="paragraph">Pour commencer à utiliser cette fonctionnalité, vous devez activer un indicateur dans l'interface utilisateur de BlueXP . Vous pouvez ensuite saisir les informations de connexion de votre magasin d'objets tiers et l'intégrer à vos workflows de sauvegarde et de restauration.</block>
   <block id="9b6d9b582a741bc832b2557c16d31b09" category="section-title">Limites du mode d'aperçu</block>
   <block id="fdf10a1d090d444123d00414152f7943" category="paragraph">Lorsque cette fonction est en aperçu, tenez compte des limitations suivantes :</block>
   <block id="7ebc42140a656312f7a985f14e55f3a6" category="list-text">Le modèle BYOB (Bring Your Own Bucket) n'est pas pris en charge.</block>
@@ -775,4 +766,40 @@
   <block id="5ba05bcaf18ef618c0ef794d4ae3e855" category="list-text">MetroCluster n'est pas pris en charge.</block>
   <block id="2a9854e98da75bbc07132378bef6de4d" category="list-text">Les options d'activation du chiffrement au niveau du compartiment ne sont pas prises en charge.</block>
   <block id="f98d5407ffd34a829996a4bb36d6e582" category="paragraph">Au cours de cette présentation, nous vous encourageons à explorer cette nouvelle fonctionnalité et à nous faire part de vos commentaires sur l'intégration à des magasins d'objets tiers avant le déploiement complet des fonctionnalités.</block>
+  <block id="490e13bea5876f4583d326593619ee16" category="list-text">La gestion des systèmes Cloud Volumes ONTAP est désormais prise en charge par les connecteurs sur lesquels SELinux est activé sur le système d'exploitation.</block>
+  <block id="a86bab47fe0d1d4772388e14bf7532a0" category="inline-link">En savoir plus sur SELinux</block>
+  <block id="612eef26819f532944539f99d535f8c6" category="paragraph"><block ref="612eef26819f532944539f99d535f8c6" category="inline-link-rx"></block></block>
+  <block id="0c9e9a971e295d08b39001ef71ddfca9" category="paragraph">Pour commencer à utiliser le stockage tiers en tant que magasin d'objets, vous devez activer un indicateur dans le connecteur BlueXP . Vous pouvez ensuite saisir les informations de connexion de votre magasin d'objets tiers et l'intégrer à vos workflows de sauvegarde et de restauration.</block>
+  <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">Étapes</block>
+  <block id="09c224692df6f6a3d6045847d63b5e86" category="list-text">SSH dans votre connecteur.</block>
+  <block id="d4abc9f6a0f7759f15272b587badc33b" category="list-text">Accédez au conteneur du serveur cbs de sauvegarde et de restauration BlueXP  :</block>
+  <block id="e5b842eef10876fd5aec5be48ecec9b3" category="list-text">Ouvrez le<block ref="a4f5e59b80d929d30eba10ee00d7450d" prefix=" " category="inline-code"></block> fichier dans le<block ref="2245023265ae4cf87d02c8b6ba991139" prefix=" " category="inline-code"></block> dossier via VIM ou tout autre éditeur :</block>
+  <block id="14ee6952f3be48ef4395f003ecfdac2c" category="list-text">Modifier<block ref="05e4358c747c33d991f9217e4b509fcc" prefix=" " category="inline-code"></block>: FALSE à<block ref="05e4358c747c33d991f9217e4b509fcc" prefix=" " category="inline-code"></block>: TRUE.</block>
+  <block id="08c4f5aee4f8b6cabdcd558ad1452ad2" category="list-text">Enregistrez les modifications.</block>
+  <block id="4b891dca63ef1ab4f9daab8d3bd76368" category="list-text">Sortir du conteneur.</block>
+  <block id="3dc3e984a5412f225aea00167c9309bf" category="list-text">Redémarrez le conteneur du serveur cbs de sauvegarde et de restauration BlueXP .</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">Résultat</block>
+  <block id="15c66d710af89e601163f082e2d62e63" category="paragraph">Une fois le conteneur à nouveau ALLUMÉ, ouvrez l'interface utilisateur de sauvegarde et de restauration de BlueXP . Lorsque vous lancez une sauvegarde ou modifiez une stratégie de sauvegarde, le nouveau fournisseur « compatible S3 » s'affiche, ainsi que les autres fournisseurs de sauvegarde : AWS, Microsoft Azure, Google Cloud, StorageGRID et ONTAP S3.</block>
+  <block id="aa3bf76b3589430467bef386eaec9486" category="section-title">Nouvelles régions prises en charge dans Azure</block>
+  <block id="c1ad65632774d8f35681af3ad68ef48e" category="paragraph">Vous pouvez désormais déployer Cloud Volumes ONTAP 9.12.1 GA ou version ultérieure dans une ou plusieurs zones de disponibilité dans Azure dans les régions suivantes. Cela inclut la prise en charge des déploiements à un seul nœud et la haute disponibilité (HA).</block>
+  <block id="db0cdd3af654aa7b69312d9b6154a9de" category="list-text">Espagne Centrale</block>
+  <block id="ef87967149148a309569bd7d04467de6" category="list-text">Mexique Centre</block>
+  <block id="f0d468a1074534e3b37c7322f2e97bb1" category="section-title">3 avril 2025</block>
+  <block id="b77891a5294c25aca8a6fda943805ecf" category="section-title">Prise en charge des régions chinoises pour Cloud Volumes ONTAP 9.13.1 dans AWS</block>
+  <block id="3899c7c0df13a38296f1334779a1dfe7" category="paragraph">Vous pouvez désormais déployer Cloud Volumes ONTAP 9.13.1 dans AWS dans les régions chinoises. Cela inclut la prise en charge des déploiements à un seul nœud et la haute disponibilité (HA). Une fois que vous avez déployé Cloud Volumes ONTAP 9.13.1, vous pouvez le mettre à niveau vers des versions ultérieures. Seules les licences achetées directement auprès de NetApp sont prises en charge.</block>
+  <block id="abe88f95b23156cb29c433c9ebe92a00" category="inline-link">Cartes des régions mondiales pour Cloud Volumes ONTAP</block>
+  <block id="10df570a0447a18b299f516b2e8498c2" category="paragraph">Pour connaître la disponibilité régionale, reportez-vous au<block ref="f76c632bc8b9c4e032a9d48fcbfa8dc1" category="inline-link-rx"></block>.</block>
+  <block id="8855742ef7ac60d26f35536e1d09aef9" category="section-title">29 avril 2025</block>
+  <block id="f65bfe10577ea64b648eddd04f107545" category="section-title">Prise en charge d'Amazon FSX pour NetApp ONTAP</block>
+  <block id="24964ea0918b681c02283685b1da1438" category="paragraph">Cette version prend en charge Amazon FSX pour NetApp ONTAP. Cette fonctionnalité vous aide à protéger vos workloads FSX pour ONTAP avec la protection contre les ransomware BlueXP .</block>
+  <block id="1e2a1ff777d742c50d6c64a6b6350f90" category="paragraph">FSX pour ONTAP est un service entièrement géré qui offre la puissance du stockage NetApp ONTAP dans le cloud. Il fournit les mêmes fonctionnalités, performances et fonctionnalités d'administration que sur site, avec l'agilité et l'évolutivité d'un service AWS natif.</block>
+  <block id="4fc90f7d90d19ba5f3581d326200a5f1" category="paragraph">Les modifications suivantes ont été apportées au workflow de protection contre les ransomwares de BlueXP  :</block>
+  <block id="65053514fea19aa395ec9799580be143" category="list-text">La découverte inclut les workloads dans FSX pour les environnements de travail ONTAP 9.15.</block>
+  <block id="6ea987783dda6093154792926d8e285c" category="list-text">L'onglet protection affiche les workloads dans les environnements FSX pour ONTAP. Dans cet environnement, vous devez effectuer des opérations de sauvegarde à l'aide du service de sauvegarde FSX pour ONTAP. Vous pouvez restaurer ces workloads à l'aide des snapshots de protection contre les ransomwares de BlueXP .</block>
+  <block id="2e09d92e8822f80e9aac61fdb75fa3c8" category="admonition">Les stratégies de sauvegarde d'un workload s'exécutant sur FSX pour ONTAP ne peuvent pas être définies dans BlueXP . Toutes les stratégies de sauvegarde existantes définies dans Amazon FSX pour NetApp ONTAP restent inchangées.</block>
+  <block id="97c627f1fcd3a299ac19157a8f566694" category="list-text">Les incidents d'alerte affichent le nouvel environnement de travail FSX pour ONTAP.</block>
+  <block id="1d40c591d842224b16a448bc26a6bfab" category="inline-link">Découvrez la protection contre les ransomwares de BlueXP  et les environnements de travail</block>
+  <block id="280931b406a1e00d83a4a8faa2e537a0" category="paragraph">Pour plus de détails, reportez-vous à<block ref="4517bbdfa51110822f93ef44df6a4f92" category="inline-link-rx"></block> .</block>
+  <block id="08ceca9f9a853977a5c71c8c66b68b55" category="inline-link">Limites de la protection contre les ransomware de BlueXP</block>
+  <block id="eb745462fc54b055b8087d694fb01b5f" category="paragraph">Pour plus d'informations sur les options prises en charge, reportez-vous au<block ref="875047b763859105fc2c6e622181cfbb" category="inline-link-rx"></block>.</block>
 </blocks>
