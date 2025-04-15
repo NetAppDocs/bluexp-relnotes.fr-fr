@@ -24,6 +24,30 @@ Cette section décrit les nouvelles fonctionnalités liées aux fonctions d'admi
 
 
 
+=== 12 mai 2025
+
+
+
+==== Connecteur 3.9.52
+
+Cette version de BlueXP  Connector inclut des améliorations mineures de la sécurité et des correctifs de bogues, ainsi que quelques mises à jour supplémentaires.
+
+À ce stade, la version 3.9.52 est disponible pour le mode standard et le mode restreint.
+
+
+
+===== Prise en charge de Docker 27 et Docker 28
+
+Docker 27 et Docker 28 sont désormais pris en charge avec le connecteur.
+
+
+
+==== Administration Keystone disponible dans BlueXP
+
+La version bêta de NetApp Keystone dans BlueXP  a permis d'accéder à l'administration Keystone. Vous pouvez accéder à la page d'inscription de la version bêta de NetApp Keystone à partir de la barre de navigation de gauche de BlueXP .
+
+
+
 === 14 avril 2025
 
 
@@ -77,30 +101,6 @@ Pour plus d'informations sur le mode privé, notamment sur la mise à niveau, re
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Découvrez comment démarrer avec BlueXP en mode privé"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Apprenez à mettre à niveau le connecteur lorsque vous utilisez le mode privé"]
 
-
-
-
-=== 10 mars 2025
-
-
-
-==== Connecteur 3.9.50
-
-Cette version de BlueXP Connector inclut des améliorations mineures de la sécurité et des correctifs.
-
-* La gestion des systèmes Cloud Volumes ONTAP est désormais prise en charge par les connecteurs sur lesquels SELinux est activé sur le système d'exploitation.
-+
-https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_selinux/getting-started-with-selinux_using-selinux["En savoir plus sur SELinux"^]
-
-
-
-À ce stade, la version 3.9.50 est disponible pour le mode standard et le mode restreint.
-
-
-
-==== Version bêta de NetApp Keystone disponible dans BlueXP
-
-NetApp Keystone sera bientôt disponible sur BlueXP  et est maintenant en version bêta. Vous pouvez accéder à la page d'inscription de la version bêta de NetApp Keystone à partir de la barre de navigation de gauche de BlueXP .
 
 
 
@@ -820,6 +820,62 @@ Pour plus d'informations sur les rapports d'utilisation, reportez-vous à la sec
 
 
 == Reprise après incident
+
+
+
+=== 13 mai 2025
+
+Version 4.2.3
+
+
+
+==== Mappage de sous-réseau
+
+Avec cette version, vous pouvez gérer les adresses IP en cas de basculement de manière nouvelle à l'aide du mappage de sous-réseau, qui vous permet d'ajouter des sous-réseaux pour chaque vCenter. Dans ce cas, vous définissez le CIDR IPv4, la passerelle par défaut et le DNS pour chaque réseau virtuel.
+
+Lors du basculement, la reprise après incident BlueXP  détermine l'adresse IP appropriée de chaque vNIC en examinant le CIDR fourni pour le réseau virtuel mappé et l'utilise pour dériver la nouvelle adresse IP.
+
+Par exemple :
+
+* Réseau a = 10.1.1.0/24
+* Réseau B = 192.168.1.0/24
+
+
+VM1 dispose d'une vNIC (10.1.1.50) connectée au réseau A. NetworkA est mappé sur le réseau B dans les paramètres du plan de réplication.
+
+En cas de basculement, la reprise après incident BlueXP  remplace la partie réseau de l'adresse IP d'origine (10.1.1) et conserve l'adresse hôte (.50) de l'adresse IP d'origine (10.1.1.50). Pour VM1, BlueXP  Disaster Recovery examine les paramètres CIDR du réseau B et utilise cette partie du réseau 192.168.1 tout en conservant la partie hôte (.50) pour créer la nouvelle adresse IP du VM1. La nouvelle adresse IP devient 192.168.1.50.
+
+En résumé, l'adresse de l'hôte reste la même, tandis que l'adresse réseau est remplacée par celle configurée dans le mappage de sous-réseau du site. Cela vous permet de gérer plus facilement la réaffectation d'adresses IP en cas de basculement, notamment si vous avez des centaines de réseaux et des milliers de machines virtuelles à gérer.
+
+Pour plus d'informations sur l'inclusion du mappage de sous-réseau dans vos sites, reportez-vous à la section https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/sites-add.html["Ajoutez des sites de serveur vCenter"] .
+
+
+
+==== Ignorer la protection
+
+Vous pouvez maintenant ignorer la protection afin que le service ne crée pas automatiquement une relation de protection inverse après un basculement de plan de réplication. Cette fonction est utile si vous souhaitez effectuer des opérations supplémentaires sur le site restauré avant de le remettre en ligne dans le cadre de la reprise sur incident BlueXP .
+
+Lorsque vous initiez un basculement, par défaut, le service crée automatiquement une relation de protection inverse pour chaque volume du plan de réplication, si le site source d'origine est en ligne. Cela signifie que le service crée une relation SnapMirror entre le site cible et le site source. Par ailleurs, le service inverse automatiquement la relation SnapMirror lorsque vous initiez un retour arrière.
+
+Lorsque vous lancez un basculement, vous pouvez maintenant choisir une option *Ignorer la protection*. Avec cela, le service n'inverse pas automatiquement la relation SnapMirror. Il laisse le volume inscriptible des deux côtés du plan de réplication.
+
+Une fois le site source d'origine remis en ligne, vous pouvez établir une protection inverse en sélectionnant *protéger les ressources* dans le menu actions du plan de réplication. Cette opération tente de créer une relation de réplication inverse pour chaque volume du plan. Vous pouvez exécuter cette tâche plusieurs fois jusqu'à ce que la protection soit restaurée. Une fois la protection restaurée, vous pouvez lancer un rétablissement de la manière habituelle.
+
+Pour plus de détails sur le fait d'ignorer la protection, reportez-vous à la https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html["Basculement des applications vers un site distant"].
+
+
+
+==== SnapMirror planifie les mises à jour dans le plan de réplication
+
+La reprise sur incident BlueXP  prend désormais en charge l'utilisation de solutions de gestion externe des snapshots, comme le planificateur de règles ONTAP SnapMirror natif ou les intégrations tierces avec ONTAP. Si chaque datastore (volume) du plan de réplication dispose déjà d'une relation SnapMirror gérée par un autre emplacement, vous pouvez utiliser ces snapshots comme points de restauration dans la reprise d'activité BlueXP .
+
+Pour configurer, dans la section Replication Plan > Resource Mapping, cochez la case *utiliser les sauvegardes gérées par la plate-forme et les plannings de rétention* lors de la configuration du mappage des datastores.
+
+Lorsque cette option est sélectionnée, la reprise sur incident BlueXP  ne configure pas de programme de sauvegarde. Toutefois, vous devez toujours configurer un planning de conservation, car les snapshots peuvent toujours être créés pour les opérations de test, de basculement et de restauration.
+
+Une fois configuré, le service ne prend pas de snapshots planifiés régulièrement, mais s'appuie plutôt sur l'entité externe pour prendre et mettre à jour ces snapshots.
+
+Pour plus d'informations sur l'utilisation de solutions d'instantanés externes dans le plan de réplication, reportez-vous à la section https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Créer un plan de réplication"] .
 
 
 
