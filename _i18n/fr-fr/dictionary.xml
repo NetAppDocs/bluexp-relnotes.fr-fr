@@ -374,15 +374,6 @@
   <block id="35ccbae2ce9b9594b9af9196a3bed361" category="inline-link">Usine de charge de travail</block>
   <block id="0b672c7e4b6adbcc5d61df4659dfc304" category="list-text"><block ref="0b672c7e4b6adbcc5d61df4659dfc304" category="inline-link-rx"></block></block>
   <block id="43cb17f8c706e2a2a7e4c81a5cb2d17b" category="paragraph">Nous avons mis à jour le service de copie et de synchronisation BlueXP ainsi que le courtier en données pour corriger quelques bugs. La nouvelle version du courtier de données est 1.0.56.</block>
-  <block id="139da935670a9f985194d3241917c359" category="paragraph">La sauvegarde et la restauration BlueXP  peuvent désormais sauvegarder des volumes FlexVol et FlexGroup sur site configurés en mode de protection SnapLock Compliance ou SnapLock Enterprise. Pour cette prise en charge, vos clusters doivent exécuter ONTAP 9.14 ou une version ultérieure. La sauvegarde de volumes FlexVol à l'aide de SnapLock Enterprise mode est prise en charge depuis ONTAP version 9.11.1. Les versions antérieures de ONTAP ne prennent pas en charge la sauvegarde des volumes de protection SnapLock.</block>
-  <block id="ba48140a3394818b661e6fd497e203a7" category="inline-link">Découvrez la sauvegarde et la restauration BlueXP</block>
-  <block id="9ddb3e6714694f5c7f619d474fec8169" category="paragraph">Consultez la liste complète des volumes pris en charge dans le<block ref="9e68a582cc487ad29425f5a4796c9e45" category="inline-link-rx"></block>.</block>
-  <block id="cd9b31737e78e0a0a755acc12151f766" category="list-text">Indexé : les volumes ont été indexés.</block>
-  <block id="02e4eb80c967f3b9add2ba16a690eef2" category="list-text">En cours</block>
-  <block id="838534d879f74e7af515a7de57e72b71" category="list-text">Non indexé</block>
-  <block id="73d4d0de3c5f56849f3c1a290a6681f2" category="list-text">Indexation suspendue</block>
-  <block id="902b0d55fddef6f8d651fe1035b7d4bd" category="list-text">Erreur</block>
-  <block id="cb48cbf342305a9ae53e02e21fcb644c" category="list-text">Non activé</block>
   <block id="0d9e2244b8fb5d13651efe34b9723803" category="paragraph">Vous pouvez désormais découvrir les systèmes NetApp ASA r2 lorsque vous utilisez BlueXP  en mode privé. Cette prise en charge est disponible à partir de la version 3.9.46 du mode privé de BlueXP .</block>
   <block id="39ca8580b0e6a065fa25faac2a2acc86" category="inline-link-macro">Découvrez comment consulter les recommandations de mise à jour du firmware</block>
   <block id="33596391cf2ec8b74b76bf635ea4c6e2" category="paragraph">Cette version de BlueXP Connector inclut des améliorations mineures de la sécurité et des correctifs.</block>
@@ -451,11 +442,7 @@
   <block id="bb123d17400bea06780499dfee0aa1eb" category="section-title">Nouvelle autorisation requise</block>
   <block id="9d5b3307d5a7d5905623bf21ab049bdd" category="section-title">22 avril 2024</block>
   <block id="2d177a5ce778fe0e6f460ac5e9449f84" category="section-title">Les modèles de volume ne sont plus pris en charge</block>
-  <block id="008c6d012aabba0e44e2b94f8259635c" category="section-title">22 novembre 2024</block>
   <block id="3c97d3b45dd14b2958c1e0e304230aa0" category="paragraph">Cette version de sauvegarde et de restauration BlueXP  comprend les mises à jour suivantes.</block>
-  <block id="517624d736bd2a385ee8cda71584112f" category="section-title">Modes de protection SnapLock Compliance et SnapLock Enterprise</block>
-  <block id="fec92c3dfb6a0b3db498488c7f4d2f29" category="section-title">Indexation pour le processus de recherche et de restauration sur la page volumes</block>
-  <block id="20d3b0b7cfe7a9f3dcfdb0faa9398efd" category="paragraph">Avant de pouvoir utiliser la fonction de recherche et de restauration, vous devez activer « indexation » sur chaque environnement de travail source à partir duquel vous souhaitez restaurer les données du volume. Cela permet au catalogue indexé de suivre les fichiers de sauvegarde de chaque volume. La page volumes affiche désormais l'état de l'indexation :</block>
   <block id="009d2060a609114df262eff04e83f241" category="section-title">22 janvier 2025</block>
   <block id="0a401367ec8a2cd84bb197e6d12c99af" category="section-title">Version 1.39</block>
   <block id="1a58f9988f87b599ed71b9c7430034c2" category="paragraph">Cette version de classification BlueXP  met à jour le processus d'exportation du rapport d'investigation de données. Cette mise à jour d'exportation est utile pour effectuer des analyses supplémentaires sur vos données, créer des visualisations supplémentaires sur les données ou partager les résultats de votre enquête de données avec d'autres personnes.</block>
@@ -766,4 +753,26 @@
   <block id="38a9b45e86982c8330edcb875da55284" category="paragraph">Cette version fournit des notifications indiquant que l'essai gratuit expirera dans 60 jours pour vous assurer que vous avez le temps d'obtenir une licence. Cette version fournit également des notifications le jour de l'expiration de la licence.</block>
   <block id="5d940e67e8d433508306c751ff0ea678" category="section-title">Notification des mises à jour de service</block>
   <block id="9bdd52eb995b6f47a02ffa6aa4318399" category="paragraph">Avec cette version, une bannière s'affiche en haut pour indiquer que les services sont en cours de mise à niveau et que le service est placé en mode de maintenance. La bannière s'affiche lorsque le service est mis à niveau et disparaît lorsque la mise à niveau est terminée. Bien que vous puissiez continuer à travailler dans l'interface utilisateur pendant la mise à niveau, vous ne pouvez pas soumettre de nouveaux travaux. Les tâches planifiées s'exécuteront une fois la mise à jour terminée et le service retournera en mode de production.</block>
+  <block id="46c8a90c914cf567466d573545fb57d9" category="section-title">Tableau de bord de volume amélioré (aperçu)</block>
+  <block id="d4400da5c041019019538ea47e6a4d7e" category="paragraph">Le tableau de bord de volume se charge désormais en moins de 10 secondes, offrant ainsi une interface beaucoup plus rapide et efficace. Cette version préliminaire est disponible pour certains clients, leur offrant un aperçu de ces améliorations.</block>
+  <block id="a43e01afb7862afba8cef123bb022bd8" category="section-title">Améliorations de l'interface utilisateur</block>
+  <block id="d631beb153bc97ac47e69041180f2bda" category="paragraph">Cette version améliore votre expérience en simplifiant l'interface :</block>
+  <block id="7945214ab9edda2604c048e3254b6820" category="list-text">La suppression de la colonne Aggregate des tables volumes, ainsi que des colonnes Snapshot Policy, Backup Policy et Replication Policy de la table Volume du tableau de bord V2, entraîne une mise en page plus rationalisée.</block>
+  <block id="1f4ea4d0a55155c1ea9271081e2e118f" category="list-text">L'exclusion des environnements de travail non activés dans la liste déroulante rend l'interface moins encombrée, la navigation plus efficace et le chargement plus rapide.</block>
+  <block id="c42ae4d1274def078f227f6b5526ed38" category="list-text">Lorsque le tri dans la colonne balises est désactivé, vous pouvez toujours afficher les balises, en vous assurant que les informations importantes restent facilement accessibles.</block>
+  <block id="ee5a89c90c463c21f6188d8945b6a165" category="list-text">Le retrait des étiquettes sur les icônes de protection contribue à un aspect plus propre et réduit le temps de chargement.</block>
+  <block id="4deca0db77c0cb1d491b7636aff218c4" category="list-text">Pendant le processus d'activation de l'environnement de travail, une boîte de dialogue affiche une icône de chargement pour fournir des informations jusqu'à ce que le processus de découverte soit terminé, ce qui améliore la transparence et la confiance dans les opérations du système.</block>
+  <block id="e933dec5f784259760ab3c9400fb8e0b" category="section-title">Prise en charge d'un magasin d'objets Wasabi tiers (aperçu)</block>
+  <block id="57a83bf4b6d8f755d141ebf2bb282ed3" category="paragraph">La sauvegarde et la restauration BlueXP  étendent désormais sa prise en charge aux magasins d'objets tiers, en mettant l'accent sur Wasabi. Cette nouvelle fonctionnalité de préversion vous permet d'exploiter un magasin d'objets compatible S3 pour vos besoins de sauvegarde et de restauration.</block>
+  <block id="da21b58c44ce1975cb8550ec689df5b3" category="section-title">Mise en route de Wasabi</block>
+  <block id="f3afa8b48aa14a1da6a21d82ad964f5d" category="paragraph">Pour commencer à utiliser cette fonctionnalité, vous devez activer un indicateur dans l'interface utilisateur de BlueXP . Vous pouvez ensuite saisir les informations de connexion de votre magasin d'objets tiers et l'intégrer à vos workflows de sauvegarde et de restauration.</block>
+  <block id="9b6d9b582a741bc832b2557c16d31b09" category="section-title">Limites du mode d'aperçu</block>
+  <block id="fdf10a1d090d444123d00414152f7943" category="paragraph">Lorsque cette fonction est en aperçu, tenez compte des limitations suivantes :</block>
+  <block id="7ebc42140a656312f7a985f14e55f3a6" category="list-text">Le modèle BYOB (Bring Your Own Bucket) n'est pas pris en charge.</block>
+  <block id="1361fc3308297e6892c65225fef43d57" category="list-text">L'activation de DataLock dans une stratégie n'est pas prise en charge.</block>
+  <block id="250e26d77f45f9c60f2e7d28e0011265" category="list-text">L'activation du mode archivage dans une règle n'est pas prise en charge.</block>
+  <block id="b86033acef55ce16df9b8accc019fc9d" category="list-text">Seuls les environnements ONTAP sur site sont pris en charge.</block>
+  <block id="5ba05bcaf18ef618c0ef794d4ae3e855" category="list-text">MetroCluster n'est pas pris en charge.</block>
+  <block id="2a9854e98da75bbc07132378bef6de4d" category="list-text">Les options d'activation du chiffrement au niveau du compartiment ne sont pas prises en charge.</block>
+  <block id="f98d5407ffd34a829996a4bb36d6e582" category="paragraph">Au cours de cette présentation, nous vous encourageons à explorer cette nouvelle fonctionnalité et à nous faire part de vos commentaires sur l'intégration à des magasins d'objets tiers avant le déploiement complet des fonctionnalités.</block>
 </blocks>
