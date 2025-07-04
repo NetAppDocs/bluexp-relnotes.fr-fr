@@ -24,6 +24,88 @@ Cette section décrit les nouvelles fonctionnalités liées aux fonctions d'admi
 
 
 
+=== 9 juin 2025
+
+
+
+==== Connecteur 3.9.53
+
+Cette version du connecteur BlueXP inclut des améliorations de sécurité et des corrections de bogues.
+
+La version 3.9.53 est disponible pour le mode standard et le mode restreint.
+
+
+
+==== Alertes d'utilisation de l'espace disque
+
+Le centre de notifications inclut désormais des alertes sur l’utilisation de l’espace disque sur le connecteur. link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-maintain-connectors.html#monitor-disk-space["En savoir plus ."^]
+
+
+
+==== Améliorations de l'audit
+
+La chronologie inclut désormais les événements de connexion et de déconnexion des utilisateurs. Vous pouvez consulter les activités de connexion, ce qui facilite l'audit et la surveillance de la sécurité. Les utilisateurs de l'API disposant du rôle d'administrateur d'organisation peuvent consulter l'adresse e-mail de l'utilisateur connecté en incluant l'adresse e-mail.  `includeUserData=true`` paramètre comme dans ce qui suit :  `/audit/<account_id>?includeUserData=true` .
+
+
+
+==== Gestion des abonnements Keystone disponible dans BlueXP
+
+Vous pouvez gérer votre abonnement NetApp Keystone depuis BlueXP.
+
+link:https://docs.netapp.com/us-en/keystone-staas/index.html["Découvrez la gestion des abonnements Keystone dans BlueXP."^]
+
+
+
+==== Gestion des identités et des accès BlueXP
+
+
+
+===== Authentification multifacteur (MFA)
+
+Les utilisateurs non fédérés peuvent désormais activer l'authentification multifacteur (MFA) pour leurs comptes BlueXP, renforçant ainsi leur sécurité. Les administrateurs BlueXP peuvent gérer les paramètres MFA de leurs utilisateurs et réinitialiser ou désactiver la MFA pour chaque utilisateur, selon les besoins. Ceci est pris en charge uniquement en mode standard.
+
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-user-settings.html#task-user-mfa["Découvrez comment configurer l’authentification multifacteur pour vous-même."^] link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#manage-mfa["Découvrez comment administrer l’authentification multifacteur pour les utilisateurs."^]
+
+
+
+==== Charges de travail
+
+Vous pouvez désormais afficher et supprimer les informations d’identification Amazon FSx for NetApp ONTAP à partir de la page Informations d’identification dans BlueXP.
+
+
+
+=== 29 mai 2025
+
+
+
+==== Version du mode privé (3.9.52)
+
+Une nouvelle version en mode privé est désormais disponible au téléchargement sur le https://mysupport.netapp.com/site/downloads["Site de support NetApp"^]
+
+La version 3.9.52 inclut des mises à jour des composants et services BlueXP suivants.
+
+[cols="3*"]
+|===
+| Composant ou service | Version incluse dans cette version | Modifications depuis la version précédente du mode privé 
+
+
+| Connecteur | 3.9.52, 3.9.51 | Aller à la  https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-50["Nouveautés de la page BlueXP  Connector"] et reportez-vous aux modifications incluses pour les versions 3.9.52 et 3.9.50. 
+
+
+| Sauvegarde et restauration | 12 mai 2025 | Aller à la  https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["Nouveautés de la page sauvegarde et restauration BlueXP"^] et se référer aux modifications incluses dans la version de mai 2025. 
+
+
+| Classement | 12 mai 2025 (version 1.43) | Accédez au et consultez les changements inclus dans les https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["Nouveautés de la page de classification BlueXP"^] versions 1.38 à 1.371.41. 
+|===
+Pour plus d'informations sur le mode privé, notamment sur la mise à niveau, reportez-vous aux sections suivantes :
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["En savoir plus sur le mode privé"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Découvrez comment démarrer avec BlueXP en mode privé"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Apprenez à mettre à niveau le connecteur lorsque vous utilisez le mode privé"]
+
+
+
+
 === 12 mai 2025
 
 
@@ -42,70 +124,61 @@ Docker 27 et Docker 28 sont désormais pris en charge avec le connecteur.
 
 
 
+===== Cloud Volumes ONTAP
+
+Les nœuds Cloud Volumes ONTAP ne s'arrêtent plus lorsque le connecteur est hors conformité ou hors service pendant plus de 14 jours. Cloud Volumes ONTAP continue d'envoyer des messages de gestion des événements en cas de perte d'accès au connecteur. Cette modification vise à garantir que Cloud Volumes ONTAP puisse continuer à fonctionner même en cas d'interruption prolongée du connecteur. Elle ne modifie pas les exigences de conformité du connecteur.
+
+
+
 ==== Administration Keystone disponible dans BlueXP
 
 La version bêta de NetApp Keystone dans BlueXP  a permis d'accéder à l'administration Keystone. Vous pouvez accéder à la page d'inscription de la version bêta de NetApp Keystone à partir de la barre de navigation de gauche de BlueXP .
 
 
 
-=== 14 avril 2025
-
-
-
-==== Connecteur 3.9.51
-
-Cette version de BlueXP Connector inclut des améliorations mineures de la sécurité et des correctifs.
-
-À ce stade, la version 3.9.51 est disponible pour le mode standard et le mode restreint.
-
-
-
-===== Des terminaux sécurisés pour les téléchargements de connecteurs sont désormais pris en charge pour la sauvegarde et la restauration, ainsi que pour la protection contre les ransomware
-
-Si vous utilisez la sauvegarde et la restauration ou la protection contre les ransomware, vous pouvez désormais utiliser des terminaux sécurisés pour télécharger des connecteurs. link:https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#new-secure-endpoints-to-obtain-connector-images["Découvrez les terminaux sécurisés pour le téléchargement de connecteurs."^]
-
-
-
 ==== Gestion des identités et des accès BlueXP
 
-* Pour accéder à la protection contre les ransomware, les utilisateurs ne disposant pas d'un rôle d'administrateur d'organisation ou de dossier ou de projet doivent se voir attribuer un rôle de protection contre les ransomwares. Vous pouvez attribuer un utilisateur à l'un des deux rôles suivants : administrateur de la protection contre les ransomware ou visualiseur de la protection contre les ransomware.
-* Les utilisateurs ne disposant pas d'un administrateur Org, d'un dossier ou d'un administrateur de projet doivent se voir attribuer un rôle Keystone pour avoir accès à Keystone. Vous pouvez attribuer un utilisateur à l'un des deux rôles suivants : admin Keystone ou visionneur Keystone.
+
+
+===== Nouveaux rôles de gestion du stockage
+
+Les rôles d’administrateur de stockage, de spécialiste de l’état du système et de visualiseur de stockage sont disponibles et peuvent être attribués aux utilisateurs.
+
+Ces rôles vous permettent de gérer qui dans votre organisation peut découvrir et gérer les ressources de stockage, ainsi que d'afficher les informations sur l'état du stockage et d'effectuer des mises à jour logicielles.
+
+Ces rôles sont pris en charge pour contrôler l'accès aux ressources de stockage suivantes :
+
+* Systèmes E-Series
+* Systèmes StorageGRID
+* Systèmes ONTAP sur site
+
+
+Vous pouvez également utiliser ces rôles pour contrôler l’accès aux services BlueXP suivants :
+
+* Mises à jour de logiciels
+* Conseiller digital
+* Résilience opérationnelle
+* Efficacité économique
+* Durabilité
+
+
+Les rôles suivants ont été ajoutés :
+
+* *Administrateur de stockage*
++
+Administrer l'intégrité, la gouvernance et la découverte du stockage des ressources de l'organisation. Ce rôle peut également effectuer des mises à jour logicielles sur les ressources de stockage.
+
+* *Spécialiste de la santé du système*
++
+Administrer l'intégrité et la gouvernance du stockage des ressources de l'organisation. Ce rôle peut également effectuer des mises à jour logicielles sur les ressources de stockage. Il ne peut pas modifier ni supprimer les environnements de travail.
+
+* *Visionneuse de stockage*
++
+Afficher les informations sur l’état du stockage et les données de gouvernance.
+
 +
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["En savoir plus sur les rôles d'accès."^]
 
-* Si vous disposez du rôle d'administrateur Org, dossier ou projet, vous pouvez désormais associer un abonnement Keystone à un projet IAM. L'association d'un abonnement Keystone à un projet IAM vous permet de contrôler l'accès à Keystone dans BlueXP .
-
-
-
-
-=== 28 mars 2025
-
-
-
-==== Version en mode privé (3.9.50)
-
-Une nouvelle version en mode privé est désormais disponible au téléchargement sur le https://mysupport.netapp.com/site/downloads["Site de support NetApp"^]
-
-La version 3.9.50 comprend des mises à jour des composants et services BlueXP  suivants.
-
-[cols="3*"]
-|===
-| Composant ou service | Version incluse dans cette version | Modifications depuis la version précédente du mode privé 
-
-
-| Connecteur | 3.9.50, 3.9.49 | Accédez au https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-50["Nouveautés de la page BlueXP  Connector"] et reportez-vous aux modifications incluses pour les versions 3.9.50 et 3.9.49. 
-
-
-| Sauvegarde et restauration | 17 mars 2025 | Accédez au et consultez les modifications incluses dans la https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["Nouveautés de la page sauvegarde et restauration BlueXP"^] version de mars 2024. 
-
-
-| Classement | 10 mars 2025 (version 1.41) | Accédez au et consultez les changements inclus dans les https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["Nouveautés de la page de classification BlueXP"^] versions 1.38 à 1.371.41. 
-|===
-Pour plus d'informations sur le mode privé, notamment sur la mise à niveau, reportez-vous aux sections suivantes :
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["En savoir plus sur le mode privé"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Découvrez comment démarrer avec BlueXP en mode privé"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Apprenez à mettre à niveau le connecteur lorsque vous utilisez le mode privé"]
 
 
 
@@ -139,6 +212,26 @@ https://docs.netapp.com/us-en/bluexp-alerts/concept-alerts.html["En savoir plus 
 
 
 == Amazon FSX pour ONTAP
+
+
+
+=== 29 juin 2025
+
+
+
+==== Mise à jour des informations d'identification
+
+Après avoir configuré les informations d'identification et les autorisations pour votre système de fichiers FSx for ONTAP, vous serez redirigé vers la page « Informations d'identification BlueXP ». Depuis cette page, vous pouvez renommer ou supprimer vos informations d'identification FSx for ONTAP.
+
+link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Configurer les autorisations pour les systèmes de fichiers FSx pour ONTAP"]
+
+
+
+==== Prise en charge de la réplication des données entre deux systèmes de fichiers FSx for ONTAP
+
+La réplication des données est désormais disponible entre deux systèmes de fichiers FSx for ONTAP à partir de la console BlueXP.
+
+link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-environment.html#replicate-data["Réplication des données"]
 
 
 
@@ -178,7 +271,7 @@ Dans la console BlueXP , les systèmes de fichiers FSX pour ONTAP présentant d
 
 ==== Mise à jour de la terminologie des autorisations
 
-L'interface utilisateur et la documentation de l'usine de la charge de travail utilisent désormais « lecture seule » pour faire référence aux autorisations de lecture et « lecture-écriture » pour faire référence aux autorisations d'automatisation.
+L'interface utilisateur et la documentation de l'usine de charge de travail utilisent désormais « lecture seule » pour faire référence aux autorisations de lecture et « lecture/écriture » pour faire référence aux autorisations d'automatisation.
 
 
 
@@ -191,18 +284,6 @@ L'interface utilisateur et la documentation de l'usine de la charge de travail u
 Vous pouvez désormais gérer l' `iam:SimulatePrincipalPolicy`autorisation depuis la console BlueXP  lorsque vous ajoutez des informations d'identification de compte AWS supplémentaires ou que vous ajoutez une nouvelle fonctionnalité de charge de travail telle que la charge de travail GenAI.
 
 link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html#change-log["Journal des modifications de référence des autorisations"^]
-
-
-
-=== 02 mars 2025
-
-
-
-==== Événements CloudShell dans Tracker
-
-À chaque fois que vous utilisez CloudShell pour exécuter les opérations FSX for ONTAP à partir de workloads BlueXP , les événements apparaissent dans le module de suivi.
-
-link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-monitor-operations.html["Découvrez comment surveiller et suivre les opérations FSX pour ONTAP dans BlueXP"^]
 
 
 
@@ -277,6 +358,51 @@ Vous ne pouvez plus créer de volume à partir d'un modèle. Cette action a ét�
 
 
 == Sauvegarde et restauration
+
+
+
+=== 09 juin 2025
+
+Cette version de sauvegarde et de restauration BlueXP  comprend les mises à jour suivantes.
+
+
+
+==== Mises à jour du support du catalogue indexé
+
+En février 2025, nous avons introduit la fonctionnalité d'indexation mise à jour (Catalogue indexé v2) que vous utilisez lors de la méthode de recherche et de restauration des données. La version précédente améliorait considérablement les performances d'indexation des données dans les environnements locaux. Avec cette version, le catalogue d'indexation est désormais disponible dans les environnements Amazon Web Services, Microsoft Azure et Google Cloud Platform (GCP).
+
+Si vous êtes un nouveau client, le catalogue indexé v2 est activé par défaut pour tous les nouveaux environnements. Si vous êtes déjà client, vous pouvez réindexer votre environnement pour bénéficier du catalogue indexé v2.
+
+.Comment activer l'indexation ?
+Avant de pouvoir utiliser la méthode Search & Restore de restauration des données, vous devez activer l'« indexation » sur chaque environnement de travail source à partir duquel vous prévoyez de restaurer des volumes ou des fichiers. Sélectionnez l'option *Activer l'indexation* lorsque vous effectuez une recherche et une restauration.
+
+Le catalogue indexé peut ensuite suivre chaque volume et fichier de sauvegarde, rendant vos recherches rapides et efficaces.
+
+Pour plus d'informations, voir https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html#restore-ontap-data-using-search-restore["Comment restaurer des données ONTAP à l'aide de la fonction recherche et ampli ; Restaurer"].
+
+
+
+==== Points de terminaison de liaison privée Azure et points de terminaison de service
+
+Généralement, la sauvegarde et la restauration BlueXP établissent un point de terminaison privé avec le fournisseur de cloud pour gérer diverses tâches de protection. Cette version introduit un paramètre facultatif permettant d'activer ou de désactiver la création automatique d'un point de terminaison privé par la sauvegarde et la restauration BlueXP. Cela peut vous être utile si vous souhaitez davantage de contrôle sur le processus de création de points de terminaison privés.
+
+Vous pouvez activer ou désactiver cette option lorsque vous activez la protection ou démarrez le processus de restauration.
+
+Si vous désactivez ce paramètre, vous devrez créer manuellement le point de terminaison privé pour que la sauvegarde et la restauration BlueXP fonctionnent correctement. Sans une connectivité adéquate, vous risquez de ne pas pouvoir effectuer correctement les tâches de sauvegarde et de restauration.
+
+
+
+==== Prise en charge de SnapMirror vers Cloud Resync sur ONTAP S3
+
+La version précédente intégrait la prise en charge de SnapMirror to Cloud Resync (SM-C Resync). Cette fonctionnalité simplifie la protection des données lors de la migration de volumes dans les environnements NetApp. Cette version prend désormais en charge SM-C Resync sur ONTAP S3, ainsi que sur d'autres fournisseurs compatibles S3 tels que Wasabi et MinIO.
+
+
+
+==== Apportez votre propre seau pour StorageGRID
+
+Lorsque vous créez des fichiers de sauvegarde dans le stockage objet pour un environnement de travail, la sauvegarde et la restauration BlueXP créent par défaut le conteneur (bucket ou compte de stockage) pour les fichiers de sauvegarde dans le compte de stockage objet que vous avez configuré. Auparavant, vous pouviez remplacer cette configuration et spécifier votre propre conteneur pour Amazon S3, Azure Blob Storage et Google Cloud Storage. Avec cette version, vous pouvez désormais utiliser votre propre conteneur de stockage objet StorageGRID.
+
+Voir https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#do-you-want-to-create-your-own-object-storage-container["Créez votre propre conteneur de stockage d'objets"].
 
 
 
@@ -403,91 +529,68 @@ Au cours de cette présentation, nous vous encourageons à explorer cette nouvel
 
 
 
-=== 17 mars 2025
-
-Cette version de sauvegarde et de restauration BlueXP  comprend les mises à jour suivantes.
-
-
-
-==== Exploration des snapshots SMB
-
-Cette mise à jour de sauvegarde et de restauration BlueXP  a résolu un problème qui empêchait les clients de parcourir les snapshots locaux dans un environnement SMB.
-
-
-
-==== Mise à jour de l'environnement AWS GovCloud
-
-Cette mise à jour de sauvegarde et de restauration BlueXP  a résolu un problème qui empêchait l'interface utilisateur de se connecter à un environnement AWS GovCloud en raison d'erreurs de certificat TLS. Le problème a été résolu en utilisant le nom d'hôte du connecteur BlueXP  au lieu de l'adresse IP.
-
-
-
-==== Limites de conservation des règles de sauvegarde
-
-Jusqu'à présent, l'interface de sauvegarde et de restauration de BlueXP  limitait les sauvegardes à 999 copies, tandis que l'interface de ligne de commandes permettait d'en effectuer davantage. Vous pouvez désormais relier jusqu'à 4,000 volumes à une règle de sauvegarde et inclure 1,018 volumes non rattachés à une règle de sauvegarde. Cette mise à jour inclut des validations supplémentaires qui empêchent de dépasser ces limites.
-
-
-
-==== Resynchronisation du cloud SnapMirror
-
-Cette mise à jour garantit que la resynchronisation du cloud SnapMirror ne peut pas être démarrée à partir de la sauvegarde et de la restauration BlueXP  pour les versions ONTAP non prises en charge après la suppression d'une relation SnapMirror.
-
-
-
-=== 21 février 2025
-
-Cette version de sauvegarde et de restauration BlueXP  comprend les mises à jour suivantes.
-
-
-
-==== Indexation haute performance
-
-La sauvegarde et la restauration BlueXP  proposent une fonction d'indexation mise à jour qui optimise l'indexation des données dans l'environnement de travail source. La nouvelle fonction d'indexation inclut des mises à jour de l'interface utilisateur, des performances améliorées de la méthode de recherche et de restauration des données, des mises à niveau vers des fonctionnalités de recherche globale et une meilleure évolutivité.
-
-Voici une description des améliorations :
-
-* *Consolidation des dossiers* : la version mise à jour regroupe les dossiers en utilisant des noms qui incluent des identificateurs spécifiques, rendant le processus d'indexation plus fluide.
-* *Compactage du fichier parquet* : la version mise à jour réduit le nombre de fichiers utilisés pour indexer chaque volume, ce qui simplifie le processus et élimine le besoin d'une base de données supplémentaire.
-* *Scale-out avec plus de sessions*: La nouvelle version ajoute plus de sessions pour gérer les tâches d'indexation, ce qui accélère le processus.
-* *Prise en charge de plusieurs conteneurs d'index* : la nouvelle version utilise plusieurs conteneurs pour mieux gérer et distribuer les tâches d'indexation.
-* *Flux de travail d'index partagé* : la nouvelle version divise le processus d'indexation en deux parties, améliorant ainsi l'efficacité.
-* *Concurrence améliorée* : la nouvelle version permet de supprimer ou de déplacer des répertoires en même temps, accélérant ainsi le processus d'indexation.
-
-
-.Qui bénéficie de cette fonctionnalité ?
-La nouvelle fonction d'indexation est disponible pour tous les nouveaux clients.
-
-.Comment activer l'indexation ?
-Avant de pouvoir utiliser la méthode Search & Restore de restauration des données, vous devez activer l'« indexation » sur chaque environnement de travail source à partir duquel vous prévoyez de restaurer des volumes ou des fichiers. Cela permet au catalogue indexé de suivre chaque volume et chaque fichier de sauvegarde, ce qui accélère et optimise vos recherches.
-
-Activez l'indexation sur l'environnement de travail source en sélectionnant l'option « Activer l'indexation » lorsque vous effectuez une recherche et une restauration.
-
-Pour plus d'informations, reportez-vous à la documentation https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html#restore-ontap-data-using-search-restore["Comment restaurer des données ONTAP à l'aide de la fonction recherche et ampli ; Restaurer"].
-
-.Échelle prise en charge
-La nouvelle fonction d'indexation prend en charge les éléments suivants :
-
-* Recherche globale efficace en moins de 3 minutes
-* Jusqu'à 5 milliards de fichiers
-* Jusqu'à 5000 volumes par cluster
-* Jusqu'à 100 000 snapshots par volume
-* La durée maximale pour l'indexation de la ligne de base est inférieure à 7 jours. La durée réelle varie en fonction de votre environnement.
-
-
-
-
-==== Amélioration des performances de recherche globale
-
-Cette version comprend également des améliorations des performances de recherche globale. Vous verrez maintenant des indicateurs de progression et des résultats de recherche plus détaillés, y compris le nombre de fichiers et le temps nécessaire à la recherche. Des conteneurs dédiés à la recherche et à l'indexation garantissent que les recherches globales sont effectuées en moins de cinq minutes.
-
-Notez les considérations suivantes relatives à la recherche globale :
-
-* Le nouvel index n'est pas effectué sur les instantanés libellés horaire.
-* La nouvelle fonctionnalité d'indexation ne fonctionne que sur les copies Snapshot sur FlexVols et non sur les copies Snapshot sur FlexGroups.
-
-
-
-
 == Classement
+
+
+
+=== 09 juin 2025
+
+
+
+==== Version 1.44
+
+Cette version de classification BlueXP  inclut :
+
+.Amélioration des temps de mise à jour du tableau de bord de gouvernance
+Les délais de mise à jour des différents composants du tableau de bord de gouvernance ont été améliorés. Le tableau suivant présente la fréquence de mise à jour de chaque composant.
+
+[cols="1,1"]
+|===
+| Composant | Heures de mise à jour 
+
+
+| Âge des données | 24 heures 
+
+
+| Catégories | 24 heures 
+
+
+| Présentation des données | 5 minutes 
+
+
+| Fichiers en double | 2 heures 
+
+
+| Types de fichiers | 24 heures 
+
+
+| Données non commerciales | 2 heures 
+
+
+| Ouvrez autorisations | 24 heures 
+
+
+| Recherches enregistrées | 2 heures 
+
+
+| Données sensibles et autorisations étendues | 24 heures 
+
+
+| Taille des données | 24 heures 
+
+
+| Données obsolètes | 2 heures 
+
+
+| Principaux référentiels de données par niveau de sensibilité | 2 heures 
+|===
+Vous pouvez consulter l'heure de la dernière mise à jour et mettre à jour manuellement les composants « Fichiers en double », « Données non commerciales », « Recherches enregistrées », « Données obsolètes » et « Principaux référentiels de données par niveau de sensibilité ». xref:task-controlling-governance-data.html[Afficher les détails de gouvernance sur les données stockées dans votre organisation] .
+
+.Améliorations des performances et de la sécurité
+Des améliorations ont été apportées pour améliorer les performances, la consommation de mémoire et la sécurité de la classification BlueXP.
+
+.Correctifs de bogues
+Redis a été mis à niveau pour améliorer la fiabilité de la classification BlueXP. Cette dernière utilise désormais Elasticsearch pour améliorer la précision des rapports de nombre de fichiers lors des analyses.
 
 
 
@@ -650,6 +753,18 @@ Cette version de classification BlueXP  inclut des améliorations générales e
 
 
 
+=== 29 mai 2025
+
+
+
+==== Déploiements en mode privé activés pour Cloud Volumes ONTAP 9.15.1
+
+Vous pouvez désormais déployer Cloud Volumes ONTAP 9.15.1 en mode privé sur AWS, Azure et Google Cloud. Ce mode est activé pour les déploiements à nœud unique et haute disponibilité (HA) de Cloud Volumes ONTAP 9.15.1.
+
+Pour plus d'informations sur les déploiements en mode privé, reportez-vous https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#restricted-mode["Découvrez les modes de déploiement BlueXP"^]à la section .
+
+
+
 === 12 mai 2025
 
 
@@ -683,18 +798,6 @@ Vous pouvez désormais déployer Cloud Volumes ONTAP 9.12.1 GA ou version ultér
 
 
 Pour obtenir la liste de toutes les régions, reportez-vous à la https://bluexp.netapp.com/cloud-volumes-global-regions["Carte des régions globales sous Azure"^].
-
-
-
-=== 14 avril 2025
-
-
-
-==== La création des machines virtuelles de stockage est automatisée au moyen des API dans Google Cloud
-
-Vous pouvez désormais utiliser les API BlueXP  pour automatiser la création des machines virtuelles de stockage dans Google Cloud. Vous utilisez cette fonctionnalité dans des configurations Cloud Volumes ONTAP haute disponibilité (HA), et vous pouvez désormais l'utiliser dans des déploiements à un seul nœud. Avec les API BlueXP , vous pouvez facilement créer, renommer et supprimer d'autres serveurs de stockage virtuels qui servent les données dans votre environnement Google Cloud, sans avoir à configurer manuellement les interfaces réseau, les LIF et les LIF de gestion requises. Cette automatisation simplifie le processus de gestion des machines virtuelles de stockage.
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-gcp.html["Gestion des machines virtuelles de stockage destinées à la transmission des données pour Cloud Volumes ONTAP dans Google Cloud"^]
 
 
 
@@ -885,6 +988,46 @@ Pour plus d'informations sur les rapports d'utilisation, reportez-vous à la sec
 
 
 == Reprise après incident
+
+
+
+=== 30 juin 2025
+
+Version 4.2.4P2
+
+
+
+==== Améliorations de la découverte
+
+Cette mise à jour améliore le processus de découverte, ce qui réduit le temps nécessaire à la découverte.
+
+
+
+=== 23 juin 2025
+
+Version 4.2.4P1
+
+
+
+==== Améliorations du mappage des sous-réseaux
+
+Cette mise à jour améliore la boîte de dialogue « Ajouter et modifier le mappage de sous-réseaux » avec une nouvelle fonctionnalité de recherche. Vous pouvez désormais trouver rapidement des sous-réseaux spécifiques en saisissant des termes de recherche, ce qui simplifie la gestion des mappages de sous-réseaux.
+
+
+
+=== 9 juin 2025
+
+Version 4.2.4
+
+
+
+==== Prise en charge de la solution de mot de passe d'administrateur local Windows (LAPS)
+
+Windows Local Administrator Password Solution (Windows LAPS) est une fonctionnalité Windows qui gère et sauvegarde automatiquement le mot de passe d'un compte administrateur local sur Active Directory.
+
+Vous pouvez désormais sélectionner les options de mappage de sous-réseau et cocher l'option LAPS en fournissant les informations du contrôleur de domaine. Grâce à cette option, vous n'avez pas besoin de fournir de mot de passe pour chacune de vos machines virtuelles.
+
+Pour plus de détails, reportez-vous à https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Créer un plan de réplication"] .
 
 
 
@@ -1130,6 +1273,16 @@ Pour plus de détails, reportez-vous à https://docs.netapp.com/us-en/bluexp-dis
 
 
 
+=== 12 mai 2025
+
+
+
+==== Rôle d'accès BlueXP requis
+
+Vous avez désormais besoin de l’un des rôles d’accès suivants pour afficher, découvrir ou gérer la série E dans BlueXP : administrateur d’organisation, administrateur de dossier ou de projet, administrateur de stockage ou spécialiste de l’intégrité du système.  https://docs.netapp.com/us-en/bluexp/reference-iam-predefined-roles.html["Découvrez les rôles d’accès BlueXP."^]
+
+
+
 === 18 septembre 2022
 
 
@@ -1206,6 +1359,29 @@ Vous avez pu afficher les compartiments Google Cloud Storage sur le canevas Blue
 
 
 
+== Keystone
+
+
+
+=== 19 juin 2025
+
+
+
+==== Tableau de bord Keystone dans BlueXP
+
+Vous pouvez désormais accéder au tableau de bord Keystone directement depuis BlueXP. Cette intégration vous offre un emplacement unique pour surveiller, gérer et suivre tous vos abonnements Keystone ainsi que vos autres services NetApp.
+
+Avec le tableau de bord Keystone dans BlueXP, vous pouvez :
+
+* Affichez tous les détails de votre abonnement, l'utilisation de la capacité et les ressources en un seul endroit.
+* Gérez facilement vos abonnements et demandez des modifications à mesure que vos besoins évoluent.
+* Restez au courant des dernières informations concernant votre environnement de stockage.
+
+
+Pour commencer, accédez à *Stockage > Keystone* dans le menu de navigation de gauche de BlueXP. Pour en savoir plus, reportez-vous link:https://docs.netapp.com/us-en/keystone-staas/integrations/dashboard-overview.html["Présentation du tableau de bord Keystone"]à la section .
+
+
+
 == Kubernetes
 
 La prise en charge de la détection et de la gestion des clusters Kubernetes a été supprimée le 7 août 2024.
@@ -1219,6 +1395,16 @@ Le service de rapports de migration BlueXP  a été supprimé le 7 août 2024.
 
 
 == Clusters ONTAP sur site
+
+
+
+=== 12 mai 2025
+
+
+
+==== Rôle d'accès BlueXP requis
+
+Vous avez désormais besoin de l’un des rôles d’accès suivants pour afficher, découvrir ou gérer les clusters ONTAP sur site : administrateur d’organisation, administrateur de dossier ou de projet, administrateur de stockage ou spécialiste de l’intégrité du système. link:https://docs.netapp.com/us-en/bluexp/concept-iam-predefined-roles.html["Découvrez les rôles d’accès BlueXP."^]
 
 
 
@@ -1254,16 +1440,6 @@ La découverte des systèmes ASA r2 n'est pas prise en charge lorsque vous utili
 
 
 
-=== 22 avril 2024
-
-
-
-==== Les modèles de volume ne sont plus pris en charge
-
-Vous ne pouvez plus créer de volume à partir d'un modèle. Cette action a été associée au service de correction BlueXP, qui n'est plus disponible.
-
-
-
 == Résilience opérationnelle
 
 
@@ -1283,6 +1459,38 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 
 == Protection par ransomware
+
+
+
+=== 9 juin 2025
+
+
+
+==== Mises à jour de la page de destination
+
+Cette version inclut des mises à jour de la page de destination de la protection contre les ransomwares BlueXP qui facilitent le démarrage de l'essai gratuit et la découverte.
+
+
+
+==== Mises à jour sur les exercices de préparation
+
+Auparavant, vous pouviez exécuter un exercice de préparation aux ransomwares en simulant une attaque sur un nouvel échantillon de charge de travail. Grâce à cette fonctionnalité, vous pouvez analyser l'attaque simulée et récupérer la charge de travail. Utilisez cette fonctionnalité pour tester les notifications d'alerte, la réponse et la récupération. Exécutez et planifiez ces exercices aussi souvent que nécessaire.
+
+Avec cette version, vous pouvez utiliser un nouveau bouton sur le tableau de bord de protection contre les ransomwares BlueXP pour exécuter un exercice de préparation aux ransomwares sur une charge de travail de test, ce qui vous permet de simuler plus facilement des attaques de ransomwares, d'étudier leur impact et de récupérer efficacement les charges de travail, le tout dans un environnement contrôlé.
+
+Vous pouvez désormais exécuter des exercices de préparation sur les charges de travail CIFS (SMB) en plus des charges de travail NFS.
+
+Pour plus de détails, reportez-vous à https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["Évaluez le niveau de préparation à une attaque par ransomware"] .
+
+
+
+==== Activer les mises à jour de classification BlueXP
+
+Avant d'utiliser la classification BlueXP  dans le service de protection contre les ransomwares BlueXP , vous devez activer la classification BlueXP  pour analyser vos données. La classification des données vous aide à trouver des informations personnelles identifiables (PII), ce qui peut augmenter les risques de sécurité.
+
+Vous pouvez déployer la classification BlueXP sur une charge de travail de partage de fichiers depuis la protection BlueXP contre les ransomwares. Dans la colonne *Exposition à la confidentialité*, sélectionnez l'option *Identifier l'exposition*. Si vous avez activé le service de classification, cette action identifie l'exposition. Sinon, avec cette version, une boîte de dialogue vous propose de déployer la classification BlueXP. Sélectionnez *Déployer* pour accéder à la page d'accueil du service de classification BlueXP, où vous pourrez déployer ce service. W
+
+Pour plus de détails, reportez-vous à  https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html["Déployez la classification BlueXP dans le cloud"^] et pour utiliser le service dans le cadre de la protection contre les ransomwares BlueXP, reportez-vous à  https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classify.html["Recherchez des informations à caractère personnel grâce à la classification BlueXP"] .
 
 
 
@@ -1326,6 +1534,14 @@ TIP: Les stratégies de sauvegarde d'un workload s'exécutant sur FSX pour ONTAP
 Pour plus de détails, reportez-vous à https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["Découvrez la protection contre les ransomwares de BlueXP  et les environnements de travail"] .
 
 Pour plus d'informations sur les options prises en charge, reportez-vous au https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-limitations.html["Limites de la protection contre les ransomware de BlueXP"].
+
+
+
+==== Rôle d'accès BlueXP requis
+
+Vous avez désormais besoin de l’un des rôles d’accès suivants pour afficher, découvrir ou gérer la protection contre les ransomwares BlueXP : administrateur de l’organisation, administrateur de dossier ou de projet, administrateur de la protection contre les ransomwares ou visualiseur de protection contre les ransomwares.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["En savoir plus sur les rôles d'accès BlueXP pour tous les services"^].
 
 
 
@@ -1477,6 +1693,16 @@ https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["Dé
 
 
 
+=== 12 mai 2025
+
+
+
+==== Rôle d'accès BlueXP requis
+
+Vous devez désormais disposer de l'un des rôles d'accès suivants pour installer les mises à jour logicielles : *Administrateur de l'organisation*, *Administrateur de dossier ou de projet*, *Administrateur du stockage*, *Observateur du stockage* ou *Spécialiste de l'intégrité du stockage*. Les utilisateurs disposant du rôle d'observateur du stockage disposent de diverses autorisations liées aux mises à jour logicielles, mais ne peuvent pas les installer. link:https://docs.netapp.com/us-en/bluexp/concept-iam-predefined-roles.html["Découvrez les rôles d’accès BlueXP."^]
+
+
+
 === 02 avril 2025
 
 
@@ -1609,6 +1835,26 @@ link:https://docs.netapp.com/us-en/bluexp-volume-caching/get-started/cache-intro
 
 
 
+=== 29 juin 2025
+
+
+
+==== Mise à jour des autorisations pour les bases de données
+
+L'autorisation suivante est désormais disponible en mode _lecture seule_ pour les bases de données :  `cloudwatch:GetMetricData` .
+
+https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html#change-log["Journal des modifications de référence des autorisations"]
+
+
+
+==== Prise en charge du service de notification de l'usine de charge de travail BlueXP
+
+Le service de notification de l'usine de charge de travail BlueXP permet à l'usine de charge de travail d'envoyer des notifications au service d'alertes BlueXP ou à une rubrique Amazon SNS. Les notifications envoyées aux alertes BlueXP apparaissent dans le panneau des alertes BlueXP. Lorsque la fabrique de charges de travail publie des notifications dans une rubrique Amazon SNS, les abonnés à cette rubrique (tels que les personnes ou d'autres applications) reçoivent les notifications aux points de terminaison configurés pour cette rubrique (tels que les e-mails ou les SMS).
+
+https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html["Configurer les notifications de l'usine de charge de travail BlueXP"]
+
+
+
 === 04 mai 2025
 
 
@@ -1621,7 +1867,7 @@ Lorsque vous utilisez BlueXP  Workload Factory CloudShell, vous pouvez commence
 
 ==== Mise à jour de la terminologie des autorisations
 
-L'interface utilisateur et la documentation de l'usine de la charge de travail utilisent désormais « lecture seule » pour faire référence aux autorisations de lecture et « lecture-écriture » pour faire référence aux autorisations d'automatisation.
+L'interface utilisateur et la documentation de l'usine de charge de travail utilisent désormais « lecture seule » pour faire référence aux autorisations de lecture et « lecture/écriture » pour faire référence aux autorisations d'automatisation.
 
 
 
