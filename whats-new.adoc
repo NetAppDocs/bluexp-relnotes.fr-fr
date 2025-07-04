@@ -206,6 +206,18 @@ https://docs.netapp.com/us-en/bluexp-alerts/concept-alerts.html["En savoir plus 
 
 
 
+=== 14 juillet 2025
+
+
+
+==== Prise en charge de la réplication des données entre deux systèmes de fichiers FSx for ONTAP
+
+La réplication des données est désormais disponible entre deux systèmes de fichiers FSx for ONTAP à partir de la console BlueXP.
+
+link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-environment.html#replicate-data["Réplication des données"]
+
+
+
 === 29 juin 2025
 
 
@@ -215,14 +227,6 @@ https://docs.netapp.com/us-en/bluexp-alerts/concept-alerts.html["En savoir plus 
 Après avoir configuré les informations d'identification et les autorisations pour votre système de fichiers FSx for ONTAP, vous serez redirigé vers la page « Informations d'identification BlueXP ». Depuis cette page, vous pouvez renommer ou supprimer vos informations d'identification FSx for ONTAP.
 
 link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Configurer les autorisations pour les systèmes de fichiers FSx pour ONTAP"]
-
-
-
-==== Prise en charge de la réplication des données entre deux systèmes de fichiers FSx for ONTAP
-
-La réplication des données est désormais disponible entre deux systèmes de fichiers FSx for ONTAP à partir de la console BlueXP.
-
-link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-environment.html#replicate-data["Réplication des données"]
 
 
 
@@ -263,18 +267,6 @@ Dans la console BlueXP , les systèmes de fichiers FSX pour ONTAP présentant d
 ==== Mise à jour de la terminologie des autorisations
 
 L'interface utilisateur et la documentation de l'usine de charge de travail utilisent désormais « lecture seule » pour faire référence aux autorisations de lecture et « lecture/écriture » pour faire référence aux autorisations d'automatisation.
-
-
-
-=== 30 mars 2025
-
-
-
-==== iam:mise à jour des autorisations SimulatePermissionPolicy
-
-Vous pouvez désormais gérer l' `iam:SimulatePrincipalPolicy`autorisation depuis la console BlueXP  lorsque vous ajoutez des informations d'identification de compte AWS supplémentaires ou que vous ajoutez une nouvelle fonctionnalité de charge de travail telle que la charge de travail GenAI.
-
-link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html#change-log["Journal des modifications de référence des autorisations"^]
 
 
 
@@ -1354,21 +1346,21 @@ Pour plus d'informations, reportez-vous link:https://docs.netapp.com/us-en/bluex
 
 ==== Protection améliorée de la charge de travail
 
-Cette version inclut un workflow amélioré pour la protection des charges de travail, avec ou sans protection des données. Si vous utilisez d'autres outils de protection des données NetApp , tels que SnapCenter ou la BlueXP backup and recovery , pour vos snapshots ou sauvegardes, la BlueXP ransomware protection BlueXP ransomware protection ou continuer à utiliser les politiques existantes.
+Cette version améliore le processus de configuration des charges de travail avec des stratégies de snapshots et de sauvegarde issues d'autres outils NetApp , tels que SnapCenter ou BlueXP backup and recovery. Dans les versions précédentes, la BlueXP ransomware protection détectait les stratégies d'autres outils, vous permettant uniquement de modifier la stratégie de détection. Avec cette version, vous pouvez désormais remplacer les stratégies de snapshots et de sauvegarde par des stratégies de BlueXP ransomware protection ou continuer à utiliser celles d'autres outils.
 
-Pour plus de détails, reportez-vous à https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Protégez les workloads"] .
+Pour plus de détails, reportez-vous à link:https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Protégez les workloads"].
 
 
 
 ==== Notifications par e-mail
 
-Si la BlueXP ransomware protection détecte une attaque potentielle, une notification apparaît dans les notifications BlueXP et un e-mail est envoyé à l'adresse e-mail configurée. Le service lance également immédiatement un instantané.
+Si la BlueXP ransomware protection détecte une attaque possible, une notification apparaît dans les notifications BlueXP et un e-mail est envoyé à l'adresse e-mail que vous avez configurée.
 
-À ce stade, vous devez consulter l'e-mail, qui répertorie la gravité et les ressources affectées et examiner le risque potentiel dans l'onglet *Alertes* de BlueXP ransomware protection .
+Cet e-mail contient des informations sur la gravité de l'attaque, la charge de travail impactée et un lien vers l'alerte dans l'onglet *Alertes* de la BlueXP ransomware protection .
 
-Si vous avez configuré une gestion de la sécurité et des événements (SIEM) dans la BlueXP ransomware protection, le service envoie les détails des alertes à votre système SIEM.
+Si vous avez configuré un système de gestion de la sécurité et des événements (SIEM) dans la BlueXP ransomware protection, le service envoie les détails de l'alerte à votre système SIEM.
 
-Pour plus de détails, reportez-vous à https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["Gérer les alertes de ransomware détectées"] .
+Pour plus de détails, reportez-vous à link:https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["Gérer les alertes de ransomware détectées"].
 
 
 
