@@ -369,6 +369,29 @@ Vous ne pouvez plus créer de volume à partir d'un modèle. Cette action a ét�
 
 
 
+=== 28 juillet 2025
+
+Cette version de sauvegarde et de restauration BlueXP  comprend les mises à jour suivantes.
+
+
+
+==== Prise en charge des charges de travail Kubernetes en tant qu'aperçu
+
+Cette version de la BlueXP backup and recovery introduit la prise en charge de la découverte et de la gestion des charges de travail Kubernetes :
+
+* Découvrez Red Hat OpenShift et les clusters Kubernetes open source, soutenus par NetApp ONTAP, sans partager les fichiers kubeconfig.
+* Découvrez, gérez et protégez les applications sur plusieurs clusters Kubernetes à l’aide d’un plan de contrôle unifié.
+* Déchargez les opérations de déplacement de données pour la sauvegarde et la récupération des applications Kubernetes vers NetApp ONTAP.
+* Orchestrez les sauvegardes d'applications locales et basées sur le stockage d'objets.
+* Sauvegardez et restaurez des applications entières et des ressources individuelles sur n'importe quel cluster Kubernetes.
+* Travaillez avec des conteneurs et des machines virtuelles exécutés sur Kubernetes.
+* Créez des sauvegardes cohérentes avec les applications à l’aide de hooks d’exécution et de modèles.
+
+
+Pour plus de détails sur la protection des charges de travail Kubernetes, reportez-vous à  https://docs.netapp.com/us-en/bluexp-backup-recovery/br-use-kubernetes-protect-overview.html["Présentation de la protection des charges de travail Kubernetes"] .
+
+
+
 === 14 juillet 2025
 
 Cette version de sauvegarde et de restauration BlueXP  comprend les mises à jour suivantes.
@@ -454,51 +477,6 @@ La version précédente intégrait la prise en charge de SnapMirror to Cloud Res
 Lorsque vous créez des fichiers de sauvegarde dans le stockage objet pour un environnement de travail, la sauvegarde et la restauration BlueXP créent par défaut le conteneur (bucket ou compte de stockage) pour les fichiers de sauvegarde dans le compte de stockage objet que vous avez configuré. Auparavant, vous pouviez remplacer cette configuration et spécifier votre propre conteneur pour Amazon S3, Azure Blob Storage et Google Cloud Storage. Avec cette version, vous pouvez désormais utiliser votre propre conteneur de stockage objet StorageGRID.
 
 Voir https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html["Créez votre propre conteneur de stockage d'objets"].
-
-
-
-=== 13 mai 2025
-
-Cette version de sauvegarde et de restauration BlueXP  comprend les mises à jour suivantes.
-
-
-
-==== Resynchronisation entre SnapMirror et cloud pour les migrations de volumes
-
-La fonctionnalité SnapMirror to Cloud Resync rationalise la protection et la continuité des données lors des migrations de volumes dans les environnements NetApp. Lors de la migration d'un volume à l'aide de la réplication logique SnapMirror (LRSE), d'un déploiement NetApp sur site vers un autre ou vers une solution cloud telle que Cloud Volumes ONTAP ou Cloud Volumes Service, la fonction SnapMirror to Cloud Resync permet de préserver l'intégrité et le fonctionnement des sauvegardes cloud existantes.
-
-Cette fonctionnalité élimine le besoin de redéfinir les bases de données de manière chronophage et gourmande en ressources, pour assurer la continuité des opérations de sauvegarde après la migration. Cette fonctionnalité est très utile pour les scénarios de migration de workloads, prenant en charge FlexVols et FlexGroups, et est disponible à partir de la version 9.16.1 de ONTAP.
-
-En maintenant la continuité des sauvegardes dans l'ensemble des environnements, la resynchronisation de la SnapMirror vers le cloud améliore l'efficacité opérationnelle et réduit la complexité de la gestion des données dans les environnements hybrides et multicloud.
-
-Pour plus de détails sur la façon d'effectuer l'opération de resynchronisation, reportez-vousà la section https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-migrate-resync.html["Migration de volumes à l'aide de SnapMirror pour la resynchronisation cloud"].
-
-
-
-==== Prise en charge du magasin d'objets MiniO tiers (Aperçu)
-
-La sauvegarde et la restauration BlueXP  étendent désormais sa prise en charge aux magasins d'objets tiers, en mettant l'accent sur MiniO. Cette nouvelle fonctionnalité de préversion vous permet d'exploiter un magasin d'objets compatible S3 pour vos besoins de sauvegarde et de restauration.
-
-Avec cette version préliminaire, nous espérons garantir une intégration robuste avec des magasins d'objets tiers avant le déploiement de toutes les fonctionnalités. Nous vous encourageons à explorer cette nouvelle capacité et à fournir des commentaires pour améliorer le service.
-
-
-IMPORTANT: Cette fonction ne doit pas être utilisée en production.
-
-*Limites du mode Aperçu*
-
-Lorsque cette fonction est en aperçu, il existe certaines limitations :
-
-* Le modèle BYOB (Bring Your Own Bucket) n'est pas pris en charge.
-* L'activation de DataLock dans la stratégie n'est pas prise en charge.
-* L'activation du mode archivage dans la stratégie n'est pas prise en charge.
-* Seuls les environnements ONTAP sur site sont pris en charge.
-* MetroCluster n'est pas pris en charge.
-* Les options d'activation du chiffrement au niveau du compartiment ne sont pas prises en charge.
-
-
-*Mise en route*
-
-Pour commencer à utiliser cette fonction d'aperçu, vous devez activer un indicateur sur le connecteur BlueXP . Vous pouvez ensuite entrer les détails de connexion de votre magasin d'objets tiers MiniO dans le flux de travail de protection en choisissant le magasin d'objets *compatible* tiers dans la section de sauvegarde.
 
 
 
