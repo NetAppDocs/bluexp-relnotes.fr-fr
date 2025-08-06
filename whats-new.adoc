@@ -42,6 +42,12 @@ L'interface utilisateur BlueXP est désormais disponible en japonais. Si la lang
 
 
 
+==== Fonctionnalité de résilience opérationnelle
+
+La fonctionnalité de résilience opérationnelle a été supprimée de BlueXP. Contactez le support NetApp si vous rencontrez des problèmes.
+
+
+
 ==== Gestion des identités et des accès BlueXP
 
 La gestion des identités et des accès dans BlueXP fournit désormais la fonctionnalité suivante.
@@ -325,6 +331,66 @@ Vous ne pouvez plus créer de volume à partir d'un modèle. Cette action a ét�
 
 
 == Sauvegarde et restauration
+
+
+
+=== 12 août 2025
+
+Cette version de sauvegarde et de restauration BlueXP  comprend les mises à jour suivantes.
+
+
+
+==== Charge de travail Microsoft SQL Server prise en charge en disponibilité générale (GA)
+
+La prise en charge de la charge de travail Microsoft SQL Server est désormais généralement disponible (GA) dans la BlueXP backup and recovery. Les organisations utilisant un environnement MSSQL sur ONTAP, Cloud Volumes ONTAP et Amazon FSx for NetApp ONTAP peuvent désormais profiter de ce nouveau service de sauvegarde et de récupération pour protéger leurs données.
+
+Cette version inclut les améliorations suivantes apportées à la prise en charge de la charge de travail Microsoft SQL Server par rapport à la version d'aperçu précédente :
+
+* * Synchronisation active SnapMirror * : cette version prend désormais en charge la synchronisation active SnapMirror (également appelée SnapMirror Business Continuity [SM-BC]), qui permet aux services d'entreprise de continuer à fonctionner même en cas de panne complète du site, en prenant en charge le basculement transparent des applications à l'aide d'une copie secondaire. La BlueXP backup and recovery prennent désormais en charge la protection des bases de données Microsoft SQL Server dans une configuration de synchronisation active SnapMirror et Metrocluster. Les informations apparaissent dans la section *Statut de stockage et de relation* de la page Détails de la protection. Les informations sur la relation sont affichées dans la section *Paramètres secondaires* mise à jour de la page Politique.
++
+Se référer à https://docs.netapp.com/us-en/bluexp-backup-recovery/br-use-policies-create.html["Utilisez des politiques pour protéger vos charges de travail"] .
+
++
+image:../media/screen-br-sql-protection-details.png["Page de détails de protection pour la charge de travail Microsoft SQL Server"]
+
+* *Prise en charge de plusieurs buckets* : vous pouvez désormais protéger les volumes au sein d'un environnement de travail avec jusqu'à 6 buckets par environnement de travail sur différents fournisseurs de cloud.
+* *Licences et mises à jour d'essai gratuites* pour les charges de travail SQL Server : vous pouvez désormais utiliser le modèle de licence de sauvegarde et de récupération BlueXP existant pour protéger les charges de travail SQL Server. Il n’existe aucune exigence de licence distincte pour les charges de travail SQL Server.
++
+Pour plus de détails, reportez-vous à https://docs.netapp.com/us-en/bluexp-backup-recovery/br-start-licensing.html["Configurer les licences pour la BlueXP backup and recovery"] .
+
+* *Nom d’instantané personnalisé* : vous pouvez désormais utiliser votre propre nom d’instantané dans une stratégie qui régit les sauvegardes des charges de travail Microsoft SQL Server. Saisissez ces informations dans la section *Paramètres avancés* de la page Politique.
++
+image:../media/screen-br-sql-policy-create-advanced-snapmirror.png["Capture d'écran des paramètres de format SnapMirror et snapshot pour les stratégies de BlueXP backup and recovery"]
+
++
+Se référer à https://docs.netapp.com/us-en/bluexp-backup-recovery/br-use-policies-create.html["Utilisez des politiques pour protéger vos charges de travail"] .
+
+* *Préfixe et suffixe du volume secondaire* : Vous pouvez saisir un préfixe et un suffixe personnalisés dans la section *Paramètres avancés* de la page Politique.
+* *Gestion des identités et des accès (IAM)* : Vous pouvez désormais contrôler l'accès des utilisateurs aux fonctionnalités.
++
+Se référer à https://docs.netapp.com/us-en/bluexp-backup-recovery/br-start-login.html["Connectez-vous à la BlueXP backup and recovery"] et https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-roles.html["Accès aux fonctionnalités de BlueXP backup and recovery"] .
+
+* *Restauration à partir du stockage d'objets vers un autre hôte* : vous pouvez désormais restaurer à partir du stockage d'objets vers un autre hôte même si le stockage principal est en panne.
+* *Données de sauvegarde du journal* : la page des détails de protection de la base de données affiche désormais les sauvegardes du journal. Vous pouvez voir la colonne Type de sauvegarde qui indique si la sauvegarde est une sauvegarde complète ou une sauvegarde de journal.
+* *Tableau de bord amélioré* : le tableau de bord affiche désormais les économies de stockage et de clonage.
++
+image:../media/screen-br-dashboard3.png["Tableau de bord de BlueXP backup and recovery"]
+
+
+
+
+
+==== Améliorations de la charge de travail du volume ONTAP
+
+* *Restauration multi-dossiers pour les volumes ONTAP * : Jusqu'à présent, vous pouviez restaurer un dossier ou plusieurs fichiers à la fois à partir de la fonction Parcourir et restaurer. La BlueXP backup and recovery offrent désormais la possibilité de sélectionner plusieurs dossiers à la fois à l'aide de la fonction Parcourir et restaurer.
+* *Afficher et gérer les sauvegardes des volumes supprimés* : le tableau de bord de BlueXP backup and recovery offre désormais une option permettant d'afficher et de gérer les volumes supprimés d' ONTAP. Avec cela, vous pouvez afficher et supprimer les sauvegardes des volumes qui n'existent plus dans ONTAP.
+* *Forcer la suppression des sauvegardes* : Dans certains cas extrêmes, vous souhaiterez peut-être que la BlueXP backup and recovery n'aient plus accès aux sauvegardes. Cela peut se produire par exemple si le service n'a plus accès au bucket de sauvegarde ou si les sauvegardes sont protégées par DataLock mais que vous n'en voulez plus. Auparavant, vous ne pouviez pas les supprimer vous-même et deviez appeler le support NetApp . Avec cette version, vous pouvez utiliser l'option permettant de forcer la suppression des sauvegardes (au niveau du volume et de l'environnement de travail).
+
+
+
+CAUTION: Utilisez cette option avec précaution et uniquement en cas de besoins de nettoyage extrêmes. La BlueXP backup and recovery n'auront plus accès à ces sauvegardes même si elles ne sont pas supprimées dans le stockage d'objets. Vous devrez vous rendre chez votre fournisseur de cloud et supprimer manuellement les sauvegardes.
+
+Se référer à https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-overview.html["Protégez les charges de travail ONTAP"] .
 
 
 
@@ -804,7 +870,7 @@ Nous avons mis à jour le service de copie et de synchronisation BlueXP ainsi qu
 
 ==== Prise en charge des commutateurs autorisés
 
-Vous pouvez désormais afficher des informations sur les commutateurs SAN Brocade Fibre Channel éligibles au support. Cela inclut des détails sur le modèle de commutateur, le numéro de série et l'état de l'assistance. link:https://docs.netapp.com/us-en/active-iq/task_view_inventory_details.html["Apprenez à afficher les commutateurs autorisés du support"] .
+ef3139c75debdd9ee259a4ea386083d3
 
 
 
@@ -1146,7 +1212,11 @@ Le service de mise en cache BlueXP  Edge a été supprimé le 7 août 2024.
 
 == Google Cloud NetApp volumes
 
-Directive non résolue dans <stdin> - inclure : https://raw.githubusercontent.com/NetAppDocs/bluexp-google-cloud-netapp-volumes/main/whats-new.adoc [tag=whats-new,leveloffset=+1]
+
+
+=== 21 juillet 2025
+
+Directive non résolue dans https://raw.githubusercontent.com/NetAppDocs/bluexp-google-cloud-netapp-volumes/main/whats-new.adoc[] - inclure ::../_whatsnew/2025-07-14.adoc[]
 
 
 
