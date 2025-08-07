@@ -921,7 +921,6 @@
   <block id="e5d2f68147d287044a7fffa2d0926eae" category="paragraph-title">Prise en charge de RHEL 9.6</block>
   <block id="f1513d7b9b8ef1acb75bb450ddd12a6c" category="paragraph">Cette version ajoute la prise en charge de Red Hat Enterprise Linux v9.6 pour l'installation manuelle sur site de la BlueXP classification, y compris les déploiements de sites sombres.</block>
   <block id="9def883103b7b964dcbb0993e3f8a065" category="section-title">Fin de disponibilité des licences optimisées</block>
-  <block id="cf4dd05cf065c9ae01bc836c5033bb63" category="paragraph">À compter du 11 août 2025, la licence Cloud Volumes ONTAP Optimized sera obsolète et ne sera plus disponible à l’achat ou au renouvellement sur les places de marché Azure et Google Cloud pour les abonnements à la carte (PAYGO). Si vous disposez d'un contrat annuel existant avec une licence optimisée, vous pouvez continuer à utiliser la licence jusqu'à la fin de votre contrat. Lorsque votre licence optimisée expire, vous pouvez opter pour les licences Cloud Volumes ONTAP Essentials ou Professional.</block>
   <block id="09027718866a8a3a2edb0bb0eb53c926" category="paragraph">Cependant, la possibilité d’ajouter ou de renouveler des licences optimisées sera disponible via les API.</block>
   <block id="be02aeef4770b69cefbe40935aba2797" category="inline-link">Licences pour Cloud Volumes ONTAP</block>
   <block id="2b8e43c95c1d15bc0824064c3dc0f993" category="paragraph">Pour plus d'informations sur les packages de licence, reportez-vous à<block ref="4b2776d787a70224c2441f63d3888380" category="inline-link-rx"></block> .</block>
@@ -969,4 +968,7 @@
   <block id="bfcabace496e3d26dcf080c810ecd405" category="list-text">Ajoutez un environnement de travail.</block>
   <block id="ee07da92eddb189dc56635b6831f1856" category="list-text">Visualisez vos volumes.</block>
   <block id="f842a501bbdfa7f71ac344c36591a1b8" category="list-text">Supprimez votre environnement de travail.</block>
+  <block id="667b631b672b77239becd955ba1e71e7" category="paragraph">À compter du 11 août 2025, la licence Cloud Volumes ONTAP Optimized sera obsolète et ne sera plus disponible à l’achat ou au renouvellement sur les places de marché Azure et Google Cloud pour les abonnements à la carte (PAYGO). Si vous disposez d'un contrat annuel existant avec une licence optimisée, vous pouvez continuer à utiliser la licence jusqu'à la fin de votre contrat. Lorsque votre licence optimisée expire, vous pouvez opter pour les licences Cloud Volumes ONTAP Essentials ou Professional dans BlueXP.</block>
+  <block id="742f9b79f178d376f2ac9836103a6f86" category="section-title">12 juillet 2025</block>
+  <block id="3662750346c2942117b5e1492f2bdcd4" category="paragraph">Cette version comprend des améliorations générales.</block>
 </blocks>
