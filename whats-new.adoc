@@ -870,7 +870,7 @@ Nous avons mis à jour le service de copie et de synchronisation BlueXP ainsi qu
 
 ==== Prise en charge des commutateurs autorisés
 
-ef3139c75debdd9ee259a4ea386083d3
+Vous pouvez désormais afficher des informations sur les commutateurs SAN Brocade Fibre Channel éligibles au support. Cela inclut des détails sur le modèle de commutateur, le numéro de série et l'état de l'assistance. link:https://docs.netapp.com/us-en/active-iq/task_view_inventory_details.html["Apprenez à afficher les commutateurs de support autorisés"] .
 
 
 
@@ -1216,7 +1216,16 @@ Le service de mise en cache BlueXP  Edge a été supprimé le 7 août 2024.
 
 === 21 juillet 2025
 
-Directive non résolue dans https://raw.githubusercontent.com/NetAppDocs/bluexp-google-cloud-netapp-volumes/main/whats-new.adoc[] - inclure ::../_whatsnew/2025-07-14.adoc[]
+
+
+==== Prise en charge des Google Cloud NetApp Volumes dans BlueXP
+
+Vous pouvez désormais gérer les Google Cloud NetApp Volumes directement depuis BlueXP:
+
+* Ajoutez un environnement de travail.
+* Visualisez vos volumes.
+* Supprimez votre environnement de travail.
+
 
 
 
