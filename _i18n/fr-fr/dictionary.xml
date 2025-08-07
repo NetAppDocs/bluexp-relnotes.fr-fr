@@ -918,4 +918,16 @@
   <block id="4632607b0b76f87d36568a2df2c3a267" category="paragraph">Une nouvelle section API obsolète est disponible dans le catalogue API de Digital Advisor . Il répertorie les API dont l'obsolescence est prévue, ainsi que les calendriers d'obsolescence et les API alternatives.</block>
   <block id="9eadf268f4ef55df53b7403a020082b1" category="section-title">Obsolescence des modules API de prévision de capacité V2 et de fin de support</block>
   <block id="bd2055e6fb5a6ca7ecc6d9d52f394548" category="paragraph">Les modules API de prévision de capacité V2 et de fin de support sont prévus pour être obsolètes. Pour accéder aux API obsolètes ou pour connaître les délais d'obsolescence et les API alternatives, accédez à *Services API -&gt; Parcourir -&gt; API obsolètes*.</block>
+  <block id="3488d38349240c72f75d081c2a79fa3b" category="section-title">04 août 2025</block>
+  <block id="4a32789f771ba902fef02cd0f2a544e6" category="paragraph">Version 4.2.5P2</block>
+  <block id="d4b79f85bf29ad80a3ae386050c77c87" category="section-title">Mises à jour de BlueXP disaster recovery</block>
+  <block id="36088b35355e766d544b98140baa439a" category="list-text">Amélioration de la prise en charge VMFS pour gérer le même LUN présenté à partir de plusieurs machines virtuelles de stockage.</block>
+  <block id="5958ae417b9ca044a24e8a3629b195bb" category="list-text">Amélioration du nettoyage du démontage des tests pour gérer le magasin de données déjà démonté et/ou supprimé.</block>
+  <block id="1a2957b0c8fb36225440df520076e072" category="list-text">Mappage de sous-réseau amélioré afin qu'il valide désormais que la passerelle saisie est contenue dans le réseau fourni.</block>
+  <block id="7f5267deccdc08e8591ec8b4dccfcc03" category="list-text">Correction d'un problème qui pouvait entraîner l'échec du plan de réplication si le nom de la machine virtuelle contenait « .com ».</block>
+  <block id="8af129ac3a817923db5feb647660eb7c" category="list-text">Suppression d'une restriction empêchant le volume de destination d'être identique au volume source lors de la création du volume dans le cadre de la création du plan de réplication.</block>
+  <block id="4de413f6189881cc6b259fb6e68df02c" category="list-text">Ajout de la prise en charge d’un abonnement à la carte (PAYGO) aux services intelligents NetApp dans Azure Marketplace et ajout d’un lien vers Azure Marketplace dans la boîte de dialogue d’essai gratuit.</block>
+  <block id="276ba658474d8685c0925cd2bcb486a8" category="inline-link">Licence de BlueXP disaster recovery</block>
+  <block id="a7193edb26a4b1bca4b7b82254e6dd4b" category="inline-link">Configurer les licences pour la BlueXP disaster recovery</block>
+  <block id="17c3f7bad28af5667bbaacbe3fe4f6d1" category="paragraph">Pour plus de détails, voir<block ref="ea68973aac8ca707300074d97a0eb98d" category="inline-link-rx"></block> et<block ref="1e6c39dcb2e36546ede605d53a914ae9" category="inline-link-rx"></block> .</block>
 </blocks>
