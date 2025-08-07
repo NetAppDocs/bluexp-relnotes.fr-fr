@@ -792,6 +792,34 @@ Nous avons mis à jour le service de copie et de synchronisation BlueXP ainsi qu
 
 
 
+=== 06 août 2025
+
+
+
+==== Prise en charge des commutateurs autorisés
+
+Vous pouvez désormais afficher des informations sur les commutateurs SAN Brocade Fibre Channel éligibles au support. Cela inclut des détails sur le modèle de commutateur, le numéro de série et l'état de l'assistance. link:https://docs.netapp.com/us-en/active-iq/task_view_inventory_details.html["Apprenez à afficher les commutateurs autorisés du support"] .
+
+
+
+==== Seuil pour les données RSS AutoSupport
+
+La limite d'envoi récemment arrêté (RSS), dans le widget AutoSupport , a été étendue de 48 heures (2 jours) à 216 heures (9 jours) avant qu'un système ne soit signalé comme RSS. Ceci est fait pour s'adapter aux plateformes comme StorageGRID qui n'envoient que des données AutoSupport hebdomadaires.
+
+
+
+==== Section API obsolète dans le catalogue API de Digital Advisor
+
+Une nouvelle section API obsolète est disponible dans le catalogue API de Digital Advisor . Il répertorie les API dont l'obsolescence est prévue, ainsi que les calendriers d'obsolescence et les API alternatives.
+
+
+
+==== Obsolescence des modules API de prévision de capacité V2 et de fin de support
+
+Les modules API de prévision de capacité V2 et de fin de support sont prévus pour être obsolètes. Pour accéder aux API obsolètes ou pour connaître les délais d'obsolescence et les API alternatives, accédez à *Services API -> Parcourir -> API obsolètes*.
+
+
+
 === 09 juillet 2025
 
 
@@ -829,18 +857,6 @@ Le rapport sur les contrats de support a été amélioré pour inclure le nouvea
 ==== Tableau de bord durabilité
 
 Vous pouvez maintenant lancer le tableau de bord Sustainability à l'aide du lien inclus dans la présentation Sustainability.
-
-
-
-=== 05 mars 2025
-
-
-
-==== Upgrade Advisor
-
-* Le DQP (Disk qualification Package) permet désormais de mettre à jour automatiquement les contrôleurs de disque et le firmware du périphérique de stockage en fonction de critères prédéfinis d'intégrité et de performance. Cela réduit les défaillances potentielles et améliore la fiabilité globale du système.
-* La base de données Timezone (DB) a été introduite pour maintenir automatiquement l'alignement du système avec les dernières définitions de fuseau horaire. Ainsi, les opérations dépendant du temps se poursuivent sans problème, même en cas de modification des règles du fuseau horaire.
-
 
 
 
