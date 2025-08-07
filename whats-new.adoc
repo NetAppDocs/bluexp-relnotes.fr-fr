@@ -1426,7 +1426,7 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 
 
-=== 12 juillet 2025
+=== 12 août 2025
 
 Cette version comprend des améliorations générales.
 
