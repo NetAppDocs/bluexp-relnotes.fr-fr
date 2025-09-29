@@ -157,7 +157,7 @@ link:https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#iam["En sav
 
 ===== Gestion simplifiée des fédérations d'identité
 
-BlueXP propose désormais une interface plus intuitive pour la gestion de la fédération d'identités. Celle-ci comprend une navigation simplifiée, des options plus claires pour la configuration des connexions fédérées et une meilleure visibilité sur les fédérations existantes.
+BlueXP propose désormais une interface plus intuitive pour gérer la fédération d'identité lors de l'utilisation du mode standard. Cela inclut une navigation plus facile, des options plus claires pour la configuration des connexions fédérées et une meilleure visibilité sur les fédérations existantes.
 
 L'activation de l'authentification unique (SSO) via la fédération d'identités permet aux utilisateurs de se connecter à BlueXP avec leurs identifiants d'entreprise. Cela améliore la sécurité, réduit l'utilisation des mots de passe et simplifie l'intégration.
 
@@ -360,66 +360,6 @@ Activé par défaut :
 * Si vous êtes un nouveau client, l'indexation haute performance est activée par défaut.
 * Si vous êtes un client existant, vous pouvez activer la réindexation en accédant à la section Restaurer de l'interface utilisateur.
 
-
-
-
-=== 11 août 2025
-
-Cette version de sauvegarde et de restauration BlueXP  comprend les mises à jour suivantes.
-
-
-
-==== Charge de travail Microsoft SQL Server prise en charge en disponibilité générale (GA)
-
-La prise en charge de la charge de travail Microsoft SQL Server est désormais généralement disponible (GA) dans la BlueXP backup and recovery. Les organisations utilisant un environnement MSSQL sur ONTAP, Cloud Volumes ONTAP et Amazon FSx for NetApp ONTAP peuvent désormais profiter de ce nouveau service de sauvegarde et de récupération pour protéger leurs données.
-
-Cette version inclut les améliorations suivantes apportées à la prise en charge de la charge de travail Microsoft SQL Server par rapport à la version d'aperçu précédente :
-
-* * Synchronisation active SnapMirror * : cette version prend désormais en charge la synchronisation active SnapMirror (également appelée SnapMirror Business Continuity [SM-BC]), qui permet aux services d'entreprise de continuer à fonctionner même en cas de panne complète du site, en prenant en charge le basculement transparent des applications à l'aide d'une copie secondaire. La BlueXP backup and recovery prennent désormais en charge la protection des bases de données Microsoft SQL Server dans une configuration de synchronisation active SnapMirror et Metrocluster. Les informations apparaissent dans la section *Statut de stockage et de relation* de la page Détails de la protection. Les informations sur la relation sont affichées dans la section *Paramètres secondaires* mise à jour de la page Politique.
-+
-Se référer à https://docs.netapp.com/us-en/bluexp-backup-recovery/br-use-policies-create.html["Utilisez des politiques pour protéger vos charges de travail"] .
-
-+
-image:../media/screen-br-sql-protection-details.png["Page de détails de protection pour la charge de travail Microsoft SQL Server"]
-
-* *Prise en charge de plusieurs buckets* : vous pouvez désormais protéger les volumes au sein d'un environnement de travail avec jusqu'à 6 buckets par environnement de travail sur différents fournisseurs de cloud.
-* *Licences et mises à jour d'essai gratuites* pour les charges de travail SQL Server : vous pouvez désormais utiliser le modèle de licence de sauvegarde et de récupération BlueXP existant pour protéger les charges de travail SQL Server. Il n’existe aucune exigence de licence distincte pour les charges de travail SQL Server.
-+
-Pour plus de détails, reportez-vous à https://docs.netapp.com/us-en/bluexp-backup-recovery/br-start-licensing.html["Configurer les licences pour la BlueXP backup and recovery"] .
-
-* *Nom d’instantané personnalisé* : vous pouvez désormais utiliser votre propre nom d’instantané dans une stratégie qui régit les sauvegardes des charges de travail Microsoft SQL Server. Saisissez ces informations dans la section *Paramètres avancés* de la page Politique.
-+
-image:../media/screen-br-sql-policy-create-advanced-snapmirror.png["Capture d'écran des paramètres de format SnapMirror et snapshot pour les stratégies de BlueXP backup and recovery"]
-
-+
-Se référer à https://docs.netapp.com/us-en/bluexp-backup-recovery/br-use-policies-create.html["Utilisez des politiques pour protéger vos charges de travail"] .
-
-* *Préfixe et suffixe du volume secondaire* : Vous pouvez saisir un préfixe et un suffixe personnalisés dans la section *Paramètres avancés* de la page Politique.
-* *Gestion des identités et des accès (IAM)* : Vous pouvez désormais contrôler l'accès des utilisateurs aux fonctionnalités.
-+
-Se référer à https://docs.netapp.com/us-en/bluexp-backup-recovery/br-start-login.html["Connectez-vous à la BlueXP backup and recovery"] et https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-roles.html["Accès aux fonctionnalités de BlueXP backup and recovery"] .
-
-* *Restauration à partir du stockage d'objets vers un autre hôte* : vous pouvez désormais restaurer à partir du stockage d'objets vers un autre hôte même si le stockage principal est en panne.
-* *Données de sauvegarde du journal* : la page des détails de protection de la base de données affiche désormais les sauvegardes du journal. Vous pouvez voir la colonne Type de sauvegarde qui indique si la sauvegarde est une sauvegarde complète ou une sauvegarde de journal.
-* *Tableau de bord amélioré* : le tableau de bord affiche désormais les économies de stockage et de clonage.
-+
-image:../media/screen-br-dashboard3.png["Tableau de bord de BlueXP backup and recovery"]
-
-
-
-
-
-==== Améliorations de la charge de travail du volume ONTAP
-
-* *Restauration multi-dossiers pour les volumes ONTAP * : Jusqu'à présent, vous pouviez restaurer un dossier ou plusieurs fichiers à la fois à partir de la fonction Parcourir et restaurer. La BlueXP backup and recovery offrent désormais la possibilité de sélectionner plusieurs dossiers à la fois à l'aide de la fonction Parcourir et restaurer.
-* *Afficher et gérer les sauvegardes des volumes supprimés* : le tableau de bord de BlueXP backup and recovery offre désormais une option permettant d'afficher et de gérer les volumes supprimés d' ONTAP. Avec cela, vous pouvez afficher et supprimer les sauvegardes des volumes qui n'existent plus dans ONTAP.
-* *Forcer la suppression des sauvegardes* : Dans certains cas extrêmes, vous souhaiterez peut-être que la BlueXP backup and recovery n'aient plus accès aux sauvegardes. Cela peut se produire par exemple si le service n'a plus accès au bucket de sauvegarde ou si les sauvegardes sont protégées par DataLock mais que vous n'en voulez plus. Auparavant, vous ne pouviez pas les supprimer vous-même et deviez appeler le support NetApp . Avec cette version, vous pouvez utiliser l'option permettant de forcer la suppression des sauvegardes (au niveau du volume et de l'environnement de travail).
-
-
-
-CAUTION: Utilisez cette option avec précaution et uniquement en cas de besoins de nettoyage extrêmes. La BlueXP backup and recovery n'auront plus accès à ces sauvegardes même si elles ne sont pas supprimées dans le stockage d'objets. Vous devrez vous rendre chez votre fournisseur de cloud et supprimer manuellement les sauvegardes.
-
-Se référer à https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-overview.html["Protégez les charges de travail ONTAP"] .
 
 
 
@@ -858,6 +798,18 @@ Cette version de classification BlueXP  inclut des améliorations générales e
 
 
 
+=== 4 septembre 2025
+
+
+
+==== Cloud Volumes ONTAP 9.17.1 RC
+
+Vous pouvez désormais utiliser BlueXP pour déployer et gérer la version Release Candidate 1 de Cloud Volumes ONTAP 9.17.1 dans Azure et Google Cloud. Cependant, cette version n'est pas disponible pour le déploiement et la mise à niveau dans AWS.
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["En savoir plus sur cette version de Cloud Volumes ONTAP"^] .
+
+
+
 === 11 août 2025
 
 
@@ -896,20 +848,6 @@ Pour plus d'informations sur l'utilisation des serveurs proxy dans Cloud Volumes
 À partir de Cloud Volumes ONTAP 9.13.1, L8s_v3 est pris en charge en tant que type de machine virtuelle dans les zones de disponibilité uniques et multiples Azure, pour les déploiements de paires haute disponibilité (HA) nouveaux et existants.
 
 Pour plus d'informations, reportez-vous https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Configurations prises en charge dans Azure"^]à .
-
-
-
-=== 25 juin 2025
-
-
-
-==== Disponibilité restreinte des licences BYOL pour Cloud Volumes ONTAP
-
-À compter du 25 juin 2025, NetApp a restreint le modèle de licence BYOL (Bring Your Own License) pour Cloud Volumes ONTAP. Cette restriction s'applique à tous les clients et déploiements Cloud Volumes ONTAP sur AWS, Azure et Google Cloud. Les seules exceptions concernent les clients du secteur public américain et les déploiements en Chine.
-
-Le support et les services NetApp seront maintenus jusqu'à l'expiration de votre contrat BYOL, mais vos licences expirées ne seront ni renouvelées ni prolongées. À l'expiration de vos licences BYOL, vous devrez les remplacer par des licences basées sur la capacité, achetées via vos abonnements à la place de marché cloud. Un modèle de licence basé sur la capacité, via les places de marché hyperscale, simplifie l'expérience de licence et offre de meilleurs avantages commerciaux. Contactez votre équipe de comptes NetApp ou vos représentants du service client pour discuter des options de conversion.
-
-Pour plus d'informations, reportez-vous à ce communiqué client :  https://mysupport.netapp.com/info/communications/CPC-00661.html["CPC-00661 : Modifications de la politique BYOL de Cloud Volumes ONTAP"^] .
 
 
 
@@ -1104,6 +1042,28 @@ Pour plus d'informations sur les rapports d'utilisation, reportez-vous à la sec
 
 
 == Reprise après incident
+
+
+
+=== 15 septembre 2025
+
+Version 4.3.5P3
+
+
+
+==== Configuration du script pour le test de basculement
+
+Avec cette version, vous pouvez désormais exécuter des scripts sur les machines virtuelles après leur mise sous tension pendant le processus de basculement de test. Cela vous permet de tester et de valider des scripts. Par exemple, vous pouvez mettre à jour les montages NFS pour pointer vers un nouveau serveur cible, garantissant ainsi que les applications invitées sont entièrement en ligne et que votre processus de récupération peut être testé de bout en bout.
+
+Pour plus d'informations sur le processus de basculement, voirlink:https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html["Basculer les applications vers un site distant"] .
+
+
+
+==== Processus de restauration automatique amélioré
+
+Lors du basculement, le processus de restauration automatique est désormais désactivé jusqu'à ce que la découverte soit terminée. Cela garantit que toutes les configurations sont correctement identifiées et prises en compte avant de lancer une restauration, et réduit le risque d'erreurs.
+
+Pour plus d'informations sur le processus de restauration automatique, voirlink:https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failback.html["Rétablir la source d'origine des applications"] .
 
 
 
@@ -1333,6 +1293,44 @@ Vous avez pu afficher les compartiments Google Cloud Storage sur le canevas Blue
 
 
 == Keystone
+
+
+
+=== 22 septembre 2025
+
+
+
+==== Ajout de la surveillance des alertes
+
+Le tableau de bord Keystone de BlueXP inclut désormais un onglet *Surveillance* pour gérer les alertes et les surveillances sur vos abonnements. Ce nouvel onglet vous permet de :
+
+* Affichez et résolvez les alertes actives, y compris les alertes générées par le système et définies par l'utilisateur concernant l'utilisation de la capacité et l'expiration de l'abonnement.
+* Créez des moniteurs d’alerte pour suivre l’utilisation de la capacité et les événements d’expiration de l’abonnement.
+
+
+Pour en savoir plus, consultezlink:https://docs.netapp.com/us-en/keystone-staas/integrations/monitoring-alerts.html["Afficher et gérer les alertes et les moniteurs"] .
+
+
+
+==== Affichage simplifié des niveaux de service de performance
+
+Vous pouvez afficher les informations sur les niveaux de service de performances, désormais déplacées d'un onglet séparé vers une vue extensible, dans l'onglet *Abonnements*. Cliquez sur la flèche vers le bas à côté de la colonne *Date d'expiration* pour les afficher pour chaque abonnement. Pour en savoir plus, consultezlink:https://docs.netapp.com/us-en/keystone-staas/integrations/subscriptions-tab.html["Afficher les détails de vos abonnements Keystone"] .
+
+
+
+=== 28 août 2025
+
+
+
+==== Suivi d'utilisation logique amélioré avec une nouvelle colonne
+
+Une nouvelle colonne, Empreinte totale, est ajoutée pour améliorer le suivi de la consommation Keystone pour les volumes FabricPool :
+
+* * Tableau de bord Keystone dans BlueXP*: Vous pouvez voir la colonne *Empreinte totale* dans l'onglet *Volumes dans les clusters* dans l'onglet *Actifs*.
+* * Digital Advisor*: Vous pouvez voir la colonne *Empreinte totale* dans l'onglet *Détails du volume* dans l'onglet *Volumes et objets*.
+
+
+Cette colonne affiche l'empreinte logique totale des volumes utilisant la hiérarchisation FabricPool , y compris les données des niveaux de performances et de froid, afin que vous puissiez calculer avec précision la consommation de Keystone .
 
 
 
